@@ -52,7 +52,7 @@ function detectTimezone(): string {
  * country code and timezone are mandatory to ENABLE reminders; everything
  * else has sensible defaults (60 min goal, 20:00–23:45 window, every 15 min).
  */
-export function WhatsAppReminderSettings() {
+export function WhatsAppReminderSettings({ onSaved }: { onSaved?: () => void } = {}) {
   const { data, isLoading, mutate } = useSWR<ReminderSettingsPayload>(
     "/api/reminders/settings",
     fetcher,
@@ -94,6 +94,10 @@ export function WhatsAppReminderSettings() {
   const { status } = data;
   const set = (patch: Partial<typeof form>) => setForm((f) => ({ ...f!, ...patch }));
   const phoneComplete = /^\+\d{1,4}$/.test(form.countryCode) && /^\d{6,14}$/.test(form.phoneNumber);
+  // Reminders can only be ENABLED once phone, country code, timezone AND a
+  // positive daily goal are all present (mirrors the server-side rule).
+  const profileComplete =
+    phoneComplete && form.timezone.trim() !== "" && form.goalMinutes >= 5;
   const goalPct = Math.min(100, Math.round((status.today.activeMinutes / Math.max(1, form.goalMinutes)) * 100));
 
   async function save() {
@@ -108,6 +112,7 @@ export function WhatsAppReminderSettings() {
       if (!res.ok || !json?.success) throw new Error(json?.error || "Failed to save");
       toast.success("Reminder settings saved");
       await mutate();
+      onSaved?.();
     } catch (err) {
       toast.error("Couldn't save reminder settings", { description: (err as Error).message });
     } finally {
@@ -188,13 +193,21 @@ export function WhatsAppReminderSettings() {
           </div>
           <Switch
             checked={form.reminderEnabled}
-            disabled={!form.reminderEnabled && !phoneComplete}
+            disabled={!form.reminderEnabled && !profileComplete}
             onCheckedChange={(v) => set({ reminderEnabled: v })}
           />
         </div>
-        {!phoneComplete && !form.reminderEnabled && (
+        {!profileComplete && !form.reminderEnabled && (
           <p className="text-[11px] text-muted-foreground">
-            Add your country code and WhatsApp number below to unlock the switch.
+            To unlock the switch, fill in:{" "}
+            {[
+              !phoneComplete && "country code + WhatsApp number",
+              form.timezone.trim() === "" && "timezone",
+              form.goalMinutes < 5 && "daily goal (≥5 min)",
+            ]
+              .filter(Boolean)
+              .join(", ")}
+            .
           </p>
         )}
 

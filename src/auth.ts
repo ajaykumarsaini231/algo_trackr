@@ -119,6 +119,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
           id: String(user._id),
           email: user.email,
           name: user.name || user.email,
+          image: user.image || "",
           role,
           sessionVersion: user.sessionVersion ?? 0,
         };
@@ -127,12 +128,20 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
   ],
   callbacks: {
     // Persist id + role + session version into the JWT at sign-in…
-    jwt({ token, user }) {
+    jwt({ token, user, trigger, session }) {
       if (user) {
         token.id = user.id;
         token.role = (user as { role?: UserRole }).role ?? "user";
         token.sessionVersion =
           (user as { sessionVersion?: number }).sessionVersion ?? 0;
+      }
+      // Client-initiated session refresh after a profile edit
+      // (useSession().update({ name, image })) — keeps the header current
+      // without forcing a re-login. Only display fields are updatable here.
+      if (trigger === "update" && session) {
+        const s = session as { name?: string; image?: string };
+        if (typeof s.name === "string" && s.name.trim()) token.name = s.name.trim().slice(0, 80);
+        if (typeof s.image === "string") token.picture = s.image.slice(0, 500);
       }
       return token;
     },

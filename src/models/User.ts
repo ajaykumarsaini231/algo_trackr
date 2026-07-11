@@ -30,6 +30,8 @@ const UserSchema = new Schema(
       maxlength: 254,
     },
     name: { type: String, trim: true, maxlength: 80, default: "" },
+    /** Optional https avatar URL; the UI falls back to initials. */
+    image: { type: String, trim: true, maxlength: 500, default: "" },
     passwordHash: { type: String, required: true, select: false },
     role: { type: String, enum: USER_ROLES, default: "user" },
     status: { type: String, enum: USER_STATUSES, default: "active" },
