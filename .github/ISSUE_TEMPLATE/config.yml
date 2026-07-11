@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security vulnerability (private)
+    url: https://github.com/ajaykumarsaini231/algo_trackr/security/advisories/new
+    about: Please report security issues privately — never as a public issue.
+  - name: Documentation
+    url: https://github.com/ajaykumarsaini231/algo_trackr/tree/main/docs
+    about: Setup, architecture, API, admin and deployment guides.

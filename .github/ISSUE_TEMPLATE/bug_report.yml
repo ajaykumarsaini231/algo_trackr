@@ -1,0 +1,53 @@
+name: Bug report
+description: Something is broken or behaves unexpectedly
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report! **Security vulnerabilities must NOT be filed here** — use GitHub's private *Report a vulnerability* instead (see SECURITY.md).
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Clear description of the bug and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Sign in as a normal user
+        2. Go to …
+        3. Click …
+        4. See error
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Dashboard / statistics
+        - Learning / topics / progressive unlock
+        - Questions / search / filters
+        - Patterns / sheets / Google prep
+        - Auth / accounts
+        - Admin console / impersonation
+        - WhatsApp reminders / heartbeat / GitHub Actions
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      placeholder: "Deployed (Vercel) or local? Browser/OS? Role (user/admin/superadmin)?"
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / screenshots
+      description: API error envelope, console output, Action logs — redact secrets and personal data.
