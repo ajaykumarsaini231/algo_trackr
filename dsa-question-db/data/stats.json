@@ -1,0 +1,197 @@
+{
+  "generatedAt": "2026-07-10T15:57:01.509Z",
+  "total": 15267,
+  "byPlatform": {
+    "leetcode": 3985,
+    "codeforces": 11282
+  },
+  "byDifficulty": {
+    "Easy": 3670,
+    "Medium": 3999,
+    "Hard": 3430,
+    "Unrated": 289,
+    "Expert": 3879
+  },
+  "byLearningLevel": {
+    "Beginner": 3670,
+    "Intermediate": 4288,
+    "Advanced": 3430,
+    "Expert": 3879
+  },
+  "topTopics": [
+    [
+      "Dynamic Programming",
+      3169
+    ],
+    [
+      "Greedy",
+      2355
+    ],
+    [
+      "Binary Search",
+      1121
+    ],
+    [
+      "Graph",
+      1038
+    ],
+    [
+      "Math",
+      939
+    ],
+    [
+      "Miscellaneous",
+      835
+    ],
+    [
+      "Implementation",
+      729
+    ],
+    [
+      "Tree",
+      572
+    ],
+    [
+      "Number Theory",
+      464
+    ],
+    [
+      "Strings",
+      404
+    ],
+    [
+      "Sorting",
+      358
+    ],
+    [
+      "Hash Table",
+      339
+    ],
+    [
+      "Constructive",
+      292
+    ],
+    [
+      "Bit Manipulation",
+      283
+    ],
+    [
+      "Geometry",
+      252
+    ],
+    [
+      "Two Pointer",
+      244
+    ],
+    [
+      "Data Structures",
+      208
+    ],
+    [
+      "Combinatorics",
+      190
+    ],
+    [
+      "Divide and Conquer",
+      138
+    ],
+    [
+      "Arrays",
+      122
+    ]
+  ],
+  "striverMapped": 224,
+  "striverBySteps": [
+    {
+      "stepNo": 1,
+      "step": "Learn the Basics",
+      "count": 0
+    },
+    {
+      "stepNo": 2,
+      "step": "Learn Important Sorting Techniques",
+      "count": 0
+    },
+    {
+      "stepNo": 3,
+      "step": "Solve Problems on Arrays",
+      "count": 25
+    },
+    {
+      "stepNo": 4,
+      "step": "Binary Search",
+      "count": 18
+    },
+    {
+      "stepNo": 5,
+      "step": "Strings",
+      "count": 10
+    },
+    {
+      "stepNo": 6,
+      "step": "Learn LinkedList",
+      "count": 14
+    },
+    {
+      "stepNo": 7,
+      "step": "Recursion",
+      "count": 14
+    },
+    {
+      "stepNo": 8,
+      "step": "Bit Manipulation",
+      "count": 8
+    },
+    {
+      "stepNo": 9,
+      "step": "Stack and Queues",
+      "count": 16
+    },
+    {
+      "stepNo": 10,
+      "step": "Sliding Window & Two Pointer",
+      "count": 10
+    },
+    {
+      "stepNo": 11,
+      "step": "Heaps",
+      "count": 8
+    },
+    {
+      "stepNo": 12,
+      "step": "Greedy Algorithms",
+      "count": 9
+    },
+    {
+      "stepNo": 13,
+      "step": "Binary Trees",
+      "count": 20
+    },
+    {
+      "stepNo": 14,
+      "step": "Binary Search Trees",
+      "count": 10
+    },
+    {
+      "stepNo": 15,
+      "step": "Graphs",
+      "count": 23
+    },
+    {
+      "stepNo": 16,
+      "step": "Dynamic Programming",
+      "count": 29
+    },
+    {
+      "stepNo": 17,
+      "step": "Tries",
+      "count": 7
+    },
+    {
+      "stepNo": 18,
+      "step": "Strings (Advanced Algorithms)",
+      "count": 3
+    }
+  ],
+  "premiumCount": 774
+}

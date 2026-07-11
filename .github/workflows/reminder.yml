@@ -1,0 +1,64 @@
+# WhatsApp study reminders — the ONLY scheduler for /api/reminders/run.
+#
+# Required repository secrets:
+#   REMINDER_APP_URL      e.g. https://your-app.vercel.app   (no trailing slash)
+#   REMINDER_CRON_SECRET  the same value as the Vercel env var REMINDER_CRON_SECRET
+#
+# Notes:
+#   - GitHub cron has no sub-minute precision and may drift a few minutes;
+#     the API's slot logic (floor(minutesOfDay / interval)) absorbs drift and
+#     the unique slot claim makes overlapping runs harmless.
+#   - `workflow_dispatch` allows manual test runs from the Actions tab.
+name: WhatsApp reminders
+
+on:
+  schedule:
+    - cron: "*/15 * * * *" # every 15 minutes, 24/7 (per-user windows filter server-side)
+  workflow_dispatch:
+    inputs:
+      dryRun:
+        description: "Evaluate eligibility without sending"
+        type: boolean
+        default: false
+
+concurrency:
+  group: whatsapp-reminders
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Call reminder endpoint
+        env:
+          APP_URL: ${{ secrets.REMINDER_APP_URL }}
+          CRON_SECRET: ${{ secrets.REMINDER_CRON_SECRET }}
+          DRY_RUN: ${{ inputs.dryRun && '1' || '0' }}
+        run: |
+          set -euo pipefail
+          if [ -z "${APP_URL:-}" ] || [ -z "${CRON_SECRET:-}" ]; then
+            echo "::error::REMINDER_APP_URL / REMINDER_CRON_SECRET secrets are not configured"
+            exit 1
+          fi
+          URL="$APP_URL/api/reminders/run"
+          if [ "$DRY_RUN" = "1" ]; then URL="$URL?dryRun=1"; fi
+
+          # --retry covers transient network/5xx failures; the endpoint is
+          # idempotent per slot, so retries can never double-send.
+          RESPONSE=$(curl -sS -X POST "$URL" \
+            -H "Authorization: Bearer $CRON_SECRET" \
+            -H "Content-Type: application/json" \
+            --max-time 90 \
+            --retry 3 --retry-delay 5 --retry-all-errors \
+            -w '\n%{http_code}')
+          BODY=$(echo "$RESPONSE" | sed '$d')
+          CODE=$(echo "$RESPONSE" | tail -n1)
+
+          echo "HTTP $CODE"
+          echo "$BODY"
+
+          if [ "$CODE" != "200" ]; then
+            echo "::error::Reminder run failed with HTTP $CODE"
+            exit 1
+          fi

@@ -1,0 +1,102 @@
+{
+  "kadane-algorithm": {
+    "titles": ["Maximum Subarray", "Maximum Sum Circular Subarray", "Maximum Product Subarray", "K-Concatenation Maximum Sum", "Maximum Absolute Sum of Any Subarray", "Best Time to Buy and Sell Stock", "Longest Turbulent Subarray"],
+    "tags": [],
+    "keywords": ["maximum (sum )?(circular )?subarray", "maximum absolute sum"]
+  },
+  "difference-array": {
+    "titles": ["Range Addition", "Corporate Flight Bookings", "Shifting Letters II", "Car Pooling", "Describe the Painting", "Range Addition II", "Points That Intersect With Cars"],
+    "tags": [],
+    "keywords": ["range addition"]
+  },
+  "circular-array": {
+    "titles": ["Gas Station", "Next Greater Element II", "Circular Array Loop", "Maximum Sum Circular Subarray", "Freedom Trail", "Rotate Array"],
+    "tags": [],
+    "keywords": ["circular"]
+  },
+  "dutch-national-flag": {
+    "titles": ["Sort Colors", "Wiggle Sort", "Wiggle Sort II", "Partition List", "Sort Array By Parity", "Sort Array By Parity II"],
+    "tags": [],
+    "keywords": []
+  },
+  "binary-search-on-answer": {
+    "titles": ["Koko Eating Bananas", "Split Array Largest Sum", "Capacity To Ship Packages Within D Days", "Minimum Number of Days to Make m Bouquets", "Magnetic Force Between Two Balls", "Maximum Running Time of N Computers", "Minimize the Maximum Difference of Pairs", "Find the Smallest Divisor Given a Threshold", "Minimized Maximum of Products Distributed to Any Store", "Kth Smallest Number in Multiplication Table", "Ugly Number III", "Divide Chocolate", "Minimize Maximum of Array"],
+    "tags": [],
+    "keywords": []
+  },
+  "lower-bound": {
+    "titles": ["Search Insert Position", "Find First and Last Position of Element in Sorted Array", "Successful Pairs of Spells and Potions", "Time Based Key-Value Store", "Random Pick with Weight", "Sqrt(x)"],
+    "tags": [],
+    "keywords": []
+  },
+  "upper-bound": {
+    "titles": ["Find Right Interval", "Count Negative Numbers in a Sorted Matrix", "Maximum Count of Positive Integer and Negative Integer", "Number of Flowers in Full Bloom", "Find First and Last Position of Element in Sorted Array"],
+    "tags": [],
+    "keywords": []
+  },
+  "next-greater-element": {
+    "titles": ["Next Greater Element I", "Next Greater Element II", "Next Greater Element IV", "Daily Temperatures", "Online Stock Span", "Largest Rectangle in Histogram", "Remove K Digits", "Sum of Subarray Minimums", "Trapping Rain Water", "Maximum Width Ramp", "Next Greater Node In Linked List"],
+    "tags": [],
+    "keywords": ["next greater"]
+  },
+  "prefix-tree": {
+    "titles": ["Implement Trie (Prefix Tree)", "Implement Trie II (Prefix Tree)", "Word Search II", "Replace Words", "Maximum XOR of Two Numbers in an Array", "Design Add and Search Words Data Structure", "Search Suggestions System", "Longest Word in Dictionary", "Map Sum Pairs", "Stream of Characters"],
+    "tags": ["Trie"],
+    "keywords": ["prefix tree", "\\btrie\\b"]
+  },
+  "disjoint-set": {
+    "titles": ["Number of Provinces", "Accounts Merge", "Redundant Connection", "Redundant Connection II", "Number of Islands II", "Regions Cut By Slashes", "Most Stones Removed with Same Row or Column", "Satisfiability of Equality Equations", "Graph Valid Tree", "Number of Connected Components in an Undirected Graph", "Smallest String With Swaps", "Evaluate Division", "Number of Operations to Make Network Connected"],
+    "tags": ["dsu", "Union Find"],
+    "keywords": []
+  },
+  "tree-dp": {
+    "titles": ["House Robber III", "Binary Tree Cameras", "Longest ZigZag Path in a Binary Tree", "Binary Tree Maximum Path Sum", "Diameter of Binary Tree", "Distribute Coins in Binary Tree", "Sum of Distances in Tree"],
+    "tags": [],
+    "keywords": []
+  },
+  "digit-dp": {
+    "titles": ["Count Digit One", "Numbers With Repeated Digits", "Count Special Integers", "Numbers At Most N Given Digit Set", "Non-negative Integers without Consecutive Ones", "Rotated Digits", "Count Numbers with Unique Digits"],
+    "tags": [],
+    "keywords": []
+  },
+  "lca": {
+    "titles": ["Lowest Common Ancestor of a Binary Tree", "Lowest Common Ancestor of a Binary Search Tree", "Lowest Common Ancestor of a Binary Tree II", "Lowest Common Ancestor of a Binary Tree III", "Lowest Common Ancestor of a Binary Tree IV", "Smallest Common Region"],
+    "tags": [],
+    "keywords": ["lowest common ancestor"]
+  },
+  "diameter": {
+    "titles": ["Diameter of Binary Tree", "Diameter of N-Ary Tree", "Tree Diameter"],
+    "tags": [],
+    "keywords": ["diameter of", "\\bdiameter\\b"]
+  },
+  "serialization": {
+    "titles": ["Serialize and Deserialize Binary Tree", "Serialize and Deserialize BST", "Serialize and Deserialize N-ary Tree", "Construct String from Binary Tree", "Encode and Decode Strings", "Find Duplicate Subtrees"],
+    "tags": [],
+    "keywords": ["serialize", "deserialize"]
+  },
+  "n-queens": {
+    "titles": ["N-Queens", "N-Queens II"],
+    "tags": [],
+    "keywords": ["n[- ]?queens"]
+  },
+  "sudoku": {
+    "titles": ["Sudoku Solver", "Valid Sudoku"],
+    "tags": [],
+    "keywords": ["sudoku"]
+  },
+  "gray-code": {
+    "titles": ["Gray Code", "Circular Permutation in Binary Representation"],
+    "tags": [],
+    "keywords": ["gray code"]
+  },
+  "line-sweep": {
+    "titles": ["The Skyline Problem", "My Calendar I", "My Calendar II", "My Calendar III", "Meeting Rooms II", "Employee Free Time", "Describe the Painting", "Number of Flowers in Full Bloom", "Range Module", "Car Pooling", "Count Integers in Intervals"],
+    "tags": ["Line Sweep"],
+    "keywords": []
+  },
+  "manacher": {
+    "titles": ["Longest Palindromic Substring", "Palindromic Substrings", "Shortest Palindrome", "Longest Palindrome"],
+    "tags": [],
+    "keywords": ["palindromic sub"]
+  }
+}

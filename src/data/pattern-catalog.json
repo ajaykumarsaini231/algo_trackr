@@ -1,0 +1,3114 @@
+{
+  "generatedFrom": "roadmap-tools/build-catalog.mjs",
+  "counts": {
+    "patterns": 163,
+    "categories": 22
+  },
+  "categories": [
+    {
+      "category": "Array",
+      "categorySlug": "array",
+      "priority": "High",
+      "patternSlugs": [
+        "basic-array",
+        "simulation",
+        "brute-force",
+        "prefix-sum",
+        "suffix-sum",
+        "difference-array",
+        "kadane-algorithm",
+        "circular-array",
+        "matrix",
+        "coordinate-compression"
+      ]
+    },
+    {
+      "category": "Two Pointer",
+      "categorySlug": "two-pointer",
+      "priority": "High",
+      "patternSlugs": [
+        "two-pointer",
+        "same-direction",
+        "opposite-direction",
+        "fast-slow-pointer",
+        "partition",
+        "dutch-national-flag"
+      ]
+    },
+    {
+      "category": "Sliding Window",
+      "categorySlug": "sliding-window",
+      "priority": "High",
+      "patternSlugs": [
+        "fixed-window",
+        "variable-window",
+        "frequency-window",
+        "character-window",
+        "substring-window"
+      ]
+    },
+    {
+      "category": "Binary Search",
+      "categorySlug": "binary-search",
+      "priority": "High",
+      "patternSlugs": [
+        "binary-search",
+        "binary-search-on-answer",
+        "lower-bound",
+        "upper-bound",
+        "peak-element",
+        "rotated-array",
+        "search-space-reduction"
+      ]
+    },
+    {
+      "category": "Sorting",
+      "categorySlug": "sorting",
+      "priority": "Medium",
+      "patternSlugs": [
+        "merge-sort",
+        "quick-sort",
+        "heap-sort",
+        "counting-sort",
+        "bucket-sort",
+        "radix-sort",
+        "custom-comparator",
+        "partial-sorting"
+      ]
+    },
+    {
+      "category": "Hashing",
+      "categorySlug": "hashing",
+      "priority": "High",
+      "patternSlugs": [
+        "hashmap",
+        "hashset",
+        "frequency-count",
+        "prefix-hash",
+        "rolling-hash",
+        "polynomial-hash"
+      ]
+    },
+    {
+      "category": "Stack",
+      "categorySlug": "stack",
+      "priority": "Medium",
+      "patternSlugs": [
+        "monotonic-stack",
+        "increasing-stack",
+        "decreasing-stack",
+        "expression-evaluation",
+        "parentheses",
+        "next-greater-element",
+        "histogram"
+      ]
+    },
+    {
+      "category": "Queue",
+      "categorySlug": "queue",
+      "priority": "Medium",
+      "patternSlugs": [
+        "queue",
+        "deque",
+        "monotonic-queue",
+        "circular-queue",
+        "priority-queue"
+      ]
+    },
+    {
+      "category": "Linked List",
+      "categorySlug": "linked-list",
+      "priority": "Medium",
+      "patternSlugs": [
+        "reverse-list",
+        "merge-list",
+        "fast-slow-list",
+        "cycle-detection",
+        "intersection",
+        "dummy-node"
+      ]
+    },
+    {
+      "category": "Tree",
+      "categorySlug": "tree",
+      "priority": "Critical",
+      "patternSlugs": [
+        "tree-dfs",
+        "tree-bfs",
+        "tree-traversal",
+        "binary-tree",
+        "bst",
+        "lca",
+        "diameter",
+        "serialization",
+        "tree-dp"
+      ]
+    },
+    {
+      "category": "Trie",
+      "categorySlug": "trie",
+      "priority": "Medium",
+      "patternSlugs": [
+        "trie",
+        "prefix-tree",
+        "dictionary",
+        "auto-complete",
+        "bit-trie"
+      ]
+    },
+    {
+      "category": "Heap",
+      "categorySlug": "heap",
+      "priority": "High",
+      "patternSlugs": [
+        "top-k",
+        "median-finding",
+        "merge-k-lists",
+        "priority-queue-heap",
+        "min-heap",
+        "max-heap",
+        "heapify"
+      ]
+    },
+    {
+      "category": "Graph",
+      "categorySlug": "graph",
+      "priority": "Critical",
+      "patternSlugs": [
+        "graph-dfs",
+        "graph-bfs",
+        "topological-sort",
+        "union-find",
+        "disjoint-set",
+        "dijkstra",
+        "bellman-ford",
+        "floyd-warshall",
+        "prim",
+        "kruskal",
+        "shortest-path",
+        "mst",
+        "bridge",
+        "articulation-point",
+        "scc",
+        "euler-tour",
+        "graph-coloring"
+      ]
+    },
+    {
+      "category": "Dynamic Programming",
+      "categorySlug": "dynamic-programming",
+      "priority": "Critical",
+      "patternSlugs": [
+        "1d-dp",
+        "2d-dp",
+        "grid-dp",
+        "lis",
+        "lcs",
+        "knapsack",
+        "tree-dp-advanced",
+        "digit-dp",
+        "bitmask-dp",
+        "game-dp",
+        "interval-dp",
+        "memoization",
+        "tabulation",
+        "optimization-dp"
+      ]
+    },
+    {
+      "category": "Greedy",
+      "categorySlug": "greedy",
+      "priority": "High",
+      "patternSlugs": [
+        "interval-scheduling",
+        "activity-selection",
+        "sorting-greedy",
+        "exchange-argument",
+        "fractional-knapsack",
+        "greedy-choice"
+      ]
+    },
+    {
+      "category": "Backtracking",
+      "categorySlug": "backtracking",
+      "priority": "High",
+      "patternSlugs": [
+        "combination",
+        "permutation",
+        "subset",
+        "n-queens",
+        "sudoku",
+        "branch-and-bound"
+      ]
+    },
+    {
+      "category": "Recursion",
+      "categorySlug": "recursion",
+      "priority": "Medium",
+      "patternSlugs": [
+        "recursion",
+        "divide-and-conquer",
+        "tail-recursion",
+        "master-theorem"
+      ]
+    },
+    {
+      "category": "Math",
+      "categorySlug": "math",
+      "priority": "Medium",
+      "patternSlugs": [
+        "prime",
+        "gcd",
+        "lcm",
+        "modular-arithmetic",
+        "power",
+        "combinatorics",
+        "probability",
+        "expected-value",
+        "matrix-exponentiation"
+      ]
+    },
+    {
+      "category": "Bit Manipulation",
+      "categorySlug": "bit-manipulation",
+      "priority": "Medium",
+      "patternSlugs": [
+        "xor",
+        "and-or",
+        "bitmask",
+        "subset-enumeration",
+        "gray-code"
+      ]
+    },
+    {
+      "category": "Geometry",
+      "categorySlug": "geometry",
+      "priority": "Low",
+      "patternSlugs": [
+        "convex-hull",
+        "line-sweep",
+        "cross-product",
+        "orientation",
+        "polygon",
+        "distance"
+      ]
+    },
+    {
+      "category": "String",
+      "categorySlug": "string",
+      "priority": "High",
+      "patternSlugs": [
+        "kmp",
+        "z-algorithm",
+        "string-trie",
+        "string-rolling-hash",
+        "manacher",
+        "rabin-karp",
+        "suffix-array",
+        "suffix-automaton"
+      ]
+    },
+    {
+      "category": "Miscellaneous",
+      "categorySlug": "miscellaneous",
+      "priority": "Low",
+      "patternSlugs": [
+        "simulation-misc",
+        "implementation",
+        "design",
+        "randomization",
+        "interactive",
+        "constructive",
+        "ad-hoc"
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "name": "Basic Array",
+      "slug": "basic-array",
+      "category": "Array",
+      "categorySlug": "array",
+      "priority": "High",
+      "description": "Basic Array — a Array pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Simulation",
+      "slug": "simulation",
+      "category": "Array",
+      "categorySlug": "array",
+      "priority": "High",
+      "description": "Simulation — a Array pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Brute Force",
+      "slug": "brute-force",
+      "category": "Array",
+      "categorySlug": "array",
+      "priority": "High",
+      "description": "Brute Force — a Array pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Prefix Sum",
+      "slug": "prefix-sum",
+      "category": "Array",
+      "categorySlug": "array",
+      "priority": "Critical",
+      "description": "Many range-sum / subarray-sum queries or count-of-subarrays problems.",
+      "whenToUse": "Many range-sum / subarray-sum queries or count-of-subarrays problems.",
+      "recognition": [
+        "range sum",
+        "subarray sum equals k",
+        "immutable array queries"
+      ],
+      "mistakes": [
+        "forgetting the empty-prefix (0) seed",
+        "mixing inclusive/exclusive bounds"
+      ],
+      "time": "O(n) build, O(1) query",
+      "space": "O(n)",
+      "importance": "Foundational; unlocks hashing+prefix combos."
+    },
+    {
+      "name": "Suffix Sum",
+      "slug": "suffix-sum",
+      "category": "Array",
+      "categorySlug": "array",
+      "priority": "High",
+      "description": "Suffix Sum — a Array pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Difference Array",
+      "slug": "difference-array",
+      "category": "Array",
+      "categorySlug": "array",
+      "priority": "High",
+      "description": "Difference Array — a Array pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Kadane Algorithm",
+      "slug": "kadane-algorithm",
+      "category": "Array",
+      "categorySlug": "array",
+      "priority": "High",
+      "description": "Maximum/minimum contiguous subarray value.",
+      "whenToUse": "Maximum/minimum contiguous subarray value.",
+      "recognition": [
+        "max subarray",
+        "contiguous",
+        "best window sum"
+      ],
+      "mistakes": [
+        "resetting to 0 instead of current element",
+        "not tracking a global max"
+      ],
+      "time": "O(n)",
+      "space": "O(1)",
+      "importance": "Interview classic (Maximum Subarray)."
+    },
+    {
+      "name": "Circular Array",
+      "slug": "circular-array",
+      "category": "Array",
+      "categorySlug": "array",
+      "priority": "High",
+      "description": "Circular Array — a Array pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Matrix",
+      "slug": "matrix",
+      "category": "Array",
+      "categorySlug": "array",
+      "priority": "High",
+      "description": "Matrix — a Array pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Coordinate Compression",
+      "slug": "coordinate-compression",
+      "category": "Array",
+      "categorySlug": "array",
+      "priority": "High",
+      "description": "Coordinate Compression — a Array pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Two Pointer",
+      "slug": "two-pointer",
+      "category": "Two Pointer",
+      "categorySlug": "two-pointer",
+      "priority": "Critical",
+      "description": "Sorted arrays/strings or pairing problems where two indices move to shrink the search.",
+      "whenToUse": "Sorted arrays/strings or pairing problems where two indices move to shrink the search.",
+      "recognition": [
+        "sorted input",
+        "find a pair/triplet",
+        "in-place O(1) space"
+      ],
+      "mistakes": [
+        "moving both pointers when only one should",
+        "off-by-one on the crossing condition"
+      ],
+      "time": "O(n)",
+      "space": "O(1)",
+      "importance": "Extremely common in phone screens."
+    },
+    {
+      "name": "Same Direction",
+      "slug": "same-direction",
+      "category": "Two Pointer",
+      "categorySlug": "two-pointer",
+      "priority": "High",
+      "description": "Same Direction — a Two Pointer pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Opposite Direction",
+      "slug": "opposite-direction",
+      "category": "Two Pointer",
+      "categorySlug": "two-pointer",
+      "priority": "High",
+      "description": "Opposite Direction — a Two Pointer pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Fast Slow Pointer",
+      "slug": "fast-slow-pointer",
+      "category": "Two Pointer",
+      "categorySlug": "two-pointer",
+      "priority": "High",
+      "description": "Cycle detection and finding middle of a sequence/linked list.",
+      "whenToUse": "Cycle detection and finding middle of a sequence/linked list.",
+      "recognition": [
+        "linked list cycle",
+        "find middle",
+        "detect loop"
+      ],
+      "mistakes": [
+        "null-deref on fast.next.next",
+        "wrong start offset for cycle entry"
+      ],
+      "time": "O(n)",
+      "space": "O(1)",
+      "importance": "Classic linked-list interview staple."
+    },
+    {
+      "name": "Partition",
+      "slug": "partition",
+      "category": "Two Pointer",
+      "categorySlug": "two-pointer",
+      "priority": "High",
+      "description": "Partition — a Two Pointer pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Dutch National Flag",
+      "slug": "dutch-national-flag",
+      "category": "Two Pointer",
+      "categorySlug": "two-pointer",
+      "priority": "High",
+      "description": "Dutch National Flag — a Two Pointer pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Fixed Window",
+      "slug": "fixed-window",
+      "category": "Sliding Window",
+      "categorySlug": "sliding-window",
+      "priority": "High",
+      "description": "Aggregate over every window of a fixed size k.",
+      "whenToUse": "Aggregate over every window of a fixed size k.",
+      "recognition": [
+        "window size k",
+        "max/avg of each window"
+      ],
+      "mistakes": [
+        "recomputing the whole window",
+        "not evicting the leaving element"
+      ],
+      "time": "O(n)",
+      "space": "O(k)",
+      "importance": "Common warm-up."
+    },
+    {
+      "name": "Variable Window",
+      "slug": "variable-window",
+      "category": "Sliding Window",
+      "categorySlug": "sliding-window",
+      "priority": "Critical",
+      "description": "Longest/shortest window satisfying a constraint.",
+      "whenToUse": "Longest/shortest window satisfying a constraint.",
+      "recognition": [
+        "longest substring with...",
+        "at most K",
+        "minimum window"
+      ],
+      "mistakes": [
+        "shrinking with `if` instead of `while`",
+        "stale window-state after moves"
+      ],
+      "time": "O(n)",
+      "space": "O(k)",
+      "importance": "One of the highest-yield patterns."
+    },
+    {
+      "name": "Frequency Window",
+      "slug": "frequency-window",
+      "category": "Sliding Window",
+      "categorySlug": "sliding-window",
+      "priority": "High",
+      "description": "Frequency Window — a Sliding Window pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Character Window",
+      "slug": "character-window",
+      "category": "Sliding Window",
+      "categorySlug": "sliding-window",
+      "priority": "High",
+      "description": "Character Window — a Sliding Window pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Substring Window",
+      "slug": "substring-window",
+      "category": "Sliding Window",
+      "categorySlug": "sliding-window",
+      "priority": "High",
+      "description": "Substring Window — a Sliding Window pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search",
+      "category": "Binary Search",
+      "categorySlug": "binary-search",
+      "priority": "Critical",
+      "description": "Sorted data or any monotonic predicate.",
+      "whenToUse": "Sorted data or any monotonic predicate.",
+      "recognition": [
+        "sorted array",
+        "find boundary",
+        "O(log n) expected"
+      ],
+      "mistakes": [
+        "mid overflow",
+        "wrong loop invariant lo<=hi vs lo<hi"
+      ],
+      "time": "O(log n)",
+      "space": "O(1)",
+      "importance": "Must-know; appears everywhere."
+    },
+    {
+      "name": "Binary Search on Answer",
+      "slug": "binary-search-on-answer",
+      "category": "Binary Search",
+      "categorySlug": "binary-search",
+      "priority": "Critical",
+      "description": "Minimize/maximize a value where feasibility is monotonic.",
+      "whenToUse": "Minimize/maximize a value where feasibility is monotonic.",
+      "recognition": [
+        "min largest ...",
+        "max min ...",
+        "smallest k such that feasible(k)"
+      ],
+      "mistakes": [
+        "non-monotonic predicate",
+        "boundary returns wrong side"
+      ],
+      "time": "O(n log(range))",
+      "space": "O(1)",
+      "importance": "Frequent in mediums/hards."
+    },
+    {
+      "name": "Lower Bound",
+      "slug": "lower-bound",
+      "category": "Binary Search",
+      "categorySlug": "binary-search",
+      "priority": "High",
+      "description": "Lower Bound — a Binary Search pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Upper Bound",
+      "slug": "upper-bound",
+      "category": "Binary Search",
+      "categorySlug": "binary-search",
+      "priority": "High",
+      "description": "Upper Bound — a Binary Search pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Peak Element",
+      "slug": "peak-element",
+      "category": "Binary Search",
+      "categorySlug": "binary-search",
+      "priority": "High",
+      "description": "Peak Element — a Binary Search pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Rotated Array",
+      "slug": "rotated-array",
+      "category": "Binary Search",
+      "categorySlug": "binary-search",
+      "priority": "High",
+      "description": "Rotated Array — a Binary Search pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Search Space Reduction",
+      "slug": "search-space-reduction",
+      "category": "Binary Search",
+      "categorySlug": "binary-search",
+      "priority": "High",
+      "description": "Search Space Reduction — a Binary Search pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Merge Sort",
+      "slug": "merge-sort",
+      "category": "Sorting",
+      "categorySlug": "sorting",
+      "priority": "Medium",
+      "description": "Merge Sort — a Sorting pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Quick Sort",
+      "slug": "quick-sort",
+      "category": "Sorting",
+      "categorySlug": "sorting",
+      "priority": "Medium",
+      "description": "Quick Sort — a Sorting pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Heap Sort",
+      "slug": "heap-sort",
+      "category": "Sorting",
+      "categorySlug": "sorting",
+      "priority": "Medium",
+      "description": "Heap Sort — a Sorting pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Counting Sort",
+      "slug": "counting-sort",
+      "category": "Sorting",
+      "categorySlug": "sorting",
+      "priority": "Medium",
+      "description": "Counting Sort — a Sorting pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Bucket Sort",
+      "slug": "bucket-sort",
+      "category": "Sorting",
+      "categorySlug": "sorting",
+      "priority": "Medium",
+      "description": "Bucket Sort — a Sorting pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Radix Sort",
+      "slug": "radix-sort",
+      "category": "Sorting",
+      "categorySlug": "sorting",
+      "priority": "Medium",
+      "description": "Radix Sort — a Sorting pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Custom Comparator",
+      "slug": "custom-comparator",
+      "category": "Sorting",
+      "categorySlug": "sorting",
+      "priority": "Medium",
+      "description": "Custom Comparator — a Sorting pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Partial Sorting",
+      "slug": "partial-sorting",
+      "category": "Sorting",
+      "categorySlug": "sorting",
+      "priority": "Medium",
+      "description": "Partial Sorting — a Sorting pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "HashMap",
+      "slug": "hashmap",
+      "category": "Hashing",
+      "categorySlug": "hashing",
+      "priority": "Critical",
+      "description": "O(1) lookups: complements, seen-sets, grouping, counting.",
+      "whenToUse": "O(1) lookups: complements, seen-sets, grouping, counting.",
+      "recognition": [
+        "two-sum style",
+        "group by key",
+        "seen before?"
+      ],
+      "mistakes": [
+        "mutating map while iterating",
+        "hash of mutable key"
+      ],
+      "time": "O(n)",
+      "space": "O(n)",
+      "importance": "The most-used tool in interviews."
+    },
+    {
+      "name": "HashSet",
+      "slug": "hashset",
+      "category": "Hashing",
+      "categorySlug": "hashing",
+      "priority": "High",
+      "description": "HashSet — a Hashing pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Frequency Count",
+      "slug": "frequency-count",
+      "category": "Hashing",
+      "categorySlug": "hashing",
+      "priority": "High",
+      "description": "Anagrams, top-k, majority — anything counting occurrences.",
+      "whenToUse": "Anagrams, top-k, majority — anything counting occurrences.",
+      "recognition": [
+        "anagram",
+        "count of each",
+        "k most frequent"
+      ],
+      "mistakes": [
+        "comparing counts by reference",
+        "not resetting between windows"
+      ],
+      "time": "O(n)",
+      "space": "O(n)",
+      "importance": "Pairs with sliding window & heaps."
+    },
+    {
+      "name": "Prefix Hash",
+      "slug": "prefix-hash",
+      "category": "Hashing",
+      "categorySlug": "hashing",
+      "priority": "High",
+      "description": "Prefix Hash — a Hashing pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Rolling Hash",
+      "slug": "rolling-hash",
+      "category": "Hashing",
+      "categorySlug": "hashing",
+      "priority": "High",
+      "description": "Rolling Hash — a Hashing pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Polynomial Hash",
+      "slug": "polynomial-hash",
+      "category": "Hashing",
+      "categorySlug": "hashing",
+      "priority": "High",
+      "description": "Polynomial Hash — a Hashing pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Monotonic Stack",
+      "slug": "monotonic-stack",
+      "category": "Stack",
+      "categorySlug": "stack",
+      "priority": "High",
+      "description": "Next/previous greater or smaller element; histogram-style spans.",
+      "whenToUse": "Next/previous greater or smaller element; histogram-style spans.",
+      "recognition": [
+        "next greater",
+        "largest rectangle",
+        "span/temperature"
+      ],
+      "mistakes": [
+        "wrong pop comparator",
+        "leaving unresolved elements unhandled"
+      ],
+      "time": "O(n)",
+      "space": "O(n)",
+      "importance": "High-value, appears in hards."
+    },
+    {
+      "name": "Increasing Stack",
+      "slug": "increasing-stack",
+      "category": "Stack",
+      "categorySlug": "stack",
+      "priority": "Medium",
+      "description": "Increasing Stack — a Stack pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Decreasing Stack",
+      "slug": "decreasing-stack",
+      "category": "Stack",
+      "categorySlug": "stack",
+      "priority": "Medium",
+      "description": "Decreasing Stack — a Stack pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Expression Evaluation",
+      "slug": "expression-evaluation",
+      "category": "Stack",
+      "categorySlug": "stack",
+      "priority": "Medium",
+      "description": "Expression Evaluation — a Stack pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Parentheses",
+      "slug": "parentheses",
+      "category": "Stack",
+      "categorySlug": "stack",
+      "priority": "Medium",
+      "description": "Parentheses — a Stack pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Next Greater Element",
+      "slug": "next-greater-element",
+      "category": "Stack",
+      "categorySlug": "stack",
+      "priority": "High",
+      "description": "For each element, the next element bigger than it.",
+      "whenToUse": "For each element, the next element bigger than it.",
+      "recognition": [
+        "next greater/warmer",
+        "circular next greater"
+      ],
+      "mistakes": [
+        "forgetting circular wrap",
+        "storing values vs indices"
+      ],
+      "time": "O(n)",
+      "space": "O(n)",
+      "importance": "Canonical monotonic-stack use."
+    },
+    {
+      "name": "Histogram",
+      "slug": "histogram",
+      "category": "Stack",
+      "categorySlug": "stack",
+      "priority": "Medium",
+      "description": "Histogram — a Stack pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Queue",
+      "slug": "queue",
+      "category": "Queue",
+      "categorySlug": "queue",
+      "priority": "Medium",
+      "description": "Queue — a Queue pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Deque",
+      "slug": "deque",
+      "category": "Queue",
+      "categorySlug": "queue",
+      "priority": "Medium",
+      "description": "Deque — a Queue pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Monotonic Queue",
+      "slug": "monotonic-queue",
+      "category": "Queue",
+      "categorySlug": "queue",
+      "priority": "Medium",
+      "description": "Monotonic Queue — a Queue pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Circular Queue",
+      "slug": "circular-queue",
+      "category": "Queue",
+      "categorySlug": "queue",
+      "priority": "Medium",
+      "description": "Circular Queue — a Queue pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Priority Queue",
+      "slug": "priority-queue",
+      "category": "Queue",
+      "categorySlug": "queue",
+      "priority": "Medium",
+      "description": "Priority Queue — a Queue pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Reverse List",
+      "slug": "reverse-list",
+      "category": "Linked List",
+      "categorySlug": "linked-list",
+      "priority": "Medium",
+      "description": "Reverse List — a Linked List pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Merge List",
+      "slug": "merge-list",
+      "category": "Linked List",
+      "categorySlug": "linked-list",
+      "priority": "Medium",
+      "description": "Merge List — a Linked List pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Fast Slow List",
+      "slug": "fast-slow-list",
+      "category": "Linked List",
+      "categorySlug": "linked-list",
+      "priority": "Medium",
+      "description": "Fast Slow List — a Linked List pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Cycle Detection",
+      "slug": "cycle-detection",
+      "category": "Linked List",
+      "categorySlug": "linked-list",
+      "priority": "Medium",
+      "description": "Cycle Detection — a Linked List pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Intersection",
+      "slug": "intersection",
+      "category": "Linked List",
+      "categorySlug": "linked-list",
+      "priority": "Medium",
+      "description": "Intersection — a Linked List pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Dummy Node",
+      "slug": "dummy-node",
+      "category": "Linked List",
+      "categorySlug": "linked-list",
+      "priority": "Medium",
+      "description": "Dummy Node — a Linked List pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Tree DFS",
+      "slug": "tree-dfs",
+      "category": "Tree",
+      "categorySlug": "tree",
+      "priority": "Critical",
+      "description": "Tree DFS — a Tree pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Critical priority for interviews."
+    },
+    {
+      "name": "Tree BFS",
+      "slug": "tree-bfs",
+      "category": "Tree",
+      "categorySlug": "tree",
+      "priority": "Critical",
+      "description": "Tree BFS — a Tree pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Critical priority for interviews."
+    },
+    {
+      "name": "Tree Traversal",
+      "slug": "tree-traversal",
+      "category": "Tree",
+      "categorySlug": "tree",
+      "priority": "Critical",
+      "description": "Any binary-tree problem — inorder/preorder/postorder/level.",
+      "whenToUse": "Any binary-tree problem — inorder/preorder/postorder/level.",
+      "recognition": [
+        "traverse a tree",
+        "level order",
+        "path problems"
+      ],
+      "mistakes": [
+        "recursion depth on skewed trees",
+        "forgetting null children"
+      ],
+      "time": "O(n)",
+      "space": "O(h)",
+      "importance": "Gateway to all tree problems."
+    },
+    {
+      "name": "Binary Tree",
+      "slug": "binary-tree",
+      "category": "Tree",
+      "categorySlug": "tree",
+      "priority": "Critical",
+      "description": "Binary Tree — a Tree pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Critical priority for interviews."
+    },
+    {
+      "name": "BST",
+      "slug": "bst",
+      "category": "Tree",
+      "categorySlug": "tree",
+      "priority": "High",
+      "description": "Ordered operations: search/insert/kth/validate on a BST.",
+      "whenToUse": "Ordered operations: search/insert/kth/validate on a BST.",
+      "recognition": [
+        "binary search tree",
+        "kth smallest",
+        "validate BST"
+      ],
+      "mistakes": [
+        "using value bounds incorrectly",
+        "assuming balanced"
+      ],
+      "time": "O(h)",
+      "space": "O(h)",
+      "importance": "Common and testable."
+    },
+    {
+      "name": "LCA",
+      "slug": "lca",
+      "category": "Tree",
+      "categorySlug": "tree",
+      "priority": "Critical",
+      "description": "Lowest common ancestor of two tree/graph nodes.",
+      "whenToUse": "Lowest common ancestor of two tree/graph nodes.",
+      "recognition": [
+        "lowest common ancestor",
+        "distance between nodes"
+      ],
+      "mistakes": [
+        "not handling node==ancestor",
+        "BST vs general-tree method mix"
+      ],
+      "time": "O(n)",
+      "space": "O(h)",
+      "importance": "Frequent tree medium."
+    },
+    {
+      "name": "Diameter",
+      "slug": "diameter",
+      "category": "Tree",
+      "categorySlug": "tree",
+      "priority": "Critical",
+      "description": "Diameter — a Tree pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Critical priority for interviews."
+    },
+    {
+      "name": "Serialization",
+      "slug": "serialization",
+      "category": "Tree",
+      "categorySlug": "tree",
+      "priority": "Critical",
+      "description": "Serialization — a Tree pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Critical priority for interviews."
+    },
+    {
+      "name": "Tree DP",
+      "slug": "tree-dp",
+      "category": "Tree",
+      "categorySlug": "tree",
+      "priority": "Critical",
+      "description": "Tree DP — a Tree pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Critical priority for interviews."
+    },
+    {
+      "name": "Trie",
+      "slug": "trie",
+      "category": "Trie",
+      "categorySlug": "trie",
+      "priority": "High",
+      "description": "Prefix queries over a dictionary of strings.",
+      "whenToUse": "Prefix queries over a dictionary of strings.",
+      "recognition": [
+        "prefix search",
+        "word dictionary",
+        "autocomplete"
+      ],
+      "mistakes": [
+        "not marking word ends",
+        "memory blow-up"
+      ],
+      "time": "O(L)",
+      "space": "O(Σ·nodes)",
+      "importance": "Common medium/hard."
+    },
+    {
+      "name": "Prefix Tree",
+      "slug": "prefix-tree",
+      "category": "Trie",
+      "categorySlug": "trie",
+      "priority": "Medium",
+      "description": "Prefix Tree — a Trie pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Dictionary",
+      "slug": "dictionary",
+      "category": "Trie",
+      "categorySlug": "trie",
+      "priority": "Medium",
+      "description": "Dictionary — a Trie pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Auto Complete",
+      "slug": "auto-complete",
+      "category": "Trie",
+      "categorySlug": "trie",
+      "priority": "Medium",
+      "description": "Auto Complete — a Trie pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Bit Trie",
+      "slug": "bit-trie",
+      "category": "Trie",
+      "categorySlug": "trie",
+      "priority": "Medium",
+      "description": "Bit Trie — a Trie pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Top K",
+      "slug": "top-k",
+      "category": "Heap",
+      "categorySlug": "heap",
+      "priority": "High",
+      "description": "K largest/smallest/most-frequent from a stream or array.",
+      "whenToUse": "K largest/smallest/most-frequent from a stream or array.",
+      "recognition": [
+        "k closest",
+        "k largest",
+        "top k frequent"
+      ],
+      "mistakes": [
+        "min-heap vs max-heap mixup",
+        "heap of wrong size"
+      ],
+      "time": "O(n log k)",
+      "space": "O(k)",
+      "importance": "Very common heap use."
+    },
+    {
+      "name": "Median Finding",
+      "slug": "median-finding",
+      "category": "Heap",
+      "categorySlug": "heap",
+      "priority": "High",
+      "description": "Median Finding — a Heap pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Merge K Lists",
+      "slug": "merge-k-lists",
+      "category": "Heap",
+      "categorySlug": "heap",
+      "priority": "High",
+      "description": "Merge multiple sorted sequences.",
+      "whenToUse": "Merge multiple sorted sequences.",
+      "recognition": [
+        "merge k sorted",
+        "smallest range across lists"
+      ],
+      "mistakes": [
+        "not using a heap",
+        "comparator on the wrong field"
+      ],
+      "time": "O(n log k)",
+      "space": "O(k)",
+      "importance": "Classic hard-medium."
+    },
+    {
+      "name": "Priority Queue Heap",
+      "slug": "priority-queue-heap",
+      "category": "Heap",
+      "categorySlug": "heap",
+      "priority": "High",
+      "description": "Priority Queue Heap — a Heap pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Min Heap",
+      "slug": "min-heap",
+      "category": "Heap",
+      "categorySlug": "heap",
+      "priority": "High",
+      "description": "Min Heap — a Heap pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Max Heap",
+      "slug": "max-heap",
+      "category": "Heap",
+      "categorySlug": "heap",
+      "priority": "High",
+      "description": "Max Heap — a Heap pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Heapify",
+      "slug": "heapify",
+      "category": "Heap",
+      "categorySlug": "heap",
+      "priority": "High",
+      "description": "Heapify — a Heap pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Graph DFS",
+      "slug": "graph-dfs",
+      "category": "Graph",
+      "categorySlug": "graph",
+      "priority": "Critical",
+      "description": "Connectivity, components, cycles, path enumeration.",
+      "whenToUse": "Connectivity, components, cycles, path enumeration.",
+      "recognition": [
+        "number of islands",
+        "connected components",
+        "detect cycle"
+      ],
+      "mistakes": [
+        "recursion stack overflow",
+        "not restoring visited in backtracking"
+      ],
+      "time": "O(V+E)",
+      "space": "O(V)",
+      "importance": "Core graph tool."
+    },
+    {
+      "name": "Graph BFS",
+      "slug": "graph-bfs",
+      "category": "Graph",
+      "categorySlug": "graph",
+      "priority": "Critical",
+      "description": "Shortest path in unweighted graphs / level expansion.",
+      "whenToUse": "Shortest path in unweighted graphs / level expansion.",
+      "recognition": [
+        "shortest steps",
+        "min moves",
+        "spread/flood"
+      ],
+      "mistakes": [
+        "marking visited on pop not push",
+        "revisiting nodes"
+      ],
+      "time": "O(V+E)",
+      "space": "O(V)",
+      "importance": "Core graph tool."
+    },
+    {
+      "name": "Topological Sort",
+      "slug": "topological-sort",
+      "category": "Graph",
+      "categorySlug": "graph",
+      "priority": "High",
+      "description": "Ordering with dependencies in a DAG.",
+      "whenToUse": "Ordering with dependencies in a DAG.",
+      "recognition": [
+        "course schedule",
+        "build order",
+        "prerequisites"
+      ],
+      "mistakes": [
+        "not detecting cycles",
+        "wrong in-degree bookkeeping"
+      ],
+      "time": "O(V+E)",
+      "space": "O(V)",
+      "importance": "High-value graph pattern."
+    },
+    {
+      "name": "Union Find",
+      "slug": "union-find",
+      "category": "Graph",
+      "categorySlug": "graph",
+      "priority": "High",
+      "description": "Dynamic connectivity, grouping, cycle detection in undirected graphs.",
+      "whenToUse": "Dynamic connectivity, grouping, cycle detection in undirected graphs.",
+      "recognition": [
+        "connected components",
+        "redundant connection",
+        "accounts merge"
+      ],
+      "mistakes": [
+        "no path compression/union by rank",
+        "off-by-one parent init"
+      ],
+      "time": "O(α(n))",
+      "space": "O(n)",
+      "importance": "Frequent and elegant."
+    },
+    {
+      "name": "Disjoint Set",
+      "slug": "disjoint-set",
+      "category": "Graph",
+      "categorySlug": "graph",
+      "priority": "Critical",
+      "description": "Disjoint Set — a Graph pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Critical priority for interviews."
+    },
+    {
+      "name": "Dijkstra",
+      "slug": "dijkstra",
+      "category": "Graph",
+      "categorySlug": "graph",
+      "priority": "High",
+      "description": "Shortest path with non-negative weights.",
+      "whenToUse": "Shortest path with non-negative weights.",
+      "recognition": [
+        "min cost path",
+        "weighted shortest path"
+      ],
+      "mistakes": [
+        "using it with negative edges",
+        "not skipping stale heap entries"
+      ],
+      "time": "O(E log V)",
+      "space": "O(V)",
+      "importance": "Common weighted-graph hard."
+    },
+    {
+      "name": "Bellman Ford",
+      "slug": "bellman-ford",
+      "category": "Graph",
+      "categorySlug": "graph",
+      "priority": "Critical",
+      "description": "Bellman Ford — a Graph pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Critical priority for interviews."
+    },
+    {
+      "name": "Floyd Warshall",
+      "slug": "floyd-warshall",
+      "category": "Graph",
+      "categorySlug": "graph",
+      "priority": "Critical",
+      "description": "Floyd Warshall — a Graph pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Critical priority for interviews."
+    },
+    {
+      "name": "Prim",
+      "slug": "prim",
+      "category": "Graph",
+      "categorySlug": "graph",
+      "priority": "Critical",
+      "description": "Prim — a Graph pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Critical priority for interviews."
+    },
+    {
+      "name": "Kruskal",
+      "slug": "kruskal",
+      "category": "Graph",
+      "categorySlug": "graph",
+      "priority": "Critical",
+      "description": "Kruskal — a Graph pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Critical priority for interviews."
+    },
+    {
+      "name": "Shortest Path",
+      "slug": "shortest-path",
+      "category": "Graph",
+      "categorySlug": "graph",
+      "priority": "Critical",
+      "description": "Shortest Path — a Graph pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Critical priority for interviews."
+    },
+    {
+      "name": "MST",
+      "slug": "mst",
+      "category": "Graph",
+      "categorySlug": "graph",
+      "priority": "Critical",
+      "description": "MST — a Graph pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Critical priority for interviews."
+    },
+    {
+      "name": "Bridge",
+      "slug": "bridge",
+      "category": "Graph",
+      "categorySlug": "graph",
+      "priority": "Critical",
+      "description": "Bridge — a Graph pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Critical priority for interviews."
+    },
+    {
+      "name": "Articulation Point",
+      "slug": "articulation-point",
+      "category": "Graph",
+      "categorySlug": "graph",
+      "priority": "Critical",
+      "description": "Articulation Point — a Graph pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Critical priority for interviews."
+    },
+    {
+      "name": "SCC",
+      "slug": "scc",
+      "category": "Graph",
+      "categorySlug": "graph",
+      "priority": "Critical",
+      "description": "SCC — a Graph pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Critical priority for interviews."
+    },
+    {
+      "name": "Euler Tour",
+      "slug": "euler-tour",
+      "category": "Graph",
+      "categorySlug": "graph",
+      "priority": "Critical",
+      "description": "Euler Tour — a Graph pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Critical priority for interviews."
+    },
+    {
+      "name": "Graph Coloring",
+      "slug": "graph-coloring",
+      "category": "Graph",
+      "categorySlug": "graph",
+      "priority": "Critical",
+      "description": "Graph Coloring — a Graph pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Critical priority for interviews."
+    },
+    {
+      "name": "1D DP",
+      "slug": "1d-dp",
+      "category": "Dynamic Programming",
+      "categorySlug": "dynamic-programming",
+      "priority": "Critical",
+      "description": "Optimal value over a linear sequence with a recurrence.",
+      "whenToUse": "Optimal value over a linear sequence with a recurrence.",
+      "recognition": [
+        "climbing stairs",
+        "house robber",
+        "decode ways"
+      ],
+      "mistakes": [
+        "wrong base cases",
+        "iteration order"
+      ],
+      "time": "O(n)",
+      "space": "O(1..n)",
+      "importance": "DP foundation."
+    },
+    {
+      "name": "2D DP",
+      "slug": "2d-dp",
+      "category": "Dynamic Programming",
+      "categorySlug": "dynamic-programming",
+      "priority": "Critical",
+      "description": "Recurrence over two dimensions (two sequences / index+state).",
+      "whenToUse": "Recurrence over two dimensions (two sequences / index+state).",
+      "recognition": [
+        "edit distance",
+        "two strings",
+        "index + capacity"
+      ],
+      "mistakes": [
+        "dimension order",
+        "uninitialized first row/col"
+      ],
+      "time": "O(nm)",
+      "space": "O(nm)",
+      "importance": "Very common in hards."
+    },
+    {
+      "name": "Grid DP",
+      "slug": "grid-dp",
+      "category": "Dynamic Programming",
+      "categorySlug": "dynamic-programming",
+      "priority": "High",
+      "description": "Paths/cost over a matrix.",
+      "whenToUse": "Paths/cost over a matrix.",
+      "recognition": [
+        "unique paths",
+        "min path sum",
+        "maximal square"
+      ],
+      "mistakes": [
+        "blocked-cell handling",
+        "in-place overwrite order"
+      ],
+      "time": "O(nm)",
+      "space": "O(nm)",
+      "importance": "Frequent medium."
+    },
+    {
+      "name": "LIS",
+      "slug": "lis",
+      "category": "Dynamic Programming",
+      "categorySlug": "dynamic-programming",
+      "priority": "High",
+      "description": "Longest increasing subsequence and variants.",
+      "whenToUse": "Longest increasing subsequence and variants.",
+      "recognition": [
+        "longest increasing",
+        "russian dolls",
+        "chain"
+      ],
+      "mistakes": [
+        "O(n^2) when O(n log n) needed",
+        "strict vs non-strict"
+      ],
+      "time": "O(n log n)",
+      "space": "O(n)",
+      "importance": "Common medium/hard."
+    },
+    {
+      "name": "LCS",
+      "slug": "lcs",
+      "category": "Dynamic Programming",
+      "categorySlug": "dynamic-programming",
+      "priority": "High",
+      "description": "Alignment/edit between two sequences.",
+      "whenToUse": "Alignment/edit between two sequences.",
+      "recognition": [
+        "longest common subsequence",
+        "edit distance",
+        "delete ops"
+      ],
+      "mistakes": [
+        "subsequence vs substring",
+        "base row init"
+      ],
+      "time": "O(nm)",
+      "space": "O(nm)",
+      "importance": "Classic 2D DP."
+    },
+    {
+      "name": "Knapsack",
+      "slug": "knapsack",
+      "category": "Dynamic Programming",
+      "categorySlug": "dynamic-programming",
+      "priority": "High",
+      "description": "Choose items under a capacity/target constraint.",
+      "whenToUse": "Choose items under a capacity/target constraint.",
+      "recognition": [
+        "subset sum",
+        "partition equal",
+        "coin change"
+      ],
+      "mistakes": [
+        "0/1 vs unbounded loop direction",
+        "target off-by-one"
+      ],
+      "time": "O(n·W)",
+      "space": "O(W)",
+      "importance": "DP staple."
+    },
+    {
+      "name": "Tree DP Advanced",
+      "slug": "tree-dp-advanced",
+      "category": "Dynamic Programming",
+      "categorySlug": "dynamic-programming",
+      "priority": "Critical",
+      "description": "Tree DP Advanced — a Dynamic Programming pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Critical priority for interviews."
+    },
+    {
+      "name": "Digit DP",
+      "slug": "digit-dp",
+      "category": "Dynamic Programming",
+      "categorySlug": "dynamic-programming",
+      "priority": "Critical",
+      "description": "Digit DP — a Dynamic Programming pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Critical priority for interviews."
+    },
+    {
+      "name": "Bitmask DP",
+      "slug": "bitmask-dp",
+      "category": "Dynamic Programming",
+      "categorySlug": "dynamic-programming",
+      "priority": "Critical",
+      "description": "Bitmask DP — a Dynamic Programming pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Critical priority for interviews."
+    },
+    {
+      "name": "Game DP",
+      "slug": "game-dp",
+      "category": "Dynamic Programming",
+      "categorySlug": "dynamic-programming",
+      "priority": "Critical",
+      "description": "Game DP — a Dynamic Programming pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Critical priority for interviews."
+    },
+    {
+      "name": "Interval DP",
+      "slug": "interval-dp",
+      "category": "Dynamic Programming",
+      "categorySlug": "dynamic-programming",
+      "priority": "Critical",
+      "description": "Interval DP — a Dynamic Programming pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Critical priority for interviews."
+    },
+    {
+      "name": "Memoization",
+      "slug": "memoization",
+      "category": "Dynamic Programming",
+      "categorySlug": "dynamic-programming",
+      "priority": "Critical",
+      "description": "Memoization — a Dynamic Programming pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Critical priority for interviews."
+    },
+    {
+      "name": "Tabulation",
+      "slug": "tabulation",
+      "category": "Dynamic Programming",
+      "categorySlug": "dynamic-programming",
+      "priority": "Critical",
+      "description": "Tabulation — a Dynamic Programming pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Critical priority for interviews."
+    },
+    {
+      "name": "Optimization DP",
+      "slug": "optimization-dp",
+      "category": "Dynamic Programming",
+      "categorySlug": "dynamic-programming",
+      "priority": "Critical",
+      "description": "Optimization DP — a Dynamic Programming pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Critical priority for interviews."
+    },
+    {
+      "name": "Interval Scheduling",
+      "slug": "interval-scheduling",
+      "category": "Greedy",
+      "categorySlug": "greedy",
+      "priority": "High",
+      "description": "Interval Scheduling — a Greedy pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Activity Selection",
+      "slug": "activity-selection",
+      "category": "Greedy",
+      "categorySlug": "greedy",
+      "priority": "High",
+      "description": "Activity Selection — a Greedy pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Sorting Greedy",
+      "slug": "sorting-greedy",
+      "category": "Greedy",
+      "categorySlug": "greedy",
+      "priority": "High",
+      "description": "Sorting Greedy — a Greedy pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Exchange Argument",
+      "slug": "exchange-argument",
+      "category": "Greedy",
+      "categorySlug": "greedy",
+      "priority": "High",
+      "description": "Exchange Argument — a Greedy pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Fractional Knapsack",
+      "slug": "fractional-knapsack",
+      "category": "Greedy",
+      "categorySlug": "greedy",
+      "priority": "High",
+      "description": "Fractional Knapsack — a Greedy pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Greedy Choice",
+      "slug": "greedy-choice",
+      "category": "Greedy",
+      "categorySlug": "greedy",
+      "priority": "High",
+      "description": "Greedy Choice — a Greedy pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Combination",
+      "slug": "combination",
+      "category": "Backtracking",
+      "categorySlug": "backtracking",
+      "priority": "High",
+      "description": "Combination — a Backtracking pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Permutation",
+      "slug": "permutation",
+      "category": "Backtracking",
+      "categorySlug": "backtracking",
+      "priority": "High",
+      "description": "Permutation — a Backtracking pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Subset",
+      "slug": "subset",
+      "category": "Backtracking",
+      "categorySlug": "backtracking",
+      "priority": "High",
+      "description": "Enumerate subsets / combinations via backtracking.",
+      "whenToUse": "Enumerate subsets / combinations via backtracking.",
+      "recognition": [
+        "all subsets",
+        "combination sum",
+        "power set"
+      ],
+      "mistakes": [
+        "duplicate subsets",
+        "not sorting to skip dups"
+      ],
+      "time": "O(2^n)",
+      "space": "O(n)",
+      "importance": "Backtracking core."
+    },
+    {
+      "name": "N Queens",
+      "slug": "n-queens",
+      "category": "Backtracking",
+      "categorySlug": "backtracking",
+      "priority": "High",
+      "description": "N Queens — a Backtracking pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Sudoku",
+      "slug": "sudoku",
+      "category": "Backtracking",
+      "categorySlug": "backtracking",
+      "priority": "High",
+      "description": "Sudoku — a Backtracking pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Branch and Bound",
+      "slug": "branch-and-bound",
+      "category": "Backtracking",
+      "categorySlug": "backtracking",
+      "priority": "High",
+      "description": "Branch and Bound — a Backtracking pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Recursion",
+      "slug": "recursion",
+      "category": "Recursion",
+      "categorySlug": "recursion",
+      "priority": "Medium",
+      "description": "Recursion — a Recursion pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Divide and Conquer",
+      "slug": "divide-and-conquer",
+      "category": "Recursion",
+      "categorySlug": "recursion",
+      "priority": "Medium",
+      "description": "Divide and Conquer — a Recursion pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Tail Recursion",
+      "slug": "tail-recursion",
+      "category": "Recursion",
+      "categorySlug": "recursion",
+      "priority": "Medium",
+      "description": "Tail Recursion — a Recursion pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Master Theorem",
+      "slug": "master-theorem",
+      "category": "Recursion",
+      "categorySlug": "recursion",
+      "priority": "Medium",
+      "description": "Master Theorem — a Recursion pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Prime",
+      "slug": "prime",
+      "category": "Math",
+      "categorySlug": "math",
+      "priority": "Medium",
+      "description": "Prime — a Math pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "GCD",
+      "slug": "gcd",
+      "category": "Math",
+      "categorySlug": "math",
+      "priority": "Medium",
+      "description": "GCD — a Math pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "LCM",
+      "slug": "lcm",
+      "category": "Math",
+      "categorySlug": "math",
+      "priority": "Medium",
+      "description": "LCM — a Math pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Modular Arithmetic",
+      "slug": "modular-arithmetic",
+      "category": "Math",
+      "categorySlug": "math",
+      "priority": "Medium",
+      "description": "Modular Arithmetic — a Math pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Power",
+      "slug": "power",
+      "category": "Math",
+      "categorySlug": "math",
+      "priority": "Medium",
+      "description": "Power — a Math pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Combinatorics",
+      "slug": "combinatorics",
+      "category": "Math",
+      "categorySlug": "math",
+      "priority": "Medium",
+      "description": "Combinatorics — a Math pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Probability",
+      "slug": "probability",
+      "category": "Math",
+      "categorySlug": "math",
+      "priority": "Medium",
+      "description": "Probability — a Math pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Expected Value",
+      "slug": "expected-value",
+      "category": "Math",
+      "categorySlug": "math",
+      "priority": "Medium",
+      "description": "Expected Value — a Math pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Matrix Exponentiation",
+      "slug": "matrix-exponentiation",
+      "category": "Math",
+      "categorySlug": "math",
+      "priority": "Medium",
+      "description": "Matrix Exponentiation — a Math pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "XOR",
+      "slug": "xor",
+      "category": "Bit Manipulation",
+      "categorySlug": "bit-manipulation",
+      "priority": "Medium",
+      "description": "XOR — a Bit Manipulation pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "AND OR",
+      "slug": "and-or",
+      "category": "Bit Manipulation",
+      "categorySlug": "bit-manipulation",
+      "priority": "Medium",
+      "description": "AND OR — a Bit Manipulation pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Bitmask",
+      "slug": "bitmask",
+      "category": "Bit Manipulation",
+      "categorySlug": "bit-manipulation",
+      "priority": "Medium",
+      "description": "Bitmask — a Bit Manipulation pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Subset Enumeration",
+      "slug": "subset-enumeration",
+      "category": "Bit Manipulation",
+      "categorySlug": "bit-manipulation",
+      "priority": "Medium",
+      "description": "Subset Enumeration — a Bit Manipulation pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Gray Code",
+      "slug": "gray-code",
+      "category": "Bit Manipulation",
+      "categorySlug": "bit-manipulation",
+      "priority": "Medium",
+      "description": "Gray Code — a Bit Manipulation pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Medium priority for interviews."
+    },
+    {
+      "name": "Convex Hull",
+      "slug": "convex-hull",
+      "category": "Geometry",
+      "categorySlug": "geometry",
+      "priority": "Low",
+      "description": "Convex Hull — a Geometry pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Low priority for interviews."
+    },
+    {
+      "name": "Line Sweep",
+      "slug": "line-sweep",
+      "category": "Geometry",
+      "categorySlug": "geometry",
+      "priority": "Low",
+      "description": "Line Sweep — a Geometry pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Low priority for interviews."
+    },
+    {
+      "name": "Cross Product",
+      "slug": "cross-product",
+      "category": "Geometry",
+      "categorySlug": "geometry",
+      "priority": "Low",
+      "description": "Cross Product — a Geometry pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Low priority for interviews."
+    },
+    {
+      "name": "Orientation",
+      "slug": "orientation",
+      "category": "Geometry",
+      "categorySlug": "geometry",
+      "priority": "Low",
+      "description": "Orientation — a Geometry pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Low priority for interviews."
+    },
+    {
+      "name": "Polygon",
+      "slug": "polygon",
+      "category": "Geometry",
+      "categorySlug": "geometry",
+      "priority": "Low",
+      "description": "Polygon — a Geometry pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Low priority for interviews."
+    },
+    {
+      "name": "Distance",
+      "slug": "distance",
+      "category": "Geometry",
+      "categorySlug": "geometry",
+      "priority": "Low",
+      "description": "Distance — a Geometry pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Low priority for interviews."
+    },
+    {
+      "name": "KMP",
+      "slug": "kmp",
+      "category": "String",
+      "categorySlug": "string",
+      "priority": "Medium",
+      "description": "Substring search / prefix-function problems.",
+      "whenToUse": "Substring search / prefix-function problems.",
+      "recognition": [
+        "find pattern in text",
+        "shortest palindrome",
+        "longest prefix=suffix"
+      ],
+      "mistakes": [
+        "failure-function off-by-one",
+        "reusing across tests wrongly"
+      ],
+      "time": "O(n+m)",
+      "space": "O(m)",
+      "importance": "Advanced strings."
+    },
+    {
+      "name": "Z Algorithm",
+      "slug": "z-algorithm",
+      "category": "String",
+      "categorySlug": "string",
+      "priority": "High",
+      "description": "Z Algorithm — a String pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "String Trie",
+      "slug": "string-trie",
+      "category": "String",
+      "categorySlug": "string",
+      "priority": "High",
+      "description": "String Trie — a String pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "String Rolling Hash",
+      "slug": "string-rolling-hash",
+      "category": "String",
+      "categorySlug": "string",
+      "priority": "High",
+      "description": "String Rolling Hash — a String pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Manacher",
+      "slug": "manacher",
+      "category": "String",
+      "categorySlug": "string",
+      "priority": "High",
+      "description": "Manacher — a String pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Rabin Karp",
+      "slug": "rabin-karp",
+      "category": "String",
+      "categorySlug": "string",
+      "priority": "High",
+      "description": "Rabin Karp — a String pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Suffix Array",
+      "slug": "suffix-array",
+      "category": "String",
+      "categorySlug": "string",
+      "priority": "High",
+      "description": "Suffix Array — a String pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Suffix Automaton",
+      "slug": "suffix-automaton",
+      "category": "String",
+      "categorySlug": "string",
+      "priority": "High",
+      "description": "Suffix Automaton — a String pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "High priority for interviews."
+    },
+    {
+      "name": "Simulation Misc",
+      "slug": "simulation-misc",
+      "category": "Miscellaneous",
+      "categorySlug": "miscellaneous",
+      "priority": "Low",
+      "description": "Simulation Misc — a Miscellaneous pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Low priority for interviews."
+    },
+    {
+      "name": "Implementation",
+      "slug": "implementation",
+      "category": "Miscellaneous",
+      "categorySlug": "miscellaneous",
+      "priority": "Low",
+      "description": "Implementation — a Miscellaneous pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Low priority for interviews."
+    },
+    {
+      "name": "Design",
+      "slug": "design",
+      "category": "Miscellaneous",
+      "categorySlug": "miscellaneous",
+      "priority": "Low",
+      "description": "Design — a Miscellaneous pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Low priority for interviews."
+    },
+    {
+      "name": "Randomization",
+      "slug": "randomization",
+      "category": "Miscellaneous",
+      "categorySlug": "miscellaneous",
+      "priority": "Low",
+      "description": "Randomization — a Miscellaneous pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Low priority for interviews."
+    },
+    {
+      "name": "Interactive",
+      "slug": "interactive",
+      "category": "Miscellaneous",
+      "categorySlug": "miscellaneous",
+      "priority": "Low",
+      "description": "Interactive — a Miscellaneous pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Low priority for interviews."
+    },
+    {
+      "name": "Constructive",
+      "slug": "constructive",
+      "category": "Miscellaneous",
+      "categorySlug": "miscellaneous",
+      "priority": "Low",
+      "description": "Constructive — a Miscellaneous pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Low priority for interviews."
+    },
+    {
+      "name": "Ad Hoc",
+      "slug": "ad-hoc",
+      "category": "Miscellaneous",
+      "categorySlug": "miscellaneous",
+      "priority": "Low",
+      "description": "Ad Hoc — a Miscellaneous pattern.",
+      "whenToUse": "",
+      "recognition": [],
+      "mistakes": [],
+      "time": "",
+      "space": "",
+      "importance": "Low priority for interviews."
+    }
+  ],
+  "tagMap": {
+    "array": [
+      "basic-array"
+    ],
+    "arrays": [
+      "basic-array"
+    ],
+    "prefix sum": [
+      "prefix-sum"
+    ],
+    "two pointers": [
+      "two-pointer"
+    ],
+    "two pointer": [
+      "two-pointer"
+    ],
+    "sliding window": [
+      "variable-window",
+      "fixed-window"
+    ],
+    "binary search": [
+      "binary-search"
+    ],
+    "ternary search": [
+      "binary-search"
+    ],
+    "sortings": [
+      "custom-comparator"
+    ],
+    "sorting": [
+      "custom-comparator"
+    ],
+    "hashing": [
+      "hashmap"
+    ],
+    "hash table": [
+      "hashmap"
+    ],
+    "hashset": [
+      "hashset"
+    ],
+    "stack": [
+      "monotonic-stack"
+    ],
+    "monotonic stack": [
+      "monotonic-stack"
+    ],
+    "queue": [
+      "queue"
+    ],
+    "monotonic queue": [
+      "monotonic-queue"
+    ],
+    "heap (priority queue)": [
+      "top-k",
+      "priority-queue-heap"
+    ],
+    "heap": [
+      "priority-queue-heap"
+    ],
+    "linked list": [
+      "reverse-list",
+      "fast-slow-list"
+    ],
+    "doubly-linked list": [
+      "reverse-list"
+    ],
+    "tree": [
+      "tree-traversal"
+    ],
+    "trees": [
+      "tree-traversal"
+    ],
+    "binary tree": [
+      "binary-tree"
+    ],
+    "binary search tree": [
+      "bst"
+    ],
+    "trie": [
+      "trie"
+    ],
+    "string suffix structures": [
+      "suffix-array"
+    ],
+    "suffix array": [
+      "suffix-array"
+    ],
+    "segment tree": [
+      "design"
+    ],
+    "binary indexed tree": [
+      "design"
+    ],
+    "graph": [
+      "graph-dfs",
+      "graph-bfs"
+    ],
+    "graphs": [
+      "graph-dfs",
+      "graph-bfs"
+    ],
+    "dfs and similar": [
+      "graph-dfs"
+    ],
+    "depth-first search": [
+      "graph-dfs"
+    ],
+    "breadth-first search": [
+      "graph-bfs"
+    ],
+    "topological sort": [
+      "topological-sort"
+    ],
+    "shortest paths": [
+      "shortest-path",
+      "dijkstra"
+    ],
+    "shortest path": [
+      "shortest-path"
+    ],
+    "dsu": [
+      "union-find"
+    ],
+    "union find": [
+      "union-find"
+    ],
+    "2-sat": [
+      "graph-coloring"
+    ],
+    "flows": [
+      "graph-dfs"
+    ],
+    "dp": [
+      "memoization",
+      "tabulation"
+    ],
+    "dynamic programming": [
+      "memoization",
+      "tabulation"
+    ],
+    "memoization": [
+      "memoization"
+    ],
+    "greedy": [
+      "greedy-choice"
+    ],
+    "backtracking": [
+      "subset",
+      "permutation",
+      "combination"
+    ],
+    "brute force": [
+      "brute-force"
+    ],
+    "constructive algorithms": [
+      "constructive"
+    ],
+    "implementation": [
+      "implementation"
+    ],
+    "simulation": [
+      "simulation"
+    ],
+    "recursion": [
+      "recursion"
+    ],
+    "divide and conquer": [
+      "divide-and-conquer"
+    ],
+    "math": [
+      "gcd",
+      "modular-arithmetic"
+    ],
+    "number theory": [
+      "prime",
+      "modular-arithmetic"
+    ],
+    "combinatorics": [
+      "combinatorics"
+    ],
+    "probabilities": [
+      "probability"
+    ],
+    "probability and statistics": [
+      "probability"
+    ],
+    "bitmasks": [
+      "bitmask",
+      "bitmask-dp"
+    ],
+    "bit manipulation": [
+      "xor",
+      "bitmask"
+    ],
+    "geometry": [
+      "cross-product",
+      "convex-hull"
+    ],
+    "strings": [
+      "kmp"
+    ],
+    "string": [
+      "kmp"
+    ],
+    "rolling hash": [
+      "string-rolling-hash"
+    ],
+    "hashing string": [
+      "string-rolling-hash"
+    ],
+    "games": [
+      "game-dp"
+    ],
+    "interactive": [
+      "interactive"
+    ],
+    "matrix": [
+      "matrix"
+    ],
+    "matrices": [
+      "matrix"
+    ],
+    "data structures": [
+      "design"
+    ],
+    "ordered set": [
+      "design"
+    ],
+    "enumeration": [
+      "brute-force"
+    ],
+    "counting": [
+      "frequency-count"
+    ]
+  },
+  "topicMap": {
+    "Arrays": [
+      "basic-array"
+    ],
+    "Strings": [
+      "kmp"
+    ],
+    "Linked List": [
+      "reverse-list"
+    ],
+    "Stack": [
+      "monotonic-stack"
+    ],
+    "Queue": [
+      "queue"
+    ],
+    "Trees": [
+      "tree-traversal",
+      "tree-dfs"
+    ],
+    "Graph": [
+      "graph-dfs",
+      "graph-bfs"
+    ],
+    "Dynamic Programming": [
+      "memoization",
+      "tabulation"
+    ],
+    "Greedy": [
+      "greedy-choice"
+    ],
+    "Binary Search": [
+      "binary-search"
+    ],
+    "Recursion": [
+      "recursion"
+    ],
+    "Heap": [
+      "priority-queue-heap"
+    ],
+    "Bit Manipulation": [
+      "bitmask"
+    ],
+    "Mathematics": [
+      "gcd"
+    ],
+    "Number Theory": [
+      "prime"
+    ],
+    "Geometry": [
+      "cross-product"
+    ],
+    "Miscellaneous": [
+      "ad-hoc"
+    ]
+  }
+}

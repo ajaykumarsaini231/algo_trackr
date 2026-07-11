@@ -1,0 +1,19 @@
+{
+  "name": "dsa-question-db",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Structured DSA question database built from the official LeetCode + Codeforces APIs, mapped to the Striver A2Z sheet, ready for MongoDB import.",
+  "engines": {
+    "node": ">=20.6.0"
+  },
+  "scripts": {
+    "build": "node src/buildDataset.js",
+    "build:sample": "node src/buildDataset.js --limit 300",
+    "build:cache": "node src/buildDataset.js --from-cache",
+    "import": "node --env-file-if-exists=.env src/importToMongo.js",
+    "all": "node src/buildDataset.js && node --env-file-if-exists=.env src/importToMongo.js"
+  },
+  "dependencies": {
+    "mongodb": "^6.21.0"
+  }
+}

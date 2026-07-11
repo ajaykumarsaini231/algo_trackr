@@ -1,0 +1,80 @@
+{
+  "generatedAt": "2026-07-10T18:23:58.219Z",
+  "note": "Patterns with fewer than 5 real questions across LeetCode/Codeforces/Striver A2Z. Not padded with unrelated problems.",
+  "gaps": [
+    {
+      "slug": "bridge",
+      "name": "Bridge",
+      "category": "Graph",
+      "priority": "Critical",
+      "count": 2,
+      "reason": "Only 2 real matching problem(s) exist on the indexed platforms — this is a niche/advanced topic with few published problems.",
+      "suggestedKeywords": [
+        "critical connection",
+        "Critical Connections in a Network",
+        "Minimum Number of Days to Disconnect Island"
+      ],
+      "suggestedSources": [
+        "Codeforces (problemset tag search)",
+        "Striver A2Z sheet",
+        "CSES Problem Set"
+      ]
+    },
+    {
+      "slug": "articulation-point",
+      "name": "Articulation Point",
+      "category": "Graph",
+      "priority": "Critical",
+      "count": 2,
+      "reason": "Only 2 real matching problem(s) exist on the indexed platforms — this is a niche/advanced topic with few published problems.",
+      "suggestedKeywords": [
+        "critical connection",
+        "Critical Connections in a Network",
+        "Minimum Number of Days to Disconnect Island"
+      ],
+      "suggestedSources": [
+        "Codeforces (problemset tag search)",
+        "Striver A2Z sheet",
+        "CSES Problem Set"
+      ]
+    },
+    {
+      "slug": "n-queens",
+      "name": "N Queens",
+      "category": "Backtracking",
+      "priority": "High",
+      "count": 4,
+      "reason": "Only 4 real matching problem(s) exist on the indexed platforms — this is a niche/advanced topic with few published problems.",
+      "suggestedKeywords": [
+        "n[- ]?queens",
+        "\\bn[- ]?queens\\b",
+        "N-Queens",
+        "N-Queens II",
+        "The Knight's Tour"
+      ],
+      "suggestedSources": [
+        "Codeforces (problemset tag search)",
+        "Striver A2Z sheet",
+        "CSES Problem Set"
+      ]
+    },
+    {
+      "slug": "sudoku",
+      "name": "Sudoku",
+      "category": "Backtracking",
+      "priority": "High",
+      "count": 3,
+      "reason": "Only 3 real matching problem(s) exist on the indexed platforms — this is a niche/advanced topic with few published problems.",
+      "suggestedKeywords": [
+        "sudoku",
+        "Sudoku Solver",
+        "Valid Sudoku"
+      ],
+      "suggestedSources": [
+        "Codeforces (problemset tag search)",
+        "Striver A2Z sheet",
+        "CSES Problem Set"
+      ]
+    }
+  ]
+}

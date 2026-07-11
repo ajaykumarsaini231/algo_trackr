@@ -1,0 +1,7 @@
+node_modules/
+.env
+data/raw/
+data/dsa-questions.json
+data/dsa-questions.ndjson
+data/dsa-questions.csv
+*.log

@@ -1,0 +1,142 @@
+{
+  "disjoint-set": {
+    "titles": [
+      "Number of Provinces",
+      "Accounts Merge",
+      "Redundant Connection",
+      "Redundant Connection II",
+      "Number of Islands II",
+      "Regions Cut By Slashes",
+      "Most Stones Removed with Same Row or Column",
+      "Satisfiability of Equality Equations",
+      "Graph Valid Tree",
+      "Number of Connected Components in an Undirected Graph",
+      "Smallest String With Swaps",
+      "Evaluate Division",
+      "Number of Operations to Make Network Connected",
+      "Making A Large Island",
+      "Checking Existence of Edge Length Limited Paths",
+      "Similar String Groups",
+      "Lexicographically Smallest Equivalent String",
+      "The Earliest Moment When Everyone Become Friends",
+      "Remove Max Number of Edges to Keep Graph Fully Traversable",
+      "Number of Good Paths"
+    ],
+    "tags": ["dsu", "Union-Find"],
+    "keywords": ["edge length limited"]
+  },
+  "bellman-ford": {
+    "titles": [
+      "Cheapest Flights Within K Stops",
+      "Network Delay Time",
+      "Find the City With the Smallest Number of Neighbors at a Threshold Distance",
+      "Path with Maximum Probability",
+      "Course Schedule IV",
+      "Second Minimum Time to Reach Destination",
+      "Number of Ways to Arrive at Destination",
+      "Minimum Cost to Make at Least One Valid Path in a Grid",
+      "Path With Minimum Effort",
+      "Minimum Cost to Reach Destination in Time",
+      "Design Graph With Shortest Path Calculator",
+      "Modify Graph Edge Weights",
+      "Shortest Path Visiting All Nodes",
+      "Minimum Weighted Subgraph With the Required Paths",
+      "Reachable Nodes In Subdivided Graph"
+    ],
+    "tags": ["shortest paths"],
+    "keywords": ["cheapest flight", "network delay"]
+  },
+  "floyd-warshall": {
+    "titles": [
+      "Find the City With the Smallest Number of Neighbors at a Threshold Distance",
+      "Network Delay Time",
+      "Cheapest Flights Within K Stops",
+      "Course Schedule IV",
+      "Path with Maximum Probability",
+      "Second Minimum Time to Reach Destination",
+      "Count Subtrees With Max Distance Between Cities",
+      "Minimum Cost to Convert String I",
+      "Minimum Cost to Convert String II",
+      "Design Graph With Shortest Path Calculator",
+      "Number of Ways to Arrive at Destination"
+    ],
+    "tags": ["shortest paths"],
+    "keywords": ["threshold distance"]
+  },
+  "prim": {
+    "titles": [
+      "Min Cost to Connect All Points",
+      "Connecting Cities With Minimum Cost",
+      "Optimize Water Distribution in a Village",
+      "Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree",
+      "Minimum Cost to Connect Two Groups of Points",
+      "Checking Existence of Edge Length Limited Paths",
+      "Remove Max Number of Edges to Keep Graph Fully Traversable"
+    ],
+    "tags": [],
+    "keywords": ["spanning tree", "connect all points", "connecting cities", "water distribution"]
+  },
+  "kruskal": {
+    "titles": [
+      "Min Cost to Connect All Points",
+      "Connecting Cities With Minimum Cost",
+      "Optimize Water Distribution in a Village",
+      "Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree",
+      "Checking Existence of Edge Length Limited Paths",
+      "Remove Max Number of Edges to Keep Graph Fully Traversable",
+      "Minimum Cost to Connect Two Groups of Points"
+    ],
+    "tags": [],
+    "keywords": ["spanning tree", "connect all points", "connecting cities", "edge length limited"]
+  },
+  "mst": {
+    "titles": [
+      "Min Cost to Connect All Points",
+      "Connecting Cities With Minimum Cost",
+      "Optimize Water Distribution in a Village",
+      "Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree",
+      "Checking Existence of Edge Length Limited Paths",
+      "Remove Max Number of Edges to Keep Graph Fully Traversable",
+      "Minimum Cost to Connect Two Groups of Points"
+    ],
+    "tags": [],
+    "keywords": ["spanning tree", "minimum spanning", "connect all points", "connecting cities"]
+  },
+  "bridge": {
+    "titles": [
+      "Critical Connections in a Network",
+      "Minimum Number of Days to Disconnect Island"
+    ],
+    "tags": ["graphs"],
+    "keywords": ["critical connection"]
+  },
+  "articulation-point": {
+    "titles": [
+      "Critical Connections in a Network",
+      "Minimum Number of Days to Disconnect Island"
+    ],
+    "tags": ["graphs"],
+    "keywords": ["critical connection"]
+  },
+  "scc": {
+    "titles": [
+      "Critical Connections in a Network",
+      "Course Schedule",
+      "Course Schedule II",
+      "Find Eventual Safe States",
+      "Minimum Number of Days to Disconnect Island",
+      "Strange Printer II"
+    ],
+    "tags": ["graphs"],
+    "keywords": ["strongly connected", "eventual safe"]
+  },
+  "euler-tour": {
+    "titles": [
+      "Reconstruct Itinerary",
+      "Valid Arrangement of Pairs",
+      "Cracking the Safe"
+    ],
+    "tags": ["graphs"],
+    "keywords": ["eulerian", "\\beuler", "reconstruct itinerary", "valid arrangement of pairs"]
+  }
+}

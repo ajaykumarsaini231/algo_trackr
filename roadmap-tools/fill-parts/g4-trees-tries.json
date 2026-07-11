@@ -1,0 +1,218 @@
+{
+  "tree-dfs": {
+    "titles": [
+      "Binary Tree Inorder Traversal",
+      "Binary Tree Preorder Traversal",
+      "Binary Tree Postorder Traversal",
+      "Path Sum",
+      "Path Sum II",
+      "Path Sum III",
+      "Sum Root to Leaf Numbers",
+      "Maximum Depth of Binary Tree",
+      "Invert Binary Tree",
+      "Flatten Binary Tree to Linked List",
+      "Validate Binary Search Tree",
+      "Count Good Nodes in Binary Tree",
+      "Binary Tree Right Side View",
+      "Symmetric Tree",
+      "Balanced Binary Tree",
+      "Same Tree",
+      "Binary Tree Paths",
+      "Subtree of Another Tree",
+      "Merge Two Binary Trees",
+      "Convert Sorted Array to Binary Search Tree"
+    ],
+    "tags": ["Depth-First Search"],
+    "keywords": []
+  },
+  "tree-bfs": {
+    "titles": [
+      "Binary Tree Level Order Traversal",
+      "Binary Tree Level Order Traversal II",
+      "Binary Tree Zigzag Level Order Traversal",
+      "Average of Levels in Binary Tree",
+      "Populating Next Right Pointers in Each Node",
+      "Populating Next Right Pointers in Each Node II",
+      "Find Largest Value in Each Tree Row",
+      "Minimum Depth of Binary Tree",
+      "Cousins in Binary Tree",
+      "Cousins in Binary Tree II",
+      "N-ary Tree Level Order Traversal",
+      "Maximum Level Sum of a Binary Tree",
+      "Deepest Leaves Sum",
+      "Add One Row to Tree",
+      "Even Odd Tree",
+      "Sum of Nodes with Even-Valued Grandparent"
+    ],
+    "tags": ["Breadth-First Search"],
+    "keywords": ["level order"]
+  },
+  "lca": {
+    "titles": [
+      "Lowest Common Ancestor of a Binary Tree",
+      "Lowest Common Ancestor of a Binary Search Tree",
+      "Lowest Common Ancestor of a Binary Tree II",
+      "Lowest Common Ancestor of a Binary Tree III",
+      "Lowest Common Ancestor of a Binary Tree IV",
+      "Lowest Common Ancestor of Deepest Leaves",
+      "Smallest Common Region",
+      "Step-By-Step Directions From a Binary Tree Node to Another",
+      "Kth Ancestor of a Tree Node",
+      "Find Distance in a Binary Tree"
+    ],
+    "tags": [],
+    "keywords": ["lowest common ancestor"]
+  },
+  "diameter": {
+    "titles": [
+      "Diameter of Binary Tree",
+      "Diameter of N-Ary Tree",
+      "Tree Diameter"
+    ],
+    "tags": [],
+    "keywords": ["diameter of", "\\bdiameter\\b"]
+  },
+  "serialization": {
+    "titles": [
+      "Serialize and Deserialize Binary Tree",
+      "Serialize and Deserialize BST",
+      "Serialize and Deserialize N-ary Tree",
+      "Construct Binary Tree from Preorder and Inorder Traversal",
+      "Construct Binary Tree from Inorder and Postorder Traversal",
+      "Construct Binary Search Tree from Preorder Traversal",
+      "Construct String from Binary Tree",
+      "Construct Binary Tree from Preorder and Postorder Traversal",
+      "Find Duplicate Subtrees",
+      "Encode and Decode Strings",
+      "Verify Preorder Serialization of a Binary Tree",
+      "Recover a Tree From Preorder Traversal"
+    ],
+    "tags": [],
+    "keywords": ["serialize|deserialize", "construct binary (tree|search tree) from"]
+  },
+  "tree-dp": {
+    "titles": [
+      "House Robber III",
+      "Binary Tree Cameras",
+      "Longest ZigZag Path in a Binary Tree",
+      "Binary Tree Maximum Path Sum",
+      "Diameter of Binary Tree",
+      "Distribute Coins in Binary Tree",
+      "Count Nodes Equal to Average of Subtree",
+      "Maximum Product of Splitted Binary Tree",
+      "Longest Univalent Path",
+      "Longest Univalue Path",
+      "Binary Tree Tilt",
+      "Maximum Difference Between Node and Ancestor",
+      "Count Good Nodes in Binary Tree",
+      "Sum of Distances in Tree",
+      "Number of Good Leaf Nodes Pairs"
+    ],
+    "tags": [],
+    "keywords": []
+  },
+  "tree-dp-advanced": {
+    "titles": [
+      "Sum of Distances in Tree",
+      "Binary Tree Cameras",
+      "Distribute Coins in Binary Tree",
+      "Number of Good Leaf Nodes Pairs",
+      "Maximum Product of Splitted Binary Tree",
+      "Minimum Height Trees",
+      "Collect Coins in a Tree",
+      "Minimum Number of Coins for Fruits",
+      "Count Nodes Equal to Average of Subtree",
+      "Maximum Score After Applying Operations on a Tree",
+      "Height of Binary Tree After Subtree Removal Queries",
+      "Number of Ways to Reorder Array to Get Same BST"
+    ],
+    "tags": [],
+    "keywords": ["distances in tree"]
+  },
+  "prefix-tree": {
+    "titles": [
+      "Implement Trie (Prefix Tree)",
+      "Implement Trie II (Prefix Tree)",
+      "Design Add and Search Words Data Structure",
+      "Word Search II",
+      "Replace Words",
+      "Search Suggestions System",
+      "Longest Word in Dictionary",
+      "Map Sum Pairs",
+      "Stream of Characters",
+      "Word Break",
+      "Word Break II",
+      "Concatenated Words",
+      "Longest Common Prefix",
+      "Add and Search Word - Data structure design"
+    ],
+    "tags": ["Trie"],
+    "keywords": ["\\btrie\\b|prefix tree"]
+  },
+  "dictionary": {
+    "titles": [
+      "Design Add and Search Words Data Structure",
+      "Add and Search Word - Data structure design",
+      "Longest Word in Dictionary",
+      "Longest Word in Dictionary through Deleting",
+      "Replace Words",
+      "Word Break",
+      "Word Break II",
+      "Concatenated Words",
+      "Implement Magic Dictionary",
+      "Prefix and Suffix Search",
+      "Index Pairs of a String",
+      "Short Encoding of Words"
+    ],
+    "tags": [],
+    "keywords": ["\\bdictionary\\b"]
+  },
+  "auto-complete": {
+    "titles": [
+      "Search Suggestions System",
+      "Design Search Autocomplete System",
+      "Stream of Characters",
+      "Map Sum Pairs",
+      "Prefix and Suffix Search",
+      "Replace Words",
+      "Implement Magic Dictionary",
+      "Longest Word in Dictionary",
+      "Palindrome Pairs",
+      "Word Filter"
+    ],
+    "tags": [],
+    "keywords": ["autocomplete|auto-complete|search suggestion"]
+  },
+  "bit-trie": {
+    "titles": [
+      "Maximum XOR of Two Numbers in an Array",
+      "Maximum XOR With an Element From Array",
+      "Count Pairs With XOR in a Range",
+      "Maximum Genetic Difference Query",
+      "Maximum Strong Pair XOR II",
+      "Find the Maximum Length of a Good Subsequence II"
+    ],
+    "tags": [],
+    "keywords": ["maximum xor|max xor|xor .*(range|queries)"]
+  },
+  "string-trie": {
+    "titles": [
+      "Implement Trie (Prefix Tree)",
+      "Implement Trie II (Prefix Tree)",
+      "Word Search II",
+      "Replace Words",
+      "Search Suggestions System",
+      "Stream of Characters",
+      "Concatenated Words",
+      "Palindrome Pairs",
+      "Prefix and Suffix Search",
+      "Short Encoding of Words",
+      "Camelcase Matching",
+      "Design File System",
+      "Maximum XOR of Two Numbers in an Array",
+      "Word Break II"
+    ],
+    "tags": ["Trie"],
+    "keywords": ["\\btrie\\b"]
+  }
+}

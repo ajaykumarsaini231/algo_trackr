@@ -1,0 +1,3138 @@
+{
+  "generatedAt": "2026-07-10T16:31:05.538Z",
+  "db": "dsa-tracker",
+  "total": 15267,
+  "progress": {
+    "solved": 0,
+    "attempted": 0,
+    "favorite": 0,
+    "revision": 0,
+    "solvedPct": 0,
+    "favoritePct": 0,
+    "revisionPct": 0
+  },
+  "byDifficulty": [
+    {
+      "key": "Hard",
+      "total": 7309,
+      "solved": 0
+    },
+    {
+      "key": "Medium",
+      "total": 4288,
+      "solved": 0
+    },
+    {
+      "key": "Easy",
+      "total": 3670,
+      "solved": 0
+    }
+  ],
+  "byPlatform": [
+    {
+      "key": "Codeforces",
+      "total": 11282,
+      "solved": 0
+    },
+    {
+      "key": "LeetCode",
+      "total": 3985,
+      "solved": 0
+    }
+  ],
+  "byPattern": [
+    {
+      "key": "DP",
+      "total": 2064,
+      "solved": 0
+    },
+    {
+      "key": "Greedy",
+      "total": 1828,
+      "solved": 0
+    },
+    {
+      "key": "Binary Search",
+      "total": 1582,
+      "solved": 0
+    },
+    {
+      "key": "Math",
+      "total": 1099,
+      "solved": 0
+    },
+    {
+      "key": "DFS",
+      "total": 985,
+      "solved": 0
+    },
+    {
+      "key": "Bitmask",
+      "total": 772,
+      "solved": 0
+    },
+    {
+      "key": "Two Pointer",
+      "total": 353,
+      "solved": 0
+    },
+    {
+      "key": "Hashing",
+      "total": 291,
+      "solved": 0
+    },
+    {
+      "key": "Graph",
+      "total": 250,
+      "solved": 0
+    },
+    {
+      "key": "Tree",
+      "total": 120,
+      "solved": 0
+    },
+    {
+      "key": "Sliding Window",
+      "total": 99,
+      "solved": 0
+    },
+    {
+      "key": "Backtracking",
+      "total": 79,
+      "solved": 0
+    },
+    {
+      "key": "BFS",
+      "total": 56,
+      "solved": 0
+    },
+    {
+      "key": "Heap",
+      "total": 41,
+      "solved": 0
+    },
+    {
+      "key": "Trie",
+      "total": 31,
+      "solved": 0
+    },
+    {
+      "key": "Recursion",
+      "total": 28,
+      "solved": 0
+    }
+  ],
+  "byTopic": [
+    {
+      "topic": "Dynamic Programming",
+      "priority": "Critical",
+      "orderIndex": 11,
+      "total": 3269,
+      "easy": 181,
+      "medium": 665,
+      "hard": 2423,
+      "leetcode": 669,
+      "codeforces": 2600,
+      "striver": 50,
+      "expertOrigin": 1350,
+      "solved": 0,
+      "remaining": 3269,
+      "completionPct": 0,
+      "coverageTarget": 120,
+      "coveragePct": 100
+    },
+    {
+      "topic": "Greedy",
+      "priority": "High",
+      "orderIndex": 12,
+      "total": 2355,
+      "easy": 960,
+      "medium": 737,
+      "hard": 658,
+      "leetcode": 354,
+      "codeforces": 2001,
+      "striver": 7,
+      "expertOrigin": 253,
+      "solved": 0,
+      "remaining": 2355,
+      "completionPct": 0,
+      "coverageTarget": 60,
+      "coveragePct": 100
+    },
+    {
+      "topic": "Miscellaneous",
+      "priority": "Low",
+      "orderIndex": 17,
+      "total": 2221,
+      "easy": 750,
+      "medium": 671,
+      "hard": 800,
+      "leetcode": 481,
+      "codeforces": 1740,
+      "striver": 7,
+      "expertOrigin": 447,
+      "solved": 0,
+      "remaining": 2221,
+      "completionPct": 0,
+      "coverageTarget": 40,
+      "coveragePct": 100
+    },
+    {
+      "topic": "Arrays",
+      "priority": "Critical",
+      "orderIndex": 1,
+      "total": 1377,
+      "easy": 476,
+      "medium": 601,
+      "hard": 300,
+      "leetcode": 941,
+      "codeforces": 436,
+      "striver": 47,
+      "expertOrigin": 125,
+      "solved": 0,
+      "remaining": 1377,
+      "completionPct": 0,
+      "coverageTarget": 120,
+      "coveragePct": 100
+    },
+    {
+      "topic": "Graph",
+      "priority": "Critical",
+      "orderIndex": 10,
+      "total": 1329,
+      "easy": 46,
+      "medium": 238,
+      "hard": 1045,
+      "leetcode": 109,
+      "codeforces": 1220,
+      "striver": 9,
+      "expertOrigin": 674,
+      "solved": 0,
+      "remaining": 1329,
+      "completionPct": 0,
+      "coverageTarget": 100,
+      "coveragePct": 100
+    },
+    {
+      "topic": "Mathematics",
+      "priority": "Medium",
+      "orderIndex": 14,
+      "total": 1186,
+      "easy": 541,
+      "medium": 246,
+      "hard": 399,
+      "leetcode": 183,
+      "codeforces": 1003,
+      "striver": 0,
+      "expertOrigin": 222,
+      "solved": 0,
+      "remaining": 1186,
+      "completionPct": 0,
+      "coverageTarget": 40,
+      "coveragePct": 100
+    },
+    {
+      "topic": "Binary Search",
+      "priority": "High",
+      "orderIndex": 6,
+      "total": 1121,
+      "easy": 121,
+      "medium": 367,
+      "hard": 633,
+      "leetcode": 260,
+      "codeforces": 861,
+      "striver": 22,
+      "expertOrigin": 247,
+      "solved": 0,
+      "remaining": 1121,
+      "completionPct": 0,
+      "coverageTarget": 50,
+      "coveragePct": 100
+    },
+    {
+      "topic": "Trees",
+      "priority": "Critical",
+      "orderIndex": 8,
+      "total": 646,
+      "easy": 49,
+      "medium": 195,
+      "hard": 402,
+      "leetcode": 293,
+      "codeforces": 353,
+      "striver": 31,
+      "expertOrigin": 237,
+      "solved": 0,
+      "remaining": 646,
+      "completionPct": 0,
+      "coverageTarget": 90,
+      "coveragePct": 100
+    },
+    {
+      "topic": "Number Theory",
+      "priority": "Low",
+      "orderIndex": 15,
+      "total": 464,
+      "easy": 130,
+      "medium": 121,
+      "hard": 213,
+      "leetcode": 53,
+      "codeforces": 411,
+      "striver": 0,
+      "expertOrigin": 116,
+      "solved": 0,
+      "remaining": 464,
+      "completionPct": 0,
+      "coverageTarget": 20,
+      "coveragePct": 100
+    },
+    {
+      "topic": "Strings",
+      "priority": "High",
+      "orderIndex": 2,
+      "total": 457,
+      "easy": 253,
+      "medium": 113,
+      "hard": 91,
+      "leetcode": 186,
+      "codeforces": 271,
+      "striver": 11,
+      "expertOrigin": 41,
+      "solved": 0,
+      "remaining": 457,
+      "completionPct": 0,
+      "coverageTarget": 70,
+      "coveragePct": 100
+    },
+    {
+      "topic": "Bit Manipulation",
+      "priority": "Medium",
+      "orderIndex": 13,
+      "total": 283,
+      "easy": 64,
+      "medium": 97,
+      "hard": 122,
+      "leetcode": 115,
+      "codeforces": 168,
+      "striver": 5,
+      "expertOrigin": 67,
+      "solved": 0,
+      "remaining": 283,
+      "completionPct": 0,
+      "coverageTarget": 25,
+      "coveragePct": 100
+    },
+    {
+      "topic": "Geometry",
+      "priority": "Low",
+      "orderIndex": 16,
+      "total": 252,
+      "easy": 50,
+      "medium": 48,
+      "hard": 154,
+      "leetcode": 34,
+      "codeforces": 218,
+      "striver": 0,
+      "expertOrigin": 100,
+      "solved": 0,
+      "remaining": 252,
+      "completionPct": 0,
+      "coverageTarget": 15,
+      "coveragePct": 100
+    },
+    {
+      "topic": "Recursion",
+      "priority": "High",
+      "orderIndex": 7,
+      "total": 116,
+      "easy": 12,
+      "medium": 71,
+      "hard": 33,
+      "leetcode": 116,
+      "codeforces": 0,
+      "striver": 19,
+      "expertOrigin": 0,
+      "solved": 0,
+      "remaining": 116,
+      "completionPct": 0,
+      "coverageTarget": 50,
+      "coveragePct": 100
+    },
+    {
+      "topic": "Stack",
+      "priority": "Medium",
+      "orderIndex": 4,
+      "total": 76,
+      "easy": 14,
+      "medium": 48,
+      "hard": 14,
+      "leetcode": 76,
+      "codeforces": 0,
+      "striver": 10,
+      "expertOrigin": 0,
+      "solved": 0,
+      "remaining": 76,
+      "completionPct": 0,
+      "coverageTarget": 30,
+      "coveragePct": 100
+    },
+    {
+      "topic": "Heap",
+      "priority": "High",
+      "orderIndex": 9,
+      "total": 64,
+      "easy": 11,
+      "medium": 35,
+      "hard": 18,
+      "leetcode": 64,
+      "codeforces": 0,
+      "striver": 2,
+      "expertOrigin": 0,
+      "solved": 0,
+      "remaining": 64,
+      "completionPct": 0,
+      "coverageTarget": 40,
+      "coveragePct": 100
+    },
+    {
+      "topic": "Linked List",
+      "priority": "Medium",
+      "orderIndex": 3,
+      "total": 35,
+      "easy": 8,
+      "medium": 24,
+      "hard": 3,
+      "leetcode": 35,
+      "codeforces": 0,
+      "striver": 4,
+      "expertOrigin": 0,
+      "solved": 0,
+      "remaining": 35,
+      "completionPct": 0,
+      "coverageTarget": 30,
+      "coveragePct": 100
+    },
+    {
+      "topic": "Queue",
+      "priority": "Medium",
+      "orderIndex": 5,
+      "total": 16,
+      "easy": 4,
+      "medium": 11,
+      "hard": 1,
+      "leetcode": 16,
+      "codeforces": 0,
+      "striver": 0,
+      "expertOrigin": 0,
+      "solved": 0,
+      "remaining": 16,
+      "completionPct": 0,
+      "coverageTarget": 20,
+      "coveragePct": 80
+    }
+  ],
+  "subtopics": [
+    {
+      "topic": "Arrays",
+      "subtopic": "Sorting",
+      "total": 354,
+      "solved": 0,
+      "remaining": 354,
+      "completionPct": 0
+    },
+    {
+      "topic": "Arrays",
+      "subtopic": "Hash Table",
+      "total": 331,
+      "solved": 0,
+      "remaining": 331,
+      "completionPct": 0
+    },
+    {
+      "topic": "Arrays",
+      "subtopic": "Two Pointer",
+      "total": 227,
+      "solved": 0,
+      "remaining": 227,
+      "completionPct": 0
+    },
+    {
+      "topic": "Arrays",
+      "subtopic": "Matrix",
+      "total": 102,
+      "solved": 0,
+      "remaining": 102,
+      "completionPct": 0
+    },
+    {
+      "topic": "Arrays",
+      "subtopic": "Prefix Sum",
+      "total": 99,
+      "solved": 0,
+      "remaining": 99,
+      "completionPct": 0
+    },
+    {
+      "topic": "Arrays",
+      "subtopic": "Sliding Window",
+      "total": 96,
+      "solved": 0,
+      "remaining": 96,
+      "completionPct": 0
+    },
+    {
+      "topic": "Arrays",
+      "subtopic": "Arrays",
+      "total": 67,
+      "solved": 0,
+      "remaining": 67,
+      "completionPct": 0
+    },
+    {
+      "topic": "Arrays",
+      "subtopic": "Simulation",
+      "total": 34,
+      "solved": 0,
+      "remaining": 34,
+      "completionPct": 0
+    },
+    {
+      "topic": "Arrays",
+      "subtopic": "Implementation",
+      "total": 16,
+      "solved": 0,
+      "remaining": 16,
+      "completionPct": 0
+    },
+    {
+      "topic": "Arrays",
+      "subtopic": "Arrays [Medium]",
+      "total": 12,
+      "solved": 0,
+      "remaining": 12,
+      "completionPct": 0
+    },
+    {
+      "topic": "Arrays",
+      "subtopic": "Medium",
+      "total": 6,
+      "solved": 0,
+      "remaining": 6,
+      "completionPct": 0
+    },
+    {
+      "topic": "Arrays",
+      "subtopic": "BFS/DFS",
+      "total": 5,
+      "solved": 0,
+      "remaining": 5,
+      "completionPct": 0
+    },
+    {
+      "topic": "Arrays",
+      "subtopic": "Arrays [Easy]",
+      "total": 4,
+      "solved": 0,
+      "remaining": 4,
+      "completionPct": 0
+    },
+    {
+      "topic": "Arrays",
+      "subtopic": "Singly LL",
+      "total": 4,
+      "solved": 0,
+      "remaining": 4,
+      "completionPct": 0
+    },
+    {
+      "topic": "Arrays",
+      "subtopic": "Hard",
+      "total": 3,
+      "solved": 0,
+      "remaining": 3,
+      "completionPct": 0
+    },
+    {
+      "topic": "Arrays",
+      "subtopic": "Strings [Easy]",
+      "total": 3,
+      "solved": 0,
+      "remaining": 3,
+      "completionPct": 0
+    },
+    {
+      "topic": "Arrays",
+      "subtopic": "KMP / Z",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Arrays",
+      "subtopic": "Design",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Arrays",
+      "subtopic": "Strings [Medium]",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Arrays",
+      "subtopic": "Medium LL",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Arrays",
+      "subtopic": "DSU/MST",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Arrays",
+      "subtopic": "Medium/Hard",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Arrays",
+      "subtopic": "Shortest Path",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Arrays",
+      "subtopic": "Interactive",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Arrays",
+      "subtopic": "Data Structures",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Binary Search",
+      "subtopic": "Implementation",
+      "total": 217,
+      "solved": 0,
+      "remaining": 217,
+      "completionPct": 0
+    },
+    {
+      "topic": "Binary Search",
+      "subtopic": "Arrays",
+      "total": 196,
+      "solved": 0,
+      "remaining": 196,
+      "completionPct": 0
+    },
+    {
+      "topic": "Binary Search",
+      "subtopic": "Data Structures",
+      "total": 175,
+      "solved": 0,
+      "remaining": 175,
+      "completionPct": 0
+    },
+    {
+      "topic": "Binary Search",
+      "subtopic": "Greedy",
+      "total": 144,
+      "solved": 0,
+      "remaining": 144,
+      "completionPct": 0
+    },
+    {
+      "topic": "Binary Search",
+      "subtopic": "Constructive",
+      "total": 79,
+      "solved": 0,
+      "remaining": 79,
+      "completionPct": 0
+    },
+    {
+      "topic": "Binary Search",
+      "subtopic": "Math",
+      "total": 69,
+      "solved": 0,
+      "remaining": 69,
+      "completionPct": 0
+    },
+    {
+      "topic": "Binary Search",
+      "subtopic": "Bit Manipulation",
+      "total": 46,
+      "solved": 0,
+      "remaining": 46,
+      "completionPct": 0
+    },
+    {
+      "topic": "Binary Search",
+      "subtopic": "Geometry",
+      "total": 37,
+      "solved": 0,
+      "remaining": 37,
+      "completionPct": 0
+    },
+    {
+      "topic": "Binary Search",
+      "subtopic": "Interactive",
+      "total": 26,
+      "solved": 0,
+      "remaining": 26,
+      "completionPct": 0
+    },
+    {
+      "topic": "Binary Search",
+      "subtopic": "Combinatorics",
+      "total": 25,
+      "solved": 0,
+      "remaining": 25,
+      "completionPct": 0
+    },
+    {
+      "topic": "Binary Search",
+      "subtopic": "Binary Search",
+      "total": 18,
+      "solved": 0,
+      "remaining": 18,
+      "completionPct": 0
+    },
+    {
+      "topic": "Binary Search",
+      "subtopic": "Sorting",
+      "total": 17,
+      "solved": 0,
+      "remaining": 17,
+      "completionPct": 0
+    },
+    {
+      "topic": "Binary Search",
+      "subtopic": "Two Pointer",
+      "total": 13,
+      "solved": 0,
+      "remaining": 13,
+      "completionPct": 0
+    },
+    {
+      "topic": "Binary Search",
+      "subtopic": "Hash Table",
+      "total": 9,
+      "solved": 0,
+      "remaining": 9,
+      "completionPct": 0
+    },
+    {
+      "topic": "Binary Search",
+      "subtopic": "BS on 1D Arrays",
+      "total": 8,
+      "solved": 0,
+      "remaining": 8,
+      "completionPct": 0
+    },
+    {
+      "topic": "Binary Search",
+      "subtopic": "Strings",
+      "total": 7,
+      "solved": 0,
+      "remaining": 7,
+      "completionPct": 0
+    },
+    {
+      "topic": "Binary Search",
+      "subtopic": "Divide and Conquer",
+      "total": 7,
+      "solved": 0,
+      "remaining": 7,
+      "completionPct": 0
+    },
+    {
+      "topic": "Binary Search",
+      "subtopic": "DFS",
+      "total": 6,
+      "solved": 0,
+      "remaining": 6,
+      "completionPct": 0
+    },
+    {
+      "topic": "Binary Search",
+      "subtopic": "Number Theory",
+      "total": 5,
+      "solved": 0,
+      "remaining": 5,
+      "completionPct": 0
+    },
+    {
+      "topic": "Binary Search",
+      "subtopic": "BS on Answers",
+      "total": 5,
+      "solved": 0,
+      "remaining": 5,
+      "completionPct": 0
+    },
+    {
+      "topic": "Binary Search",
+      "subtopic": "BS on 2D Arrays",
+      "total": 3,
+      "solved": 0,
+      "remaining": 3,
+      "completionPct": 0
+    },
+    {
+      "topic": "Binary Search",
+      "subtopic": "Medium",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Binary Search",
+      "subtopic": "BFS",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Binary Search",
+      "subtopic": "Game Theory",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Binary Search",
+      "subtopic": "Arrays [Medium]",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Binary Search",
+      "subtopic": "Hard",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Binary Search",
+      "subtopic": "Shortest Path",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Binary Search",
+      "subtopic": "DSU/MST",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Bit Manipulation",
+      "subtopic": "Arrays",
+      "total": 71,
+      "solved": 0,
+      "remaining": 71,
+      "completionPct": 0
+    },
+    {
+      "topic": "Bit Manipulation",
+      "subtopic": "Implementation",
+      "total": 61,
+      "solved": 0,
+      "remaining": 61,
+      "completionPct": 0
+    },
+    {
+      "topic": "Bit Manipulation",
+      "subtopic": "Constructive",
+      "total": 43,
+      "solved": 0,
+      "remaining": 43,
+      "completionPct": 0
+    },
+    {
+      "topic": "Bit Manipulation",
+      "subtopic": "Math",
+      "total": 29,
+      "solved": 0,
+      "remaining": 29,
+      "completionPct": 0
+    },
+    {
+      "topic": "Bit Manipulation",
+      "subtopic": "Bit Manipulation",
+      "total": 21,
+      "solved": 0,
+      "remaining": 21,
+      "completionPct": 0
+    },
+    {
+      "topic": "Bit Manipulation",
+      "subtopic": "Combinatorics",
+      "total": 16,
+      "solved": 0,
+      "remaining": 16,
+      "completionPct": 0
+    },
+    {
+      "topic": "Bit Manipulation",
+      "subtopic": "Hash Table",
+      "total": 10,
+      "solved": 0,
+      "remaining": 10,
+      "completionPct": 0
+    },
+    {
+      "topic": "Bit Manipulation",
+      "subtopic": "Data Structures",
+      "total": 10,
+      "solved": 0,
+      "remaining": 10,
+      "completionPct": 0
+    },
+    {
+      "topic": "Bit Manipulation",
+      "subtopic": "Interactive",
+      "total": 5,
+      "solved": 0,
+      "remaining": 5,
+      "completionPct": 0
+    },
+    {
+      "topic": "Bit Manipulation",
+      "subtopic": "Problems",
+      "total": 3,
+      "solved": 0,
+      "remaining": 3,
+      "completionPct": 0
+    },
+    {
+      "topic": "Bit Manipulation",
+      "subtopic": "Number Theory",
+      "total": 3,
+      "solved": 0,
+      "remaining": 3,
+      "completionPct": 0
+    },
+    {
+      "topic": "Bit Manipulation",
+      "subtopic": "Strings",
+      "total": 3,
+      "solved": 0,
+      "remaining": 3,
+      "completionPct": 0
+    },
+    {
+      "topic": "Bit Manipulation",
+      "subtopic": "Geometry",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Bit Manipulation",
+      "subtopic": "DFS",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Bit Manipulation",
+      "subtopic": "Basics",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Bit Manipulation",
+      "subtopic": "Game Theory",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Bit Manipulation",
+      "subtopic": "Probability",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Bit Manipulation",
+      "subtopic": "Arrays [Easy]",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Arrays",
+      "total": 391,
+      "solved": 0,
+      "remaining": 391,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Implementation",
+      "total": 369,
+      "solved": 0,
+      "remaining": 369,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Combinatorics",
+      "total": 312,
+      "solved": 0,
+      "remaining": 312,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Binary Search",
+      "total": 285,
+      "solved": 0,
+      "remaining": 285,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Bit Manipulation",
+      "total": 284,
+      "solved": 0,
+      "remaining": 284,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Data Structures",
+      "total": 254,
+      "solved": 0,
+      "remaining": 254,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Greedy",
+      "total": 202,
+      "solved": 0,
+      "remaining": 202,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Dynamic Programming",
+      "total": 196,
+      "solved": 0,
+      "remaining": 196,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Math",
+      "total": 162,
+      "solved": 0,
+      "remaining": 162,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "DFS",
+      "total": 160,
+      "solved": 0,
+      "remaining": 160,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Game Theory",
+      "total": 135,
+      "solved": 0,
+      "remaining": 135,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Constructive",
+      "total": 116,
+      "solved": 0,
+      "remaining": 116,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Strings",
+      "total": 98,
+      "solved": 0,
+      "remaining": 98,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Graph",
+      "total": 70,
+      "solved": 0,
+      "remaining": 70,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Tree",
+      "total": 38,
+      "solved": 0,
+      "remaining": 38,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Hash Table",
+      "total": 30,
+      "solved": 0,
+      "remaining": 30,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Divide and Conquer",
+      "total": 18,
+      "solved": 0,
+      "remaining": 18,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Matrix",
+      "total": 17,
+      "solved": 0,
+      "remaining": 17,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Sorting",
+      "total": 16,
+      "solved": 0,
+      "remaining": 16,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Geometry",
+      "total": 15,
+      "solved": 0,
+      "remaining": 15,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Two Pointer",
+      "total": 14,
+      "solved": 0,
+      "remaining": 14,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Probability",
+      "total": 12,
+      "solved": 0,
+      "remaining": 12,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "DP on Strings",
+      "total": 6,
+      "solved": 0,
+      "remaining": 6,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Number Theory",
+      "total": 6,
+      "solved": 0,
+      "remaining": 6,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Shortest Path",
+      "total": 5,
+      "solved": 0,
+      "remaining": 5,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "DP on Grids",
+      "total": 5,
+      "solved": 0,
+      "remaining": 5,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Prefix Sum",
+      "total": 4,
+      "solved": 0,
+      "remaining": 4,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "DP on Stocks",
+      "total": 4,
+      "solved": 0,
+      "remaining": 4,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Union Find",
+      "total": 4,
+      "solved": 0,
+      "remaining": 4,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Medium/Hard",
+      "total": 4,
+      "solved": 0,
+      "remaining": 4,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "DP on Subsequences",
+      "total": 4,
+      "solved": 0,
+      "remaining": 4,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "1D DP",
+      "total": 4,
+      "solved": 0,
+      "remaining": 4,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "DP on LIS",
+      "total": 3,
+      "solved": 0,
+      "remaining": 3,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Arrays [Medium]",
+      "total": 3,
+      "solved": 0,
+      "remaining": 3,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Monotonic Stack",
+      "total": 3,
+      "solved": 0,
+      "remaining": 3,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Partition DP",
+      "total": 3,
+      "solved": 0,
+      "remaining": 3,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Arrays [Easy]",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Topological Sort",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Hard Backtracking",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Backtracking",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Interactive",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "BS on Answers",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Queue",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Basics",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Strings [Medium]",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "BFS/DFS",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "BFS",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Dynamic Programming",
+      "subtopic": "Medium",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Geometry",
+      "subtopic": "Implementation",
+      "total": 68,
+      "solved": 0,
+      "remaining": 68,
+      "completionPct": 0
+    },
+    {
+      "topic": "Geometry",
+      "subtopic": "Geometry",
+      "total": 62,
+      "solved": 0,
+      "remaining": 62,
+      "completionPct": 0
+    },
+    {
+      "topic": "Geometry",
+      "subtopic": "Math",
+      "total": 45,
+      "solved": 0,
+      "remaining": 45,
+      "completionPct": 0
+    },
+    {
+      "topic": "Geometry",
+      "subtopic": "Arrays",
+      "total": 28,
+      "solved": 0,
+      "remaining": 28,
+      "completionPct": 0
+    },
+    {
+      "topic": "Geometry",
+      "subtopic": "Data Structures",
+      "total": 19,
+      "solved": 0,
+      "remaining": 19,
+      "completionPct": 0
+    },
+    {
+      "topic": "Geometry",
+      "subtopic": "Constructive",
+      "total": 18,
+      "solved": 0,
+      "remaining": 18,
+      "completionPct": 0
+    },
+    {
+      "topic": "Geometry",
+      "subtopic": "Sorting",
+      "total": 9,
+      "solved": 0,
+      "remaining": 9,
+      "completionPct": 0
+    },
+    {
+      "topic": "Geometry",
+      "subtopic": "DFS",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Geometry",
+      "subtopic": "Interactive",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Geometry",
+      "subtopic": "Hash Table",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "DFS",
+      "total": 263,
+      "solved": 0,
+      "remaining": 263,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "Constructive",
+      "total": 223,
+      "solved": 0,
+      "remaining": 223,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "Implementation",
+      "total": 131,
+      "solved": 0,
+      "remaining": 131,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "Data Structures",
+      "total": 118,
+      "solved": 0,
+      "remaining": 118,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "Union Find",
+      "total": 109,
+      "solved": 0,
+      "remaining": 109,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "Shortest Path",
+      "total": 97,
+      "solved": 0,
+      "remaining": 97,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "Binary Search",
+      "total": 83,
+      "solved": 0,
+      "remaining": 83,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "Graph",
+      "total": 82,
+      "solved": 0,
+      "remaining": 82,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "Greedy",
+      "total": 42,
+      "solved": 0,
+      "remaining": 42,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "Bit Manipulation",
+      "total": 41,
+      "solved": 0,
+      "remaining": 41,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "Combinatorics",
+      "total": 36,
+      "solved": 0,
+      "remaining": 36,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "Topological Sort",
+      "total": 25,
+      "solved": 0,
+      "remaining": 25,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "Interactive",
+      "total": 16,
+      "solved": 0,
+      "remaining": 16,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "Math",
+      "total": 14,
+      "solved": 0,
+      "remaining": 14,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "BFS",
+      "total": 9,
+      "solved": 0,
+      "remaining": 9,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "Geometry",
+      "total": 8,
+      "solved": 0,
+      "remaining": 8,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "Minimum Spanning Tree",
+      "total": 5,
+      "solved": 0,
+      "remaining": 5,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "Divide and Conquer",
+      "total": 4,
+      "solved": 0,
+      "remaining": 4,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "Number Theory",
+      "total": 3,
+      "solved": 0,
+      "remaining": 3,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "DSU/MST",
+      "total": 3,
+      "solved": 0,
+      "remaining": 3,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "Topo Sort",
+      "total": 3,
+      "solved": 0,
+      "remaining": 3,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "Tree",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "Arrays",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "Hash Table",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "Strings",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "Game Theory",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "Sorting",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "BFS/DFS",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Graph",
+      "subtopic": "Hard",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Greedy",
+      "subtopic": "Implementation",
+      "total": 591,
+      "solved": 0,
+      "remaining": 591,
+      "completionPct": 0
+    },
+    {
+      "topic": "Greedy",
+      "subtopic": "Constructive",
+      "total": 434,
+      "solved": 0,
+      "remaining": 434,
+      "completionPct": 0
+    },
+    {
+      "topic": "Greedy",
+      "subtopic": "Math",
+      "total": 252,
+      "solved": 0,
+      "remaining": 252,
+      "completionPct": 0
+    },
+    {
+      "topic": "Greedy",
+      "subtopic": "Arrays",
+      "total": 244,
+      "solved": 0,
+      "remaining": 244,
+      "completionPct": 0
+    },
+    {
+      "topic": "Greedy",
+      "subtopic": "Greedy",
+      "total": 207,
+      "solved": 0,
+      "remaining": 207,
+      "completionPct": 0
+    },
+    {
+      "topic": "Greedy",
+      "subtopic": "Data Structures",
+      "total": 159,
+      "solved": 0,
+      "remaining": 159,
+      "completionPct": 0
+    },
+    {
+      "topic": "Greedy",
+      "subtopic": "Sorting",
+      "total": 115,
+      "solved": 0,
+      "remaining": 115,
+      "completionPct": 0
+    },
+    {
+      "topic": "Greedy",
+      "subtopic": "Bit Manipulation",
+      "total": 89,
+      "solved": 0,
+      "remaining": 89,
+      "completionPct": 0
+    },
+    {
+      "topic": "Greedy",
+      "subtopic": "Strings",
+      "total": 86,
+      "solved": 0,
+      "remaining": 86,
+      "completionPct": 0
+    },
+    {
+      "topic": "Greedy",
+      "subtopic": "Game Theory",
+      "total": 53,
+      "solved": 0,
+      "remaining": 53,
+      "completionPct": 0
+    },
+    {
+      "topic": "Greedy",
+      "subtopic": "Combinatorics",
+      "total": 33,
+      "solved": 0,
+      "remaining": 33,
+      "completionPct": 0
+    },
+    {
+      "topic": "Greedy",
+      "subtopic": "Hash Table",
+      "total": 30,
+      "solved": 0,
+      "remaining": 30,
+      "completionPct": 0
+    },
+    {
+      "topic": "Greedy",
+      "subtopic": "Two Pointer",
+      "total": 22,
+      "solved": 0,
+      "remaining": 22,
+      "completionPct": 0
+    },
+    {
+      "topic": "Greedy",
+      "subtopic": "Geometry",
+      "total": 13,
+      "solved": 0,
+      "remaining": 13,
+      "completionPct": 0
+    },
+    {
+      "topic": "Greedy",
+      "subtopic": "Number Theory",
+      "total": 9,
+      "solved": 0,
+      "remaining": 9,
+      "completionPct": 0
+    },
+    {
+      "topic": "Greedy",
+      "subtopic": "DFS",
+      "total": 8,
+      "solved": 0,
+      "remaining": 8,
+      "completionPct": 0
+    },
+    {
+      "topic": "Greedy",
+      "subtopic": "Medium",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Greedy",
+      "subtopic": "Easy",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Greedy",
+      "subtopic": "Medium/Hard",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Greedy",
+      "subtopic": "Interactive",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Greedy",
+      "subtopic": "Monotonic Stack",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Greedy",
+      "subtopic": "Matrix",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Heap",
+      "subtopic": "Arrays",
+      "total": 49,
+      "solved": 0,
+      "remaining": 49,
+      "completionPct": 0
+    },
+    {
+      "topic": "Heap",
+      "subtopic": "Hash Table",
+      "total": 8,
+      "solved": 0,
+      "remaining": 8,
+      "completionPct": 0
+    },
+    {
+      "topic": "Heap",
+      "subtopic": "Design",
+      "total": 4,
+      "solved": 0,
+      "remaining": 4,
+      "completionPct": 0
+    },
+    {
+      "topic": "Heap",
+      "subtopic": "Hard",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Heap",
+      "subtopic": "Strings [Medium]",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Heap",
+      "subtopic": "Sorting",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Linked List",
+      "subtopic": "Linked List",
+      "total": 10,
+      "solved": 0,
+      "remaining": 10,
+      "completionPct": 0
+    },
+    {
+      "topic": "Linked List",
+      "subtopic": "Arrays",
+      "total": 7,
+      "solved": 0,
+      "remaining": 7,
+      "completionPct": 0
+    },
+    {
+      "topic": "Linked List",
+      "subtopic": "Hash Table",
+      "total": 5,
+      "solved": 0,
+      "remaining": 5,
+      "completionPct": 0
+    },
+    {
+      "topic": "Linked List",
+      "subtopic": "Math",
+      "total": 4,
+      "solved": 0,
+      "remaining": 4,
+      "completionPct": 0
+    },
+    {
+      "topic": "Linked List",
+      "subtopic": "Implementation",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Linked List",
+      "subtopic": "Design",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Linked List",
+      "subtopic": "DFS",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Linked List",
+      "subtopic": "Sorting",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Linked List",
+      "subtopic": "Medium LL",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Linked List",
+      "subtopic": "Simulation",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Linked List",
+      "subtopic": "Hard LL",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Mathematics",
+      "subtopic": "Math",
+      "total": 939,
+      "solved": 0,
+      "remaining": 939,
+      "completionPct": 0
+    },
+    {
+      "topic": "Mathematics",
+      "subtopic": "Combinatorics",
+      "total": 190,
+      "solved": 0,
+      "remaining": 190,
+      "completionPct": 0
+    },
+    {
+      "topic": "Mathematics",
+      "subtopic": "Probability",
+      "total": 57,
+      "solved": 0,
+      "remaining": 57,
+      "completionPct": 0
+    },
+    {
+      "topic": "Miscellaneous",
+      "subtopic": "Miscellaneous",
+      "total": 835,
+      "solved": 0,
+      "remaining": 835,
+      "completionPct": 0
+    },
+    {
+      "topic": "Miscellaneous",
+      "subtopic": "Implementation",
+      "total": 729,
+      "solved": 0,
+      "remaining": 729,
+      "completionPct": 0
+    },
+    {
+      "topic": "Miscellaneous",
+      "subtopic": "Constructive",
+      "total": 292,
+      "solved": 0,
+      "remaining": 292,
+      "completionPct": 0
+    },
+    {
+      "topic": "Miscellaneous",
+      "subtopic": "Data Structures",
+      "total": 208,
+      "solved": 0,
+      "remaining": 208,
+      "completionPct": 0
+    },
+    {
+      "topic": "Miscellaneous",
+      "subtopic": "Divide and Conquer",
+      "total": 131,
+      "solved": 0,
+      "remaining": 131,
+      "completionPct": 0
+    },
+    {
+      "topic": "Miscellaneous",
+      "subtopic": "Interactive",
+      "total": 17,
+      "solved": 0,
+      "remaining": 17,
+      "completionPct": 0
+    },
+    {
+      "topic": "Miscellaneous",
+      "subtopic": "Basics",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Miscellaneous",
+      "subtopic": "Simulation",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Miscellaneous",
+      "subtopic": "Medium",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Miscellaneous",
+      "subtopic": "Hard",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Miscellaneous",
+      "subtopic": "Arrays [Easy]",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Miscellaneous",
+      "subtopic": "Medium LL",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Number Theory",
+      "subtopic": "Math",
+      "total": 143,
+      "solved": 0,
+      "remaining": 143,
+      "completionPct": 0
+    },
+    {
+      "topic": "Number Theory",
+      "subtopic": "Implementation",
+      "total": 134,
+      "solved": 0,
+      "remaining": 134,
+      "completionPct": 0
+    },
+    {
+      "topic": "Number Theory",
+      "subtopic": "Constructive",
+      "total": 61,
+      "solved": 0,
+      "remaining": 61,
+      "completionPct": 0
+    },
+    {
+      "topic": "Number Theory",
+      "subtopic": "Combinatorics",
+      "total": 36,
+      "solved": 0,
+      "remaining": 36,
+      "completionPct": 0
+    },
+    {
+      "topic": "Number Theory",
+      "subtopic": "Arrays",
+      "total": 33,
+      "solved": 0,
+      "remaining": 33,
+      "completionPct": 0
+    },
+    {
+      "topic": "Number Theory",
+      "subtopic": "Number Theory",
+      "total": 25,
+      "solved": 0,
+      "remaining": 25,
+      "completionPct": 0
+    },
+    {
+      "topic": "Number Theory",
+      "subtopic": "Data Structures",
+      "total": 14,
+      "solved": 0,
+      "remaining": 14,
+      "completionPct": 0
+    },
+    {
+      "topic": "Number Theory",
+      "subtopic": "Hash Table",
+      "total": 7,
+      "solved": 0,
+      "remaining": 7,
+      "completionPct": 0
+    },
+    {
+      "topic": "Number Theory",
+      "subtopic": "Geometry",
+      "total": 5,
+      "solved": 0,
+      "remaining": 5,
+      "completionPct": 0
+    },
+    {
+      "topic": "Number Theory",
+      "subtopic": "Interactive",
+      "total": 4,
+      "solved": 0,
+      "remaining": 4,
+      "completionPct": 0
+    },
+    {
+      "topic": "Number Theory",
+      "subtopic": "DFS",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Number Theory",
+      "subtopic": "Probability",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Queue",
+      "subtopic": "Arrays",
+      "total": 12,
+      "solved": 0,
+      "remaining": 12,
+      "completionPct": 0
+    },
+    {
+      "topic": "Queue",
+      "subtopic": "Hash Table",
+      "total": 3,
+      "solved": 0,
+      "remaining": 3,
+      "completionPct": 0
+    },
+    {
+      "topic": "Queue",
+      "subtopic": "Design",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Recursion",
+      "subtopic": "Backtracking",
+      "total": 63,
+      "solved": 0,
+      "remaining": 63,
+      "completionPct": 0
+    },
+    {
+      "topic": "Recursion",
+      "subtopic": "Math",
+      "total": 15,
+      "solved": 0,
+      "remaining": 15,
+      "completionPct": 0
+    },
+    {
+      "topic": "Recursion",
+      "subtopic": "Arrays",
+      "total": 7,
+      "solved": 0,
+      "remaining": 7,
+      "completionPct": 0
+    },
+    {
+      "topic": "Recursion",
+      "subtopic": "Hard Backtracking",
+      "total": 6,
+      "solved": 0,
+      "remaining": 6,
+      "completionPct": 0
+    },
+    {
+      "topic": "Recursion",
+      "subtopic": "Subsequences",
+      "total": 5,
+      "solved": 0,
+      "remaining": 5,
+      "completionPct": 0
+    },
+    {
+      "topic": "Recursion",
+      "subtopic": "Linked List",
+      "total": 5,
+      "solved": 0,
+      "remaining": 5,
+      "completionPct": 0
+    },
+    {
+      "topic": "Recursion",
+      "subtopic": "Strings",
+      "total": 5,
+      "solved": 0,
+      "remaining": 5,
+      "completionPct": 0
+    },
+    {
+      "topic": "Recursion",
+      "subtopic": "Medium LL",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Recursion",
+      "subtopic": "Singly LL",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Recursion",
+      "subtopic": "Hash Table",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Recursion",
+      "subtopic": "Basics",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Recursion",
+      "subtopic": "Math Recursion",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Recursion",
+      "subtopic": "Hard LL",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Recursion",
+      "subtopic": "BFS/DFS",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Stack",
+      "subtopic": "Arrays",
+      "total": 33,
+      "solved": 0,
+      "remaining": 33,
+      "completionPct": 0
+    },
+    {
+      "topic": "Stack",
+      "subtopic": "Strings",
+      "total": 23,
+      "solved": 0,
+      "remaining": 23,
+      "completionPct": 0
+    },
+    {
+      "topic": "Stack",
+      "subtopic": "Monotonic Stack",
+      "total": 6,
+      "solved": 0,
+      "remaining": 6,
+      "completionPct": 0
+    },
+    {
+      "topic": "Stack",
+      "subtopic": "Linked List",
+      "total": 4,
+      "solved": 0,
+      "remaining": 4,
+      "completionPct": 0
+    },
+    {
+      "topic": "Stack",
+      "subtopic": "Implementation",
+      "total": 3,
+      "solved": 0,
+      "remaining": 3,
+      "completionPct": 0
+    },
+    {
+      "topic": "Stack",
+      "subtopic": "Hash Table",
+      "total": 3,
+      "solved": 0,
+      "remaining": 3,
+      "completionPct": 0
+    },
+    {
+      "topic": "Stack",
+      "subtopic": "Math",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Stack",
+      "subtopic": "DFS",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Stack",
+      "subtopic": "Prefix/Infix",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Strings",
+      "subtopic": "Implementation",
+      "total": 178,
+      "solved": 0,
+      "remaining": 178,
+      "completionPct": 0
+    },
+    {
+      "topic": "Strings",
+      "subtopic": "Strings",
+      "total": 125,
+      "solved": 0,
+      "remaining": 125,
+      "completionPct": 0
+    },
+    {
+      "topic": "Strings",
+      "subtopic": "Trie",
+      "total": 45,
+      "solved": 0,
+      "remaining": 45,
+      "completionPct": 0
+    },
+    {
+      "topic": "Strings",
+      "subtopic": "Arrays",
+      "total": 35,
+      "solved": 0,
+      "remaining": 35,
+      "completionPct": 0
+    },
+    {
+      "topic": "Strings",
+      "subtopic": "Constructive",
+      "total": 28,
+      "solved": 0,
+      "remaining": 28,
+      "completionPct": 0
+    },
+    {
+      "topic": "Strings",
+      "subtopic": "Data Structures",
+      "total": 20,
+      "solved": 0,
+      "remaining": 20,
+      "completionPct": 0
+    },
+    {
+      "topic": "Strings",
+      "subtopic": "Simulation",
+      "total": 15,
+      "solved": 0,
+      "remaining": 15,
+      "completionPct": 0
+    },
+    {
+      "topic": "Strings",
+      "subtopic": "Tries",
+      "total": 7,
+      "solved": 0,
+      "remaining": 7,
+      "completionPct": 0
+    },
+    {
+      "topic": "Strings",
+      "subtopic": "Strings [Easy]",
+      "total": 2,
+      "solved": 0,
+      "remaining": 2,
+      "completionPct": 0
+    },
+    {
+      "topic": "Strings",
+      "subtopic": "Strings [Medium]",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Strings",
+      "subtopic": "KMP / Z",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    },
+    {
+      "topic": "Trees",
+      "subtopic": "Tree",
+      "total": 542,
+      "solved": 0,
+      "remaining": 542,
+      "completionPct": 0
+    },
+    {
+      "topic": "Trees",
+      "subtopic": "Segment Tree",
+      "total": 66,
+      "solved": 0,
+      "remaining": 66,
+      "completionPct": 0
+    },
+    {
+      "topic": "Trees",
+      "subtopic": "Medium",
+      "total": 9,
+      "solved": 0,
+      "remaining": 9,
+      "completionPct": 0
+    },
+    {
+      "topic": "Trees",
+      "subtopic": "Problems",
+      "total": 7,
+      "solved": 0,
+      "remaining": 7,
+      "completionPct": 0
+    },
+    {
+      "topic": "Trees",
+      "subtopic": "Fenwick Tree",
+      "total": 7,
+      "solved": 0,
+      "remaining": 7,
+      "completionPct": 0
+    },
+    {
+      "topic": "Trees",
+      "subtopic": "Hard",
+      "total": 6,
+      "solved": 0,
+      "remaining": 6,
+      "completionPct": 0
+    },
+    {
+      "topic": "Trees",
+      "subtopic": "Traversals",
+      "total": 5,
+      "solved": 0,
+      "remaining": 5,
+      "completionPct": 0
+    },
+    {
+      "topic": "Trees",
+      "subtopic": "Concepts",
+      "total": 3,
+      "solved": 0,
+      "remaining": 3,
+      "completionPct": 0
+    },
+    {
+      "topic": "Trees",
+      "subtopic": "Arrays [Hard]",
+      "total": 1,
+      "solved": 0,
+      "remaining": 1,
+      "completionPct": 0
+    }
+  ],
+  "googleTiers": {
+    "Foundation": 3670,
+    "Intermediate": 2081,
+    "Interview Ready": 224,
+    "Google Hard": 951,
+    "Research Level": 3879
+  },
+  "companyOverlap": [],
+  "googleHardList": [
+    {
+      "title": "Median of Two Sorted Arrays",
+      "problemLink": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
+      "platform": "LeetCode",
+      "difficulty": "Hard",
+      "topic": "Binary Search"
+    },
+    {
+      "title": "Regular Expression Matching",
+      "problemLink": "https://leetcode.com/problems/regular-expression-matching/",
+      "platform": "LeetCode",
+      "difficulty": "Hard",
+      "topic": "Dynamic Programming"
+    },
+    {
+      "title": "Merge k Sorted Lists",
+      "problemLink": "https://leetcode.com/problems/merge-k-sorted-lists/",
+      "platform": "LeetCode",
+      "difficulty": "Hard",
+      "topic": "Miscellaneous"
+    },
+    {
+      "title": "Reverse Nodes in k-Group",
+      "problemLink": "https://leetcode.com/problems/reverse-nodes-in-k-group/",
+      "platform": "LeetCode",
+      "difficulty": "Hard",
+      "topic": "Recursion"
+    },
+    {
+      "title": "Sudoku Solver",
+      "problemLink": "https://leetcode.com/problems/sudoku-solver/",
+      "platform": "LeetCode",
+      "difficulty": "Hard",
+      "topic": "Recursion"
+    },
+    {
+      "title": "Trapping Rain Water",
+      "problemLink": "https://leetcode.com/problems/trapping-rain-water/",
+      "platform": "LeetCode",
+      "difficulty": "Hard",
+      "topic": "Dynamic Programming"
+    },
+    {
+      "title": "Wildcard Matching",
+      "problemLink": "https://leetcode.com/problems/wildcard-matching/",
+      "platform": "LeetCode",
+      "difficulty": "Hard",
+      "topic": "Dynamic Programming"
+    },
+    {
+      "title": "N-Queens",
+      "problemLink": "https://leetcode.com/problems/n-queens/",
+      "platform": "LeetCode",
+      "difficulty": "Hard",
+      "topic": "Recursion"
+    },
+    {
+      "title": "Minimum Window Substring",
+      "problemLink": "https://leetcode.com/problems/minimum-window-substring/",
+      "platform": "LeetCode",
+      "difficulty": "Hard",
+      "topic": "Arrays"
+    },
+    {
+      "title": "Largest Rectangle in Histogram",
+      "problemLink": "https://leetcode.com/problems/largest-rectangle-in-histogram/",
+      "platform": "LeetCode",
+      "difficulty": "Hard",
+      "topic": "Stack"
+    },
+    {
+      "title": "Maximal Rectangle",
+      "problemLink": "https://leetcode.com/problems/maximal-rectangle/",
+      "platform": "LeetCode",
+      "difficulty": "Hard",
+      "topic": "Dynamic Programming"
+    },
+    {
+      "title": "Distinct Subsequences",
+      "problemLink": "https://leetcode.com/problems/distinct-subsequences/",
+      "platform": "LeetCode",
+      "difficulty": "Hard",
+      "topic": "Dynamic Programming"
+    },
+    {
+      "title": "Best Time to Buy and Sell Stock III",
+      "problemLink": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/",
+      "platform": "LeetCode",
+      "difficulty": "Hard",
+      "topic": "Dynamic Programming"
+    },
+    {
+      "title": "Binary Tree Maximum Path Sum",
+      "problemLink": "https://leetcode.com/problems/binary-tree-maximum-path-sum/",
+      "platform": "LeetCode",
+      "difficulty": "Hard",
+      "topic": "Dynamic Programming"
+    },
+    {
+      "title": "Word Ladder II",
+      "problemLink": "https://leetcode.com/problems/word-ladder-ii/",
+      "platform": "LeetCode",
+      "difficulty": "Hard",
+      "topic": "Recursion"
+    },
+    {
+      "title": "Word Ladder",
+      "problemLink": "https://leetcode.com/problems/word-ladder/",
+      "platform": "LeetCode",
+      "difficulty": "Hard",
+      "topic": "Arrays"
+    },
+    {
+      "title": "Palindrome Partitioning II",
+      "problemLink": "https://leetcode.com/problems/palindrome-partitioning-ii/",
+      "platform": "LeetCode",
+      "difficulty": "Hard",
+      "topic": "Dynamic Programming"
+    },
+    {
+      "title": "Candy",
+      "problemLink": "https://leetcode.com/problems/candy/",
+      "platform": "LeetCode",
+      "difficulty": "Hard",
+      "topic": "Greedy"
+    },
+    {
+      "title": "Best Time to Buy and Sell Stock IV",
+      "problemLink": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/",
+      "platform": "LeetCode",
+      "difficulty": "Hard",
+      "topic": "Dynamic Programming"
+    },
+    {
+      "title": "Word Search II",
+      "problemLink": "https://leetcode.com/problems/word-search-ii/",
+      "platform": "LeetCode",
+      "difficulty": "Hard",
+      "topic": "Strings"
+    },
+    {
+      "title": "Shortest Palindrome",
+      "problemLink": "https://leetcode.com/problems/shortest-palindrome/",
+      "platform": "LeetCode",
+      "difficulty": "Hard",
+      "topic": "Arrays"
+    },
+    {
+      "title": "Find Median from Data Stream",
+      "problemLink": "https://leetcode.com/problems/find-median-from-data-stream/",
+      "platform": "LeetCode",
+      "difficulty": "Hard",
+      "topic": "Arrays"
+    },
+    {
+      "title": "Serialize and Deserialize Binary Tree",
+      "problemLink": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/",
+      "platform": "LeetCode",
+      "difficulty": "Hard",
+      "topic": "Trees"
+    },
+    {
+      "title": "Burst Balloons",
+      "problemLink": "https://leetcode.com/problems/burst-balloons/",
+      "platform": "LeetCode",
+      "difficulty": "Hard",
+      "topic": "Dynamic Programming"
+    },
+    {
+      "title": "Split Array Largest Sum",
+      "problemLink": "https://leetcode.com/problems/split-array-largest-sum/",
+      "platform": "LeetCode",
+      "difficulty": "Hard",
+      "topic": "Dynamic Programming"
+    }
+  ],
+  "recommendations": {
+    "today": [
+      {
+        "title": "Two Sum",
+        "problemLink": "https://leetcode.com/problems/two-sum/",
+        "platform": "LeetCode",
+        "difficulty": "Easy",
+        "topic": "Arrays",
+        "isStriver": 0,
+        "isLC": 0
+      },
+      {
+        "title": "Longest Substring Without Repeating Characters",
+        "problemLink": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+        "platform": "LeetCode",
+        "difficulty": "Medium",
+        "topic": "Arrays",
+        "isStriver": 0,
+        "isLC": 0
+      },
+      {
+        "title": "Longest Palindromic Substring",
+        "problemLink": "https://leetcode.com/problems/longest-palindromic-substring/",
+        "platform": "LeetCode",
+        "difficulty": "Medium",
+        "topic": "Dynamic Programming",
+        "isStriver": 0,
+        "isLC": 0
+      },
+      {
+        "title": "Regular Expression Matching",
+        "problemLink": "https://leetcode.com/problems/regular-expression-matching/",
+        "platform": "LeetCode",
+        "difficulty": "Hard",
+        "topic": "Dynamic Programming",
+        "isStriver": 0,
+        "isLC": 0
+      },
+      {
+        "title": "Roman to Integer",
+        "problemLink": "https://leetcode.com/problems/roman-to-integer/",
+        "platform": "LeetCode",
+        "difficulty": "Easy",
+        "topic": "Arrays",
+        "isStriver": 0,
+        "isLC": 0
+      }
+    ],
+    "weekly": [
+      {
+        "title": "Two Sum",
+        "problemLink": "https://leetcode.com/problems/two-sum/",
+        "platform": "LeetCode",
+        "difficulty": "Easy",
+        "topic": "Arrays",
+        "isStriver": 0,
+        "isLC": 0
+      },
+      {
+        "title": "Longest Substring Without Repeating Characters",
+        "problemLink": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+        "platform": "LeetCode",
+        "difficulty": "Medium",
+        "topic": "Arrays",
+        "isStriver": 0,
+        "isLC": 0
+      },
+      {
+        "title": "Longest Palindromic Substring",
+        "problemLink": "https://leetcode.com/problems/longest-palindromic-substring/",
+        "platform": "LeetCode",
+        "difficulty": "Medium",
+        "topic": "Dynamic Programming",
+        "isStriver": 0,
+        "isLC": 0
+      },
+      {
+        "title": "Regular Expression Matching",
+        "problemLink": "https://leetcode.com/problems/regular-expression-matching/",
+        "platform": "LeetCode",
+        "difficulty": "Hard",
+        "topic": "Dynamic Programming",
+        "isStriver": 0,
+        "isLC": 0
+      },
+      {
+        "title": "Roman to Integer",
+        "problemLink": "https://leetcode.com/problems/roman-to-integer/",
+        "platform": "LeetCode",
+        "difficulty": "Easy",
+        "topic": "Arrays",
+        "isStriver": 0,
+        "isLC": 0
+      },
+      {
+        "title": "3Sum",
+        "problemLink": "https://leetcode.com/problems/3sum/",
+        "platform": "LeetCode",
+        "difficulty": "Medium",
+        "topic": "Arrays",
+        "isStriver": 0,
+        "isLC": 0
+      },
+      {
+        "title": "4Sum",
+        "problemLink": "https://leetcode.com/problems/4sum/",
+        "platform": "LeetCode",
+        "difficulty": "Medium",
+        "topic": "Arrays",
+        "isStriver": 0,
+        "isLC": 0
+      },
+      {
+        "title": "Remove Nth Node From End of List",
+        "problemLink": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+        "platform": "LeetCode",
+        "difficulty": "Medium",
+        "topic": "Arrays",
+        "isStriver": 0,
+        "isLC": 0
+      },
+      {
+        "title": "Generate Parentheses",
+        "problemLink": "https://leetcode.com/problems/generate-parentheses/",
+        "platform": "LeetCode",
+        "difficulty": "Medium",
+        "topic": "Dynamic Programming",
+        "isStriver": 0,
+        "isLC": 0
+      },
+      {
+        "title": "Remove Duplicates from Sorted Array",
+        "problemLink": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/",
+        "platform": "LeetCode",
+        "difficulty": "Easy",
+        "topic": "Arrays",
+        "isStriver": 0,
+        "isLC": 0
+      },
+      {
+        "title": "Find the Index of the First Occurrence in a String",
+        "problemLink": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/",
+        "platform": "LeetCode",
+        "difficulty": "Easy",
+        "topic": "Arrays",
+        "isStriver": 0,
+        "isLC": 0
+      },
+      {
+        "title": "Next Permutation",
+        "problemLink": "https://leetcode.com/problems/next-permutation/",
+        "platform": "LeetCode",
+        "difficulty": "Medium",
+        "topic": "Arrays",
+        "isStriver": 0,
+        "isLC": 0
+      },
+      {
+        "title": "Trapping Rain Water",
+        "problemLink": "https://leetcode.com/problems/trapping-rain-water/",
+        "platform": "LeetCode",
+        "difficulty": "Hard",
+        "topic": "Dynamic Programming",
+        "isStriver": 0,
+        "isLC": 0
+      },
+      {
+        "title": "Wildcard Matching",
+        "problemLink": "https://leetcode.com/problems/wildcard-matching/",
+        "platform": "LeetCode",
+        "difficulty": "Hard",
+        "topic": "Dynamic Programming",
+        "isStriver": 0,
+        "isLC": 0
+      },
+      {
+        "title": "Jump Game II",
+        "problemLink": "https://leetcode.com/problems/jump-game-ii/",
+        "platform": "LeetCode",
+        "difficulty": "Medium",
+        "topic": "Dynamic Programming",
+        "isStriver": 0,
+        "isLC": 0
+      },
+      {
+        "title": "Rotate Image",
+        "problemLink": "https://leetcode.com/problems/rotate-image/",
+        "platform": "LeetCode",
+        "difficulty": "Medium",
+        "topic": "Arrays",
+        "isStriver": 0,
+        "isLC": 0
+      },
+      {
+        "title": "Maximum Subarray",
+        "problemLink": "https://leetcode.com/problems/maximum-subarray/",
+        "platform": "LeetCode",
+        "difficulty": "Medium",
+        "topic": "Dynamic Programming",
+        "isStriver": 0,
+        "isLC": 0
+      },
+      {
+        "title": "Spiral Matrix",
+        "problemLink": "https://leetcode.com/problems/spiral-matrix/",
+        "platform": "LeetCode",
+        "difficulty": "Medium",
+        "topic": "Arrays",
+        "isStriver": 0,
+        "isLC": 0
+      },
+      {
+        "title": "Jump Game",
+        "problemLink": "https://leetcode.com/problems/jump-game/",
+        "platform": "LeetCode",
+        "difficulty": "Medium",
+        "topic": "Dynamic Programming",
+        "isStriver": 0,
+        "isLC": 0
+      },
+      {
+        "title": "Merge Intervals",
+        "problemLink": "https://leetcode.com/problems/merge-intervals/",
+        "platform": "LeetCode",
+        "difficulty": "Medium",
+        "topic": "Arrays",
+        "isStriver": 0,
+        "isLC": 0
+      },
+      {
+        "title": "Insert Interval",
+        "problemLink": "https://leetcode.com/problems/insert-interval/",
+        "platform": "LeetCode",
+        "difficulty": "Medium",
+        "topic": "Arrays",
+        "isStriver": 0,
+        "isLC": 0
+      },
+      {
+        "title": "Rotate List",
+        "problemLink": "https://leetcode.com/problems/rotate-list/",
+        "platform": "LeetCode",
+        "difficulty": "Medium",
+        "topic": "Arrays",
+        "isStriver": 0,
+        "isLC": 0
+      },
+      {
+        "title": "Unique Paths",
+        "problemLink": "https://leetcode.com/problems/unique-paths/",
+        "platform": "LeetCode",
+        "difficulty": "Medium",
+        "topic": "Dynamic Programming",
+        "isStriver": 0,
+        "isLC": 0
+      },
+      {
+        "title": "Unique Paths II",
+        "problemLink": "https://leetcode.com/problems/unique-paths-ii/",
+        "platform": "LeetCode",
+        "difficulty": "Medium",
+        "topic": "Dynamic Programming",
+        "isStriver": 0,
+        "isLC": 0
+      },
+      {
+        "title": "Minimum Path Sum",
+        "problemLink": "https://leetcode.com/problems/minimum-path-sum/",
+        "platform": "LeetCode",
+        "difficulty": "Medium",
+        "topic": "Dynamic Programming",
+        "isStriver": 0,
+        "isLC": 0
+      }
+    ]
+  },
+  "readiness": {
+    "coverageScore": 99,
+    "progressScore": 0,
+    "overall": 40,
+    "note": "overall = 40% topic-coverage + 60% solved-progress, weighted by Google priority"
+  },
+  "weakTopics": [
+    {
+      "topic": "Dynamic Programming",
+      "priority": "Critical",
+      "completionPct": 0,
+      "remaining": 3269
+    },
+    {
+      "topic": "Greedy",
+      "priority": "High",
+      "completionPct": 0,
+      "remaining": 2355
+    },
+    {
+      "topic": "Arrays",
+      "priority": "Critical",
+      "completionPct": 0,
+      "remaining": 1377
+    },
+    {
+      "topic": "Graph",
+      "priority": "Critical",
+      "completionPct": 0,
+      "remaining": 1329
+    },
+    {
+      "topic": "Binary Search",
+      "priority": "High",
+      "completionPct": 0,
+      "remaining": 1121
+    },
+    {
+      "topic": "Trees",
+      "priority": "Critical",
+      "completionPct": 0,
+      "remaining": 646
+    }
+  ],
+  "strongTopics": [
+    {
+      "topic": "Dynamic Programming",
+      "priority": "Critical",
+      "completionPct": 0,
+      "solved": 0
+    },
+    {
+      "topic": "Greedy",
+      "priority": "High",
+      "completionPct": 0,
+      "solved": 0
+    },
+    {
+      "topic": "Arrays",
+      "priority": "Critical",
+      "completionPct": 0,
+      "solved": 0
+    },
+    {
+      "topic": "Graph",
+      "priority": "Critical",
+      "completionPct": 0,
+      "solved": 0
+    },
+    {
+      "topic": "Binary Search",
+      "priority": "High",
+      "completionPct": 0,
+      "solved": 0
+    },
+    {
+      "topic": "Trees",
+      "priority": "Critical",
+      "completionPct": 0,
+      "solved": 0
+    }
+  ]
+}

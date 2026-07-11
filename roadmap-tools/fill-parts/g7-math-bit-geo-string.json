@@ -1,0 +1,436 @@
+{
+  "lcm": {
+    "titles": [
+      "Find Greatest Common Divisor of Array",
+      "Greatest Common Divisor of Strings",
+      "Nth Magical Number",
+      "Ugly Number",
+      "Ugly Number II",
+      "Ugly Number III",
+      "Number of Common Factors",
+      "Count Common Words With One Occurrence",
+      "Smallest Value of the Rearranged Number",
+      "GCD Sort of an Array",
+      "Replace Non-Coprime Numbers in Array",
+      "Three Divisors",
+      "Four Divisors",
+      "The kth Factor of n",
+      "Closest Divisors",
+      "Count Array Pairs Divisible by K",
+      "Water and Jug Problem",
+      "Simplified Fractions",
+      "Consecutive Numbers Sum",
+      "X of a Kind in a Deck of Cards"
+    ],
+    "tags": ["number theory", "Number Theory"],
+    "keywords": [
+      "\\b(gcd|lcm)\\b",
+      "\\bgreatest common divisor\\b",
+      "\\bcommon (factor|divisor)s?\\b",
+      "\\bcoprime\\b",
+      "\\bugly number\\b"
+    ]
+  },
+  "power": {
+    "titles": [
+      "Pow(x, n)",
+      "Super Pow",
+      "Count Good Numbers",
+      "Power of Two",
+      "Power of Three",
+      "Power of Four",
+      "Reordered Power of 2",
+      "Powerful Integers",
+      "Valid Perfect Square",
+      "Perfect Squares",
+      "Sqrt(x)",
+      "Sum of Square Numbers",
+      "Nth Magical Number",
+      "Bulb Switcher",
+      "Detect Squares",
+      "Clumsy Factorial",
+      "Maximum 69 Number",
+      "Number of Digit One"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bpow\\b|power of",
+      "\\bsuper pow\\b",
+      "\\bmodular exponentiation\\b",
+      "\\bperfect square\\b"
+    ]
+  },
+  "expected-value": {
+    "titles": [
+      "Soup Servings",
+      "New 21 Game",
+      "Airplane Seat Assignment Probability",
+      "Knight Probability in Chessboard",
+      "Probability of a Two Boxes Having The Same Number of Distinct Balls",
+      "Toss Strange Coins",
+      "Statistics from a Large Sample",
+      "Number of Dice Rolls With Target Sum",
+      "Dice Roll Simulation",
+      "Random Point in Non-overlapping Rectangles",
+      "Generate Random Point in a Circle",
+      "Implement Rand10() Using Rand7()",
+      "Random Pick with Weight",
+      "Random Pick with Blacklist"
+    ],
+    "tags": ["probabilities"],
+    "keywords": [
+      "\\bprobabilit(y|ies)\\b",
+      "\\bexpected (value|number|cost)\\b",
+      "\\bdice\\b"
+    ]
+  },
+  "matrix-exponentiation": {
+    "titles": [
+      "Fibonacci Number",
+      "N-th Tribonacci Number",
+      "Climbing Stairs",
+      "Count Vowels Permutation",
+      "Student Attendance Record II",
+      "Knight Dialer",
+      "Domino and Tromino Tiling",
+      "Count Ways To Build Good Strings",
+      "Number of Ways to Stay in the Same Place After Some Steps",
+      "Count Number of Texts",
+      "Number of Music Playlists",
+      "Count Sorted Vowel Strings",
+      "Tiling a Rectangle with the Fewest Squares",
+      "Length of Longest Fibonacci Subsequence"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bmatrix exponentiation\\b",
+      "\\bfibonacci\\b",
+      "\\btribonacci\\b"
+    ]
+  },
+  "and-or": {
+    "titles": [
+      "Bitwise AND of Numbers Range",
+      "Single Number",
+      "Single Number II",
+      "Single Number III",
+      "Counting Bits",
+      "Sum of Two Integers",
+      "Number Complement",
+      "Maximum XOR of Two Numbers in an Array",
+      "Minimum Flips to Make a OR b Equal to c",
+      "Bitwise ORs of Subarrays",
+      "Find XOR Sum of All Pairs Bitwise AND",
+      "XOR Operation in an Array",
+      "Decode XORed Array",
+      "Decode XORed Permutation",
+      "Concatenation of Consecutive Binary Numbers",
+      "Count Triplets That Can Form Two Arrays of Equal XOR",
+      "Minimum Number of K Consecutive Bit Flips",
+      "Bitwise OR of Adjacent Elements"
+    ],
+    "tags": ["Bit Manipulation", "bitmasks"],
+    "keywords": [
+      "\\bbitwise\\b",
+      "\\bxor\\b",
+      "\\bsingle number\\b",
+      "\\bcounting bits\\b"
+    ]
+  },
+  "subset-enumeration": {
+    "titles": [
+      "Subsets",
+      "Subsets II",
+      "Partition to K Equal Sum Subsets",
+      "Beautiful Arrangement",
+      "Maximum Students Taking Exam",
+      "Smallest Sufficient Team",
+      "Number of Ways to Wear Different Hats to Each Other",
+      "Combination Sum",
+      "Combination Sum II",
+      "Combinations",
+      "Fair Distribution of Cookies",
+      "Maximum Rows Covered by Columns",
+      "Minimum Cost to Connect Two Groups of Points",
+      "Find the Shortest Superstring",
+      "Maximum AND Sum of Array",
+      "Distribute Repeating Integers",
+      "Partition Array Into Two Arrays to Minimize Sum Difference",
+      "The Number of Good Subsets",
+      "Matchsticks to Square",
+      "Parallel Courses II"
+    ],
+    "tags": ["bitmasks", "Bitmask"],
+    "keywords": [
+      "\\ball subsets\\b",
+      "\\bsubmask\\b",
+      "\\bbitmask\\b"
+    ]
+  },
+  "gray-code": {
+    "titles": [
+      "Gray Code",
+      "Circular Permutation in Binary Representation",
+      "Minimum One Bit Operations to Make Integers Zero",
+      "Binary Watch",
+      "Prison Cells After N Days"
+    ],
+    "tags": ["Bit Manipulation"],
+    "keywords": [
+      "gray code"
+    ]
+  },
+  "line-sweep": {
+    "titles": [
+      "The Skyline Problem",
+      "My Calendar I",
+      "My Calendar II",
+      "My Calendar III",
+      "Meeting Rooms II",
+      "Employee Free Time",
+      "Describe the Painting",
+      "Number of Flowers in Full Bloom",
+      "Range Module",
+      "Car Pooling",
+      "Count Integers in Intervals",
+      "Points That Intersect With Cars",
+      "Corporate Flight Bookings",
+      "Amount of New Area Painted Each Day",
+      "The Number of the Smallest Unoccupied Chair",
+      "Maximum Number of Events That Can Be Attended",
+      "Divide Intervals Into Minimum Number of Groups",
+      "Falling Squares",
+      "Rectangle Area II",
+      "Count Ways to Group Overlapping Ranges"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bsweep line\\b|line sweep",
+      "\\bskyline\\b",
+      "\\bmy calendar\\b",
+      "\\bmeeting rooms\\b"
+    ]
+  },
+  "orientation": {
+    "titles": [
+      "Max Points on a Line",
+      "Erect the Fence",
+      "Check If It Is a Straight Line",
+      "Valid Boomerang",
+      "Number of Boomerangs",
+      "Largest Triangle Area",
+      "Minimum Area Rectangle",
+      "Minimum Area Rectangle II",
+      "Minimum Time Visiting All Points",
+      "Robot Bounded In Circle"
+    ],
+    "tags": ["geometry", "Geometry"],
+    "keywords": [
+      "\\bstraight line\\b",
+      "\\bcollinear\\b",
+      "\\bboomerang\\b",
+      "\\bconvex hull\\b"
+    ]
+  },
+  "polygon": {
+    "titles": [
+      "Erect the Fence",
+      "Largest Triangle Area",
+      "Minimum Area Rectangle",
+      "Minimum Area Rectangle II",
+      "Rectangle Area",
+      "Rectangle Area II",
+      "Number of Corner Rectangles",
+      "Perfect Rectangle",
+      "Rectangle Overlap",
+      "Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts",
+      "Minimum Cuts to Divide a Circle",
+      "Detect Squares"
+    ],
+    "tags": ["geometry", "Geometry"],
+    "keywords": [
+      "\\bconvex hull\\b",
+      "\\bpolygon\\b",
+      "\\brectangle area\\b",
+      "\\btriangle area\\b"
+    ]
+  },
+  "distance": {
+    "titles": [
+      "K Closest Points to Origin",
+      "Queries on Number of Points Inside a Circle",
+      "Number of Boomerangs",
+      "Minimum Time Visiting All Points",
+      "Max Points on a Line",
+      "Valid Boomerang",
+      "Check If It Is a Straight Line",
+      "Shortest Distance to a Character",
+      "Maximum Distance Between a Pair of Values",
+      "Campus Bikes",
+      "Campus Bikes II",
+      "Count Number of Pairs With Absolute Difference K",
+      "Find the City With the Smallest Number of Neighbors at a Threshold Distance"
+    ],
+    "tags": ["geometry", "Geometry"],
+    "keywords": [
+      "\\beuclidean\\b",
+      "\\bmanhattan distance\\b",
+      "\\bclosest points?\\b",
+      "\\bnearest point\\b"
+    ]
+  },
+  "z-algorithm": {
+    "titles": [
+      "Implement strStr()",
+      "Find the Index of the First Occurrence in a String",
+      "Repeated Substring Pattern",
+      "Longest Happy Prefix",
+      "Shortest Palindrome",
+      "Distinct Echo Substrings",
+      "Sum of Scores of Built Strings",
+      "Find Beautiful Indices in the Given Array I",
+      "Find Beautiful Indices in the Given Array II",
+      "Longest Duplicate Substring",
+      "Find All Anagrams in a String",
+      "String Matching in an Array",
+      "Number of Subarrays That Match a Pattern I",
+      "Number of Subarrays That Match a Pattern II",
+      "Maximum Deletions on a String",
+      "Find the Occurrence of First Almost Equal Substring"
+    ],
+    "tags": ["String Matching"],
+    "keywords": [
+      "\\bz[- ]?function\\b|\\bz[- ]?algorithm\\b",
+      "\\bprefix function\\b|\\bkmp\\b",
+      "\\bhappy prefix\\b",
+      "\\bstrstr\\b"
+    ]
+  },
+  "manacher": {
+    "titles": [
+      "Longest Palindromic Substring",
+      "Palindromic Substrings",
+      "Shortest Palindrome",
+      "Longest Palindrome",
+      "Longest Palindromic Subsequence",
+      "Palindrome Partitioning",
+      "Palindrome Partitioning II",
+      "Count Different Palindromic Subsequences",
+      "Maximum Product of the Length of Two Palindromic Substrings",
+      "Maximize Palindrome Length From Subsequences",
+      "Find Palindrome With Fixed Length",
+      "Minimum Insertion Steps to Make a String Palindrome",
+      "Break a Palindrome",
+      "Valid Palindrome",
+      "Valid Palindrome II",
+      "Longest Chunked Palindrome Decomposition"
+    ],
+    "tags": [],
+    "keywords": [
+      "palindromic sub",
+      "\\bmanacher\\b",
+      "\\bpalindrom",
+      "\\blongest palindrom"
+    ]
+  },
+  "rabin-karp": {
+    "titles": [
+      "Implement strStr()",
+      "Find the Index of the First Occurrence in a String",
+      "Repeated Substring Pattern",
+      "Longest Happy Prefix",
+      "Shortest Palindrome",
+      "Distinct Echo Substrings",
+      "Longest Duplicate Substring",
+      "Repeated DNA Sequences",
+      "Longest Common Subpath",
+      "String Matching in an Array",
+      "Substring with Concatenation of All Words",
+      "Find Substring With Given Hash Value",
+      "Check If String Is a Prefix of Array",
+      "Find Beautiful Indices in the Given Array II",
+      "Count Substrings That Differ by One Character"
+    ],
+    "tags": ["String Matching", "hashing", "Rolling Hash"],
+    "keywords": [
+      "\\brabin[- ]?karp\\b",
+      "\\brolling hash\\b",
+      "\\bhash value\\b",
+      "\\brepeated dna\\b"
+    ]
+  },
+  "suffix-automaton": {
+    "titles": [
+      "Longest Duplicate Substring",
+      "Distinct Echo Substrings",
+      "Longest Common Subpath",
+      "Sum of Scores of Built Strings",
+      "Number of Distinct Substrings in a String",
+      "Longest Repeating Substring",
+      "Count Different Palindromic Subsequences",
+      "Total Appeal of A String",
+      "Number of Matching Subsequences",
+      "Longest Common Subsequence Between Sorted Arrays",
+      "Substring with Concatenation of All Words"
+    ],
+    "tags": ["string suffix structures"],
+    "keywords": [
+      "\\bsuffix (automaton|array|tree)\\b",
+      "\\bdistinct substrings?\\b",
+      "\\bnumber of distinct substrings\\b"
+    ]
+  },
+  "simulation-misc": {
+    "titles": [
+      "Spiral Matrix",
+      "Spiral Matrix II",
+      "Spiral Matrix III",
+      "Spiral Matrix IV",
+      "Game of Life",
+      "Robot Bounded In Circle",
+      "Walking Robot Simulation",
+      "Rotate Image",
+      "Zigzag Conversion",
+      "Set Matrix Zeroes",
+      "Design Snake Game",
+      "Robot Return to Origin",
+      "Teemo Attacking",
+      "Diagonal Traverse",
+      "Robot Collisions",
+      "Asteroid Collision",
+      "Candy Crush",
+      "Shift 2D Grid"
+    ],
+    "tags": ["Simulation"],
+    "keywords": [
+      "\\bspiral\\b",
+      "\\bsimulat",
+      "\\brobot\\b"
+    ]
+  },
+  "randomization": {
+    "titles": [
+      "Insert Delete GetRandom O(1)",
+      "Insert Delete GetRandom O(1) - Duplicates allowed",
+      "Random Pick with Weight",
+      "Random Pick Index",
+      "Shuffle an Array",
+      "Linked List Random Node",
+      "Implement Rand10() Using Rand7()",
+      "Random Pick with Blacklist",
+      "Random Point in Non-overlapping Rectangles",
+      "Generate Random Point in a Circle",
+      "Random Flip Matrix",
+      "Design Skiplist",
+      "Kth Largest Element in a Stream",
+      "Find Median from Data Stream"
+    ],
+    "tags": ["Randomized"],
+    "keywords": [
+      "\\brandom(ized|ly)?\\b",
+      "\\bshuffle\\b",
+      "\\breservoir\\b",
+      "\\bgetrandom\\b"
+    ]
+  }
+}

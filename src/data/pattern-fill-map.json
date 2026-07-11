@@ -1,0 +1,2573 @@
+{
+  "kadane-algorithm": {
+    "titles": [
+      "Maximum Subarray",
+      "Maximum Sum Circular Subarray",
+      "Maximum Product Subarray",
+      "K-Concatenation Maximum Sum",
+      "Maximum Absolute Sum of Any Subarray",
+      "Best Time to Buy and Sell Stock",
+      "Longest Turbulent Subarray",
+      "Maximum Subarray Sum After One Operation",
+      "Maximum Alternating Subarray Sum",
+      "Maximum Score From Removing Substrings",
+      "Substring With Largest Variance",
+      "Maximum Subarray Min-Product",
+      "Length of Longest Subarray With at Most K Frequency",
+      "Maximum Ascending Subarray Sum",
+      "Maximize Subarray Sum After Removing All Occurrences of One Element",
+      "Maximum Sum of Two Non-Overlapping Subarrays"
+    ],
+    "tags": [],
+    "keywords": [
+      "maximum (sum )?(circular )?subarray",
+      "maximum absolute sum",
+      "maximum .*subarray",
+      "maximum sum .*subarray",
+      "maximum product subarray",
+      "largest sum .*subarray",
+      "max.* circular subarray"
+    ]
+  },
+  "difference-array": {
+    "titles": [
+      "Range Addition",
+      "Corporate Flight Bookings",
+      "Shifting Letters II",
+      "Car Pooling",
+      "Describe the Painting",
+      "Range Addition II",
+      "Points That Intersect With Cars",
+      "Number of Flowers in Full Bloom",
+      "Zero Array Transformation I",
+      "Zero Array Transformation II",
+      "Zero Array Transformation III",
+      "Maximum Population Year",
+      "Increment Submatrices by One",
+      "Stamping the Grid",
+      "Meeting Rooms III",
+      "Minimum Number of Increments on Subarrays to Form a Target",
+      "Range Sum Query - Mutable",
+      "Frequency of the Most Frequent Element"
+    ],
+    "tags": [],
+    "keywords": [
+      "range addition",
+      "difference array",
+      "zero array"
+    ]
+  },
+  "circular-array": {
+    "titles": [
+      "Gas Station",
+      "Next Greater Element II",
+      "Circular Array Loop",
+      "Maximum Sum Circular Subarray",
+      "Freedom Trail",
+      "Rotate Array",
+      "Rotate List",
+      "Rotate String",
+      "Shift 2D Grid",
+      "Design Circular Queue",
+      "Design Circular Deque",
+      "First Missing Positive",
+      "Sequential Digits",
+      "Rotate Function",
+      "Find the Winner of the Circular Game",
+      "Circular Sentence",
+      "Number of Ways to Split Array"
+    ],
+    "tags": [],
+    "keywords": [
+      "circular",
+      "rotate array",
+      "\\bgas station\\b",
+      "\\brotate\\b.*(array|list|string)"
+    ]
+  },
+  "dutch-national-flag": {
+    "titles": [
+      "Sort Colors",
+      "Wiggle Sort",
+      "Wiggle Sort II",
+      "Partition List",
+      "Sort Array By Parity",
+      "Sort Array By Parity II",
+      "Move Zeroes",
+      "Rearrange Array Elements by Sign",
+      "Three Way Partition",
+      "Sort an Array",
+      "Partition Array According to Given Pivot",
+      "Remove Duplicates from Sorted Array",
+      "Relative Sort Array",
+      "Height Checker",
+      "Sort the People",
+      "Maximum Gap"
+    ],
+    "tags": [],
+    "keywords": [
+      "sort colors",
+      "dutch",
+      "three way partition",
+      "sort array by parity",
+      "wiggle sort"
+    ]
+  },
+  "binary-search-on-answer": {
+    "titles": [
+      "Koko Eating Bananas",
+      "Split Array Largest Sum",
+      "Capacity To Ship Packages Within D Days",
+      "Minimum Number of Days to Make m Bouquets",
+      "Magnetic Force Between Two Balls",
+      "Maximum Running Time of N Computers",
+      "Minimize the Maximum Difference of Pairs",
+      "Find the Smallest Divisor Given a Threshold",
+      "Minimized Maximum of Products Distributed to Any Store",
+      "Kth Smallest Number in Multiplication Table",
+      "Ugly Number III",
+      "Divide Chocolate",
+      "Minimize Maximum of Array",
+      "Aggressive Cows",
+      "Painter's Partition Problem",
+      "Allocate Minimum Number of Pages",
+      "Book Allocation Problem",
+      "Minimize Max Distance to Gas Station",
+      "Minimum Time to Complete Trips",
+      "Minimum Speed to Arrive on Time",
+      "Maximum Candies Allocated to K Children"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\ballocat\\w* (books|pages|minimum)",
+      "\\bpainter'?s? partition\\b",
+      "\\baggressive cows\\b",
+      "\\bkoko\\b",
+      "\\bminimize (the )?max"
+    ]
+  },
+  "lower-bound": {
+    "titles": [
+      "Search Insert Position",
+      "Find First and Last Position of Element in Sorted Array",
+      "Successful Pairs of Spells and Potions",
+      "Time Based Key-Value Store",
+      "Random Pick with Weight",
+      "Sqrt(x)",
+      "Ceiling in a Sorted Array",
+      "Floor in a Sorted Array",
+      "First and Last Position of an Element In Sorted Array",
+      "Number of Occurrence",
+      "Count Occurrences in Sorted Array",
+      "Guess Number Higher or Lower",
+      "Valid Perfect Square",
+      "First Bad Version",
+      "Binary Search",
+      "Lower Bound"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\blower bound\\b",
+      "\\bfloor in\\b.*sorted",
+      "\\bceiling in\\b.*sorted",
+      "\\bsearch insert\\b"
+    ]
+  },
+  "upper-bound": {
+    "titles": [
+      "Find Right Interval",
+      "Count Negative Numbers in a Sorted Matrix",
+      "Maximum Count of Positive Integer and Negative Integer",
+      "Number of Flowers in Full Bloom",
+      "Find First and Last Position of Element in Sorted Array",
+      "Upper Bound",
+      "Count Occurrences in Sorted Array",
+      "Number of Occurrence",
+      "Ceiling in a Sorted Array",
+      "Count of Smaller Numbers After Self",
+      "How Many Numbers Are Smaller Than the Current Number",
+      "Find Smallest Letter Greater Than Target",
+      "The Number of Weak Characters in the Game",
+      "Count Pairs Whose Sum is Less than Target"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bupper bound\\b",
+      "\\bfind (the )?smallest letter greater\\b",
+      "\\bnext greater (letter|element).*sorted"
+    ]
+  },
+  "next-greater-element": {
+    "titles": [
+      "Next Greater Element I",
+      "Next Greater Element II",
+      "Next Greater Element IV",
+      "Daily Temperatures",
+      "Online Stock Span",
+      "Largest Rectangle in Histogram",
+      "Remove K Digits",
+      "Sum of Subarray Minimums",
+      "Trapping Rain Water",
+      "Maximum Width Ramp",
+      "Next Greater Node In Linked List",
+      "Next Greater Element III",
+      "Sum of Subarray Ranges",
+      "Number of Visible People in a Queue",
+      "Final Prices With a Special Discount in a Shop",
+      "132 Pattern",
+      "Buildings With an Ocean View"
+    ],
+    "tags": [
+      "Monotonic Stack"
+    ],
+    "keywords": [
+      "next greater",
+      "Next Greater",
+      "Daily Temperature",
+      "Stock Span"
+    ]
+  },
+  "prefix-tree": {
+    "titles": [
+      "Implement Trie (Prefix Tree)",
+      "Implement Trie II (Prefix Tree)",
+      "Word Search II",
+      "Replace Words",
+      "Maximum XOR of Two Numbers in an Array",
+      "Design Add and Search Words Data Structure",
+      "Search Suggestions System",
+      "Longest Word in Dictionary",
+      "Map Sum Pairs",
+      "Stream of Characters",
+      "Word Break",
+      "Word Break II",
+      "Concatenated Words",
+      "Longest Common Prefix",
+      "Add and Search Word - Data structure design"
+    ],
+    "tags": [
+      "Trie"
+    ],
+    "keywords": [
+      "prefix tree",
+      "\\btrie\\b",
+      "\\btrie\\b|prefix tree"
+    ]
+  },
+  "disjoint-set": {
+    "titles": [
+      "Number of Provinces",
+      "Accounts Merge",
+      "Redundant Connection",
+      "Redundant Connection II",
+      "Number of Islands II",
+      "Regions Cut By Slashes",
+      "Most Stones Removed with Same Row or Column",
+      "Satisfiability of Equality Equations",
+      "Graph Valid Tree",
+      "Number of Connected Components in an Undirected Graph",
+      "Smallest String With Swaps",
+      "Evaluate Division",
+      "Number of Operations to Make Network Connected",
+      "Making A Large Island",
+      "Checking Existence of Edge Length Limited Paths",
+      "Similar String Groups",
+      "Lexicographically Smallest Equivalent String",
+      "The Earliest Moment When Everyone Become Friends",
+      "Remove Max Number of Edges to Keep Graph Fully Traversable",
+      "Number of Good Paths"
+    ],
+    "tags": [
+      "dsu",
+      "Union Find",
+      "Union-Find"
+    ],
+    "keywords": [
+      "edge length limited"
+    ]
+  },
+  "tree-dp": {
+    "titles": [
+      "House Robber III",
+      "Binary Tree Cameras",
+      "Longest ZigZag Path in a Binary Tree",
+      "Binary Tree Maximum Path Sum",
+      "Diameter of Binary Tree",
+      "Distribute Coins in Binary Tree",
+      "Sum of Distances in Tree",
+      "Count Nodes Equal to Average of Subtree",
+      "Maximum Product of Splitted Binary Tree",
+      "Longest Univalent Path",
+      "Longest Univalue Path",
+      "Binary Tree Tilt",
+      "Maximum Difference Between Node and Ancestor",
+      "Count Good Nodes in Binary Tree",
+      "Number of Good Leaf Nodes Pairs"
+    ],
+    "tags": [],
+    "keywords": []
+  },
+  "digit-dp": {
+    "titles": [
+      "Count Digit One",
+      "Numbers With Repeated Digits",
+      "Count Special Integers",
+      "Numbers At Most N Given Digit Set",
+      "Non-negative Integers without Consecutive Ones",
+      "Rotated Digits",
+      "Count Numbers with Unique Digits",
+      "Count of Integers",
+      "Number of Digit One",
+      "Digit Count in Range",
+      "Count the Number of Powerful Integers",
+      "Count Stepping Numbers in Range"
+    ],
+    "tags": [],
+    "keywords": [
+      "count.*digit one",
+      "repeated digits",
+      "special integers",
+      "unique digits",
+      "stepping numbers in range"
+    ]
+  },
+  "lca": {
+    "titles": [
+      "Lowest Common Ancestor of a Binary Tree",
+      "Lowest Common Ancestor of a Binary Search Tree",
+      "Lowest Common Ancestor of a Binary Tree II",
+      "Lowest Common Ancestor of a Binary Tree III",
+      "Lowest Common Ancestor of a Binary Tree IV",
+      "Smallest Common Region",
+      "Lowest Common Ancestor of Deepest Leaves",
+      "Step-By-Step Directions From a Binary Tree Node to Another",
+      "Kth Ancestor of a Tree Node",
+      "Find Distance in a Binary Tree"
+    ],
+    "tags": [],
+    "keywords": [
+      "lowest common ancestor"
+    ]
+  },
+  "diameter": {
+    "titles": [
+      "Diameter of Binary Tree",
+      "Diameter of N-Ary Tree",
+      "Tree Diameter"
+    ],
+    "tags": [],
+    "keywords": [
+      "diameter of",
+      "\\bdiameter\\b"
+    ]
+  },
+  "serialization": {
+    "titles": [
+      "Serialize and Deserialize Binary Tree",
+      "Serialize and Deserialize BST",
+      "Serialize and Deserialize N-ary Tree",
+      "Construct String from Binary Tree",
+      "Encode and Decode Strings",
+      "Find Duplicate Subtrees",
+      "Construct Binary Tree from Preorder and Inorder Traversal",
+      "Construct Binary Tree from Inorder and Postorder Traversal",
+      "Construct Binary Search Tree from Preorder Traversal",
+      "Construct Binary Tree from Preorder and Postorder Traversal",
+      "Verify Preorder Serialization of a Binary Tree",
+      "Recover a Tree From Preorder Traversal"
+    ],
+    "tags": [],
+    "keywords": [
+      "serialize",
+      "deserialize",
+      "serialize|deserialize",
+      "construct binary (tree|search tree) from"
+    ]
+  },
+  "n-queens": {
+    "titles": [
+      "N-Queens",
+      "N-Queens II",
+      "The Knight's Tour",
+      "Rat in a Maze",
+      "Grid Illumination"
+    ],
+    "tags": [],
+    "keywords": [
+      "n[- ]?queens",
+      "\\bn[- ]?queens\\b"
+    ]
+  },
+  "sudoku": {
+    "titles": [
+      "Sudoku Solver",
+      "Valid Sudoku"
+    ],
+    "tags": [],
+    "keywords": [
+      "sudoku"
+    ]
+  },
+  "gray-code": {
+    "titles": [
+      "Gray Code",
+      "Circular Permutation in Binary Representation",
+      "Minimum One Bit Operations to Make Integers Zero",
+      "Binary Watch",
+      "Prison Cells After N Days"
+    ],
+    "tags": [],
+    "keywords": [
+      "gray code"
+    ]
+  },
+  "line-sweep": {
+    "titles": [
+      "The Skyline Problem",
+      "My Calendar I",
+      "My Calendar II",
+      "My Calendar III",
+      "Meeting Rooms II",
+      "Employee Free Time",
+      "Describe the Painting",
+      "Number of Flowers in Full Bloom",
+      "Range Module",
+      "Car Pooling",
+      "Count Integers in Intervals",
+      "Points That Intersect With Cars",
+      "Corporate Flight Bookings",
+      "Amount of New Area Painted Each Day",
+      "The Number of the Smallest Unoccupied Chair",
+      "Maximum Number of Events That Can Be Attended",
+      "Divide Intervals Into Minimum Number of Groups",
+      "Falling Squares",
+      "Rectangle Area II",
+      "Count Ways to Group Overlapping Ranges"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bsweep line\\b|line sweep",
+      "\\bskyline\\b",
+      "\\bmy calendar\\b",
+      "\\bmeeting rooms\\b"
+    ]
+  },
+  "manacher": {
+    "titles": [
+      "Longest Palindromic Substring",
+      "Palindromic Substrings",
+      "Shortest Palindrome",
+      "Longest Palindrome",
+      "Longest Palindromic Subsequence",
+      "Palindrome Partitioning",
+      "Palindrome Partitioning II",
+      "Count Different Palindromic Subsequences",
+      "Maximum Product of the Length of Two Palindromic Substrings",
+      "Maximize Palindrome Length From Subsequences",
+      "Find Palindrome With Fixed Length",
+      "Minimum Insertion Steps to Make a String Palindrome",
+      "Break a Palindrome",
+      "Valid Palindrome",
+      "Valid Palindrome II",
+      "Longest Chunked Palindrome Decomposition"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bmanacher\\b",
+      "\\blongest palindrom"
+    ]
+  },
+  "suffix-sum": {
+    "titles": [
+      "Product of Array Except Self",
+      "Find Pivot Index",
+      "Find the Middle Index in Array",
+      "Trapping Rain Water",
+      "Maximum Score of a Good Subarray",
+      "Sum of Absolute Differences in a Sorted Array",
+      "Number of Ways to Split Array",
+      "Minimum Value to Get Positive Step by Step Sum",
+      "Left and Right Sum Differences",
+      "Maximum Sum of 3 Non-Overlapping Subarrays",
+      "Best Time to Buy and Sell Stock III",
+      "Best Time to Buy and Sell Stock IV",
+      "Split Array with Equal Sum",
+      "Ways to Split Array Into Three Subarrays",
+      "Minimum Average Difference",
+      "Count Ways to Make Array With Product",
+      "Maximum Number of Ways to Partition an Array"
+    ],
+    "tags": [],
+    "keywords": [
+      "suffix sum",
+      "prefix .*suffix",
+      "except self",
+      "pivot index"
+    ]
+  },
+  "coordinate-compression": {
+    "titles": [
+      "Count of Smaller Numbers After Self",
+      "Reverse Pairs",
+      "Number of Longest Increasing Subsequence",
+      "Rank Transform of an Array",
+      "Rank Transform of a Matrix",
+      "Longest Increasing Subsequence II",
+      "Count of Range Sum",
+      "Create Sorted Array through Instructions",
+      "Number of Pairs Satisfying Inequality",
+      "Count Good Triplets in an Array",
+      "Maximum Number of Tasks You Can Assign",
+      "Falling Squares",
+      "My Calendar III",
+      "The Skyline Problem",
+      "Count the Number of Fair Pairs",
+      "Minimum Absolute Difference Between Elements With Constraint"
+    ],
+    "tags": [],
+    "keywords": [
+      "rank transform",
+      "count of smaller",
+      "reverse pairs",
+      "range sum"
+    ]
+  },
+  "same-direction": {
+    "titles": [
+      "Move Zeroes",
+      "Remove Duplicates from Sorted Array",
+      "Remove Duplicates from Sorted Array II",
+      "Remove Element",
+      "Merge Sorted Array",
+      "Backspace String Compare",
+      "Max Consecutive Ones III",
+      "Fruit Into Baskets",
+      "Longest Substring Without Repeating Characters",
+      "Minimum Size Subarray Sum",
+      "Subarray Product Less Than K",
+      "Squares of a Sorted Array",
+      "Partition Labels",
+      "Number of Subarrays with Bounded Maximum",
+      "Count Number of Nice Subarrays",
+      "Longest Subarray of 1's After Deleting One Element"
+    ],
+    "tags": [],
+    "keywords": [
+      "remove duplicates",
+      "consecutive ones",
+      "subarray sum"
+    ]
+  },
+  "opposite-direction": {
+    "titles": [
+      "Two Sum II - Input Array Is Sorted",
+      "Container With Most Water",
+      "Trapping Rain Water",
+      "3Sum",
+      "3Sum Closest",
+      "4Sum",
+      "Valid Palindrome",
+      "Valid Palindrome II",
+      "Reverse String",
+      "Reverse Vowels of a String",
+      "Two Sum Less Than K",
+      "Boats to Save People",
+      "Sort Array By Parity",
+      "Squares of a Sorted Array",
+      "Number of Subsequences That Satisfy the Given Sum Condition",
+      "3Sum With Multiplicity"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\b[234]sum\\b",
+      "two sum",
+      "valid palindrome",
+      "container with most water"
+    ]
+  },
+  "fast-slow-pointer": {
+    "titles": [
+      "Linked List Cycle",
+      "Linked List Cycle II",
+      "Happy Number",
+      "Find the Duplicate Number",
+      "Middle of the Linked List",
+      "Palindrome Linked List",
+      "Remove Nth Node From End of List",
+      "Reorder List",
+      "Circular Array Loop",
+      "Intersection of Two Linked Lists",
+      "Delete the Middle Node of a Linked List",
+      "Split Linked List in Parts",
+      "Sort List",
+      "Rotate List",
+      "Odd Even Linked List",
+      "Convert Sorted List to Binary Search Tree"
+    ],
+    "tags": [],
+    "keywords": [
+      "linked list cycle",
+      "middle of the linked list",
+      "happy number",
+      "\\bcycle\\b"
+    ]
+  },
+  "partition": {
+    "titles": [
+      "Partition List",
+      "Sort Colors",
+      "Sort Array By Parity",
+      "Sort Array By Parity II",
+      "Kth Largest Element in an Array",
+      "Wiggle Sort",
+      "Wiggle Sort II",
+      "Partition Array Into Two Arrays to Minimize Sum Difference",
+      "Partition Array According to Given Pivot",
+      "Partition Array Such That Maximum Difference Is K",
+      "Partition Array for Maximum Sum",
+      "Partition Array into Disjoint Intervals",
+      "Rearrange Array Elements by Sign",
+      "Maximum Number of Coins You Can Get",
+      "Three Way Partition",
+      "Split Array into Consecutive Subsequences"
+    ],
+    "tags": [],
+    "keywords": [
+      "partition array",
+      "partition list",
+      "\\bpartition\\b",
+      "kth largest"
+    ]
+  },
+  "frequency-window": {
+    "titles": [
+      "Subarrays with K Different Integers",
+      "Find All Anagrams in a String",
+      "Permutation in String",
+      "Longest Repeating Character Replacement",
+      "Count Number of Nice Subarrays",
+      "Longest Substring with At Most K Distinct Characters",
+      "Longest Substring with At Most Two Distinct Characters",
+      "Longest Substring with At Least K Repeating Characters",
+      "Subarrays with at Most K Distinct Integers",
+      "Fruit Into Baskets",
+      "Max Consecutive Ones III",
+      "Replace the Substring for Balanced String",
+      "Count Complete Subarrays in an Array",
+      "Length of Longest Subarray With at Most K Frequency",
+      "Number of Substrings Containing All Three Characters",
+      "Get Equal Substrings Within Budget",
+      "Frequency of the Most Frequent Element"
+    ],
+    "tags": [],
+    "keywords": [
+      "at most k distinct",
+      "k different",
+      "nice subarrays",
+      "distinct .*(characters|integers)"
+    ]
+  },
+  "character-window": {
+    "titles": [
+      "Longest Substring Without Repeating Characters",
+      "Longest Repeating Character Replacement",
+      "Permutation in String",
+      "Find All Anagrams in a String",
+      "Longest Substring with At Most K Distinct Characters",
+      "Longest Substring with At Most Two Distinct Characters",
+      "Number of Substrings Containing All Three Characters",
+      "Minimum Window Substring",
+      "Substrings of Size Three with Distinct Characters",
+      "Maximum Number of Vowels in a Substring of Given Length",
+      "Longest Nice Substring",
+      "Count Vowel Substrings of a String",
+      "Find the Longest Substring Containing Vowels in Even Counts",
+      "Longest Substring Of All Vowels in Order",
+      "Maximum Length Substring With Two Occurrences",
+      "Count Substrings That Satisfy K Constraint I"
+    ],
+    "tags": [],
+    "keywords": [
+      "longest substring",
+      "without repeating",
+      "character replacement",
+      "vowel.*substring"
+    ]
+  },
+  "substring-window": {
+    "titles": [
+      "Minimum Window Substring",
+      "Longest Substring Without Repeating Characters",
+      "Permutation in String",
+      "Find All Anagrams in a String",
+      "Substring with Concatenation of All Words",
+      "Minimum Size Subarray Sum",
+      "Subarray Product Less Than K",
+      "Minimum Window Subsequence",
+      "Smallest Range Covering Elements from K Lists",
+      "Get Equal Substrings Within Budget",
+      "Replace the Substring for Balanced String",
+      "Minimum Number of Flips to Make the Binary String Alternating",
+      "Shortest Subarray with Sum at Least K",
+      "Grumpy Bookstore Owner",
+      "Maximum Points You Can Obtain from Cards",
+      "Sliding Window Maximum"
+    ],
+    "tags": [],
+    "keywords": [
+      "minimum window",
+      "minimum size subarray",
+      "shortest subarray",
+      "concatenation of all words"
+    ]
+  },
+  "hashset": {
+    "titles": [
+      "Contains Duplicate",
+      "Contains Duplicate II",
+      "Longest Consecutive Sequence",
+      "Intersection of Two Arrays",
+      "Intersection of Two Arrays II",
+      "Happy Number",
+      "Single Number",
+      "Two Sum",
+      "Jewels and Stones",
+      "Distribute Candies",
+      "Unique Email Addresses",
+      "Set Mismatch",
+      "Find the Difference",
+      "Design HashSet",
+      "First Missing Positive",
+      "Number of Distinct Islands"
+    ],
+    "tags": [],
+    "keywords": [
+      "contains duplicate",
+      "longest consecutive",
+      "intersection of two arrays",
+      "hashset"
+    ]
+  },
+  "prefix-hash": {
+    "titles": [
+      "Subarray Sum Equals K",
+      "Continuous Subarray Sum",
+      "Contiguous Array",
+      "Subarray Sums Divisible by K",
+      "Binary Subarrays With Sum",
+      "Number of Submatrices That Sum to Target",
+      "Count Number of Nice Subarrays",
+      "Longest Well-Performing Interval",
+      "Maximum Size Subarray Sum Equals k",
+      "Path Sum III",
+      "Make Sum Divisible by P",
+      "Find Longest Subarray of 1's",
+      "Number of Wonderful Substrings",
+      "Count Subarrays With Score Less Than K",
+      "Longest Subarray With Sum Divisible by K",
+      "Count of Interesting Subarrays"
+    ],
+    "tags": [],
+    "keywords": [
+      "subarray sum equals",
+      "sums divisible by k",
+      "contiguous array",
+      "sum equals k"
+    ]
+  },
+  "rolling-hash": {
+    "titles": [
+      "Repeated DNA Sequences",
+      "Longest Duplicate Substring",
+      "Longest Common Subpath",
+      "Distinct Echo Substrings",
+      "Find the Index of the First Occurrence in a String",
+      "Implement strStr()",
+      "Shortest Palindrome",
+      "Longest Happy Prefix",
+      "String Matching in an Array",
+      "Sum of Scores of Built Strings",
+      "Find Substring With Given Hash Value",
+      "Check If String Is a Prefix of Array",
+      "Number of Matching Subsequences",
+      "Substring with Concatenation of All Words",
+      "Find All Anagrams in a String",
+      "Maximum Number of Occurrences of a Substring"
+    ],
+    "tags": [],
+    "keywords": [
+      "duplicate substring",
+      "repeated dna",
+      "hash value",
+      "strstr",
+      "first occurrence"
+    ]
+  },
+  "polynomial-hash": {
+    "titles": [
+      "Longest Duplicate Substring",
+      "Find Substring With Given Hash Value",
+      "Distinct Echo Substrings",
+      "Repeated DNA Sequences",
+      "Longest Common Subpath",
+      "Shortest Palindrome",
+      "Longest Happy Prefix",
+      "Sum of Scores of Built Strings",
+      "Palindrome Pairs",
+      "Maximum Number of Occurrences of a Substring",
+      "Number of Distinct Substrings in a String",
+      "Count Different Palindromic Subsequences",
+      "Find the Index of the First Occurrence in a String",
+      "String Matching in an Array",
+      "Two Strings Are Anagrams After Merge",
+      "Check Whether Two Strings are Almost Equivalent"
+    ],
+    "tags": [],
+    "keywords": [
+      "hash value",
+      "duplicate substring",
+      "distinct substrings",
+      "polynomial hash"
+    ]
+  },
+  "peak-element": {
+    "titles": [
+      "Find Peak Element",
+      "Peak Index in a Mountain Array",
+      "Find in Mountain Array",
+      "Find a Peak Element II",
+      "Find Peak Element II",
+      "Peak Element",
+      "Longest Mountain in Array",
+      "Valid Mountain Array",
+      "Minimum Number of Removals to Make Mountain Array",
+      "Find the Peak of a Mountain Array",
+      "Peak Element in a 2D Grid",
+      "Find Peak Element in a 2D Array",
+      "Peak Index in Mountain Array"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bpeak (element|index)\\b",
+      "\\bmountain array\\b"
+    ]
+  },
+  "rotated-array": {
+    "titles": [
+      "Search in Rotated Sorted Array",
+      "Search in Rotated Sorted Array II",
+      "Find Minimum in Rotated Sorted Array",
+      "Find Minimum in Rotated Sorted Array II",
+      "Search in Rotated Sorted Array I",
+      "Rotate Array",
+      "Check if Array Is Sorted and Rotated",
+      "Minimum in Rotated Sorted Array",
+      "Find How Many Times Array Is Rotated",
+      "Rotation Count in Rotated Sorted Array",
+      "Search Element in a Rotated Sorted Array",
+      "Number of Times a Sorted Array is Rotated",
+      "Rotate Array by K"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\brotated sorted array\\b",
+      "\\bsorted and rotated\\b",
+      "\\btimes.*(array).*rotated\\b"
+    ]
+  },
+  "search-space-reduction": {
+    "titles": [
+      "Search a 2D Matrix",
+      "Search a 2D Matrix II",
+      "Kth Smallest Element in a Sorted Matrix",
+      "Find K-th Smallest Pair Distance",
+      "Kth Smallest Number in Multiplication Table",
+      "Median of Two Sorted Arrays",
+      "Split Array Largest Sum",
+      "Koko Eating Bananas",
+      "Search in a Sorted Array of Unknown Size",
+      "Find Smallest Common Element in All Rows",
+      "Row With Maximum Ones",
+      "Kth Smallest Sum of a Matrix With Sorted Rows",
+      "Peak Index in a Mountain Array",
+      "Count Negative Numbers in a Sorted Matrix"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bsearch a 2d matrix\\b",
+      "\\bkth smallest.*(matrix|multiplication|pair)"
+    ]
+  },
+  "merge-sort": {
+    "titles": [
+      "Sort an Array",
+      "Count of Smaller Numbers After Self",
+      "Reverse Pairs",
+      "Count of Range Sum",
+      "Merge Sorted Array",
+      "Merge k Sorted Lists",
+      "Merge Two Sorted Lists",
+      "Global and Local Inversions",
+      "Count Inversions",
+      "Number of Inversions",
+      "Merge Sort",
+      "Sort List",
+      "Count Reverse Pairs",
+      "Counting Inversions",
+      "Merge Two Sorted Arrays Without Extra Space"
+    ],
+    "tags": [
+      "Merge Sort"
+    ],
+    "keywords": [
+      "\\bmerge sort\\b",
+      "\\b(count(ing)?|number of) inversions?\\b",
+      "\\breverse pairs\\b"
+    ]
+  },
+  "quick-sort": {
+    "titles": [
+      "Sort an Array",
+      "Kth Largest Element in an Array",
+      "K Closest Points to Origin",
+      "Wiggle Sort II",
+      "Kth Smallest Element in a Sorted Matrix",
+      "Kth Largest Element in a Stream",
+      "Quick Sort",
+      "Sort Colors",
+      "Top K Frequent Elements",
+      "Find the Kth Largest Integer in the Array",
+      "K-th Largest Element",
+      "Third Maximum Number"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bquick ?sort\\b",
+      "\\bquick ?select\\b",
+      "\\bkth (largest|smallest)\\b"
+    ]
+  },
+  "heap-sort": {
+    "titles": [
+      "Sort an Array",
+      "Kth Largest Element in an Array",
+      "Top K Frequent Elements",
+      "K Closest Points to Origin",
+      "Sort Characters By Frequency",
+      "Last Stone Weight",
+      "Heap Sort",
+      "The K Weakest Rows in a Matrix",
+      "Kth Largest Element in a Stream",
+      "Find K Pairs with Smallest Sums",
+      "Ugly Number II",
+      "Kth Smallest Element in a Sorted Matrix"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bheap ?sort\\b",
+      "\\bheapify\\b"
+    ]
+  },
+  "counting-sort": {
+    "titles": [
+      "Sort Colors",
+      "Relative Sort Array",
+      "Height Checker",
+      "Sort Array by Increasing Frequency",
+      "Sort an Array",
+      "Maximum Gap",
+      "Sort Characters By Frequency",
+      "Counting Sort",
+      "H-Index",
+      "Contains Duplicate III",
+      "Sort Array By Parity",
+      "Sort the People",
+      "Rank Transform of an Array",
+      "Find All Numbers Disappeared in an Array"
+    ],
+    "tags": [
+      "Counting Sort"
+    ],
+    "keywords": [
+      "\\bcounting sort\\b"
+    ]
+  },
+  "bucket-sort": {
+    "titles": [
+      "Maximum Gap",
+      "Top K Frequent Elements",
+      "Sort Characters By Frequency",
+      "Contains Duplicate III",
+      "Sort Colors",
+      "Bucket Sort",
+      "Top K Frequent Words",
+      "H-Index",
+      "Find K Closest Elements",
+      "Group Anagrams",
+      "Sort an Array",
+      "Insert Delete GetRandom O(1)",
+      "Sort List"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bbucket sort\\b",
+      "\\bmaximum gap\\b"
+    ]
+  },
+  "radix-sort": {
+    "titles": [
+      "Maximum Gap",
+      "Sort an Array",
+      "Radix Sort",
+      "Sort Integers by The Number of 1 Bits",
+      "Sort Array by Increasing Frequency",
+      "Largest Number",
+      "Contains Duplicate III",
+      "Sort the People",
+      "Maximum Product of Two Elements in an Array",
+      "Query Kth Smallest Trimmed Number",
+      "Minimum Operations to Make the Array Sorted",
+      "Sort the Jumbled Numbers"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bradix sort\\b"
+    ]
+  },
+  "partial-sorting": {
+    "titles": [
+      "Kth Largest Element in an Array",
+      "Top K Frequent Elements",
+      "K Closest Points to Origin",
+      "Find K Closest Elements",
+      "Kth Smallest Element in a Sorted Matrix",
+      "K Closest Numbers",
+      "Sort the Matrix Diagonally",
+      "Top K Frequent Words",
+      "Find K Pairs with Smallest Sums",
+      "The K Weakest Rows in a Matrix",
+      "Kth Largest Element in a Stream",
+      "K Highest Ranked Items Within a Price Range",
+      "Partial Sort",
+      "Kth Largest Sum in a Binary Tree"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bpartial sort\\b",
+      "\\bk closest\\b",
+      "\\btop k\\b"
+    ]
+  },
+  "master-theorem": {
+    "titles": [
+      "Sort an Array",
+      "Merge k Sorted Lists",
+      "Maximum Subarray",
+      "The Skyline Problem",
+      "Different Ways to Add Parentheses",
+      "Count of Smaller Numbers After Self",
+      "Reverse Pairs",
+      "Count of Range Sum",
+      "Median of Two Sorted Arrays",
+      "Pow(x, n)",
+      "Search a 2D Matrix",
+      "Beautiful Array",
+      "Balanced Binary Tree",
+      "Convert Sorted Array to Binary Search Tree"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bmaster theorem\\b",
+      "\\bdivide and conquer\\b"
+    ]
+  },
+  "increasing-stack": {
+    "titles": [
+      "Next Greater Element I",
+      "Next Greater Element II",
+      "Next Greater Element III",
+      "Next Greater Element IV",
+      "Daily Temperatures",
+      "Online Stock Span",
+      "Sum of Subarray Minimums",
+      "Sum of Subarray Ranges",
+      "Remove K Digits",
+      "Remove Duplicate Letters",
+      "Smallest Subsequence of Distinct Characters",
+      "Largest Rectangle in Histogram",
+      "Maximal Rectangle",
+      "Steps to Make Array Non-decreasing",
+      "Final Prices With a Special Discount in a Shop",
+      "Number of Visible People in a Queue",
+      "Maximum Width Ramp"
+    ],
+    "tags": [
+      "Monotonic Stack"
+    ],
+    "keywords": [
+      "Next Greater",
+      "Subarray Minimum",
+      "Monotonic"
+    ]
+  },
+  "decreasing-stack": {
+    "titles": [
+      "Next Greater Element I",
+      "Next Greater Element II",
+      "Next Greater Element IV",
+      "Daily Temperatures",
+      "Online Stock Span",
+      "Remove K Digits",
+      "Remove Duplicate Letters",
+      "Sum of Subarray Minimums",
+      "Sum of Subarray Ranges",
+      "Maximum Width Ramp",
+      "Trapping Rain Water",
+      "Largest Rectangle in Histogram",
+      "Maximal Rectangle",
+      "Steps to Make Array Non-decreasing",
+      "132 Pattern",
+      "Shortest Unsorted Continuous Subarray",
+      "Number of Visible People in a Queue"
+    ],
+    "tags": [
+      "Monotonic Stack"
+    ],
+    "keywords": [
+      "Next Greater",
+      "Daily Temperature",
+      "Subarray Range"
+    ]
+  },
+  "expression-evaluation": {
+    "titles": [
+      "Evaluate Reverse Polish Notation",
+      "Basic Calculator",
+      "Basic Calculator II",
+      "Basic Calculator III",
+      "Basic Calculator IV",
+      "Decode String",
+      "Number of Atoms",
+      "Different Ways to Add Parentheses",
+      "Expression Add Operators",
+      "Parsing A Boolean Expression",
+      "Ternary Expression Parser",
+      "Build Binary Expression Tree From Infix Expression",
+      "Design an Expression Tree With Evaluate Function",
+      "Solve the Equation",
+      "Clumsy Factorial",
+      "The Score of Students Solving Math Expression"
+    ],
+    "tags": [],
+    "keywords": [
+      "Calculator",
+      "Expression",
+      "Reverse Polish",
+      "Decode String"
+    ]
+  },
+  "parentheses": {
+    "titles": [
+      "Valid Parentheses",
+      "Generate Parentheses",
+      "Longest Valid Parentheses",
+      "Minimum Remove to Make Valid Parentheses",
+      "Score of Parentheses",
+      "Remove Invalid Parentheses",
+      "Minimum Add to Make Parentheses Valid",
+      "Check if a Parentheses String Can Be Valid",
+      "Different Ways to Add Parentheses",
+      "Maximum Nesting Depth of the Parentheses",
+      "Minimum Number of Swaps to Make the String Balanced",
+      "Valid Parenthesis String",
+      "Check Balanced Parentheses",
+      "Minimum Insertions to Balance a Parentheses String"
+    ],
+    "tags": [],
+    "keywords": [
+      "Parenthes",
+      "Parenthesis",
+      "Bracket"
+    ]
+  },
+  "histogram": {
+    "titles": [
+      "Largest Rectangle in Histogram",
+      "Maximal Rectangle",
+      "Trapping Rain Water",
+      "Container With Most Water",
+      "Maximal Square",
+      "Count Submatrices With All Ones",
+      "Sum of Subarray Minimums",
+      "Number of Submatrices That Sum to Target",
+      "Maximum Score of a Good Subarray",
+      "Largest Submatrix With Rearrangements",
+      "Trapping Rain Water II"
+    ],
+    "tags": [
+      "Monotonic Stack"
+    ],
+    "keywords": [
+      "Rectangle in Histogram",
+      "Maximal Rectangle",
+      "Histogram"
+    ]
+  },
+  "deque": {
+    "titles": [
+      "Sliding Window Maximum",
+      "Shortest Subarray with Sum at Least K",
+      "Constrained Subsequence Sum",
+      "Jump Game VI",
+      "Design Circular Deque",
+      "Design Front Middle Back Queue",
+      "Continuous Subarrays",
+      "Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit",
+      "Max Value of Equation",
+      "Shortest Subarray to be Removed to Make Array Sorted",
+      "Sliding Window Median",
+      "Sum of Subarray Minimums"
+    ],
+    "tags": [
+      "Monotonic Queue"
+    ],
+    "keywords": [
+      "Sliding Window Maximum",
+      "Deque",
+      "Constrained Subsequence"
+    ]
+  },
+  "circular-queue": {
+    "titles": [
+      "Design Circular Queue",
+      "Design Circular Deque",
+      "Design Front Middle Back Queue",
+      "Implement Queue using Stacks",
+      "Implement Stack using Queues",
+      "Number of Recent Calls",
+      "Moving Average from Data Stream",
+      "Design Hit Counter",
+      "Design Bounded Blocking Queue",
+      "Design Circular Array",
+      "Circular Queue Implementation"
+    ],
+    "tags": [],
+    "keywords": [
+      "Circular Queue",
+      "Circular Deque",
+      "Queue using",
+      "Front Middle Back"
+    ]
+  },
+  "priority-queue": {
+    "titles": [
+      "Kth Largest Element in an Array",
+      "Kth Largest Element in a Stream",
+      "Top K Frequent Elements",
+      "Top K Frequent Words",
+      "K Closest Points to Origin",
+      "Task Scheduler",
+      "Reorganize String",
+      "Meeting Rooms II",
+      "Find K Pairs with Smallest Sums",
+      "IPO",
+      "Furthest Building You Can Reach",
+      "Single-Threaded CPU",
+      "Ugly Number II",
+      "Minimum Cost to Connect Sticks",
+      "The K Weakest Rows in a Matrix",
+      "Maximum Performance of a Team",
+      "Process Tasks Using Servers"
+    ],
+    "tags": [
+      "Heap (Priority Queue)"
+    ],
+    "keywords": [
+      "Kth Largest",
+      "Top K Frequent",
+      "K Closest",
+      "K Pairs"
+    ]
+  },
+  "merge-list": {
+    "titles": [
+      "Merge Two Sorted Lists",
+      "Merge k Sorted Lists",
+      "Add Two Numbers",
+      "Add Two Numbers II",
+      "Odd Even Linked List",
+      "Partition List",
+      "Reverse Linked List II",
+      "Swap Nodes in Pairs",
+      "Remove Nth Node From End of List",
+      "Sort List",
+      "Insertion Sort List",
+      "Merge Nodes in Between Zeros",
+      "Merge In Between Linked Lists",
+      "Split Linked List in Parts"
+    ],
+    "tags": [],
+    "keywords": [
+      "Merge.*Sorted List",
+      "Linked List",
+      "Two Numbers"
+    ]
+  },
+  "cycle-detection": {
+    "titles": [
+      "Linked List Cycle",
+      "Linked List Cycle II",
+      "Find the Duplicate Number",
+      "Happy Number",
+      "Middle of the Linked List",
+      "Circular Array Loop",
+      "Intersection of Two Linked Lists",
+      "Remove Nth Node From End of List",
+      "Palindrome Linked List",
+      "Reorder List",
+      "Rotate List"
+    ],
+    "tags": [],
+    "keywords": [
+      "Linked List Cycle",
+      "Cycle",
+      "Detect.*Loop"
+    ]
+  },
+  "intersection": {
+    "titles": [
+      "Intersection of Two Linked Lists",
+      "Intersection of Two Arrays",
+      "Intersection of Two Arrays II",
+      "Interval List Intersections",
+      "Linked List Cycle II",
+      "Merge Two Sorted Lists",
+      "Get Intersection Node",
+      "Find the Duplicate Number",
+      "Middle of the Linked List",
+      "Palindrome Linked List"
+    ],
+    "tags": [],
+    "keywords": [
+      "Intersection of Two Linked",
+      "Intersection",
+      "Interval List Intersection"
+    ]
+  },
+  "dummy-node": {
+    "titles": [
+      "Remove Nth Node From End of List",
+      "Merge Two Sorted Lists",
+      "Merge k Sorted Lists",
+      "Partition List",
+      "Reverse Linked List II",
+      "Swap Nodes in Pairs",
+      "Add Two Numbers",
+      "Odd Even Linked List",
+      "Remove Duplicates from Sorted List",
+      "Remove Duplicates from Sorted List II",
+      "Remove Linked List Elements",
+      "Delete Node in a Linked List",
+      "Rotate List",
+      "Reverse Nodes in k-Group"
+    ],
+    "tags": [],
+    "keywords": [
+      "Remove.*Node",
+      "Linked List",
+      "Remove Duplicates from Sorted List"
+    ]
+  },
+  "median-finding": {
+    "titles": [
+      "Find Median from Data Stream",
+      "Sliding Window Median",
+      "Median of Two Sorted Arrays",
+      "Finding MK Average",
+      "Sequentially Ordinal Rank Tracker",
+      "The Number of the Smallest Unoccupied Chair",
+      "Kth Largest Element in a Stream",
+      "IPO",
+      "Find K Pairs with Smallest Sums",
+      "Maximize the Minimum Powered City"
+    ],
+    "tags": [
+      "Data Stream"
+    ],
+    "keywords": [
+      "Median from Data Stream",
+      "Sliding Window Median",
+      "Median"
+    ]
+  },
+  "merge-k-lists": {
+    "titles": [
+      "Merge k Sorted Lists",
+      "Merge Two Sorted Lists",
+      "Smallest Range Covering Elements from K Lists",
+      "Find K Pairs with Smallest Sums",
+      "Kth Smallest Element in a Sorted Matrix",
+      "Ugly Number II",
+      "Super Ugly Number",
+      "Kth Smallest Number in Multiplication Table",
+      "Find K-th Smallest Pair Distance",
+      "Merge Sorted Array",
+      "Kth Smallest Prime Fraction",
+      "Minimum Cost to Connect Sticks"
+    ],
+    "tags": [
+      "Heap (Priority Queue)"
+    ],
+    "keywords": [
+      "Merge k Sorted",
+      "Merge.*Sorted List",
+      "Smallest Range"
+    ]
+  },
+  "min-heap": {
+    "titles": [
+      "Kth Largest Element in an Array",
+      "Kth Largest Element in a Stream",
+      "K Closest Points to Origin",
+      "Find K Pairs with Smallest Sums",
+      "Minimum Cost to Connect Sticks",
+      "Meeting Rooms II",
+      "Merge k Sorted Lists",
+      "Smallest Range Covering Elements from K Lists",
+      "Kth Smallest Element in a Sorted Matrix",
+      "Ugly Number II",
+      "Single-Threaded CPU",
+      "The K Weakest Rows in a Matrix",
+      "Process Tasks Using Servers",
+      "Minimum Number of Refueling Stops"
+    ],
+    "tags": [
+      "Heap (Priority Queue)"
+    ],
+    "keywords": [
+      "Kth Smallest",
+      "K Closest",
+      "Smallest Sums"
+    ]
+  },
+  "max-heap": {
+    "titles": [
+      "Top K Frequent Elements",
+      "Top K Frequent Words",
+      "Task Scheduler",
+      "Reorganize String",
+      "Furthest Building You Can Reach",
+      "IPO",
+      "Maximum Performance of a Team",
+      "Last Stone Weight",
+      "Maximum Number of Events That Can Be Attended II",
+      "Find the Kth Largest Integer in the Array",
+      "Maximal Score After Applying K Operations",
+      "Take Gifts From the Richest Pile",
+      "Most Profit Assigning Work",
+      "Maximum Average Pass Ratio"
+    ],
+    "tags": [
+      "Heap (Priority Queue)"
+    ],
+    "keywords": [
+      "Top K Frequent",
+      "Last Stone Weight",
+      "Kth Largest"
+    ]
+  },
+  "heapify": {
+    "titles": [
+      "Kth Largest Element in an Array",
+      "Last Stone Weight",
+      "Top K Frequent Elements",
+      "K Closest Points to Origin",
+      "Sort Characters By Frequency",
+      "Sort an Array",
+      "Relative Ranks",
+      "Minimum Cost to Connect Sticks",
+      "Find K Pairs with Smallest Sums",
+      "Ugly Number II",
+      "The Kth Factor of n",
+      "Kth Largest Element in a Stream"
+    ],
+    "tags": [
+      "Heap (Priority Queue)"
+    ],
+    "keywords": [
+      "Kth Largest",
+      "Last Stone Weight",
+      "Sort.*Frequency"
+    ]
+  },
+  "tree-dfs": {
+    "titles": [
+      "Binary Tree Inorder Traversal",
+      "Binary Tree Preorder Traversal",
+      "Binary Tree Postorder Traversal",
+      "Path Sum",
+      "Path Sum II",
+      "Path Sum III",
+      "Sum Root to Leaf Numbers",
+      "Maximum Depth of Binary Tree",
+      "Invert Binary Tree",
+      "Flatten Binary Tree to Linked List",
+      "Validate Binary Search Tree",
+      "Count Good Nodes in Binary Tree",
+      "Binary Tree Right Side View",
+      "Symmetric Tree",
+      "Balanced Binary Tree",
+      "Same Tree",
+      "Binary Tree Paths",
+      "Subtree of Another Tree",
+      "Merge Two Binary Trees",
+      "Convert Sorted Array to Binary Search Tree"
+    ],
+    "tags": [
+      "Depth-First Search"
+    ],
+    "keywords": []
+  },
+  "tree-bfs": {
+    "titles": [
+      "Binary Tree Level Order Traversal",
+      "Binary Tree Level Order Traversal II",
+      "Binary Tree Zigzag Level Order Traversal",
+      "Average of Levels in Binary Tree",
+      "Populating Next Right Pointers in Each Node",
+      "Populating Next Right Pointers in Each Node II",
+      "Find Largest Value in Each Tree Row",
+      "Minimum Depth of Binary Tree",
+      "Cousins in Binary Tree",
+      "Cousins in Binary Tree II",
+      "N-ary Tree Level Order Traversal",
+      "Maximum Level Sum of a Binary Tree",
+      "Deepest Leaves Sum",
+      "Add One Row to Tree",
+      "Even Odd Tree",
+      "Sum of Nodes with Even-Valued Grandparent"
+    ],
+    "tags": [
+      "Breadth-First Search"
+    ],
+    "keywords": [
+      "level order"
+    ]
+  },
+  "tree-dp-advanced": {
+    "titles": [
+      "Sum of Distances in Tree",
+      "Binary Tree Cameras",
+      "Distribute Coins in Binary Tree",
+      "Number of Good Leaf Nodes Pairs",
+      "Maximum Product of Splitted Binary Tree",
+      "Minimum Height Trees",
+      "Collect Coins in a Tree",
+      "Minimum Number of Coins for Fruits",
+      "Count Nodes Equal to Average of Subtree",
+      "Maximum Score After Applying Operations on a Tree",
+      "Height of Binary Tree After Subtree Removal Queries",
+      "Number of Ways to Reorder Array to Get Same BST"
+    ],
+    "tags": [],
+    "keywords": [
+      "distances in tree"
+    ]
+  },
+  "dictionary": {
+    "titles": [
+      "Design Add and Search Words Data Structure",
+      "Add and Search Word - Data structure design",
+      "Longest Word in Dictionary",
+      "Longest Word in Dictionary through Deleting",
+      "Replace Words",
+      "Word Break",
+      "Word Break II",
+      "Concatenated Words",
+      "Implement Magic Dictionary",
+      "Prefix and Suffix Search",
+      "Index Pairs of a String",
+      "Short Encoding of Words"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bdictionary\\b"
+    ]
+  },
+  "auto-complete": {
+    "titles": [
+      "Search Suggestions System",
+      "Design Search Autocomplete System",
+      "Stream of Characters",
+      "Map Sum Pairs",
+      "Prefix and Suffix Search",
+      "Replace Words",
+      "Implement Magic Dictionary",
+      "Longest Word in Dictionary",
+      "Palindrome Pairs",
+      "Word Filter"
+    ],
+    "tags": [],
+    "keywords": [
+      "autocomplete|auto-complete|search suggestion"
+    ]
+  },
+  "bit-trie": {
+    "titles": [
+      "Maximum XOR of Two Numbers in an Array",
+      "Maximum XOR With an Element From Array",
+      "Count Pairs With XOR in a Range",
+      "Maximum Genetic Difference Query",
+      "Maximum Strong Pair XOR II",
+      "Find the Maximum Length of a Good Subsequence II"
+    ],
+    "tags": [],
+    "keywords": [
+      "maximum xor|max xor|xor .*(range|queries)"
+    ]
+  },
+  "string-trie": {
+    "titles": [
+      "Implement Trie (Prefix Tree)",
+      "Implement Trie II (Prefix Tree)",
+      "Word Search II",
+      "Replace Words",
+      "Search Suggestions System",
+      "Stream of Characters",
+      "Concatenated Words",
+      "Palindrome Pairs",
+      "Prefix and Suffix Search",
+      "Short Encoding of Words",
+      "Camelcase Matching",
+      "Design File System",
+      "Maximum XOR of Two Numbers in an Array",
+      "Word Break II"
+    ],
+    "tags": [
+      "Trie"
+    ],
+    "keywords": [
+      "\\btrie\\b"
+    ]
+  },
+  "bellman-ford": {
+    "titles": [
+      "Cheapest Flights Within K Stops",
+      "Network Delay Time",
+      "Find the City With the Smallest Number of Neighbors at a Threshold Distance",
+      "Path with Maximum Probability",
+      "Course Schedule IV",
+      "Second Minimum Time to Reach Destination",
+      "Number of Ways to Arrive at Destination",
+      "Minimum Cost to Make at Least One Valid Path in a Grid",
+      "Path With Minimum Effort",
+      "Minimum Cost to Reach Destination in Time",
+      "Design Graph With Shortest Path Calculator",
+      "Modify Graph Edge Weights",
+      "Shortest Path Visiting All Nodes",
+      "Minimum Weighted Subgraph With the Required Paths",
+      "Reachable Nodes In Subdivided Graph"
+    ],
+    "tags": [
+      "shortest paths"
+    ],
+    "keywords": [
+      "cheapest flight",
+      "network delay"
+    ]
+  },
+  "floyd-warshall": {
+    "titles": [
+      "Find the City With the Smallest Number of Neighbors at a Threshold Distance",
+      "Network Delay Time",
+      "Cheapest Flights Within K Stops",
+      "Course Schedule IV",
+      "Path with Maximum Probability",
+      "Second Minimum Time to Reach Destination",
+      "Count Subtrees With Max Distance Between Cities",
+      "Minimum Cost to Convert String I",
+      "Minimum Cost to Convert String II",
+      "Design Graph With Shortest Path Calculator",
+      "Number of Ways to Arrive at Destination"
+    ],
+    "tags": [
+      "shortest paths"
+    ],
+    "keywords": [
+      "threshold distance"
+    ]
+  },
+  "prim": {
+    "titles": [
+      "Min Cost to Connect All Points",
+      "Connecting Cities With Minimum Cost",
+      "Optimize Water Distribution in a Village",
+      "Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree",
+      "Minimum Cost to Connect Two Groups of Points",
+      "Checking Existence of Edge Length Limited Paths",
+      "Remove Max Number of Edges to Keep Graph Fully Traversable"
+    ],
+    "tags": [],
+    "keywords": [
+      "spanning tree",
+      "connect all points",
+      "connecting cities",
+      "water distribution"
+    ]
+  },
+  "kruskal": {
+    "titles": [
+      "Min Cost to Connect All Points",
+      "Connecting Cities With Minimum Cost",
+      "Optimize Water Distribution in a Village",
+      "Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree",
+      "Checking Existence of Edge Length Limited Paths",
+      "Remove Max Number of Edges to Keep Graph Fully Traversable",
+      "Minimum Cost to Connect Two Groups of Points"
+    ],
+    "tags": [],
+    "keywords": [
+      "spanning tree",
+      "connect all points",
+      "connecting cities",
+      "edge length limited"
+    ]
+  },
+  "mst": {
+    "titles": [
+      "Min Cost to Connect All Points",
+      "Connecting Cities With Minimum Cost",
+      "Optimize Water Distribution in a Village",
+      "Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree",
+      "Checking Existence of Edge Length Limited Paths",
+      "Remove Max Number of Edges to Keep Graph Fully Traversable",
+      "Minimum Cost to Connect Two Groups of Points"
+    ],
+    "tags": [],
+    "keywords": [
+      "spanning tree",
+      "minimum spanning",
+      "connect all points",
+      "connecting cities"
+    ]
+  },
+  "bridge": {
+    "titles": [
+      "Critical Connections in a Network",
+      "Minimum Number of Days to Disconnect Island"
+    ],
+    "tags": [],
+    "keywords": [
+      "critical connection"
+    ]
+  },
+  "articulation-point": {
+    "titles": [
+      "Critical Connections in a Network",
+      "Minimum Number of Days to Disconnect Island"
+    ],
+    "tags": [],
+    "keywords": [
+      "critical connection"
+    ]
+  },
+  "scc": {
+    "titles": [
+      "Critical Connections in a Network",
+      "Course Schedule",
+      "Course Schedule II",
+      "Find Eventual Safe States",
+      "Minimum Number of Days to Disconnect Island",
+      "Strange Printer II"
+    ],
+    "tags": [],
+    "keywords": [
+      "strongly connected",
+      "eventual safe"
+    ]
+  },
+  "euler-tour": {
+    "titles": [
+      "Reconstruct Itinerary",
+      "Valid Arrangement of Pairs",
+      "Cracking the Safe"
+    ],
+    "tags": [],
+    "keywords": [
+      "eulerian",
+      "\\beuler",
+      "reconstruct itinerary",
+      "valid arrangement of pairs"
+    ]
+  },
+  "1d-dp": {
+    "titles": [
+      "Climbing Stairs",
+      "House Robber",
+      "House Robber II",
+      "House Robber III",
+      "Min Cost Climbing Stairs",
+      "Fibonacci Number",
+      "N-th Tribonacci Number",
+      "Decode Ways",
+      "Decode Ways II",
+      "Word Break",
+      "Word Break II",
+      "Maximum Subarray",
+      "Maximum Product Subarray",
+      "Jump Game",
+      "Jump Game II",
+      "Longest Increasing Subsequence",
+      "Coin Change",
+      "Delete and Earn",
+      "Best Time to Buy and Sell Stock with Cooldown",
+      "Wiggle Subsequence",
+      "Maximum Alternating Subsequence Sum",
+      "Count Ways To Build Good Strings"
+    ],
+    "tags": [],
+    "keywords": [
+      "climbing stairs",
+      "house robber",
+      "decode ways",
+      "min cost climbing"
+    ]
+  },
+  "2d-dp": {
+    "titles": [
+      "Unique Paths",
+      "Unique Paths II",
+      "Unique Paths III",
+      "Minimum Path Sum",
+      "Triangle",
+      "Maximal Square",
+      "Dungeon Game",
+      "Minimum Falling Path Sum",
+      "Minimum Falling Path Sum II",
+      "Edit Distance",
+      "Interleaving String",
+      "Distinct Subsequences",
+      "Longest Common Subsequence",
+      "Maximal Rectangle",
+      "Ones and Zeroes",
+      "Cherry Pickup",
+      "Cherry Pickup II",
+      "Count Square Submatrices with All Ones",
+      "Number of Paths with Max Score",
+      "Where Will the Ball Fall"
+    ],
+    "tags": [],
+    "keywords": [
+      "unique paths",
+      "path sum",
+      "falling path"
+    ]
+  },
+  "grid-dp": {
+    "titles": [
+      "Unique Paths",
+      "Unique Paths II",
+      "Unique Paths III",
+      "Minimum Path Sum",
+      "Triangle",
+      "Maximal Square",
+      "Dungeon Game",
+      "Cherry Pickup",
+      "Cherry Pickup II",
+      "Number of Paths with Max Score",
+      "Minimum Falling Path Sum",
+      "Minimum Falling Path Sum II",
+      "Where Will the Ball Fall",
+      "Path with Maximum Gold",
+      "Count Square Submatrices with All Ones",
+      "Maximal Rectangle",
+      "Minimum Path Cost in a Grid",
+      "Minimum Cost to Make at Least One Valid Path in a Grid",
+      "Number of Ways to Divide a Long Corridor",
+      "Paths in Matrix Whose Sum Is Divisible by K"
+    ],
+    "tags": [],
+    "keywords": [
+      "min(imum)? path sum",
+      "falling path",
+      "path with maximum gold",
+      "cherry pickup"
+    ]
+  },
+  "lis": {
+    "titles": [
+      "Longest Increasing Subsequence",
+      "Longest Increasing Subsequence II",
+      "Russian Doll Envelopes",
+      "Number of Longest Increasing Subsequence",
+      "Maximum Length of Pair Chain",
+      "Largest Divisible Subset",
+      "Make Array Strictly Increasing",
+      "Minimum Number of Removals to Make Mountain Array",
+      "Longest Continuous Increasing Subsequence",
+      "Longest Arithmetic Subsequence",
+      "Longest Arithmetic Subsequence of Given Difference",
+      "Maximum Number of Events That Can Be Attended II",
+      "Delete Columns to Make Sorted III",
+      "Best Team With No Conflicts",
+      "Find the Longest Valid Obstacle Course at Each Position",
+      "Longest String Chain"
+    ],
+    "tags": [],
+    "keywords": [
+      "longest.*increasing subsequence",
+      "russian doll",
+      "longest.*arithmetic subsequence"
+    ]
+  },
+  "lcs": {
+    "titles": [
+      "Longest Common Subsequence",
+      "Longest Palindromic Subsequence",
+      "Edit Distance",
+      "Distinct Subsequences",
+      "Shortest Common Supersequence",
+      "Delete Operation for Two Strings",
+      "Uncrossed Lines",
+      "Minimum ASCII Delete Sum for Two Strings",
+      "Interleaving String",
+      "Longest Palindromic Substring",
+      "Longest Common Subpath",
+      "Maximum Number of Non-Overlapping Palindrome Substrings",
+      "Minimum Insertion Steps to Make a String Palindrome",
+      "Wildcard Matching",
+      "Regular Expression Matching",
+      "One Edit Distance"
+    ],
+    "tags": [],
+    "keywords": [
+      "common subsequence",
+      "common supersequence",
+      "edit distance",
+      "delete sum for two strings"
+    ]
+  },
+  "knapsack": {
+    "titles": [
+      "Partition Equal Subset Sum",
+      "Target Sum",
+      "Coin Change",
+      "Coin Change II",
+      "Last Stone Weight II",
+      "Ones and Zeroes",
+      "Combination Sum IV",
+      "Perfect Squares",
+      "Number of Dice Rolls With Target Sum",
+      "Profitable Schemes",
+      "Partition to K Equal Sum Subsets",
+      "Minimum Cost For Tickets",
+      "Form Largest Integer With Digits That Add up to Target",
+      "Tallest Billboard",
+      "Number of Ways to Earn Points",
+      "Count of Sub-Multisets With Bounded Sum"
+    ],
+    "tags": [],
+    "keywords": [
+      "coin change",
+      "subset sum",
+      "target sum",
+      "perfect squares"
+    ]
+  },
+  "interval-dp": {
+    "titles": [
+      "Burst Balloons",
+      "Minimum Cost to Merge Stones",
+      "Remove Boxes",
+      "Strange Printer",
+      "Palindrome Partitioning II",
+      "Minimum Score Triangulation of Polygon",
+      "Guess Number Higher or Lower II",
+      "Predict the Winner",
+      "Stone Game",
+      "Stone Game II",
+      "Stone Game III",
+      "Stone Game V",
+      "Stone Game VII",
+      "Minimum Cost Tree From Leaf Values",
+      "Print Words Vertically",
+      "Palindrome Partitioning III"
+    ],
+    "tags": [],
+    "keywords": [
+      "burst balloons",
+      "merge stones",
+      "stone game",
+      "triangulation of polygon"
+    ]
+  },
+  "optimization-dp": {
+    "titles": [
+      "Best Time to Buy and Sell Stock III",
+      "Best Time to Buy and Sell Stock IV",
+      "Best Time to Buy and Sell Stock with Cooldown",
+      "Best Time to Buy and Sell Stock with Transaction Fee",
+      "Paint House",
+      "Paint House II",
+      "Paint House III",
+      "Minimum Difficulty of a Job Schedule",
+      "Partition Array for Maximum Sum",
+      "Largest Sum of Averages",
+      "Maximum Profit in Job Scheduling",
+      "Minimum Cost to Cut a Stick",
+      "Allocate Mailboxes",
+      "Divide Chocolate",
+      "Capacity To Ship Packages Within D Days",
+      "Split Array Largest Sum"
+    ],
+    "tags": [],
+    "keywords": [
+      "buy and sell stock",
+      "paint house",
+      "job schedul",
+      "split array largest sum"
+    ]
+  },
+  "interval-scheduling": {
+    "titles": [
+      "Non-overlapping Intervals",
+      "Merge Intervals",
+      "Insert Interval",
+      "Minimum Number of Arrows to Burst Balloons",
+      "Meeting Rooms",
+      "Meeting Rooms II",
+      "Meeting Rooms III",
+      "Maximum Length of Pair Chain",
+      "Car Pooling",
+      "Maximum Number of Events That Can Be Attended",
+      "Maximum Number of Events That Can Be Attended II",
+      "Remove Covered Intervals",
+      "Interval List Intersections",
+      "My Calendar I",
+      "My Calendar II",
+      "Course Schedule III"
+    ],
+    "tags": [],
+    "keywords": [
+      "non-overlapping intervals",
+      "merge intervals",
+      "meeting rooms",
+      "burst balloons"
+    ]
+  },
+  "activity-selection": {
+    "titles": [
+      "Non-overlapping Intervals",
+      "Maximum Number of Events That Can Be Attended",
+      "Maximum Number of Events That Can Be Attended II",
+      "Meeting Rooms",
+      "Meeting Rooms II",
+      "Minimum Number of Arrows to Burst Balloons",
+      "Maximum Length of Pair Chain",
+      "Course Schedule III",
+      "Maximum Profit in Job Scheduling",
+      "Two City Scheduling",
+      "Task Scheduler",
+      "Reveal Cards In Increasing Order",
+      "Remove Covered Intervals",
+      "Minimum Number of Taps to Open to Water a Garden",
+      "Video Stitching",
+      "Maximum Number of Non-Overlapping Substrings"
+    ],
+    "tags": [],
+    "keywords": [
+      "events that can be attended",
+      "job scheduling",
+      "minimum number of taps",
+      "video stitching"
+    ]
+  },
+  "sorting-greedy": {
+    "titles": [
+      "Assign Cookies",
+      "Two City Scheduling",
+      "Boats to Save People",
+      "Minimum Cost to Hire K Workers",
+      "Queue Reconstruction by Height",
+      "Task Scheduler",
+      "Car Pooling",
+      "Reduce Array Size to The Half",
+      "Maximum Units on a Truck",
+      "Minimum Deletions to Make Character Frequencies Unique",
+      "Most Profit Assigning Work",
+      "Advantage Shuffle",
+      "Largest Number",
+      "Wiggle Sort II",
+      "Minimum Cost to Connect Sticks",
+      "Split Array into Consecutive Subsequences"
+    ],
+    "tags": [],
+    "keywords": [
+      "assign cookies",
+      "boats to save people",
+      "two city scheduling",
+      "hire k workers"
+    ]
+  },
+  "exchange-argument": {
+    "titles": [
+      "Largest Number",
+      "Minimum Cost to Hire K Workers",
+      "Queue Reconstruction by Height",
+      "Two City Scheduling",
+      "Boats to Save People",
+      "Reorganize String",
+      "Distant Barcodes",
+      "Maximum Number of Weeks for Which You Can Work",
+      "Minimum Cost to Connect Sticks",
+      "Remove K Digits",
+      "Remove Duplicate Letters",
+      "Smallest Subsequence of Distinct Characters",
+      "Create Maximum Number",
+      "Minimum Number of Refueling Stops",
+      "Maximum Performance of a Team",
+      "IPO"
+    ],
+    "tags": [],
+    "keywords": [
+      "queue reconstruction",
+      "remove k digits",
+      "reorganize string",
+      "refueling stops"
+    ]
+  },
+  "fractional-knapsack": {
+    "titles": [
+      "Maximum Units on a Truck",
+      "Minimum Cost to Hire K Workers",
+      "IPO",
+      "Most Profit Assigning Work",
+      "Advantage Shuffle",
+      "Gas Station",
+      "Boats to Save People",
+      "Minimum Number of Refueling Stops",
+      "Maximum Performance of a Team",
+      "Best Time to Buy and Sell Stock II",
+      "Container With Most Water",
+      "Assign Cookies",
+      "Maximum Bags With Full Capacity of Rocks",
+      "Maximize the Topmost Element After K Moves",
+      "Furthest Building You Can Reach",
+      "Minimum Cost to Fill Given Weight of a Truck"
+    ],
+    "tags": [],
+    "keywords": [
+      "fractional knapsack",
+      "maximum units on a truck",
+      "furthest building you can reach"
+    ]
+  },
+  "branch-and-bound": {
+    "titles": [
+      "Optimal Account Balancing",
+      "Split Array With Same Average",
+      "Matchsticks to Square",
+      "Partition to K Equal Sum Subsets",
+      "Maximum Score Words Formed by Letters",
+      "The Number of Beautiful Subsets",
+      "Maximum Compatibility Score Sum",
+      "Minimum Incompatibility",
+      "Fair Distribution of Cookies",
+      "Maximum Good People Based on Statements",
+      "Closest Subsequence Sum",
+      "Partition Array Into Two Arrays to Minimize Sum Difference",
+      "Find Minimum Time to Finish All Jobs",
+      "Distribute Repeating Integers"
+    ],
+    "tags": [],
+    "keywords": [
+      "matchsticks to square",
+      "equal sum subsets",
+      "fair distribution of cookies"
+    ]
+  },
+  "tail-recursion": {
+    "titles": [
+      "Pow(x, n)",
+      "Factorial Trailing Zeroes",
+      "Sum of Digits in the Minimum Number",
+      "Add Digits",
+      "Sqrt(x)",
+      "Power of Two",
+      "Power of Three",
+      "Power of Four",
+      "Reverse Integer",
+      "Fibonacci Number",
+      "N-th Tribonacci Number",
+      "Elimination Game"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bpow\\(x",
+      "factorial trailing zeroes",
+      "power of (two|three|four)"
+    ]
+  },
+  "lcm": {
+    "titles": [
+      "Find Greatest Common Divisor of Array",
+      "Greatest Common Divisor of Strings",
+      "Nth Magical Number",
+      "Ugly Number",
+      "Ugly Number II",
+      "Ugly Number III",
+      "Number of Common Factors",
+      "Count Common Words With One Occurrence",
+      "Smallest Value of the Rearranged Number",
+      "GCD Sort of an Array",
+      "Replace Non-Coprime Numbers in Array",
+      "Three Divisors",
+      "Four Divisors",
+      "The kth Factor of n",
+      "Closest Divisors",
+      "Count Array Pairs Divisible by K",
+      "Water and Jug Problem",
+      "Simplified Fractions",
+      "Consecutive Numbers Sum",
+      "X of a Kind in a Deck of Cards"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\b(gcd|lcm)\\b",
+      "\\bgreatest common divisor\\b",
+      "\\bcommon (factor|divisor)s?\\b",
+      "\\bcoprime\\b"
+    ]
+  },
+  "power": {
+    "titles": [
+      "Pow(x, n)",
+      "Super Pow",
+      "Count Good Numbers",
+      "Power of Two",
+      "Power of Three",
+      "Power of Four",
+      "Reordered Power of 2",
+      "Powerful Integers",
+      "Valid Perfect Square",
+      "Perfect Squares",
+      "Sqrt(x)",
+      "Sum of Square Numbers",
+      "Nth Magical Number",
+      "Bulb Switcher",
+      "Detect Squares",
+      "Clumsy Factorial",
+      "Maximum 69 Number",
+      "Number of Digit One"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bpow\\b|power of",
+      "\\bsuper pow\\b",
+      "\\bmodular exponentiation\\b",
+      "\\bperfect square\\b"
+    ]
+  },
+  "expected-value": {
+    "titles": [
+      "Soup Servings",
+      "New 21 Game",
+      "Airplane Seat Assignment Probability",
+      "Knight Probability in Chessboard",
+      "Probability of a Two Boxes Having The Same Number of Distinct Balls",
+      "Toss Strange Coins",
+      "Statistics from a Large Sample",
+      "Number of Dice Rolls With Target Sum",
+      "Dice Roll Simulation",
+      "Random Point in Non-overlapping Rectangles",
+      "Generate Random Point in a Circle",
+      "Implement Rand10() Using Rand7()",
+      "Random Pick with Weight",
+      "Random Pick with Blacklist"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bprobabilit(y|ies)\\b",
+      "\\bexpected (value|number|cost)\\b",
+      "\\bdice\\b"
+    ]
+  },
+  "matrix-exponentiation": {
+    "titles": [
+      "Fibonacci Number",
+      "N-th Tribonacci Number",
+      "Climbing Stairs",
+      "Count Vowels Permutation",
+      "Student Attendance Record II",
+      "Knight Dialer",
+      "Domino and Tromino Tiling",
+      "Count Ways To Build Good Strings",
+      "Number of Ways to Stay in the Same Place After Some Steps",
+      "Count Number of Texts",
+      "Number of Music Playlists",
+      "Count Sorted Vowel Strings",
+      "Tiling a Rectangle with the Fewest Squares",
+      "Length of Longest Fibonacci Subsequence"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bmatrix exponentiation\\b",
+      "\\bfibonacci\\b",
+      "\\btribonacci\\b"
+    ]
+  },
+  "and-or": {
+    "titles": [
+      "Bitwise AND of Numbers Range",
+      "Single Number",
+      "Single Number II",
+      "Single Number III",
+      "Counting Bits",
+      "Sum of Two Integers",
+      "Number Complement",
+      "Maximum XOR of Two Numbers in an Array",
+      "Minimum Flips to Make a OR b Equal to c",
+      "Bitwise ORs of Subarrays",
+      "Find XOR Sum of All Pairs Bitwise AND",
+      "XOR Operation in an Array",
+      "Decode XORed Array",
+      "Decode XORed Permutation",
+      "Concatenation of Consecutive Binary Numbers",
+      "Count Triplets That Can Form Two Arrays of Equal XOR",
+      "Minimum Number of K Consecutive Bit Flips",
+      "Bitwise OR of Adjacent Elements"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bbitwise\\b",
+      "\\bcounting bits\\b"
+    ]
+  },
+  "subset-enumeration": {
+    "titles": [
+      "Subsets",
+      "Subsets II",
+      "Partition to K Equal Sum Subsets",
+      "Beautiful Arrangement",
+      "Maximum Students Taking Exam",
+      "Smallest Sufficient Team",
+      "Number of Ways to Wear Different Hats to Each Other",
+      "Combination Sum",
+      "Combination Sum II",
+      "Combinations",
+      "Fair Distribution of Cookies",
+      "Maximum Rows Covered by Columns",
+      "Minimum Cost to Connect Two Groups of Points",
+      "Find the Shortest Superstring",
+      "Maximum AND Sum of Array",
+      "Distribute Repeating Integers",
+      "Partition Array Into Two Arrays to Minimize Sum Difference",
+      "The Number of Good Subsets",
+      "Matchsticks to Square",
+      "Parallel Courses II"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\ball subsets\\b",
+      "\\bsubmask\\b",
+      "\\bbitmask\\b"
+    ]
+  },
+  "orientation": {
+    "titles": [
+      "Max Points on a Line",
+      "Erect the Fence",
+      "Check If It Is a Straight Line",
+      "Valid Boomerang",
+      "Number of Boomerangs",
+      "Largest Triangle Area",
+      "Minimum Area Rectangle",
+      "Minimum Area Rectangle II",
+      "Minimum Time Visiting All Points",
+      "Robot Bounded In Circle"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bstraight line\\b",
+      "\\bcollinear\\b",
+      "\\bboomerang\\b",
+      "\\bconvex hull\\b"
+    ]
+  },
+  "polygon": {
+    "titles": [
+      "Erect the Fence",
+      "Largest Triangle Area",
+      "Minimum Area Rectangle",
+      "Minimum Area Rectangle II",
+      "Rectangle Area",
+      "Rectangle Area II",
+      "Number of Corner Rectangles",
+      "Perfect Rectangle",
+      "Rectangle Overlap",
+      "Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts",
+      "Minimum Cuts to Divide a Circle",
+      "Detect Squares"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bconvex hull\\b",
+      "\\bpolygon\\b",
+      "\\brectangle area\\b",
+      "\\btriangle area\\b"
+    ]
+  },
+  "distance": {
+    "titles": [
+      "K Closest Points to Origin",
+      "Queries on Number of Points Inside a Circle",
+      "Number of Boomerangs",
+      "Minimum Time Visiting All Points",
+      "Max Points on a Line",
+      "Valid Boomerang",
+      "Check If It Is a Straight Line",
+      "Shortest Distance to a Character",
+      "Maximum Distance Between a Pair of Values",
+      "Campus Bikes",
+      "Campus Bikes II",
+      "Count Number of Pairs With Absolute Difference K",
+      "Find the City With the Smallest Number of Neighbors at a Threshold Distance"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\beuclidean\\b",
+      "\\bmanhattan distance\\b",
+      "\\bclosest points?\\b",
+      "\\bnearest point\\b"
+    ]
+  },
+  "z-algorithm": {
+    "titles": [
+      "Implement strStr()",
+      "Find the Index of the First Occurrence in a String",
+      "Repeated Substring Pattern",
+      "Longest Happy Prefix",
+      "Shortest Palindrome",
+      "Distinct Echo Substrings",
+      "Sum of Scores of Built Strings",
+      "Find Beautiful Indices in the Given Array I",
+      "Find Beautiful Indices in the Given Array II",
+      "Longest Duplicate Substring",
+      "Find All Anagrams in a String",
+      "String Matching in an Array",
+      "Number of Subarrays That Match a Pattern I",
+      "Number of Subarrays That Match a Pattern II",
+      "Maximum Deletions on a String",
+      "Find the Occurrence of First Almost Equal Substring"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bz[- ]?function\\b|\\bz[- ]?algorithm\\b",
+      "\\bprefix function\\b|\\bkmp\\b",
+      "\\bhappy prefix\\b",
+      "\\bstrstr\\b"
+    ]
+  },
+  "rabin-karp": {
+    "titles": [
+      "Implement strStr()",
+      "Find the Index of the First Occurrence in a String",
+      "Repeated Substring Pattern",
+      "Longest Happy Prefix",
+      "Shortest Palindrome",
+      "Distinct Echo Substrings",
+      "Longest Duplicate Substring",
+      "Repeated DNA Sequences",
+      "Longest Common Subpath",
+      "String Matching in an Array",
+      "Substring with Concatenation of All Words",
+      "Find Substring With Given Hash Value",
+      "Check If String Is a Prefix of Array",
+      "Find Beautiful Indices in the Given Array II",
+      "Count Substrings That Differ by One Character"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\brabin[- ]?karp\\b",
+      "\\brolling hash\\b",
+      "\\bhash value\\b",
+      "\\brepeated dna\\b"
+    ]
+  },
+  "suffix-automaton": {
+    "titles": [
+      "Longest Duplicate Substring",
+      "Distinct Echo Substrings",
+      "Longest Common Subpath",
+      "Sum of Scores of Built Strings",
+      "Number of Distinct Substrings in a String",
+      "Longest Repeating Substring",
+      "Count Different Palindromic Subsequences",
+      "Total Appeal of A String",
+      "Number of Matching Subsequences",
+      "Longest Common Subsequence Between Sorted Arrays",
+      "Substring with Concatenation of All Words"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bsuffix (automaton|array|tree)\\b",
+      "\\bdistinct substrings?\\b",
+      "\\bnumber of distinct substrings\\b"
+    ]
+  },
+  "simulation-misc": {
+    "titles": [
+      "Spiral Matrix",
+      "Spiral Matrix II",
+      "Spiral Matrix III",
+      "Spiral Matrix IV",
+      "Game of Life",
+      "Robot Bounded In Circle",
+      "Walking Robot Simulation",
+      "Rotate Image",
+      "Zigzag Conversion",
+      "Set Matrix Zeroes",
+      "Design Snake Game",
+      "Robot Return to Origin",
+      "Teemo Attacking",
+      "Diagonal Traverse",
+      "Robot Collisions",
+      "Asteroid Collision",
+      "Candy Crush",
+      "Shift 2D Grid"
+    ],
+    "tags": [
+      "Simulation"
+    ],
+    "keywords": [
+      "\\bspiral\\b",
+      "\\bsimulat",
+      "\\brobot\\b"
+    ]
+  },
+  "randomization": {
+    "titles": [
+      "Insert Delete GetRandom O(1)",
+      "Insert Delete GetRandom O(1) - Duplicates allowed",
+      "Random Pick with Weight",
+      "Random Pick Index",
+      "Shuffle an Array",
+      "Linked List Random Node",
+      "Implement Rand10() Using Rand7()",
+      "Random Pick with Blacklist",
+      "Random Point in Non-overlapping Rectangles",
+      "Generate Random Point in a Circle",
+      "Random Flip Matrix",
+      "Design Skiplist",
+      "Kth Largest Element in a Stream",
+      "Find Median from Data Stream"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\brandom(ized|ly)?\\b",
+      "\\bshuffle\\b",
+      "\\breservoir\\b",
+      "\\bgetrandom\\b"
+    ]
+  }
+}

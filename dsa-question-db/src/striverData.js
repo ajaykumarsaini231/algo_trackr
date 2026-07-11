@@ -1,0 +1,315 @@
+// Striver A2Z DSA Sheet mapping.
+//
+// WHAT IS AUTHORITATIVE HERE:
+//   - The 18-step structure & step titles (STRIVER_STEPS) are stable public facts.
+//   - The SEED below maps A2Z problems that ARE LeetCode problems to their step/subtopic,
+//     by LeetCode slug. Only slugs verified with high confidence are included.
+//
+// WHAT WE DO NOT DO:
+//   - We do NOT encode per-problem difficulty/tags here — those are inherited from the
+//     fetched, official LeetCode record, so they are never guessed.
+//   - Many A2Z items are GeeksforGeeks/CodingNinjas-only (basics, sorting internals,
+//     some LL/graph problems). Those are not LeetCode slugs and are intentionally omitted
+//     from the seed. To ingest the COMPLETE 455-problem sheet (incl. non-LeetCode items),
+//     set STRIVER_SHEET_URL to a JSON mirror; buildDataset will merge it.
+//
+// "striverOrder" is a global monotonic index reflecting the sheet's learning progression.
+
+export const STRIVER_STEPS = [
+  { stepNo: 1, step: "Learn the Basics" },
+  { stepNo: 2, step: "Learn Important Sorting Techniques" },
+  { stepNo: 3, step: "Solve Problems on Arrays" },
+  { stepNo: 4, step: "Binary Search" },
+  { stepNo: 5, step: "Strings" },
+  { stepNo: 6, step: "Learn LinkedList" },
+  { stepNo: 7, step: "Recursion" },
+  { stepNo: 8, step: "Bit Manipulation" },
+  { stepNo: 9, step: "Stack and Queues" },
+  { stepNo: 10, step: "Sliding Window & Two Pointer" },
+  { stepNo: 11, step: "Heaps" },
+  { stepNo: 12, step: "Greedy Algorithms" },
+  { stepNo: 13, step: "Binary Trees" },
+  { stepNo: 14, step: "Binary Search Trees" },
+  { stepNo: 15, step: "Graphs" },
+  { stepNo: 16, step: "Dynamic Programming" },
+  { stepNo: 17, step: "Tries" },
+  { stepNo: 18, step: "Strings (Advanced Algorithms)" },
+];
+
+const STEP_TITLE = Object.fromEntries(STRIVER_STEPS.map((s) => [s.stepNo, s.step]));
+
+// [stepNo, subtopic, leetcodeSlug]
+const SEED = [
+  // Step 3 — Arrays
+  [3, "Arrays [Easy]", "two-sum"],
+  [3, "Arrays [Easy]", "best-time-to-buy-and-sell-stock"],
+  [3, "Arrays [Easy]", "remove-duplicates-from-sorted-array"],
+  [3, "Arrays [Easy]", "rotate-array"],
+  [3, "Arrays [Easy]", "move-zeroes"],
+  [3, "Arrays [Easy]", "majority-element"],
+  [3, "Arrays [Easy]", "maximum-subarray"],
+  [3, "Arrays [Easy]", "single-number"],
+  [3, "Arrays [Medium]", "sort-colors"],
+  [3, "Arrays [Medium]", "next-permutation"],
+  [3, "Arrays [Medium]", "set-matrix-zeroes"],
+  [3, "Arrays [Medium]", "rotate-image"],
+  [3, "Arrays [Medium]", "spiral-matrix"],
+  [3, "Arrays [Medium]", "pascals-triangle"],
+  [3, "Arrays [Medium]", "merge-intervals"],
+  [3, "Arrays [Medium]", "merge-sorted-array"],
+  [3, "Arrays [Medium]", "find-the-duplicate-number"],
+  [3, "Arrays [Medium]", "best-time-to-buy-and-sell-stock-ii"],
+  [3, "Arrays [Medium]", "majority-element-ii"],
+  [3, "Arrays [Medium]", "3sum"],
+  [3, "Arrays [Medium]", "4sum"],
+  [3, "Arrays [Medium]", "maximum-product-subarray"],
+  [3, "Arrays [Medium]", "subarray-sum-equals-k"],
+  [3, "Arrays [Medium]", "longest-consecutive-sequence"],
+  [3, "Arrays [Hard]", "reverse-pairs"],
+
+  // Step 4 — Binary Search
+  [4, "BS on 1D Arrays", "binary-search"],
+  [4, "BS on 1D Arrays", "search-insert-position"],
+  [4, "BS on 1D Arrays", "find-first-and-last-position-of-element-in-sorted-array"],
+  [4, "BS on 1D Arrays", "search-in-rotated-sorted-array"],
+  [4, "BS on 1D Arrays", "search-in-rotated-sorted-array-ii"],
+  [4, "BS on 1D Arrays", "find-minimum-in-rotated-sorted-array"],
+  [4, "BS on 1D Arrays", "single-element-in-a-sorted-array"],
+  [4, "BS on 1D Arrays", "find-peak-element"],
+  [4, "BS on Answers", "sqrtx"],
+  [4, "BS on Answers", "koko-eating-bananas"],
+  [4, "BS on Answers", "capacity-to-ship-packages-within-d-days"],
+  [4, "BS on Answers", "split-array-largest-sum"],
+  [4, "BS on Answers", "find-the-smallest-divisor-given-a-threshold"],
+  [4, "BS on Answers", "kth-missing-positive-number"],
+  [4, "BS on 2D Arrays", "search-a-2d-matrix"],
+  [4, "BS on 2D Arrays", "search-a-2d-matrix-ii"],
+  [4, "BS on 2D Arrays", "find-a-peak-element-ii"],
+  [4, "Hard", "median-of-two-sorted-arrays"],
+
+  // Step 5 — Strings
+  [5, "Strings [Easy]", "reverse-words-in-a-string"],
+  [5, "Strings [Easy]", "longest-common-prefix"],
+  [5, "Strings [Easy]", "isomorphic-strings"],
+  [5, "Strings [Easy]", "rotate-string"],
+  [5, "Strings [Easy]", "valid-anagram"],
+  [5, "Strings [Medium]", "sort-characters-by-frequency"],
+  [5, "Strings [Medium]", "roman-to-integer"],
+  [5, "Strings [Medium]", "string-to-integer-atoi"],
+  [5, "Strings [Medium]", "find-the-index-of-the-first-occurrence-in-a-string"],
+  [5, "Strings [Medium]", "longest-palindromic-substring"],
+
+  // Step 6 — Linked List
+  [6, "Singly LL", "middle-of-the-linked-list"],
+  [6, "Singly LL", "reverse-linked-list"],
+  [6, "Singly LL", "linked-list-cycle"],
+  [6, "Singly LL", "linked-list-cycle-ii"],
+  [6, "Singly LL", "palindrome-linked-list"],
+  [6, "Singly LL", "intersection-of-two-linked-lists"],
+  [6, "Medium LL", "add-two-numbers"],
+  [6, "Medium LL", "remove-nth-node-from-end-of-list"],
+  [6, "Medium LL", "sort-list"],
+  [6, "Medium LL", "rotate-list"],
+  [6, "Medium LL", "delete-node-in-a-linked-list"],
+  [6, "Medium LL", "merge-two-sorted-lists"],
+  [6, "Hard LL", "reverse-nodes-in-k-group"],
+  [6, "Hard LL", "copy-list-with-random-pointer"],
+
+  // Step 7 — Recursion / Backtracking
+  [7, "Subsequences", "subsets"],
+  [7, "Subsequences", "subsets-ii"],
+  [7, "Subsequences", "combination-sum"],
+  [7, "Subsequences", "combination-sum-ii"],
+  [7, "Subsequences", "combination-sum-iii"],
+  [7, "Hard Backtracking", "palindrome-partitioning"],
+  [7, "Hard Backtracking", "permutations"],
+  [7, "Hard Backtracking", "permutations-ii"],
+  [7, "Hard Backtracking", "letter-combinations-of-a-phone-number"],
+  [7, "Hard Backtracking", "generate-parentheses"],
+  [7, "Hard Backtracking", "word-search"],
+  [7, "Hard Backtracking", "n-queens"],
+  [7, "Hard Backtracking", "sudoku-solver"],
+  [7, "Math Recursion", "powx-n"],
+
+  // Step 8 — Bit Manipulation
+  [8, "Basics", "number-of-1-bits"],
+  [8, "Basics", "counting-bits"],
+  [8, "Basics", "power-of-two"],
+  [8, "Basics", "reverse-bits"],
+  [8, "Basics", "minimum-bit-flips-to-convert-number"],
+  [8, "Problems", "single-number-ii"],
+  [8, "Problems", "single-number-iii"],
+  [8, "Problems", "divide-two-integers"],
+
+  // Step 9 — Stack & Queues
+  [9, "Implementation", "min-stack"],
+  [9, "Implementation", "implement-stack-using-queues"],
+  [9, "Implementation", "implement-queue-using-stacks"],
+  [9, "Prefix/Infix", "valid-parentheses"],
+  [9, "Monotonic Stack", "next-greater-element-i"],
+  [9, "Monotonic Stack", "next-greater-element-ii"],
+  [9, "Monotonic Stack", "daily-temperatures"],
+  [9, "Monotonic Stack", "largest-rectangle-in-histogram"],
+  [9, "Monotonic Stack", "maximal-rectangle"],
+  [9, "Monotonic Stack", "trapping-rain-water"],
+  [9, "Monotonic Stack", "sum-of-subarray-minimums"],
+  [9, "Monotonic Stack", "asteroid-collision"],
+  [9, "Monotonic Stack", "remove-k-digits"],
+  [9, "Monotonic Stack", "online-stock-span"],
+  [9, "Implementation", "lru-cache"],
+  [9, "Implementation", "lfu-cache"],
+
+  // Step 10 — Sliding Window & Two Pointer
+  [10, "Medium", "longest-substring-without-repeating-characters"],
+  [10, "Medium", "max-consecutive-ones-iii"],
+  [10, "Medium", "fruit-into-baskets"],
+  [10, "Medium", "longest-repeating-character-replacement"],
+  [10, "Medium", "binary-subarrays-with-sum"],
+  [10, "Medium", "count-number-of-nice-subarrays"],
+  [10, "Medium", "number-of-substrings-containing-all-three-characters"],
+  [10, "Hard", "subarrays-with-k-different-integers"],
+  [10, "Hard", "minimum-window-substring"],
+  [10, "Medium", "minimum-size-subarray-sum"],
+
+  // Step 11 — Heaps
+  [11, "Medium", "kth-largest-element-in-an-array"],
+  [11, "Medium", "kth-largest-element-in-a-stream"],
+  [11, "Medium", "top-k-frequent-elements"],
+  [11, "Medium", "task-scheduler"],
+  [11, "Medium", "hand-of-straights"],
+  [11, "Hard", "find-median-from-data-stream"],
+  [11, "Hard", "merge-k-sorted-lists"],
+  [11, "Hard", "design-twitter"],
+
+  // Step 12 — Greedy
+  [12, "Easy", "assign-cookies"],
+  [12, "Easy", "lemonade-change"],
+  [12, "Medium/Hard", "jump-game"],
+  [12, "Medium/Hard", "jump-game-ii"],
+  [12, "Medium/Hard", "candy"],
+  [12, "Medium/Hard", "insert-interval"],
+  [12, "Medium/Hard", "non-overlapping-intervals"],
+  [12, "Medium/Hard", "minimum-number-of-arrows-to-burst-balloons"],
+  [12, "Medium/Hard", "valid-parenthesis-string"],
+
+  // Step 13 — Binary Trees
+  [13, "Traversals", "binary-tree-inorder-traversal"],
+  [13, "Traversals", "binary-tree-preorder-traversal"],
+  [13, "Traversals", "binary-tree-postorder-traversal"],
+  [13, "Traversals", "binary-tree-level-order-traversal"],
+  [13, "Traversals", "binary-tree-zigzag-level-order-traversal"],
+  [13, "Medium", "maximum-depth-of-binary-tree"],
+  [13, "Medium", "balanced-binary-tree"],
+  [13, "Medium", "diameter-of-binary-tree"],
+  [13, "Medium", "binary-tree-maximum-path-sum"],
+  [13, "Medium", "same-tree"],
+  [13, "Medium", "symmetric-tree"],
+  [13, "Medium", "binary-tree-right-side-view"],
+  [13, "Medium", "maximum-width-of-binary-tree"],
+  [13, "Medium", "vertical-order-traversal-of-a-binary-tree"],
+  [13, "Hard", "lowest-common-ancestor-of-a-binary-tree"],
+  [13, "Hard", "construct-binary-tree-from-preorder-and-inorder-traversal"],
+  [13, "Hard", "construct-binary-tree-from-inorder-and-postorder-traversal"],
+  [13, "Hard", "serialize-and-deserialize-binary-tree"],
+  [13, "Hard", "flatten-binary-tree-to-linked-list"],
+  [13, "Hard", "count-complete-tree-nodes"],
+
+  // Step 14 — BST
+  [14, "Concepts", "search-in-a-binary-search-tree"],
+  [14, "Concepts", "insert-into-a-binary-search-tree"],
+  [14, "Concepts", "delete-node-in-a-bst"],
+  [14, "Problems", "kth-smallest-element-in-a-bst"],
+  [14, "Problems", "validate-binary-search-tree"],
+  [14, "Problems", "lowest-common-ancestor-of-a-binary-search-tree"],
+  [14, "Problems", "convert-sorted-array-to-binary-search-tree"],
+  [14, "Problems", "binary-search-tree-iterator"],
+  [14, "Problems", "two-sum-iv-input-is-a-bst"],
+  [14, "Problems", "recover-binary-search-tree"],
+
+  // Step 15 — Graphs
+  [15, "BFS/DFS", "number-of-provinces"],
+  [15, "BFS/DFS", "number-of-islands"],
+  [15, "BFS/DFS", "flood-fill"],
+  [15, "BFS/DFS", "rotting-oranges"],
+  [15, "BFS/DFS", "01-matrix"],
+  [15, "BFS/DFS", "surrounded-regions"],
+  [15, "BFS/DFS", "word-ladder"],
+  [15, "BFS/DFS", "word-ladder-ii"],
+  [15, "Topo Sort", "course-schedule"],
+  [15, "Topo Sort", "course-schedule-ii"],
+  [15, "Topo Sort", "is-graph-bipartite"],
+  [15, "Shortest Path", "network-delay-time"],
+  [15, "Shortest Path", "cheapest-flights-within-k-stops"],
+  [15, "Shortest Path", "path-with-minimum-effort"],
+  [15, "Shortest Path", "shortest-path-in-binary-matrix"],
+  [15, "Shortest Path", "find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance"],
+  [15, "DSU/MST", "number-of-operations-to-make-network-connected"],
+  [15, "DSU/MST", "accounts-merge"],
+  [15, "DSU/MST", "making-a-large-island"],
+  [15, "DSU/MST", "redundant-connection"],
+  [15, "DSU/MST", "min-cost-to-connect-all-points"],
+  [15, "DSU/MST", "swim-in-rising-water"],
+  [15, "Hard", "critical-connections-in-a-network"],
+
+  // Step 16 — Dynamic Programming
+  [16, "1D DP", "climbing-stairs"],
+  [16, "1D DP", "house-robber"],
+  [16, "1D DP", "house-robber-ii"],
+  [16, "DP on Grids", "unique-paths"],
+  [16, "DP on Grids", "unique-paths-ii"],
+  [16, "DP on Grids", "minimum-path-sum"],
+  [16, "DP on Grids", "triangle"],
+  [16, "DP on Grids", "minimum-falling-path-sum"],
+  [16, "DP on Subsequences", "partition-equal-subset-sum"],
+  [16, "DP on Subsequences", "target-sum"],
+  [16, "DP on Subsequences", "coin-change"],
+  [16, "DP on Subsequences", "coin-change-ii"],
+  [16, "DP on Strings", "longest-common-subsequence"],
+  [16, "DP on Strings", "longest-palindromic-subsequence"],
+  [16, "DP on Strings", "edit-distance"],
+  [16, "DP on Strings", "distinct-subsequences"],
+  [16, "DP on Strings", "wildcard-matching"],
+  [16, "DP on Strings", "regular-expression-matching"],
+  [16, "DP on Stocks", "best-time-to-buy-and-sell-stock-iii"],
+  [16, "DP on Stocks", "best-time-to-buy-and-sell-stock-iv"],
+  [16, "DP on Stocks", "best-time-to-buy-and-sell-stock-with-cooldown"],
+  [16, "DP on Stocks", "best-time-to-buy-and-sell-stock-with-transaction-fee"],
+  [16, "DP on LIS", "longest-increasing-subsequence"],
+  [16, "DP on LIS", "number-of-longest-increasing-subsequence"],
+  [16, "DP on LIS", "longest-string-chain"],
+  [16, "Partition DP", "burst-balloons"],
+  [16, "Partition DP", "palindrome-partitioning-ii"],
+  [16, "Partition DP", "partition-array-for-maximum-sum"],
+  [16, "1D DP", "word-break"],
+
+  // Step 17 — Tries
+  [17, "Tries", "implement-trie-prefix-tree"],
+  [17, "Tries", "design-add-and-search-words-data-structure"],
+  [17, "Tries", "maximum-xor-of-two-numbers-in-an-array"],
+  [17, "Tries", "maximum-xor-with-an-element-from-array"],
+  [17, "Tries", "replace-words"],
+  [17, "Tries", "word-search-ii"],
+  [17, "Tries", "longest-word-in-dictionary"],
+
+  // Step 18 — Strings (Advanced)
+  [18, "KMP / Z", "shortest-palindrome"],
+  [18, "KMP / Z", "longest-happy-prefix"],
+  [18, "KMP / Z", "repeated-string-match"],
+];
+
+// Build the exported map: slug -> striver placement (with global order).
+export const STRIVER_BY_SLUG = new Map(
+  SEED.map(([stepNo, subtopic, slug], i) => [
+    slug,
+    {
+      striverStep: STEP_TITLE[stepNo],
+      striverStepNo: stepNo,
+      striverTopic: STEP_TITLE[stepNo],
+      striverSubtopic: subtopic,
+      striverOrder: i + 1,
+      striverRevisionLevel: 0,
+    },
+  ])
+);
+
+export const STRIVER_SEED_COUNT = SEED.length;

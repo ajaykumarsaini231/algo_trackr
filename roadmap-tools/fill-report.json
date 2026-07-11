@@ -1,0 +1,2062 @@
+{
+  "generatedAt": "2026-07-10T18:23:58.187Z",
+  "totalPatterns": 163,
+  "filledThisRun": 106,
+  "stillUnder5": 4,
+  "rows": [
+    {
+      "slug": "bridge",
+      "name": "Bridge",
+      "category": "Graph",
+      "priority": "Critical",
+      "count": 2,
+      "added": 2,
+      "projected": 2,
+      "sources": {
+        "title": 2,
+        "tag": 0,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "articulation-point",
+      "name": "Articulation Point",
+      "category": "Graph",
+      "priority": "Critical",
+      "count": 2,
+      "added": 2,
+      "projected": 2,
+      "sources": {
+        "title": 2,
+        "tag": 0,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "sudoku",
+      "name": "Sudoku",
+      "category": "Backtracking",
+      "priority": "High",
+      "count": 3,
+      "added": 3,
+      "projected": 3,
+      "sources": {
+        "title": 2,
+        "tag": 0,
+        "keyword": 1
+      }
+    },
+    {
+      "slug": "n-queens",
+      "name": "N Queens",
+      "category": "Backtracking",
+      "priority": "High",
+      "count": 4,
+      "added": 4,
+      "projected": 4,
+      "sources": {
+        "title": 4,
+        "tag": 0,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "gray-code",
+      "name": "Gray Code",
+      "category": "Bit Manipulation",
+      "priority": "Medium",
+      "count": 5,
+      "added": 5,
+      "projected": 5,
+      "sources": {
+        "title": 5,
+        "tag": 0,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "rotated-array",
+      "name": "Rotated Array",
+      "category": "Binary Search",
+      "priority": "High",
+      "count": 6,
+      "added": 6,
+      "projected": 6,
+      "sources": {
+        "title": 6,
+        "tag": 0,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "euler-tour",
+      "name": "Euler Tour",
+      "category": "Graph",
+      "priority": "Critical",
+      "count": 6,
+      "added": 6,
+      "projected": 6,
+      "sources": {
+        "title": 3,
+        "tag": 0,
+        "keyword": 3
+      }
+    },
+    {
+      "slug": "peak-element",
+      "name": "Peak Element",
+      "category": "Binary Search",
+      "priority": "High",
+      "count": 7,
+      "added": 7,
+      "projected": 7,
+      "sources": {
+        "title": 7,
+        "tag": 0,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "circular-queue",
+      "name": "Circular Queue",
+      "category": "Queue",
+      "priority": "Medium",
+      "count": 9,
+      "added": 9,
+      "projected": 9,
+      "sources": {
+        "title": 9,
+        "tag": 0,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "scc",
+      "name": "SCC",
+      "category": "Graph",
+      "priority": "Critical",
+      "count": 9,
+      "added": 9,
+      "projected": 9,
+      "sources": {
+        "title": 6,
+        "tag": 0,
+        "keyword": 3
+      }
+    },
+    {
+      "slug": "radix-sort",
+      "name": "Radix Sort",
+      "category": "Sorting",
+      "priority": "Medium",
+      "count": 10,
+      "added": 10,
+      "projected": 10,
+      "sources": {
+        "title": 10,
+        "tag": 0,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "lca",
+      "name": "LCA",
+      "category": "Tree",
+      "priority": "Critical",
+      "count": 10,
+      "added": 10,
+      "projected": 10,
+      "sources": {
+        "title": 10,
+        "tag": 0,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "orientation",
+      "name": "Orientation",
+      "category": "Geometry",
+      "priority": "Low",
+      "count": 10,
+      "added": 10,
+      "projected": 10,
+      "sources": {
+        "title": 10,
+        "tag": 0,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "upper-bound",
+      "name": "Upper Bound",
+      "category": "Binary Search",
+      "priority": "High",
+      "count": 11,
+      "added": 11,
+      "projected": 11,
+      "sources": {
+        "title": 10,
+        "tag": 0,
+        "keyword": 1
+      }
+    },
+    {
+      "slug": "lower-bound",
+      "name": "Lower Bound",
+      "category": "Binary Search",
+      "priority": "High",
+      "count": 12,
+      "added": 12,
+      "projected": 12,
+      "sources": {
+        "title": 12,
+        "tag": 0,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "heap-sort",
+      "name": "Heap Sort",
+      "category": "Sorting",
+      "priority": "Medium",
+      "count": 12,
+      "added": 12,
+      "projected": 12,
+      "sources": {
+        "title": 11,
+        "tag": 0,
+        "keyword": 1
+      }
+    },
+    {
+      "slug": "bucket-sort",
+      "name": "Bucket Sort",
+      "category": "Sorting",
+      "priority": "Medium",
+      "count": 12,
+      "added": 12,
+      "projected": 12,
+      "sources": {
+        "title": 12,
+        "tag": 0,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "auto-complete",
+      "name": "Auto Complete",
+      "category": "Trie",
+      "priority": "Medium",
+      "count": 12,
+      "added": 12,
+      "projected": 12,
+      "sources": {
+        "title": 11,
+        "tag": 0,
+        "keyword": 1
+      }
+    },
+    {
+      "slug": "tree-dp-advanced",
+      "name": "Tree DP Advanced",
+      "category": "Dynamic Programming",
+      "priority": "Critical",
+      "count": 12,
+      "added": 12,
+      "projected": 12,
+      "sources": {
+        "title": 12,
+        "tag": 0,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "digit-dp",
+      "name": "Digit DP",
+      "category": "Dynamic Programming",
+      "priority": "Critical",
+      "count": 12,
+      "added": 12,
+      "projected": 12,
+      "sources": {
+        "title": 11,
+        "tag": 0,
+        "keyword": 1
+      }
+    },
+    {
+      "slug": "partial-sorting",
+      "name": "Partial Sorting",
+      "category": "Sorting",
+      "priority": "Medium",
+      "count": 13,
+      "added": 13,
+      "projected": 13,
+      "sources": {
+        "title": 12,
+        "tag": 0,
+        "keyword": 1
+      }
+    },
+    {
+      "slug": "serialization",
+      "name": "Serialization",
+      "category": "Tree",
+      "priority": "Critical",
+      "count": 13,
+      "added": 13,
+      "projected": 13,
+      "sources": {
+        "title": 12,
+        "tag": 0,
+        "keyword": 1
+      }
+    },
+    {
+      "slug": "suffix-automaton",
+      "name": "Suffix Automaton",
+      "category": "String",
+      "priority": "High",
+      "count": 13,
+      "added": 13,
+      "projected": 13,
+      "sources": {
+        "title": 11,
+        "tag": 0,
+        "keyword": 2
+      }
+    },
+    {
+      "slug": "search-space-reduction",
+      "name": "Search Space Reduction",
+      "category": "Binary Search",
+      "priority": "High",
+      "count": 14,
+      "added": 14,
+      "projected": 14,
+      "sources": {
+        "title": 13,
+        "tag": 0,
+        "keyword": 1
+      }
+    },
+    {
+      "slug": "prefix-hash",
+      "name": "Prefix Hash",
+      "category": "Hashing",
+      "priority": "High",
+      "count": 14,
+      "added": 14,
+      "projected": 14,
+      "sources": {
+        "title": 14,
+        "tag": 0,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "tree-dp",
+      "name": "Tree DP",
+      "category": "Tree",
+      "priority": "Critical",
+      "count": 14,
+      "added": 14,
+      "projected": 14,
+      "sources": {
+        "title": 14,
+        "tag": 0,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "branch-and-bound",
+      "name": "Branch and Bound",
+      "category": "Backtracking",
+      "priority": "High",
+      "count": 14,
+      "added": 14,
+      "projected": 14,
+      "sources": {
+        "title": 14,
+        "tag": 0,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "rabin-karp",
+      "name": "Rabin Karp",
+      "category": "String",
+      "priority": "High",
+      "count": 14,
+      "added": 14,
+      "projected": 14,
+      "sources": {
+        "title": 14,
+        "tag": 0,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "dutch-national-flag",
+      "name": "Dutch National Flag",
+      "category": "Two Pointer",
+      "priority": "High",
+      "count": 15,
+      "added": 15,
+      "projected": 15,
+      "sources": {
+        "title": 15,
+        "tag": 0,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "rolling-hash",
+      "name": "Rolling Hash",
+      "category": "Hashing",
+      "priority": "High",
+      "count": 15,
+      "added": 15,
+      "projected": 15,
+      "sources": {
+        "title": 15,
+        "tag": 0,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "fractional-knapsack",
+      "name": "Fractional Knapsack",
+      "category": "Greedy",
+      "priority": "High",
+      "count": 15,
+      "added": 15,
+      "projected": 15,
+      "sources": {
+        "title": 15,
+        "tag": 0,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "tail-recursion",
+      "name": "Tail Recursion",
+      "category": "Recursion",
+      "priority": "Medium",
+      "count": 15,
+      "added": 15,
+      "projected": 15,
+      "sources": {
+        "title": 13,
+        "tag": 0,
+        "keyword": 2
+      }
+    },
+    {
+      "slug": "prim",
+      "name": "Prim",
+      "category": "Graph",
+      "priority": "Critical",
+      "count": 16,
+      "added": 16,
+      "projected": 16,
+      "sources": {
+        "title": 7,
+        "tag": 0,
+        "keyword": 9
+      }
+    },
+    {
+      "slug": "mst",
+      "name": "MST",
+      "category": "Graph",
+      "priority": "Critical",
+      "count": 16,
+      "added": 16,
+      "projected": 16,
+      "sources": {
+        "title": 7,
+        "tag": 0,
+        "keyword": 9
+      }
+    },
+    {
+      "slug": "activity-selection",
+      "name": "Activity Selection",
+      "category": "Greedy",
+      "priority": "High",
+      "count": 16,
+      "added": 16,
+      "projected": 16,
+      "sources": {
+        "title": 16,
+        "tag": 0,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "exchange-argument",
+      "name": "Exchange Argument",
+      "category": "Greedy",
+      "priority": "High",
+      "count": 16,
+      "added": 16,
+      "projected": 16,
+      "sources": {
+        "title": 16,
+        "tag": 0,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "z-algorithm",
+      "name": "Z Algorithm",
+      "category": "String",
+      "priority": "High",
+      "count": 16,
+      "added": 16,
+      "projected": 16,
+      "sources": {
+        "title": 15,
+        "tag": 0,
+        "keyword": 1
+      }
+    },
+    {
+      "slug": "polynomial-hash",
+      "name": "Polynomial Hash",
+      "category": "Hashing",
+      "priority": "High",
+      "count": 17,
+      "added": 17,
+      "projected": 17,
+      "sources": {
+        "title": 17,
+        "tag": 0,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "diameter",
+      "name": "Diameter",
+      "category": "Tree",
+      "priority": "Critical",
+      "count": 17,
+      "added": 17,
+      "projected": 17,
+      "sources": {
+        "title": 5,
+        "tag": 0,
+        "keyword": 12
+      }
+    },
+    {
+      "slug": "dictionary",
+      "name": "Dictionary",
+      "category": "Trie",
+      "priority": "Medium",
+      "count": 17,
+      "added": 17,
+      "projected": 17,
+      "sources": {
+        "title": 11,
+        "tag": 0,
+        "keyword": 6
+      }
+    },
+    {
+      "slug": "kruskal",
+      "name": "Kruskal",
+      "category": "Graph",
+      "priority": "Critical",
+      "count": 17,
+      "added": 17,
+      "projected": 17,
+      "sources": {
+        "title": 7,
+        "tag": 0,
+        "keyword": 10
+      }
+    },
+    {
+      "slug": "sorting-greedy",
+      "name": "Sorting Greedy",
+      "category": "Greedy",
+      "priority": "High",
+      "count": 17,
+      "added": 17,
+      "projected": 17,
+      "sources": {
+        "title": 16,
+        "tag": 0,
+        "keyword": 1
+      }
+    },
+    {
+      "slug": "monotonic-queue",
+      "name": "Monotonic Queue",
+      "category": "Queue",
+      "priority": "Medium",
+      "count": 18,
+      "added": 0,
+      "projected": 18,
+      "sources": null
+    },
+    {
+      "slug": "lis",
+      "name": "LIS",
+      "category": "Dynamic Programming",
+      "priority": "High",
+      "count": 18,
+      "added": 18,
+      "projected": 18,
+      "sources": {
+        "title": 17,
+        "tag": 0,
+        "keyword": 1
+      }
+    },
+    {
+      "slug": "interval-scheduling",
+      "name": "Interval Scheduling",
+      "category": "Greedy",
+      "priority": "High",
+      "count": 18,
+      "added": 18,
+      "projected": 18,
+      "sources": {
+        "title": 16,
+        "tag": 0,
+        "keyword": 2
+      }
+    },
+    {
+      "slug": "hashset",
+      "name": "HashSet",
+      "category": "Hashing",
+      "priority": "High",
+      "count": 19,
+      "added": 19,
+      "projected": 19,
+      "sources": {
+        "title": 16,
+        "tag": 0,
+        "keyword": 3
+      }
+    },
+    {
+      "slug": "distance",
+      "name": "Distance",
+      "category": "Geometry",
+      "priority": "Low",
+      "count": 19,
+      "added": 19,
+      "projected": 19,
+      "sources": {
+        "title": 13,
+        "tag": 0,
+        "keyword": 6
+      }
+    },
+    {
+      "slug": "character-window",
+      "name": "Character Window",
+      "category": "Sliding Window",
+      "priority": "High",
+      "count": 20,
+      "added": 20,
+      "projected": 20,
+      "sources": {
+        "title": 16,
+        "tag": 0,
+        "keyword": 4
+      }
+    },
+    {
+      "slug": "substring-window",
+      "name": "Substring Window",
+      "category": "Sliding Window",
+      "priority": "High",
+      "count": 20,
+      "added": 20,
+      "projected": 20,
+      "sources": {
+        "title": 16,
+        "tag": 0,
+        "keyword": 4
+      }
+    },
+    {
+      "slug": "subset-enumeration",
+      "name": "Subset Enumeration",
+      "category": "Bit Manipulation",
+      "priority": "Medium",
+      "count": 20,
+      "added": 20,
+      "projected": 20,
+      "sources": {
+        "title": 20,
+        "tag": 0,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "counting-sort",
+      "name": "Counting Sort",
+      "category": "Sorting",
+      "priority": "Medium",
+      "count": 21,
+      "added": 21,
+      "projected": 21,
+      "sources": {
+        "title": 14,
+        "tag": 7,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "master-theorem",
+      "name": "Master Theorem",
+      "category": "Recursion",
+      "priority": "Medium",
+      "count": 21,
+      "added": 21,
+      "projected": 21,
+      "sources": {
+        "title": 19,
+        "tag": 0,
+        "keyword": 2
+      }
+    },
+    {
+      "slug": "suffix-sum",
+      "name": "Suffix Sum",
+      "category": "Array",
+      "priority": "High",
+      "count": 22,
+      "added": 22,
+      "projected": 22,
+      "sources": {
+        "title": 17,
+        "tag": 0,
+        "keyword": 5
+      }
+    },
+    {
+      "slug": "merge-sort",
+      "name": "Merge Sort",
+      "category": "Sorting",
+      "priority": "Medium",
+      "count": 22,
+      "added": 22,
+      "projected": 22,
+      "sources": {
+        "title": 10,
+        "tag": 9,
+        "keyword": 3
+      }
+    },
+    {
+      "slug": "lcs",
+      "name": "LCS",
+      "category": "Dynamic Programming",
+      "priority": "High",
+      "count": 22,
+      "added": 22,
+      "projected": 22,
+      "sources": {
+        "title": 16,
+        "tag": 0,
+        "keyword": 6
+      }
+    },
+    {
+      "slug": "optimization-dp",
+      "name": "Optimization DP",
+      "category": "Dynamic Programming",
+      "priority": "Critical",
+      "count": 22,
+      "added": 22,
+      "projected": 22,
+      "sources": {
+        "title": 16,
+        "tag": 0,
+        "keyword": 6
+      }
+    },
+    {
+      "slug": "difference-array",
+      "name": "Difference Array",
+      "category": "Array",
+      "priority": "High",
+      "count": 23,
+      "added": 23,
+      "projected": 23,
+      "sources": {
+        "title": 17,
+        "tag": 0,
+        "keyword": 6
+      }
+    },
+    {
+      "slug": "coordinate-compression",
+      "name": "Coordinate Compression",
+      "category": "Array",
+      "priority": "High",
+      "count": 23,
+      "added": 23,
+      "projected": 23,
+      "sources": {
+        "title": 16,
+        "tag": 0,
+        "keyword": 7
+      }
+    },
+    {
+      "slug": "binary-search-on-answer",
+      "name": "Binary Search on Answer",
+      "category": "Binary Search",
+      "priority": "Critical",
+      "count": 23,
+      "added": 23,
+      "projected": 23,
+      "sources": {
+        "title": 17,
+        "tag": 0,
+        "keyword": 6
+      }
+    },
+    {
+      "slug": "quick-sort",
+      "name": "Quick Sort",
+      "category": "Sorting",
+      "priority": "Medium",
+      "count": 23,
+      "added": 23,
+      "projected": 23,
+      "sources": {
+        "title": 11,
+        "tag": 0,
+        "keyword": 12
+      }
+    },
+    {
+      "slug": "intersection",
+      "name": "Intersection",
+      "category": "Linked List",
+      "priority": "Medium",
+      "count": 23,
+      "added": 23,
+      "projected": 23,
+      "sources": {
+        "title": 9,
+        "tag": 0,
+        "keyword": 14
+      }
+    },
+    {
+      "slug": "grid-dp",
+      "name": "Grid DP",
+      "category": "Dynamic Programming",
+      "priority": "High",
+      "count": 23,
+      "added": 23,
+      "projected": 23,
+      "sources": {
+        "title": 23,
+        "tag": 0,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "interval-dp",
+      "name": "Interval DP",
+      "category": "Dynamic Programming",
+      "priority": "Critical",
+      "count": 23,
+      "added": 23,
+      "projected": 23,
+      "sources": {
+        "title": 17,
+        "tag": 0,
+        "keyword": 6
+      }
+    },
+    {
+      "slug": "manacher",
+      "name": "Manacher",
+      "category": "String",
+      "priority": "High",
+      "count": 23,
+      "added": 23,
+      "projected": 23,
+      "sources": {
+        "title": 17,
+        "tag": 0,
+        "keyword": 6
+      }
+    },
+    {
+      "slug": "bit-trie",
+      "name": "Bit Trie",
+      "category": "Trie",
+      "priority": "Medium",
+      "count": 24,
+      "added": 24,
+      "projected": 24,
+      "sources": {
+        "title": 6,
+        "tag": 0,
+        "keyword": 18
+      }
+    },
+    {
+      "slug": "frequency-window",
+      "name": "Frequency Window",
+      "category": "Sliding Window",
+      "priority": "High",
+      "count": 25,
+      "added": 25,
+      "projected": 25,
+      "sources": {
+        "title": 16,
+        "tag": 0,
+        "keyword": 9
+      }
+    },
+    {
+      "slug": "knapsack",
+      "name": "Knapsack",
+      "category": "Dynamic Programming",
+      "priority": "High",
+      "count": 25,
+      "added": 25,
+      "projected": 25,
+      "sources": {
+        "title": 17,
+        "tag": 0,
+        "keyword": 8
+      }
+    },
+    {
+      "slug": "line-sweep",
+      "name": "Line Sweep",
+      "category": "Geometry",
+      "priority": "Low",
+      "count": 25,
+      "added": 25,
+      "projected": 25,
+      "sources": {
+        "title": 20,
+        "tag": 0,
+        "keyword": 5
+      }
+    },
+    {
+      "slug": "opposite-direction",
+      "name": "Opposite Direction",
+      "category": "Two Pointer",
+      "priority": "High",
+      "count": 27,
+      "added": 27,
+      "projected": 27,
+      "sources": {
+        "title": 18,
+        "tag": 0,
+        "keyword": 9
+      }
+    },
+    {
+      "slug": "expected-value",
+      "name": "Expected Value",
+      "category": "Math",
+      "priority": "Medium",
+      "count": 27,
+      "added": 27,
+      "projected": 27,
+      "sources": {
+        "title": 14,
+        "tag": 0,
+        "keyword": 13
+      }
+    },
+    {
+      "slug": "1d-dp",
+      "name": "1D DP",
+      "category": "Dynamic Programming",
+      "priority": "Critical",
+      "count": 28,
+      "added": 28,
+      "projected": 28,
+      "sources": {
+        "title": 25,
+        "tag": 0,
+        "keyword": 3
+      }
+    },
+    {
+      "slug": "2d-dp",
+      "name": "2D DP",
+      "category": "Dynamic Programming",
+      "priority": "Critical",
+      "count": 29,
+      "added": 29,
+      "projected": 29,
+      "sources": {
+        "title": 23,
+        "tag": 0,
+        "keyword": 6
+      }
+    },
+    {
+      "slug": "power",
+      "name": "Power",
+      "category": "Math",
+      "priority": "Medium",
+      "count": 32,
+      "added": 32,
+      "projected": 32,
+      "sources": {
+        "title": 20,
+        "tag": 0,
+        "keyword": 12
+      }
+    },
+    {
+      "slug": "string-rolling-hash",
+      "name": "String Rolling Hash",
+      "category": "String",
+      "priority": "High",
+      "count": 32,
+      "added": 0,
+      "projected": 32,
+      "sources": null
+    },
+    {
+      "slug": "polygon",
+      "name": "Polygon",
+      "category": "Geometry",
+      "priority": "Low",
+      "count": 34,
+      "added": 34,
+      "projected": 34,
+      "sources": {
+        "title": 12,
+        "tag": 0,
+        "keyword": 22
+      }
+    },
+    {
+      "slug": "deque",
+      "name": "Deque",
+      "category": "Queue",
+      "priority": "Medium",
+      "count": 35,
+      "added": 35,
+      "projected": 35,
+      "sources": {
+        "title": 12,
+        "tag": 18,
+        "keyword": 5
+      }
+    },
+    {
+      "slug": "fast-slow-pointer",
+      "name": "Fast Slow Pointer",
+      "category": "Two Pointer",
+      "priority": "High",
+      "count": 38,
+      "added": 38,
+      "projected": 38,
+      "sources": {
+        "title": 16,
+        "tag": 0,
+        "keyword": 22
+      }
+    },
+    {
+      "slug": "circular-array",
+      "name": "Circular Array",
+      "category": "Array",
+      "priority": "High",
+      "count": 40,
+      "added": 40,
+      "projected": 40,
+      "sources": {
+        "title": 17,
+        "tag": 0,
+        "keyword": 23
+      }
+    },
+    {
+      "slug": "topological-sort",
+      "name": "Topological Sort",
+      "category": "Graph",
+      "priority": "High",
+      "count": 40,
+      "added": 0,
+      "projected": 40,
+      "sources": null
+    },
+    {
+      "slug": "graph-coloring",
+      "name": "Graph Coloring",
+      "category": "Graph",
+      "priority": "Critical",
+      "count": 40,
+      "added": 0,
+      "projected": 40,
+      "sources": null
+    },
+    {
+      "slug": "matrix-exponentiation",
+      "name": "Matrix Exponentiation",
+      "category": "Math",
+      "priority": "Medium",
+      "count": 40,
+      "added": 40,
+      "projected": 40,
+      "sources": {
+        "title": 15,
+        "tag": 0,
+        "keyword": 25
+      }
+    },
+    {
+      "slug": "bst",
+      "name": "BST",
+      "category": "Tree",
+      "priority": "High",
+      "count": 43,
+      "added": 0,
+      "projected": 43,
+      "sources": null
+    },
+    {
+      "slug": "cycle-detection",
+      "name": "Cycle Detection",
+      "category": "Linked List",
+      "priority": "Medium",
+      "count": 44,
+      "added": 44,
+      "projected": 44,
+      "sources": {
+        "title": 11,
+        "tag": 0,
+        "keyword": 33
+      }
+    },
+    {
+      "slug": "same-direction",
+      "name": "Same Direction",
+      "category": "Two Pointer",
+      "priority": "High",
+      "count": 45,
+      "added": 45,
+      "projected": 45,
+      "sources": {
+        "title": 16,
+        "tag": 0,
+        "keyword": 29
+      }
+    },
+    {
+      "slug": "randomization",
+      "name": "Randomization",
+      "category": "Miscellaneous",
+      "priority": "Low",
+      "count": 46,
+      "added": 46,
+      "projected": 46,
+      "sources": {
+        "title": 14,
+        "tag": 0,
+        "keyword": 32
+      }
+    },
+    {
+      "slug": "expression-evaluation",
+      "name": "Expression Evaluation",
+      "category": "Stack",
+      "priority": "Medium",
+      "count": 50,
+      "added": 50,
+      "projected": 50,
+      "sources": {
+        "title": 17,
+        "tag": 0,
+        "keyword": 33
+      }
+    },
+    {
+      "slug": "recursion",
+      "name": "Recursion",
+      "category": "Recursion",
+      "priority": "Medium",
+      "count": 51,
+      "added": 0,
+      "projected": 51,
+      "sources": null
+    },
+    {
+      "slug": "kadane-algorithm",
+      "name": "Kadane Algorithm",
+      "category": "Array",
+      "priority": "High",
+      "count": 52,
+      "added": 52,
+      "projected": 52,
+      "sources": {
+        "title": 18,
+        "tag": 0,
+        "keyword": 34
+      }
+    },
+    {
+      "slug": "dummy-node",
+      "name": "Dummy Node",
+      "category": "Linked List",
+      "priority": "Medium",
+      "count": 52,
+      "added": 52,
+      "projected": 52,
+      "sources": {
+        "title": 14,
+        "tag": 0,
+        "keyword": 38
+      }
+    },
+    {
+      "slug": "and-or",
+      "name": "AND OR",
+      "category": "Bit Manipulation",
+      "priority": "Medium",
+      "count": 53,
+      "added": 53,
+      "projected": 53,
+      "sources": {
+        "title": 18,
+        "tag": 0,
+        "keyword": 35
+      }
+    },
+    {
+      "slug": "queue",
+      "name": "Queue",
+      "category": "Queue",
+      "priority": "Medium",
+      "count": 57,
+      "added": 0,
+      "projected": 57,
+      "sources": null
+    },
+    {
+      "slug": "merge-list",
+      "name": "Merge List",
+      "category": "Linked List",
+      "priority": "Medium",
+      "count": 60,
+      "added": 60,
+      "projected": 60,
+      "sources": {
+        "title": 14,
+        "tag": 0,
+        "keyword": 46
+      }
+    },
+    {
+      "slug": "trie",
+      "name": "Trie",
+      "category": "Trie",
+      "priority": "High",
+      "count": 60,
+      "added": 0,
+      "projected": 60,
+      "sources": null
+    },
+    {
+      "slug": "prefix-tree",
+      "name": "Prefix Tree",
+      "category": "Trie",
+      "priority": "Medium",
+      "count": 61,
+      "added": 61,
+      "projected": 61,
+      "sources": {
+        "title": 14,
+        "tag": 47,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "string-trie",
+      "name": "String Trie",
+      "category": "String",
+      "priority": "High",
+      "count": 63,
+      "added": 63,
+      "projected": 63,
+      "sources": {
+        "title": 16,
+        "tag": 47,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "partition",
+      "name": "Partition",
+      "category": "Two Pointer",
+      "priority": "High",
+      "count": 71,
+      "added": 71,
+      "projected": 71,
+      "sources": {
+        "title": 15,
+        "tag": 0,
+        "keyword": 56
+      }
+    },
+    {
+      "slug": "parentheses",
+      "name": "Parentheses",
+      "category": "Stack",
+      "priority": "Medium",
+      "count": 72,
+      "added": 72,
+      "projected": 72,
+      "sources": {
+        "title": 13,
+        "tag": 0,
+        "keyword": 59
+      }
+    },
+    {
+      "slug": "decreasing-stack",
+      "name": "Decreasing Stack",
+      "category": "Stack",
+      "priority": "Medium",
+      "count": 75,
+      "added": 75,
+      "projected": 75,
+      "sources": {
+        "title": 17,
+        "tag": 56,
+        "keyword": 2
+      }
+    },
+    {
+      "slug": "next-greater-element",
+      "name": "Next Greater Element",
+      "category": "Stack",
+      "priority": "High",
+      "count": 75,
+      "added": 75,
+      "projected": 75,
+      "sources": {
+        "title": 17,
+        "tag": 57,
+        "keyword": 1
+      }
+    },
+    {
+      "slug": "median-finding",
+      "name": "Median Finding",
+      "category": "Heap",
+      "priority": "High",
+      "count": 75,
+      "added": 75,
+      "projected": 75,
+      "sources": {
+        "title": 10,
+        "tag": 20,
+        "keyword": 45
+      }
+    },
+    {
+      "slug": "increasing-stack",
+      "name": "Increasing Stack",
+      "category": "Stack",
+      "priority": "Medium",
+      "count": 79,
+      "added": 79,
+      "projected": 79,
+      "sources": {
+        "title": 17,
+        "tag": 57,
+        "keyword": 5
+      }
+    },
+    {
+      "slug": "histogram",
+      "name": "Histogram",
+      "category": "Stack",
+      "priority": "Medium",
+      "count": 79,
+      "added": 79,
+      "projected": 79,
+      "sources": {
+        "title": 11,
+        "tag": 67,
+        "keyword": 1
+      }
+    },
+    {
+      "slug": "reverse-list",
+      "name": "Reverse List",
+      "category": "Linked List",
+      "priority": "Medium",
+      "count": 82,
+      "added": 0,
+      "projected": 82,
+      "sources": null
+    },
+    {
+      "slug": "fast-slow-list",
+      "name": "Fast Slow List",
+      "category": "Linked List",
+      "priority": "Medium",
+      "count": 82,
+      "added": 0,
+      "projected": 82,
+      "sources": null
+    },
+    {
+      "slug": "suffix-array",
+      "name": "Suffix Array",
+      "category": "String",
+      "priority": "High",
+      "count": 109,
+      "added": 0,
+      "projected": 109,
+      "sources": null
+    },
+    {
+      "slug": "combination",
+      "name": "Combination",
+      "category": "Backtracking",
+      "priority": "High",
+      "count": 111,
+      "added": 0,
+      "projected": 111,
+      "sources": null
+    },
+    {
+      "slug": "permutation",
+      "name": "Permutation",
+      "category": "Backtracking",
+      "priority": "High",
+      "count": 114,
+      "added": 0,
+      "projected": 114,
+      "sources": null
+    },
+    {
+      "slug": "subset",
+      "name": "Subset",
+      "category": "Backtracking",
+      "priority": "High",
+      "count": 114,
+      "added": 0,
+      "projected": 114,
+      "sources": null
+    },
+    {
+      "slug": "lcm",
+      "name": "LCM",
+      "category": "Math",
+      "priority": "Medium",
+      "count": 120,
+      "added": 120,
+      "projected": 120,
+      "sources": {
+        "title": 21,
+        "tag": 0,
+        "keyword": 99
+      }
+    },
+    {
+      "slug": "fixed-window",
+      "name": "Fixed Window",
+      "category": "Sliding Window",
+      "priority": "High",
+      "count": 169,
+      "added": 0,
+      "projected": 169,
+      "sources": null
+    },
+    {
+      "slug": "variable-window",
+      "name": "Variable Window",
+      "category": "Sliding Window",
+      "priority": "Critical",
+      "count": 169,
+      "added": 0,
+      "projected": 169,
+      "sources": null
+    },
+    {
+      "slug": "monotonic-stack",
+      "name": "Monotonic Stack",
+      "category": "Stack",
+      "priority": "High",
+      "count": 179,
+      "added": 0,
+      "projected": 179,
+      "sources": null
+    },
+    {
+      "slug": "binary-tree",
+      "name": "Binary Tree",
+      "category": "Tree",
+      "priority": "Critical",
+      "count": 179,
+      "added": 0,
+      "projected": 179,
+      "sources": null
+    },
+    {
+      "slug": "frequency-count",
+      "name": "Frequency Count",
+      "category": "Hashing",
+      "priority": "High",
+      "count": 204,
+      "added": 0,
+      "projected": 204,
+      "sources": null
+    },
+    {
+      "slug": "simulation",
+      "name": "Simulation",
+      "category": "Array",
+      "priority": "High",
+      "count": 211,
+      "added": 0,
+      "projected": 211,
+      "sources": null
+    },
+    {
+      "slug": "priority-queue-heap",
+      "name": "Priority Queue Heap",
+      "category": "Heap",
+      "priority": "High",
+      "count": 217,
+      "added": 0,
+      "projected": 217,
+      "sources": null
+    },
+    {
+      "slug": "top-k",
+      "name": "Top K",
+      "category": "Heap",
+      "priority": "High",
+      "count": 218,
+      "added": 0,
+      "projected": 218,
+      "sources": null
+    },
+    {
+      "slug": "priority-queue",
+      "name": "Priority Queue",
+      "category": "Queue",
+      "priority": "Medium",
+      "count": 222,
+      "added": 222,
+      "projected": 222,
+      "sources": {
+        "title": 17,
+        "tag": 202,
+        "keyword": 3
+      }
+    },
+    {
+      "slug": "max-heap",
+      "name": "Max Heap",
+      "category": "Heap",
+      "priority": "High",
+      "count": 223,
+      "added": 223,
+      "projected": 223,
+      "sources": {
+        "title": 14,
+        "tag": 207,
+        "keyword": 2
+      }
+    },
+    {
+      "slug": "heapify",
+      "name": "Heapify",
+      "category": "Heap",
+      "priority": "High",
+      "count": 224,
+      "added": 224,
+      "projected": 224,
+      "sources": {
+        "title": 12,
+        "tag": 208,
+        "keyword": 4
+      }
+    },
+    {
+      "slug": "merge-k-lists",
+      "name": "Merge K Lists",
+      "category": "Heap",
+      "priority": "High",
+      "count": 227,
+      "added": 227,
+      "projected": 227,
+      "sources": {
+        "title": 11,
+        "tag": 213,
+        "keyword": 3
+      }
+    },
+    {
+      "slug": "min-heap",
+      "name": "Min Heap",
+      "category": "Heap",
+      "priority": "High",
+      "count": 227,
+      "added": 227,
+      "projected": 227,
+      "sources": {
+        "title": 14,
+        "tag": 205,
+        "keyword": 8
+      }
+    },
+    {
+      "slug": "prefix-sum",
+      "name": "Prefix Sum",
+      "category": "Array",
+      "priority": "Critical",
+      "count": 258,
+      "added": 0,
+      "projected": 258,
+      "sources": null
+    },
+    {
+      "slug": "tree-bfs",
+      "name": "Tree BFS",
+      "category": "Tree",
+      "priority": "Critical",
+      "count": 259,
+      "added": 259,
+      "projected": 259,
+      "sources": {
+        "title": 16,
+        "tag": 243,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "probability",
+      "name": "Probability",
+      "category": "Math",
+      "priority": "Medium",
+      "count": 264,
+      "added": 0,
+      "projected": 264,
+      "sources": null
+    },
+    {
+      "slug": "simulation-misc",
+      "name": "Simulation Misc",
+      "category": "Miscellaneous",
+      "priority": "Low",
+      "count": 271,
+      "added": 271,
+      "projected": 271,
+      "sources": {
+        "title": 20,
+        "tag": 196,
+        "keyword": 55
+      }
+    },
+    {
+      "slug": "dijkstra",
+      "name": "Dijkstra",
+      "category": "Graph",
+      "priority": "High",
+      "count": 272,
+      "added": 0,
+      "projected": 272,
+      "sources": null
+    },
+    {
+      "slug": "xor",
+      "name": "XOR",
+      "category": "Bit Manipulation",
+      "priority": "Medium",
+      "count": 282,
+      "added": 0,
+      "projected": 282,
+      "sources": null
+    },
+    {
+      "slug": "game-dp",
+      "name": "Game DP",
+      "category": "Dynamic Programming",
+      "priority": "Critical",
+      "count": 299,
+      "added": 0,
+      "projected": 299,
+      "sources": null
+    },
+    {
+      "slug": "floyd-warshall",
+      "name": "Floyd Warshall",
+      "category": "Graph",
+      "priority": "Critical",
+      "count": 305,
+      "added": 305,
+      "projected": 305,
+      "sources": {
+        "title": 11,
+        "tag": 294,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "bellman-ford",
+      "name": "Bellman Ford",
+      "category": "Graph",
+      "priority": "Critical",
+      "count": 309,
+      "added": 309,
+      "projected": 309,
+      "sources": {
+        "title": 15,
+        "tag": 294,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "shortest-path",
+      "name": "Shortest Path",
+      "category": "Graph",
+      "priority": "Critical",
+      "count": 326,
+      "added": 0,
+      "projected": 326,
+      "sources": null
+    },
+    {
+      "slug": "interactive",
+      "name": "Interactive",
+      "category": "Miscellaneous",
+      "priority": "Low",
+      "count": 331,
+      "added": 0,
+      "projected": 331,
+      "sources": null
+    },
+    {
+      "slug": "tree-dfs",
+      "name": "Tree DFS",
+      "category": "Tree",
+      "priority": "Critical",
+      "count": 345,
+      "added": 345,
+      "projected": 345,
+      "sources": {
+        "title": 20,
+        "tag": 325,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "union-find",
+      "name": "Union Find",
+      "category": "Graph",
+      "priority": "High",
+      "count": 411,
+      "added": 0,
+      "projected": 411,
+      "sources": null
+    },
+    {
+      "slug": "matrix",
+      "name": "Matrix",
+      "category": "Array",
+      "priority": "High",
+      "count": 413,
+      "added": 0,
+      "projected": 413,
+      "sources": null
+    },
+    {
+      "slug": "divide-and-conquer",
+      "name": "Divide and Conquer",
+      "category": "Recursion",
+      "priority": "Medium",
+      "count": 429,
+      "added": 0,
+      "projected": 429,
+      "sources": null
+    },
+    {
+      "slug": "convex-hull",
+      "name": "Convex Hull",
+      "category": "Geometry",
+      "priority": "Low",
+      "count": 474,
+      "added": 0,
+      "projected": 474,
+      "sources": null
+    },
+    {
+      "slug": "cross-product",
+      "name": "Cross Product",
+      "category": "Geometry",
+      "priority": "Low",
+      "count": 474,
+      "added": 0,
+      "projected": 474,
+      "sources": null
+    },
+    {
+      "slug": "disjoint-set",
+      "name": "Disjoint Set",
+      "category": "Graph",
+      "priority": "Critical",
+      "count": 509,
+      "added": 509,
+      "projected": 509,
+      "sources": {
+        "title": 20,
+        "tag": 489,
+        "keyword": 0
+      }
+    },
+    {
+      "slug": "bitmask-dp",
+      "name": "Bitmask DP",
+      "category": "Dynamic Programming",
+      "priority": "Critical",
+      "count": 703,
+      "added": 0,
+      "projected": 703,
+      "sources": null
+    },
+    {
+      "slug": "ad-hoc",
+      "name": "Ad Hoc",
+      "category": "Miscellaneous",
+      "priority": "Low",
+      "count": 840,
+      "added": 0,
+      "projected": 840,
+      "sources": null
+    },
+    {
+      "slug": "two-pointer",
+      "name": "Two Pointer",
+      "category": "Two Pointer",
+      "priority": "Critical",
+      "count": 867,
+      "added": 0,
+      "projected": 867,
+      "sources": null
+    },
+    {
+      "slug": "combinatorics",
+      "name": "Combinatorics",
+      "category": "Math",
+      "priority": "Medium",
+      "count": 891,
+      "added": 0,
+      "projected": 891,
+      "sources": null
+    },
+    {
+      "slug": "prime",
+      "name": "Prime",
+      "category": "Math",
+      "priority": "Medium",
+      "count": 966,
+      "added": 0,
+      "projected": 966,
+      "sources": null
+    },
+    {
+      "slug": "bitmask",
+      "name": "Bitmask",
+      "category": "Bit Manipulation",
+      "priority": "Medium",
+      "count": 983,
+      "added": 0,
+      "projected": 983,
+      "sources": null
+    },
+    {
+      "slug": "hashmap",
+      "name": "HashMap",
+      "category": "Hashing",
+      "priority": "Critical",
+      "count": 1068,
+      "added": 0,
+      "projected": 1068,
+      "sources": null
+    },
+    {
+      "slug": "tree-traversal",
+      "name": "Tree Traversal",
+      "category": "Tree",
+      "priority": "Critical",
+      "count": 1172,
+      "added": 0,
+      "projected": 1172,
+      "sources": null
+    },
+    {
+      "slug": "graph-bfs",
+      "name": "Graph BFS",
+      "category": "Graph",
+      "priority": "Critical",
+      "count": 1518,
+      "added": 0,
+      "projected": 1518,
+      "sources": null
+    },
+    {
+      "slug": "binary-search",
+      "name": "Binary Search",
+      "category": "Binary Search",
+      "priority": "Critical",
+      "count": 1656,
+      "added": 0,
+      "projected": 1656,
+      "sources": null
+    },
+    {
+      "slug": "kmp",
+      "name": "KMP",
+      "category": "String",
+      "priority": "Medium",
+      "count": 1679,
+      "added": 0,
+      "projected": 1679,
+      "sources": null
+    },
+    {
+      "slug": "custom-comparator",
+      "name": "Custom Comparator",
+      "category": "Sorting",
+      "priority": "Medium",
+      "count": 1734,
+      "added": 0,
+      "projected": 1734,
+      "sources": null
+    },
+    {
+      "slug": "constructive",
+      "name": "Constructive",
+      "category": "Miscellaneous",
+      "priority": "Low",
+      "count": 2094,
+      "added": 0,
+      "projected": 2094,
+      "sources": null
+    },
+    {
+      "slug": "brute-force",
+      "name": "Brute Force",
+      "category": "Array",
+      "priority": "High",
+      "count": 2129,
+      "added": 0,
+      "projected": 2129,
+      "sources": null
+    },
+    {
+      "slug": "graph-dfs",
+      "name": "Graph DFS",
+      "category": "Graph",
+      "priority": "Critical",
+      "count": 2153,
+      "added": 0,
+      "projected": 2153,
+      "sources": null
+    },
+    {
+      "slug": "design",
+      "name": "Design",
+      "category": "Miscellaneous",
+      "priority": "Low",
+      "count": 2163,
+      "added": 0,
+      "projected": 2163,
+      "sources": null
+    },
+    {
+      "slug": "basic-array",
+      "name": "Basic Array",
+      "category": "Array",
+      "priority": "High",
+      "count": 2196,
+      "added": 0,
+      "projected": 2196,
+      "sources": null
+    },
+    {
+      "slug": "implementation",
+      "name": "Implementation",
+      "category": "Miscellaneous",
+      "priority": "Low",
+      "count": 3023,
+      "added": 0,
+      "projected": 3023,
+      "sources": null
+    },
+    {
+      "slug": "memoization",
+      "name": "Memoization",
+      "category": "Dynamic Programming",
+      "priority": "Critical",
+      "count": 3169,
+      "added": 0,
+      "projected": 3169,
+      "sources": null
+    },
+    {
+      "slug": "tabulation",
+      "name": "Tabulation",
+      "category": "Dynamic Programming",
+      "priority": "Critical",
+      "count": 3169,
+      "added": 0,
+      "projected": 3169,
+      "sources": null
+    },
+    {
+      "slug": "greedy-choice",
+      "name": "Greedy Choice",
+      "category": "Greedy",
+      "priority": "High",
+      "count": 3981,
+      "added": 0,
+      "projected": 3981,
+      "sources": null
+    },
+    {
+      "slug": "gcd",
+      "name": "GCD",
+      "category": "Math",
+      "priority": "Medium",
+      "count": 4195,
+      "added": 0,
+      "projected": 4195,
+      "sources": null
+    },
+    {
+      "slug": "modular-arithmetic",
+      "name": "Modular Arithmetic",
+      "category": "Math",
+      "priority": "Medium",
+      "count": 4300,
+      "added": 0,
+      "projected": 4300,
+      "sources": null
+    }
+  ]
+}

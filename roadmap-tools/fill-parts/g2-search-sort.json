@@ -1,0 +1,332 @@
+{
+  "binary-search-on-answer": {
+    "titles": [
+      "Koko Eating Bananas",
+      "Split Array Largest Sum",
+      "Capacity To Ship Packages Within D Days",
+      "Aggressive Cows",
+      "Minimum Number of Days to Make m Bouquets",
+      "Painter's Partition Problem",
+      "Allocate Minimum Number of Pages",
+      "Book Allocation Problem",
+      "Magnetic Force Between Two Balls",
+      "Maximum Running Time of N Computers",
+      "Minimize the Maximum Difference of Pairs",
+      "Find the Smallest Divisor Given a Threshold",
+      "Minimize Max Distance to Gas Station",
+      "Kth Smallest Number in Multiplication Table",
+      "Ugly Number III",
+      "Divide Chocolate",
+      "Minimum Time to Complete Trips",
+      "Minimized Maximum of Products Distributed to Any Store",
+      "Minimum Speed to Arrive on Time",
+      "Maximum Candies Allocated to K Children"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\ballocat\\w* (books|pages|minimum)",
+      "\\bpainter'?s? partition\\b",
+      "\\baggressive cows\\b",
+      "\\bkoko\\b",
+      "\\bminimize (the )?max"
+    ]
+  },
+  "lower-bound": {
+    "titles": [
+      "Search Insert Position",
+      "Find First and Last Position of Element in Sorted Array",
+      "Successful Pairs of Spells and Potions",
+      "Time Based Key-Value Store",
+      "Random Pick with Weight",
+      "Sqrt(x)",
+      "Ceiling in a Sorted Array",
+      "Floor in a Sorted Array",
+      "First and Last Position of an Element In Sorted Array",
+      "Number of Occurrence",
+      "Count Occurrences in Sorted Array",
+      "Guess Number Higher or Lower",
+      "Valid Perfect Square",
+      "First Bad Version",
+      "Binary Search",
+      "Lower Bound"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\blower bound\\b",
+      "\\bfloor in\\b.*sorted",
+      "\\bceiling in\\b.*sorted",
+      "\\bsearch insert\\b"
+    ]
+  },
+  "upper-bound": {
+    "titles": [
+      "Find Right Interval",
+      "Count Negative Numbers in a Sorted Matrix",
+      "Maximum Count of Positive Integer and Negative Integer",
+      "Number of Flowers in Full Bloom",
+      "Upper Bound",
+      "Count Occurrences in Sorted Array",
+      "Number of Occurrence",
+      "Ceiling in a Sorted Array",
+      "Find First and Last Position of Element in Sorted Array",
+      "Count of Smaller Numbers After Self",
+      "How Many Numbers Are Smaller Than the Current Number",
+      "Find Smallest Letter Greater Than Target",
+      "The Number of Weak Characters in the Game",
+      "Count Pairs Whose Sum is Less than Target"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bupper bound\\b",
+      "\\bfind (the )?smallest letter greater\\b",
+      "\\bnext greater (letter|element).*sorted"
+    ]
+  },
+  "peak-element": {
+    "titles": [
+      "Find Peak Element",
+      "Peak Index in a Mountain Array",
+      "Find in Mountain Array",
+      "Find a Peak Element II",
+      "Find Peak Element II",
+      "Peak Element",
+      "Longest Mountain in Array",
+      "Valid Mountain Array",
+      "Minimum Number of Removals to Make Mountain Array",
+      "Find the Peak of a Mountain Array",
+      "Peak Element in a 2D Grid",
+      "Find Peak Element in a 2D Array",
+      "Peak Index in Mountain Array"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bpeak (element|index)\\b",
+      "\\bmountain array\\b"
+    ]
+  },
+  "rotated-array": {
+    "titles": [
+      "Search in Rotated Sorted Array",
+      "Search in Rotated Sorted Array II",
+      "Find Minimum in Rotated Sorted Array",
+      "Find Minimum in Rotated Sorted Array II",
+      "Search in Rotated Sorted Array I",
+      "Rotate Array",
+      "Check if Array Is Sorted and Rotated",
+      "Minimum in Rotated Sorted Array",
+      "Find How Many Times Array Is Rotated",
+      "Rotation Count in Rotated Sorted Array",
+      "Search Element in a Rotated Sorted Array",
+      "Number of Times a Sorted Array is Rotated",
+      "Rotate Array by K"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\brotated sorted array\\b",
+      "\\bsorted and rotated\\b",
+      "\\btimes.*(array).*rotated\\b"
+    ]
+  },
+  "search-space-reduction": {
+    "titles": [
+      "Search a 2D Matrix",
+      "Search a 2D Matrix II",
+      "Kth Smallest Element in a Sorted Matrix",
+      "Find K-th Smallest Pair Distance",
+      "Kth Smallest Number in Multiplication Table",
+      "Median of Two Sorted Arrays",
+      "Split Array Largest Sum",
+      "Koko Eating Bananas",
+      "Search in a Sorted Array of Unknown Size",
+      "Find Smallest Common Element in All Rows",
+      "Row With Maximum Ones",
+      "Kth Smallest Sum of a Matrix With Sorted Rows",
+      "Peak Index in a Mountain Array",
+      "Count Negative Numbers in a Sorted Matrix"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bsearch a 2d matrix\\b",
+      "\\bkth smallest.*(matrix|multiplication|pair)"
+    ]
+  },
+  "merge-sort": {
+    "titles": [
+      "Sort an Array",
+      "Count of Smaller Numbers After Self",
+      "Reverse Pairs",
+      "Count of Range Sum",
+      "Merge Sorted Array",
+      "Merge k Sorted Lists",
+      "Merge Two Sorted Lists",
+      "Global and Local Inversions",
+      "Count Inversions",
+      "Number of Inversions",
+      "Merge Sort",
+      "Sort List",
+      "Count Reverse Pairs",
+      "Counting Inversions",
+      "Merge Two Sorted Arrays Without Extra Space"
+    ],
+    "tags": ["Merge Sort", "Divide and Conquer"],
+    "keywords": [
+      "\\bmerge sort\\b",
+      "\\b(count(ing)?|number of) inversions?\\b",
+      "\\breverse pairs\\b"
+    ]
+  },
+  "quick-sort": {
+    "titles": [
+      "Sort an Array",
+      "Kth Largest Element in an Array",
+      "K Closest Points to Origin",
+      "Wiggle Sort II",
+      "Kth Smallest Element in a Sorted Matrix",
+      "Kth Largest Element in a Stream",
+      "Quick Sort",
+      "Sort Colors",
+      "Top K Frequent Elements",
+      "Find the Kth Largest Integer in the Array",
+      "K-th Largest Element",
+      "Third Maximum Number"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bquick ?sort\\b",
+      "\\bquick ?select\\b",
+      "\\bkth (largest|smallest)\\b"
+    ]
+  },
+  "heap-sort": {
+    "titles": [
+      "Sort an Array",
+      "Kth Largest Element in an Array",
+      "Top K Frequent Elements",
+      "K Closest Points to Origin",
+      "Sort Characters By Frequency",
+      "Last Stone Weight",
+      "Heap Sort",
+      "The K Weakest Rows in a Matrix",
+      "Kth Largest Element in a Stream",
+      "Find K Pairs with Smallest Sums",
+      "Ugly Number II",
+      "Kth Smallest Element in a Sorted Matrix"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bheap ?sort\\b",
+      "\\bheapify\\b"
+    ]
+  },
+  "counting-sort": {
+    "titles": [
+      "Sort Colors",
+      "Relative Sort Array",
+      "Height Checker",
+      "Sort Array by Increasing Frequency",
+      "Sort an Array",
+      "Maximum Gap",
+      "Sort Characters By Frequency",
+      "Counting Sort",
+      "H-Index",
+      "Contains Duplicate III",
+      "Sort Array By Parity",
+      "Sort the People",
+      "Rank Transform of an Array",
+      "Find All Numbers Disappeared in an Array"
+    ],
+    "tags": ["Counting Sort"],
+    "keywords": [
+      "\\bcounting sort\\b"
+    ]
+  },
+  "bucket-sort": {
+    "titles": [
+      "Maximum Gap",
+      "Top K Frequent Elements",
+      "Sort Characters By Frequency",
+      "Contains Duplicate III",
+      "Sort Colors",
+      "Bucket Sort",
+      "Top K Frequent Words",
+      "H-Index",
+      "Find K Closest Elements",
+      "Group Anagrams",
+      "Sort an Array",
+      "Insert Delete GetRandom O(1)",
+      "Sort List"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bbucket sort\\b",
+      "\\bmaximum gap\\b"
+    ]
+  },
+  "radix-sort": {
+    "titles": [
+      "Maximum Gap",
+      "Sort an Array",
+      "Radix Sort",
+      "Sort Integers by The Number of 1 Bits",
+      "Sort Array by Increasing Frequency",
+      "Largest Number",
+      "Contains Duplicate III",
+      "Sort the People",
+      "Maximum Product of Two Elements in an Array",
+      "Query Kth Smallest Trimmed Number",
+      "Minimum Operations to Make the Array Sorted",
+      "Sort the Jumbled Numbers"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bradix sort\\b"
+    ]
+  },
+  "partial-sorting": {
+    "titles": [
+      "Kth Largest Element in an Array",
+      "Top K Frequent Elements",
+      "K Closest Points to Origin",
+      "Find K Closest Elements",
+      "Kth Smallest Element in a Sorted Matrix",
+      "K Closest Numbers",
+      "Sort the Matrix Diagonally",
+      "Top K Frequent Words",
+      "Find K Pairs with Smallest Sums",
+      "The K Weakest Rows in a Matrix",
+      "Kth Largest Element in a Stream",
+      "K Highest Ranked Items Within a Price Range",
+      "Partial Sort",
+      "Kth Largest Sum in a Binary Tree"
+    ],
+    "tags": [],
+    "keywords": [
+      "\\bpartial sort\\b",
+      "\\bk closest\\b",
+      "\\btop k\\b"
+    ]
+  },
+  "master-theorem": {
+    "titles": [
+      "Sort an Array",
+      "Merge k Sorted Lists",
+      "Maximum Subarray",
+      "The Skyline Problem",
+      "Different Ways to Add Parentheses",
+      "Count of Smaller Numbers After Self",
+      "Reverse Pairs",
+      "Count of Range Sum",
+      "Median of Two Sorted Arrays",
+      "Pow(x, n)",
+      "Search a 2D Matrix",
+      "Beautiful Array",
+      "Balanced Binary Tree",
+      "Convert Sorted Array to Binary Search Tree"
+    ],
+    "tags": ["Divide and Conquer"],
+    "keywords": [
+      "\\bmaster theorem\\b",
+      "\\bdivide and conquer\\b"
+    ]
+  }
+}

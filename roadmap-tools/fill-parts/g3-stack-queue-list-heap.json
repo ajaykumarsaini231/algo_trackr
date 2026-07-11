@@ -1,0 +1,473 @@
+{
+  "increasing-stack": {
+    "titles": [
+      "Next Greater Element I",
+      "Next Greater Element II",
+      "Next Greater Element III",
+      "Next Greater Element IV",
+      "Daily Temperatures",
+      "Online Stock Span",
+      "Sum of Subarray Minimums",
+      "Sum of Subarray Ranges",
+      "Remove K Digits",
+      "Remove Duplicate Letters",
+      "Smallest Subsequence of Distinct Characters",
+      "Largest Rectangle in Histogram",
+      "Maximal Rectangle",
+      "Steps to Make Array Non-decreasing",
+      "Final Prices With a Special Discount in a Shop",
+      "Number of Visible People in a Queue",
+      "Maximum Width Ramp"
+    ],
+    "tags": [
+      "Monotonic Stack",
+      "Stack"
+    ],
+    "keywords": [
+      "Next Greater",
+      "Subarray Minimum",
+      "Monotonic"
+    ]
+  },
+  "decreasing-stack": {
+    "titles": [
+      "Next Greater Element I",
+      "Next Greater Element II",
+      "Next Greater Element IV",
+      "Daily Temperatures",
+      "Online Stock Span",
+      "Remove K Digits",
+      "Remove Duplicate Letters",
+      "Sum of Subarray Minimums",
+      "Sum of Subarray Ranges",
+      "Maximum Width Ramp",
+      "Trapping Rain Water",
+      "Largest Rectangle in Histogram",
+      "Maximal Rectangle",
+      "Steps to Make Array Non-decreasing",
+      "132 Pattern",
+      "Shortest Unsorted Continuous Subarray",
+      "Number of Visible People in a Queue"
+    ],
+    "tags": [
+      "Monotonic Stack",
+      "Stack"
+    ],
+    "keywords": [
+      "Next Greater",
+      "Daily Temperature",
+      "Subarray Range"
+    ]
+  },
+  "expression-evaluation": {
+    "titles": [
+      "Evaluate Reverse Polish Notation",
+      "Basic Calculator",
+      "Basic Calculator II",
+      "Basic Calculator III",
+      "Basic Calculator IV",
+      "Decode String",
+      "Number of Atoms",
+      "Different Ways to Add Parentheses",
+      "Expression Add Operators",
+      "Parsing A Boolean Expression",
+      "Ternary Expression Parser",
+      "Build Binary Expression Tree From Infix Expression",
+      "Design an Expression Tree With Evaluate Function",
+      "Solve the Equation",
+      "Clumsy Factorial",
+      "The Score of Students Solving Math Expression"
+    ],
+    "tags": [
+      "Stack",
+      "expression parsing"
+    ],
+    "keywords": [
+      "Calculator",
+      "Expression",
+      "Reverse Polish",
+      "Decode String"
+    ]
+  },
+  "parentheses": {
+    "titles": [
+      "Valid Parentheses",
+      "Generate Parentheses",
+      "Longest Valid Parentheses",
+      "Minimum Remove to Make Valid Parentheses",
+      "Score of Parentheses",
+      "Remove Invalid Parentheses",
+      "Minimum Add to Make Parentheses Valid",
+      "Check if a Parentheses String Can Be Valid",
+      "Different Ways to Add Parentheses",
+      "Maximum Nesting Depth of the Parentheses",
+      "Minimum Number of Swaps to Make the String Balanced",
+      "Valid Parenthesis String",
+      "Check Balanced Parentheses",
+      "Minimum Insertions to Balance a Parentheses String"
+    ],
+    "tags": [
+      "Stack"
+    ],
+    "keywords": [
+      "Parenthes",
+      "Parenthesis",
+      "Balanced",
+      "Bracket"
+    ]
+  },
+  "next-greater-element": {
+    "titles": [
+      "Next Greater Element I",
+      "Next Greater Element II",
+      "Next Greater Element III",
+      "Next Greater Element IV",
+      "Daily Temperatures",
+      "Online Stock Span",
+      "Next Greater Node In Linked List",
+      "Sum of Subarray Minimums",
+      "Sum of Subarray Ranges",
+      "Maximum Width Ramp",
+      "Number of Visible People in a Queue",
+      "Final Prices With a Special Discount in a Shop",
+      "Trapping Rain Water",
+      "Largest Rectangle in Histogram",
+      "132 Pattern",
+      "Buildings With an Ocean View"
+    ],
+    "tags": [
+      "Monotonic Stack",
+      "Stack"
+    ],
+    "keywords": [
+      "Next Greater",
+      "Daily Temperature",
+      "Stock Span"
+    ]
+  },
+  "histogram": {
+    "titles": [
+      "Largest Rectangle in Histogram",
+      "Maximal Rectangle",
+      "Trapping Rain Water",
+      "Container With Most Water",
+      "Maximal Square",
+      "Count Submatrices With All Ones",
+      "Sum of Subarray Minimums",
+      "Number of Submatrices That Sum to Target",
+      "Maximum Score of a Good Subarray",
+      "Largest Submatrix With Rearrangements",
+      "Trapping Rain Water II"
+    ],
+    "tags": [
+      "Monotonic Stack",
+      "Stack"
+    ],
+    "keywords": [
+      "Rectangle in Histogram",
+      "Maximal Rectangle",
+      "Histogram"
+    ]
+  },
+  "deque": {
+    "titles": [
+      "Sliding Window Maximum",
+      "Shortest Subarray with Sum at Least K",
+      "Constrained Subsequence Sum",
+      "Jump Game VI",
+      "Design Circular Deque",
+      "Design Front Middle Back Queue",
+      "Continuous Subarrays",
+      "Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit",
+      "Max Value of Equation",
+      "Shortest Subarray to be Removed to Make Array Sorted",
+      "Sliding Window Median",
+      "Sum of Subarray Minimums"
+    ],
+    "tags": [
+      "Monotonic Queue",
+      "Queue"
+    ],
+    "keywords": [
+      "Sliding Window Maximum",
+      "Deque",
+      "Constrained Subsequence"
+    ]
+  },
+  "circular-queue": {
+    "titles": [
+      "Design Circular Queue",
+      "Design Circular Deque",
+      "Design Front Middle Back Queue",
+      "Implement Queue using Stacks",
+      "Implement Stack using Queues",
+      "Number of Recent Calls",
+      "Moving Average from Data Stream",
+      "Design Hit Counter",
+      "Design Bounded Blocking Queue",
+      "Design Circular Array",
+      "Circular Queue Implementation"
+    ],
+    "tags": [
+      "Queue",
+      "Design"
+    ],
+    "keywords": [
+      "Circular Queue",
+      "Circular Deque",
+      "Queue using",
+      "Front Middle Back"
+    ]
+  },
+  "priority-queue": {
+    "titles": [
+      "Kth Largest Element in an Array",
+      "Kth Largest Element in a Stream",
+      "Top K Frequent Elements",
+      "Top K Frequent Words",
+      "K Closest Points to Origin",
+      "Task Scheduler",
+      "Reorganize String",
+      "Meeting Rooms II",
+      "Find K Pairs with Smallest Sums",
+      "IPO",
+      "Furthest Building You Can Reach",
+      "Single-Threaded CPU",
+      "Ugly Number II",
+      "Minimum Cost to Connect Sticks",
+      "The K Weakest Rows in a Matrix",
+      "Maximum Performance of a Team",
+      "Process Tasks Using Servers"
+    ],
+    "tags": [
+      "Heap (Priority Queue)"
+    ],
+    "keywords": [
+      "Kth Largest",
+      "Top K Frequent",
+      "K Closest",
+      "K Pairs"
+    ]
+  },
+  "merge-list": {
+    "titles": [
+      "Merge Two Sorted Lists",
+      "Merge k Sorted Lists",
+      "Add Two Numbers",
+      "Add Two Numbers II",
+      "Odd Even Linked List",
+      "Partition List",
+      "Reverse Linked List II",
+      "Swap Nodes in Pairs",
+      "Remove Nth Node From End of List",
+      "Sort List",
+      "Insertion Sort List",
+      "Merge Nodes in Between Zeros",
+      "Merge In Between Linked Lists",
+      "Split Linked List in Parts"
+    ],
+    "tags": [
+      "Linked List"
+    ],
+    "keywords": [
+      "Merge.*Sorted List",
+      "Linked List",
+      "Two Numbers"
+    ]
+  },
+  "cycle-detection": {
+    "titles": [
+      "Linked List Cycle",
+      "Linked List Cycle II",
+      "Find the Duplicate Number",
+      "Happy Number",
+      "Middle of the Linked List",
+      "Circular Array Loop",
+      "Intersection of Two Linked Lists",
+      "Remove Nth Node From End of List",
+      "Palindrome Linked List",
+      "Reorder List",
+      "Rotate List"
+    ],
+    "tags": [
+      "Linked List"
+    ],
+    "keywords": [
+      "Linked List Cycle",
+      "Cycle",
+      "Detect.*Loop"
+    ]
+  },
+  "intersection": {
+    "titles": [
+      "Intersection of Two Linked Lists",
+      "Intersection of Two Arrays",
+      "Intersection of Two Arrays II",
+      "Interval List Intersections",
+      "Linked List Cycle II",
+      "Merge Two Sorted Lists",
+      "Get Intersection Node",
+      "Find the Duplicate Number",
+      "Middle of the Linked List",
+      "Palindrome Linked List"
+    ],
+    "tags": [
+      "Linked List"
+    ],
+    "keywords": [
+      "Intersection of Two Linked",
+      "Intersection",
+      "Interval List Intersection"
+    ]
+  },
+  "dummy-node": {
+    "titles": [
+      "Remove Nth Node From End of List",
+      "Merge Two Sorted Lists",
+      "Merge k Sorted Lists",
+      "Partition List",
+      "Reverse Linked List II",
+      "Swap Nodes in Pairs",
+      "Add Two Numbers",
+      "Odd Even Linked List",
+      "Remove Duplicates from Sorted List",
+      "Remove Duplicates from Sorted List II",
+      "Remove Linked List Elements",
+      "Delete Node in a Linked List",
+      "Rotate List",
+      "Reverse Nodes in k-Group"
+    ],
+    "tags": [
+      "Linked List"
+    ],
+    "keywords": [
+      "Remove.*Node",
+      "Linked List",
+      "Remove Duplicates from Sorted List"
+    ]
+  },
+  "median-finding": {
+    "titles": [
+      "Find Median from Data Stream",
+      "Sliding Window Median",
+      "Median of Two Sorted Arrays",
+      "Finding MK Average",
+      "Sequentially Ordinal Rank Tracker",
+      "The Number of the Smallest Unoccupied Chair",
+      "Kth Largest Element in a Stream",
+      "IPO",
+      "Find K Pairs with Smallest Sums",
+      "Maximize the Minimum Powered City"
+    ],
+    "tags": [
+      "Heap (Priority Queue)",
+      "Data Stream"
+    ],
+    "keywords": [
+      "Median from Data Stream",
+      "Sliding Window Median",
+      "Median"
+    ]
+  },
+  "merge-k-lists": {
+    "titles": [
+      "Merge k Sorted Lists",
+      "Merge Two Sorted Lists",
+      "Smallest Range Covering Elements from K Lists",
+      "Find K Pairs with Smallest Sums",
+      "Kth Smallest Element in a Sorted Matrix",
+      "Ugly Number II",
+      "Super Ugly Number",
+      "Kth Smallest Number in Multiplication Table",
+      "Find K-th Smallest Pair Distance",
+      "Merge Sorted Array",
+      "Kth Smallest Prime Fraction",
+      "Minimum Cost to Connect Sticks"
+    ],
+    "tags": [
+      "Heap (Priority Queue)",
+      "Linked List"
+    ],
+    "keywords": [
+      "Merge k Sorted",
+      "Merge.*Sorted List",
+      "Smallest Range"
+    ]
+  },
+  "min-heap": {
+    "titles": [
+      "Kth Largest Element in an Array",
+      "Kth Largest Element in a Stream",
+      "K Closest Points to Origin",
+      "Find K Pairs with Smallest Sums",
+      "Minimum Cost to Connect Sticks",
+      "Meeting Rooms II",
+      "Merge k Sorted Lists",
+      "Smallest Range Covering Elements from K Lists",
+      "Kth Smallest Element in a Sorted Matrix",
+      "Ugly Number II",
+      "Single-Threaded CPU",
+      "The K Weakest Rows in a Matrix",
+      "Process Tasks Using Servers",
+      "Minimum Number of Refueling Stops"
+    ],
+    "tags": [
+      "Heap (Priority Queue)"
+    ],
+    "keywords": [
+      "Kth Smallest",
+      "K Closest",
+      "Smallest Sums"
+    ]
+  },
+  "max-heap": {
+    "titles": [
+      "Top K Frequent Elements",
+      "Top K Frequent Words",
+      "Task Scheduler",
+      "Reorganize String",
+      "Furthest Building You Can Reach",
+      "IPO",
+      "Maximum Performance of a Team",
+      "Last Stone Weight",
+      "Maximum Number of Events That Can Be Attended II",
+      "Find the Kth Largest Integer in the Array",
+      "Maximal Score After Applying K Operations",
+      "Take Gifts From the Richest Pile",
+      "Most Profit Assigning Work",
+      "Maximum Average Pass Ratio"
+    ],
+    "tags": [
+      "Heap (Priority Queue)"
+    ],
+    "keywords": [
+      "Top K Frequent",
+      "Last Stone Weight",
+      "Kth Largest"
+    ]
+  },
+  "heapify": {
+    "titles": [
+      "Kth Largest Element in an Array",
+      "Last Stone Weight",
+      "Top K Frequent Elements",
+      "K Closest Points to Origin",
+      "Sort Characters By Frequency",
+      "Sort an Array",
+      "Relative Ranks",
+      "Minimum Cost to Connect Sticks",
+      "Find K Pairs with Smallest Sums",
+      "Ugly Number II",
+      "The Kth Factor of n",
+      "Kth Largest Element in a Stream"
+    ],
+    "tags": [
+      "Heap (Priority Queue)"
+    ],
+    "keywords": [
+      "Kth Largest",
+      "Last Stone Weight",
+      "Sort.*Frequency"
+    ]
+  }
+}

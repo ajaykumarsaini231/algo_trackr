@@ -1,0 +1,471 @@
+{
+  "1d-dp": {
+    "titles": [
+      "Climbing Stairs",
+      "House Robber",
+      "House Robber II",
+      "House Robber III",
+      "Min Cost Climbing Stairs",
+      "Fibonacci Number",
+      "N-th Tribonacci Number",
+      "Decode Ways",
+      "Decode Ways II",
+      "Word Break",
+      "Word Break II",
+      "Maximum Subarray",
+      "Maximum Product Subarray",
+      "Jump Game",
+      "Jump Game II",
+      "Longest Increasing Subsequence",
+      "Coin Change",
+      "Delete and Earn",
+      "Best Time to Buy and Sell Stock with Cooldown",
+      "Wiggle Subsequence",
+      "Maximum Alternating Subsequence Sum",
+      "Count Ways To Build Good Strings"
+    ],
+    "tags": [],
+    "keywords": [
+      "climbing stairs",
+      "house robber",
+      "decode ways",
+      "min cost climbing"
+    ]
+  },
+  "2d-dp": {
+    "titles": [
+      "Unique Paths",
+      "Unique Paths II",
+      "Unique Paths III",
+      "Minimum Path Sum",
+      "Triangle",
+      "Maximal Square",
+      "Dungeon Game",
+      "Minimum Falling Path Sum",
+      "Minimum Falling Path Sum II",
+      "Edit Distance",
+      "Interleaving String",
+      "Distinct Subsequences",
+      "Longest Common Subsequence",
+      "Maximal Rectangle",
+      "Ones and Zeroes",
+      "Cherry Pickup",
+      "Cherry Pickup II",
+      "Count Square Submatrices with All Ones",
+      "Number of Paths with Max Score",
+      "Where Will the Ball Fall"
+    ],
+    "tags": [],
+    "keywords": [
+      "unique paths",
+      "path sum",
+      "falling path"
+    ]
+  },
+  "grid-dp": {
+    "titles": [
+      "Unique Paths",
+      "Unique Paths II",
+      "Unique Paths III",
+      "Minimum Path Sum",
+      "Triangle",
+      "Maximal Square",
+      "Dungeon Game",
+      "Cherry Pickup",
+      "Cherry Pickup II",
+      "Number of Paths with Max Score",
+      "Minimum Falling Path Sum",
+      "Minimum Falling Path Sum II",
+      "Where Will the Ball Fall",
+      "Path with Maximum Gold",
+      "Count Square Submatrices with All Ones",
+      "Maximal Rectangle",
+      "Minimum Path Cost in a Grid",
+      "Minimum Cost to Make at Least One Valid Path in a Grid",
+      "Number of Ways to Divide a Long Corridor",
+      "Paths in Matrix Whose Sum Is Divisible by K"
+    ],
+    "tags": [],
+    "keywords": [
+      "min(imum)? path sum",
+      "falling path",
+      "path with maximum gold",
+      "cherry pickup"
+    ]
+  },
+  "lis": {
+    "titles": [
+      "Longest Increasing Subsequence",
+      "Longest Increasing Subsequence II",
+      "Russian Doll Envelopes",
+      "Number of Longest Increasing Subsequence",
+      "Maximum Length of Pair Chain",
+      "Largest Divisible Subset",
+      "Make Array Strictly Increasing",
+      "Minimum Number of Removals to Make Mountain Array",
+      "Longest Continuous Increasing Subsequence",
+      "Longest Arithmetic Subsequence",
+      "Longest Arithmetic Subsequence of Given Difference",
+      "Maximum Number of Events That Can Be Attended II",
+      "Delete Columns to Make Sorted III",
+      "Best Team With No Conflicts",
+      "Find the Longest Valid Obstacle Course at Each Position",
+      "Longest String Chain"
+    ],
+    "tags": [],
+    "keywords": [
+      "longest.*increasing subsequence",
+      "russian doll",
+      "longest.*arithmetic subsequence"
+    ]
+  },
+  "lcs": {
+    "titles": [
+      "Longest Common Subsequence",
+      "Longest Palindromic Subsequence",
+      "Edit Distance",
+      "Distinct Subsequences",
+      "Shortest Common Supersequence",
+      "Delete Operation for Two Strings",
+      "Uncrossed Lines",
+      "Minimum ASCII Delete Sum for Two Strings",
+      "Interleaving String",
+      "Longest Palindromic Substring",
+      "Longest Common Subpath",
+      "Maximum Number of Non-Overlapping Palindrome Substrings",
+      "Minimum Insertion Steps to Make a String Palindrome",
+      "Wildcard Matching",
+      "Regular Expression Matching",
+      "One Edit Distance"
+    ],
+    "tags": [],
+    "keywords": [
+      "common subsequence",
+      "common supersequence",
+      "edit distance",
+      "delete sum for two strings"
+    ]
+  },
+  "knapsack": {
+    "titles": [
+      "Partition Equal Subset Sum",
+      "Target Sum",
+      "Coin Change",
+      "Coin Change II",
+      "Last Stone Weight II",
+      "Ones and Zeroes",
+      "Combination Sum IV",
+      "Perfect Squares",
+      "Number of Dice Rolls With Target Sum",
+      "Profitable Schemes",
+      "Partition to K Equal Sum Subsets",
+      "Minimum Cost For Tickets",
+      "Form Largest Integer With Digits That Add up to Target",
+      "Tallest Billboard",
+      "Number of Ways to Earn Points",
+      "Count of Sub-Multisets With Bounded Sum"
+    ],
+    "tags": [],
+    "keywords": [
+      "coin change",
+      "subset sum",
+      "target sum",
+      "perfect squares"
+    ]
+  },
+  "digit-dp": {
+    "titles": [
+      "Count Digit One",
+      "Numbers With Repeated Digits",
+      "Count Special Integers",
+      "Numbers At Most N Given Digit Set",
+      "Non-negative Integers without Consecutive Ones",
+      "Rotated Digits",
+      "Count Numbers with Unique Digits",
+      "Count of Integers",
+      "Number of Digit One",
+      "Digit Count in Range",
+      "Count the Number of Powerful Integers",
+      "Count Stepping Numbers in Range"
+    ],
+    "tags": [],
+    "keywords": [
+      "count.*digit one",
+      "repeated digits",
+      "special integers",
+      "unique digits",
+      "stepping numbers in range"
+    ]
+  },
+  "interval-dp": {
+    "titles": [
+      "Burst Balloons",
+      "Minimum Cost to Merge Stones",
+      "Remove Boxes",
+      "Strange Printer",
+      "Palindrome Partitioning II",
+      "Minimum Score Triangulation of Polygon",
+      "Guess Number Higher or Lower II",
+      "Predict the Winner",
+      "Stone Game",
+      "Stone Game II",
+      "Stone Game III",
+      "Stone Game V",
+      "Stone Game VII",
+      "Minimum Cost Tree From Leaf Values",
+      "Print Words Vertically",
+      "Palindrome Partitioning III"
+    ],
+    "tags": [
+      "games"
+    ],
+    "keywords": [
+      "burst balloons",
+      "merge stones",
+      "stone game",
+      "triangulation of polygon"
+    ]
+  },
+  "optimization-dp": {
+    "titles": [
+      "Best Time to Buy and Sell Stock III",
+      "Best Time to Buy and Sell Stock IV",
+      "Best Time to Buy and Sell Stock with Cooldown",
+      "Best Time to Buy and Sell Stock with Transaction Fee",
+      "Paint House",
+      "Paint House II",
+      "Paint House III",
+      "Minimum Difficulty of a Job Schedule",
+      "Partition Array for Maximum Sum",
+      "Largest Sum of Averages",
+      "Maximum Profit in Job Scheduling",
+      "Minimum Cost to Cut a Stick",
+      "Allocate Mailboxes",
+      "Divide Chocolate",
+      "Capacity To Ship Packages Within D Days",
+      "Split Array Largest Sum"
+    ],
+    "tags": [],
+    "keywords": [
+      "buy and sell stock",
+      "paint house",
+      "job schedul",
+      "split array largest sum"
+    ]
+  },
+  "interval-scheduling": {
+    "titles": [
+      "Non-overlapping Intervals",
+      "Merge Intervals",
+      "Insert Interval",
+      "Minimum Number of Arrows to Burst Balloons",
+      "Meeting Rooms",
+      "Meeting Rooms II",
+      "Meeting Rooms III",
+      "Maximum Length of Pair Chain",
+      "Car Pooling",
+      "Maximum Number of Events That Can Be Attended",
+      "Maximum Number of Events That Can Be Attended II",
+      "Remove Covered Intervals",
+      "Interval List Intersections",
+      "My Calendar I",
+      "My Calendar II",
+      "Course Schedule III"
+    ],
+    "tags": [
+      "schedules"
+    ],
+    "keywords": [
+      "non-overlapping intervals",
+      "merge intervals",
+      "meeting rooms",
+      "burst balloons"
+    ]
+  },
+  "activity-selection": {
+    "titles": [
+      "Non-overlapping Intervals",
+      "Maximum Number of Events That Can Be Attended",
+      "Maximum Number of Events That Can Be Attended II",
+      "Meeting Rooms",
+      "Meeting Rooms II",
+      "Minimum Number of Arrows to Burst Balloons",
+      "Maximum Length of Pair Chain",
+      "Course Schedule III",
+      "Maximum Profit in Job Scheduling",
+      "Two City Scheduling",
+      "Task Scheduler",
+      "Reveal Cards In Increasing Order",
+      "Remove Covered Intervals",
+      "Minimum Number of Taps to Open to Water a Garden",
+      "Video Stitching",
+      "Maximum Number of Non-Overlapping Substrings"
+    ],
+    "tags": [
+      "schedules"
+    ],
+    "keywords": [
+      "events that can be attended",
+      "job scheduling",
+      "minimum number of taps",
+      "video stitching"
+    ]
+  },
+  "sorting-greedy": {
+    "titles": [
+      "Assign Cookies",
+      "Two City Scheduling",
+      "Boats to Save People",
+      "Minimum Cost to Hire K Workers",
+      "Queue Reconstruction by Height",
+      "Task Scheduler",
+      "Car Pooling",
+      "Reduce Array Size to The Half",
+      "Maximum Units on a Truck",
+      "Minimum Deletions to Make Character Frequencies Unique",
+      "Most Profit Assigning Work",
+      "Advantage Shuffle",
+      "Largest Number",
+      "Wiggle Sort II",
+      "Minimum Cost to Connect Sticks",
+      "Split Array into Consecutive Subsequences"
+    ],
+    "tags": [
+      "Striver:Greedy Algorithms"
+    ],
+    "keywords": [
+      "assign cookies",
+      "boats to save people",
+      "two city scheduling",
+      "hire k workers"
+    ]
+  },
+  "exchange-argument": {
+    "titles": [
+      "Largest Number",
+      "Minimum Cost to Hire K Workers",
+      "Queue Reconstruction by Height",
+      "Two City Scheduling",
+      "Boats to Save People",
+      "Reorganize String",
+      "Distant Barcodes",
+      "Maximum Number of Weeks for Which You Can Work",
+      "Minimum Cost to Connect Sticks",
+      "Remove K Digits",
+      "Remove Duplicate Letters",
+      "Smallest Subsequence of Distinct Characters",
+      "Create Maximum Number",
+      "Minimum Number of Refueling Stops",
+      "Maximum Performance of a Team",
+      "IPO"
+    ],
+    "tags": [],
+    "keywords": [
+      "queue reconstruction",
+      "remove k digits",
+      "reorganize string",
+      "refueling stops"
+    ]
+  },
+  "fractional-knapsack": {
+    "titles": [
+      "Maximum Units on a Truck",
+      "Minimum Cost to Hire K Workers",
+      "IPO",
+      "Most Profit Assigning Work",
+      "Advantage Shuffle",
+      "Gas Station",
+      "Boats to Save People",
+      "Minimum Number of Refueling Stops",
+      "Maximum Performance of a Team",
+      "Best Time to Buy and Sell Stock II",
+      "Container With Most Water",
+      "Assign Cookies",
+      "Maximum Bags With Full Capacity of Rocks",
+      "Maximize the Topmost Element After K Moves",
+      "Furthest Building You Can Reach",
+      "Minimum Cost to Fill Given Weight of a Truck"
+    ],
+    "tags": [],
+    "keywords": [
+      "fractional knapsack",
+      "maximum units on a truck",
+      "furthest building you can reach"
+    ]
+  },
+  "n-queens": {
+    "titles": [
+      "N-Queens",
+      "N-Queens II",
+      "The Knight's Tour",
+      "Rat in a Maze",
+      "Grid Illumination"
+    ],
+    "tags": [
+      "Backtracking"
+    ],
+    "keywords": [
+      "\\bn[- ]?queens\\b"
+    ]
+  },
+  "sudoku": {
+    "titles": [
+      "Sudoku Solver",
+      "Valid Sudoku"
+    ],
+    "tags": [],
+    "keywords": [
+      "sudoku"
+    ]
+  },
+  "branch-and-bound": {
+    "titles": [
+      "Optimal Account Balancing",
+      "Split Array With Same Average",
+      "Matchsticks to Square",
+      "Partition to K Equal Sum Subsets",
+      "Maximum Score Words Formed by Letters",
+      "The Number of Beautiful Subsets",
+      "Maximum Compatibility Score Sum",
+      "Minimum Incompatibility",
+      "Fair Distribution of Cookies",
+      "Maximum Good People Based on Statements",
+      "Closest Subsequence Sum",
+      "Partition Array Into Two Arrays to Minimize Sum Difference",
+      "Find Minimum Time to Finish All Jobs",
+      "Distribute Repeating Integers"
+    ],
+    "tags": [
+      "meet-in-the-middle"
+    ],
+    "keywords": [
+      "matchsticks to square",
+      "equal sum subsets",
+      "fair distribution of cookies"
+    ]
+  },
+  "tail-recursion": {
+    "titles": [
+      "Pow(x, n)",
+      "Factorial Trailing Zeroes",
+      "Sum of Digits in the Minimum Number",
+      "Add Digits",
+      "Sqrt(x)",
+      "Power of Two",
+      "Power of Three",
+      "Power of Four",
+      "Reverse Integer",
+      "Fibonacci Number",
+      "N-th Tribonacci Number",
+      "Elimination Game"
+    ],
+    "tags": [
+      "Recursion"
+    ],
+    "keywords": [
+      "\\bpow\\(x",
+      "factorial trailing zeroes",
+      "power of (two|three|four)"
+    ]
+  }
+}

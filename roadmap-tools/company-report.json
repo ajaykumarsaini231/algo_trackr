@@ -1,0 +1,380 @@
+{
+  "generatedAt": "2026-07-10T18:36:21.317Z",
+  "importVersion": "2026.07.1",
+  "matchedQuestions": 3039,
+  "companies": 46,
+  "under5": [
+    "Palantir:1"
+  ],
+  "lowConfidence": [],
+  "rows": [
+    {
+      "company": "Google",
+      "total": 2344,
+      "easy": 606,
+      "medium": 1225,
+      "hard": 513,
+      "avgConfidence": 85
+    },
+    {
+      "company": "Amazon",
+      "total": 2031,
+      "easy": 535,
+      "medium": 1116,
+      "hard": 380,
+      "avgConfidence": 85
+    },
+    {
+      "company": "Bloomberg",
+      "total": 1240,
+      "easy": 401,
+      "medium": 670,
+      "hard": 169,
+      "avgConfidence": 84
+    },
+    {
+      "company": "Meta",
+      "total": 554,
+      "easy": 124,
+      "medium": 336,
+      "hard": 94,
+      "avgConfidence": 84
+    },
+    {
+      "company": "Microsoft",
+      "total": 513,
+      "easy": 126,
+      "medium": 300,
+      "hard": 87,
+      "avgConfidence": 84
+    },
+    {
+      "company": "Uber",
+      "total": 506,
+      "easy": 68,
+      "medium": 307,
+      "hard": 131,
+      "avgConfidence": 85
+    },
+    {
+      "company": "Apple",
+      "total": 473,
+      "easy": 126,
+      "medium": 274,
+      "hard": 73,
+      "avgConfidence": 85
+    },
+    {
+      "company": "Oracle",
+      "total": 394,
+      "easy": 86,
+      "medium": 240,
+      "hard": 68,
+      "avgConfidence": 85
+    },
+    {
+      "company": "TikTok",
+      "total": 351,
+      "easy": 34,
+      "medium": 245,
+      "hard": 72,
+      "avgConfidence": 83
+    },
+    {
+      "company": "Adobe",
+      "total": 300,
+      "easy": 84,
+      "medium": 168,
+      "hard": 48,
+      "avgConfidence": 85
+    },
+    {
+      "company": "Goldman Sachs",
+      "total": 296,
+      "easy": 55,
+      "medium": 186,
+      "hard": 55,
+      "avgConfidence": 84
+    },
+    {
+      "company": "Salesforce",
+      "total": 221,
+      "easy": 34,
+      "medium": 131,
+      "hard": 56,
+      "avgConfidence": 83
+    },
+    {
+      "company": "Visa",
+      "total": 164,
+      "easy": 34,
+      "medium": 104,
+      "hard": 26,
+      "avgConfidence": 84
+    },
+    {
+      "company": "LinkedIn",
+      "total": 160,
+      "easy": 32,
+      "medium": 99,
+      "hard": 29,
+      "avgConfidence": 87
+    },
+    {
+      "company": "ByteDance",
+      "total": 151,
+      "easy": 18,
+      "medium": 105,
+      "hard": 28,
+      "avgConfidence": 84
+    },
+    {
+      "company": "Walmart",
+      "total": 144,
+      "easy": 22,
+      "medium": 96,
+      "hard": 26,
+      "avgConfidence": 83
+    },
+    {
+      "company": "Nvidia",
+      "total": 142,
+      "easy": 34,
+      "medium": 93,
+      "hard": 15,
+      "avgConfidence": 83
+    },
+    {
+      "company": "PayPal",
+      "total": 138,
+      "easy": 29,
+      "medium": 89,
+      "hard": 20,
+      "avgConfidence": 84
+    },
+    {
+      "company": "Snap",
+      "total": 125,
+      "easy": 16,
+      "medium": 69,
+      "hard": 40,
+      "avgConfidence": 86
+    },
+    {
+      "company": "Cisco",
+      "total": 123,
+      "easy": 38,
+      "medium": 70,
+      "hard": 15,
+      "avgConfidence": 84
+    },
+    {
+      "company": "Flipkart",
+      "total": 110,
+      "easy": 7,
+      "medium": 70,
+      "hard": 33,
+      "avgConfidence": 83
+    },
+    {
+      "company": "VMware",
+      "total": 106,
+      "easy": 18,
+      "medium": 72,
+      "hard": 16,
+      "avgConfidence": 83
+    },
+    {
+      "company": "DE Shaw",
+      "total": 105,
+      "easy": 11,
+      "medium": 64,
+      "hard": 30,
+      "avgConfidence": 83
+    },
+    {
+      "company": "Atlassian",
+      "total": 102,
+      "easy": 18,
+      "medium": 66,
+      "hard": 18,
+      "avgConfidence": 83
+    },
+    {
+      "company": "Expedia",
+      "total": 93,
+      "easy": 18,
+      "medium": 63,
+      "hard": 12,
+      "avgConfidence": 85
+    },
+    {
+      "company": "DoorDash",
+      "total": 88,
+      "easy": 9,
+      "medium": 51,
+      "hard": 28,
+      "avgConfidence": 84
+    },
+    {
+      "company": "ServiceNow",
+      "total": 86,
+      "easy": 16,
+      "medium": 57,
+      "hard": 13,
+      "avgConfidence": 83
+    },
+    {
+      "company": "Intuit",
+      "total": 84,
+      "easy": 13,
+      "medium": 55,
+      "hard": 16,
+      "avgConfidence": 84
+    },
+    {
+      "company": "Pinterest",
+      "total": 83,
+      "easy": 3,
+      "medium": 48,
+      "hard": 32,
+      "avgConfidence": 83
+    },
+    {
+      "company": "Airbnb",
+      "total": 79,
+      "easy": 13,
+      "medium": 42,
+      "hard": 24,
+      "avgConfidence": 89
+    },
+    {
+      "company": "Samsung",
+      "total": 75,
+      "easy": 16,
+      "medium": 40,
+      "hard": 19,
+      "avgConfidence": 86
+    },
+    {
+      "company": "Qualcomm",
+      "total": 67,
+      "easy": 29,
+      "medium": 29,
+      "hard": 9,
+      "avgConfidence": 83
+    },
+    {
+      "company": "Tesla",
+      "total": 49,
+      "easy": 14,
+      "medium": 29,
+      "hard": 6,
+      "avgConfidence": 84
+    },
+    {
+      "company": "Databricks",
+      "total": 47,
+      "easy": 3,
+      "medium": 30,
+      "hard": 14,
+      "avgConfidence": 84
+    },
+    {
+      "company": "Sprinklr",
+      "total": 39,
+      "easy": 1,
+      "medium": 17,
+      "hard": 21,
+      "avgConfidence": 84
+    },
+    {
+      "company": "Media.net",
+      "total": 39,
+      "easy": 7,
+      "medium": 17,
+      "hard": 15,
+      "avgConfidence": 85
+    },
+    {
+      "company": "Netflix",
+      "total": 35,
+      "easy": 6,
+      "medium": 22,
+      "hard": 7,
+      "avgConfidence": 85
+    },
+    {
+      "company": "Intel",
+      "total": 29,
+      "easy": 13,
+      "medium": 15,
+      "hard": 1,
+      "avgConfidence": 86
+    },
+    {
+      "company": "Spotify",
+      "total": 26,
+      "easy": 10,
+      "medium": 11,
+      "hard": 5,
+      "avgConfidence": 86
+    },
+    {
+      "company": "Twilio",
+      "total": 23,
+      "easy": 6,
+      "medium": 15,
+      "hard": 2,
+      "avgConfidence": 84
+    },
+    {
+      "company": "OpenAI",
+      "total": 17,
+      "easy": 1,
+      "medium": 14,
+      "hard": 2,
+      "avgConfidence": 84
+    },
+    {
+      "company": "Booking",
+      "total": 14,
+      "easy": 2,
+      "medium": 8,
+      "hard": 4,
+      "avgConfidence": 85
+    },
+    {
+      "company": "Stripe",
+      "total": 11,
+      "easy": 1,
+      "medium": 9,
+      "hard": 1,
+      "avgConfidence": 84
+    },
+    {
+      "company": "Cloudflare",
+      "total": 10,
+      "easy": 1,
+      "medium": 8,
+      "hard": 1,
+      "avgConfidence": 86
+    },
+    {
+      "company": "Directi",
+      "total": 8,
+      "easy": 0,
+      "medium": 5,
+      "hard": 3,
+      "avgConfidence": 87
+    },
+    {
+      "company": "Palantir",
+      "total": 1,
+      "easy": 1,
+      "medium": 0,
+      "hard": 0,
+      "avgConfidence": 87
+    }
+  ]
+}
