@@ -70,6 +70,9 @@ export async function POST(req: NextRequest) {
         skipped: stats.skipped,
         haltedEarly: stats.haltedEarly,
         durationMs: stats.durationMs,
+        // Per-user decision sample (≤50) so the audit trail shows exactly
+        // why each user was sent, skipped, or failed on this pass.
+        decisions: stats.decisions,
       },
     });
 

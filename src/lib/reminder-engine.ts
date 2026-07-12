@@ -104,8 +104,19 @@ export async function runReminderPass(opts: {
     durationMs: 0,
     decisions: [],
   };
+  // Structured per-decision log lines (visible in the platform's function
+  // logs). Capped so a large user base cannot flood the log stream.
+  let logBudget = 200;
+  const logDecision = (userId: string, action: string, detail?: string) => {
+    if (logBudget-- > 0) {
+      console.log(
+        JSON.stringify({ tag: "reminder.decision", userId, action, ...(detail ? { detail } : {}) }),
+      );
+    }
+  };
   const skip = (reason: SkipReason | string, userId?: string, detail?: string) => {
     stats.skipped[reason] = (stats.skipped[reason] || 0) + 1;
+    if (userId) logDecision(userId, `skip:${reason}`, detail);
     if (stats.decisions.length < 50 && userId) {
       stats.decisions.push({ userId, action: `skip:${reason}`, detail });
     }
@@ -243,6 +254,7 @@ export async function runReminderPass(opts: {
           const uid = String(c.settings.userId);
           if (dryRun) {
             stats.wouldSend++;
+            logDecision(uid, "would_send", c.slotKey);
             if (stats.decisions.length < 50) {
               stats.decisions.push({
                 userId: uid,
@@ -317,6 +329,7 @@ export async function runReminderPass(opts: {
                 },
               ),
             ]);
+            logDecision(uid, "sent", `${c.slotKey} id=${result.messageId ?? ""}`);
             if (stats.decisions.length < 50) {
               stats.decisions.push({ userId: uid, action: "sent", detail: c.slotKey });
             }
@@ -347,6 +360,11 @@ export async function runReminderPass(opts: {
                 },
               ),
             ]);
+            logDecision(
+              uid,
+              "failed",
+              `${result.errorType}/${result.errorCode}: ${result.errorMessage ?? ""}`,
+            );
             if (stats.decisions.length < 50) {
               stats.decisions.push({
                 userId: uid,
@@ -366,5 +384,19 @@ export async function runReminderPass(opts: {
   }
 
   stats.durationMs = Date.now() - started;
+  console.log(
+    JSON.stringify({
+      tag: "reminder.run_summary",
+      configured: stats.configured,
+      dryRun: stats.dryRun,
+      checked: stats.checked,
+      sent: stats.sent,
+      failed: stats.failed,
+      wouldSend: stats.wouldSend,
+      skipped: stats.skipped,
+      haltedEarly: stats.haltedEarly,
+      durationMs: stats.durationMs,
+    }),
+  );
   return stats;
 }
