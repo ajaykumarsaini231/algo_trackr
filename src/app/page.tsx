@@ -18,6 +18,7 @@ import { breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { TOPICS, COMPANIES } from "@/lib/constants";
 import { ALL_PATTERNS } from "@/lib/patterns";
 import { slugify } from "@/lib/utils";
+import { Reveal, Stagger, StaggerItem, AnimatedCounter, GradientBackground } from "@/components/motion";
 
 const PROBLEM_COUNT = "15,000+";
 const TOPIC_COUNT = TOPICS.length;
@@ -40,6 +41,13 @@ export const metadata: Metadata = buildMetadata({
     "dsa practice problems",
   ],
 });
+
+const STATS: { value: number; suffix?: string; decimals?: number; label: string }[] = [
+  { value: 15000, suffix: "+", label: "Practice problems" },
+  { value: TOPIC_COUNT, label: "Core topics" },
+  { value: PATTERN_COUNT, label: "Algorithm patterns" },
+  { value: COMPANY_COUNT, suffix: "+", label: "Companies covered" },
+];
 
 const FAQS = [
   {
@@ -70,7 +78,7 @@ const EXPLORE = [
   { href: "/companies", icon: Building2, title: "Companies", desc: `Company-wise interview prep for ${COMPANY_COUNT}+ top tech companies.` },
   { href: "/sheets", icon: BookMarked, title: "Sheets", desc: "Curated ladders like Blind 75 and Striver A2Z to structure your prep." },
   { href: "/roadmaps", icon: MapIcon, title: "Roadmaps", desc: "Step-by-step visual paths from beginner to interview-ready." },
-  { href: "/about", icon: Sparkles, title: "About", desc: "How DSAspire works and the methodology behind the platform." },
+  { href: "/about", icon: Sparkles, title: "About", desc: "How DSAspire works and the developer behind the platform." },
 ];
 
 const FEATURES = [
@@ -85,120 +93,124 @@ export default function HomePage() {
   const topCompanies = COMPANIES.filter((c) => c !== "Others").slice(0, 12);
 
   return (
-    <>
-      <JsonLd
-        data={[
-          breadcrumbSchema([{ name: "Home", path: "/" }]),
-          faqSchema(FAQS),
-        ]}
-      />
+    <div className="overflow-x-hidden">
+      <JsonLd data={[breadcrumbSchema([{ name: "Home", path: "/" }]), faqSchema(FAQS)]} />
 
       {/* Hero */}
-      <section className="mx-auto max-w-4xl px-4 py-16 text-center sm:py-24">
-        <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-border bg-muted/50 px-3 py-1 text-xs font-medium text-muted-foreground">
-          <Sparkles className="h-3.5 w-3.5 text-primary" />
-          {PROBLEM_COUNT} problems · {TOPIC_COUNT} topics · {PATTERN_COUNT} patterns
-        </div>
-        <h1 className="text-balance text-4xl font-extrabold tracking-tight sm:text-6xl">
-          Master DSA &amp; crack coding interviews
-        </h1>
-        <p className="mx-auto mt-5 max-w-2xl text-pretty text-lg text-muted-foreground">
-          DSAspire is a free Data Structures &amp; Algorithms learning platform with{" "}
-          {PROBLEM_COUNT} curated problems, visual roadmaps, pattern-based guides,
-          company-wise interview prep and spaced-repetition revision — everything you
-          need to prepare for FAANG and top tech interviews.
-        </p>
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-          <Link
-            href="/topics"
-            className="inline-flex h-11 items-center gap-2 rounded-lg bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-sm transition-colors hover:bg-primary/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-          >
-            Start learning <ArrowRight className="h-4 w-4" />
-          </Link>
-          <Link
-            href="/roadmaps"
-            className="inline-flex h-11 items-center gap-2 rounded-lg border border-border bg-background px-6 text-sm font-semibold transition-colors hover:bg-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-          >
-            View roadmaps
-          </Link>
+      <section className="relative">
+        <GradientBackground />
+        <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:py-24">
+          <Reveal>
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-border bg-background/60 px-3 py-1 text-xs font-medium text-muted-foreground backdrop-blur">
+              <Sparkles className="h-3.5 w-3.5 text-primary" />
+              {PROBLEM_COUNT} problems · {TOPIC_COUNT} topics · {PATTERN_COUNT} patterns
+            </div>
+            <h1 className="text-balance text-4xl font-extrabold tracking-tight sm:text-6xl">
+              Master DSA &amp; crack coding interviews
+            </h1>
+            <p className="mx-auto mt-5 max-w-2xl text-pretty text-lg text-muted-foreground">
+              DSAspire is a free Data Structures &amp; Algorithms learning platform with{" "}
+              {PROBLEM_COUNT} curated problems, visual roadmaps, pattern-based guides,
+              company-wise interview prep and spaced-repetition revision — everything you
+              need to prepare for FAANG and top tech interviews.
+            </p>
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+              <Link
+                href="/topics"
+                className="inline-flex h-11 items-center gap-2 rounded-lg bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              >
+                Start learning <ArrowRight className="h-4 w-4" />
+              </Link>
+              <Link
+                href="/roadmaps"
+                className="inline-flex h-11 items-center gap-2 rounded-lg border border-border bg-background/60 px-6 text-sm font-semibold backdrop-blur transition-colors hover:bg-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              >
+                View roadmaps
+              </Link>
+            </div>
+          </Reveal>
         </div>
       </section>
 
       {/* Stats */}
       <section aria-label="Platform stats" className="border-y border-border bg-muted/30">
-        <div className="mx-auto grid max-w-5xl grid-cols-2 gap-px px-4 py-10 sm:grid-cols-4">
-          {[
-            [PROBLEM_COUNT, "Practice problems"],
-            [`${TOPIC_COUNT}`, "Core topics"],
-            [`${PATTERN_COUNT}`, "Algorithm patterns"],
-            [`${COMPANY_COUNT}+`, "Companies covered"],
-          ].map(([value, label]) => (
-            <div key={label} className="text-center">
-              <div className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">{value}</div>
-              <div className="mt-1 text-sm text-muted-foreground">{label}</div>
-            </div>
+        <Stagger className="mx-auto grid max-w-5xl grid-cols-2 gap-px px-4 py-10 sm:grid-cols-4">
+          {STATS.map((s) => (
+            <StaggerItem key={s.label} className="text-center">
+              <div className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+                <AnimatedCounter value={s.value} suffix={s.suffix} decimals={s.decimals ?? 0} />
+              </div>
+              <div className="mt-1 text-sm text-muted-foreground">{s.label}</div>
+            </StaggerItem>
           ))}
-        </div>
+        </Stagger>
       </section>
 
       {/* What is DSAspire */}
       <section className="mx-auto max-w-3xl px-4 py-16">
-        <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">What is DSAspire?</h2>
-        <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-          DSAspire is a structured, information-dense workspace for mastering Data
-          Structures &amp; Algorithms and preparing for technical interviews. It brings
-          together a large catalog of {PROBLEM_COUNT} problems (from LeetCode, Codeforces
-          and the Striver A2Z sheet), organizes them by {TOPIC_COUNT} topics and{" "}
-          {PATTERN_COUNT} patterns, and layers on learning roadmaps, curated sheets,
-          company-wise interview prep, progress tracking and spaced-repetition revision.
-          Whether you are a beginner starting arrays or an experienced engineer targeting
-          FAANG, DSAspire gives you a clear path from foundation to interview-ready.
-        </p>
+        <Reveal>
+          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">What is DSAspire?</h2>
+          <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
+            DSAspire is a structured, information-dense workspace for mastering Data
+            Structures &amp; Algorithms and preparing for technical interviews. It brings
+            together a large catalog of {PROBLEM_COUNT} problems (from LeetCode, Codeforces
+            and the Striver A2Z sheet), organizes them by {TOPIC_COUNT} topics and{" "}
+            {PATTERN_COUNT} patterns, and layers on learning roadmaps, curated sheets,
+            company-wise interview prep, progress tracking and spaced-repetition revision.
+            Whether you are a beginner starting arrays or an experienced engineer targeting
+            FAANG, DSAspire gives you a clear path from foundation to interview-ready.
+          </p>
+        </Reveal>
       </section>
 
       {/* Explore */}
       <section className="mx-auto max-w-6xl px-4 pb-8">
-        <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Explore DSAspire</h2>
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <Reveal>
+          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Explore DSAspire</h2>
+        </Reveal>
+        <Stagger className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {EXPLORE.map(({ href, icon: Icon, title, desc }) => (
-            <Link
-              key={href}
-              href={href}
-              className="group flex flex-col rounded-xl border border-border bg-card p-6 transition-colors hover:border-primary/40 hover:bg-accent/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-            >
-              <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                <Icon className="h-5 w-5" />
-              </div>
-              <h3 className="mt-4 flex items-center gap-1.5 font-semibold group-hover:text-primary">
-                {title}
-                <ArrowRight className="h-4 w-4 opacity-0 transition-opacity group-hover:opacity-100" />
-              </h3>
-              <p className="mt-1.5 text-sm text-muted-foreground">{desc}</p>
-            </Link>
+            <StaggerItem key={href}>
+              <Link
+                href={href}
+                className="group flex h-full flex-col rounded-xl border border-border bg-card/70 p-6 backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              >
+                <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
+                  <Icon className="h-5 w-5" />
+                </div>
+                <h3 className="mt-4 flex items-center gap-1.5 font-semibold group-hover:text-primary">
+                  {title}
+                  <ArrowRight className="h-4 w-4 -translate-x-1 opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100" />
+                </h3>
+                <p className="mt-1.5 text-sm text-muted-foreground">{desc}</p>
+              </Link>
+            </StaggerItem>
           ))}
-        </div>
+        </Stagger>
       </section>
 
       {/* Features */}
       <section className="mx-auto max-w-6xl px-4 py-16">
-        <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Why learn with DSAspire</h2>
-        <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <Reveal>
+          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Why learn with DSAspire</h2>
+        </Reveal>
+        <Stagger className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {FEATURES.map(({ icon: Icon, title, desc }) => (
-            <div key={title}>
+            <StaggerItem key={title}>
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
                 <Icon className="h-5 w-5" />
               </div>
               <h3 className="mt-4 font-semibold">{title}</h3>
               <p className="mt-1.5 text-sm text-muted-foreground">{desc}</p>
-            </div>
+            </StaggerItem>
           ))}
-        </div>
+        </Stagger>
       </section>
 
       {/* Popular topics + companies (internal linking) */}
       <section className="mx-auto max-w-6xl px-4 pb-16">
         <div className="grid gap-10 lg:grid-cols-2">
-          <div>
+          <Reveal>
             <h2 className="text-xl font-bold tracking-tight">Popular DSA topics</h2>
             <div className="mt-4 flex flex-wrap gap-2">
               {topTopics.map((t) => (
@@ -214,8 +226,8 @@ export default function HomePage() {
                 All topics →
               </Link>
             </div>
-          </div>
-          <div>
+          </Reveal>
+          <Reveal delay={0.1}>
             <h2 className="text-xl font-bold tracking-tight">Prepare by company</h2>
             <div className="mt-4 flex flex-wrap gap-2">
               {topCompanies.map((name) => (
@@ -231,47 +243,52 @@ export default function HomePage() {
                 All companies →
               </Link>
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
 
       {/* FAQ */}
       <section className="mx-auto max-w-3xl px-4 pb-20">
-        <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Frequently asked questions</h2>
+        <Reveal>
+          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Frequently asked questions</h2>
+        </Reveal>
         <dl className="mt-6 divide-y divide-border">
           {FAQS.map((f) => (
-            <div key={f.q} className="py-5">
+            <Reveal key={f.q} className="py-5">
               <dt className="font-semibold">{f.q}</dt>
               <dd className="mt-2 text-pretty leading-relaxed text-muted-foreground">{f.a}</dd>
-            </div>
+            </Reveal>
           ))}
         </dl>
       </section>
 
       {/* CTA */}
-      <section className="border-t border-border bg-muted/30">
+      <section className="relative overflow-hidden border-t border-border bg-muted/30">
+        <GradientBackground />
         <div className="mx-auto max-w-3xl px-4 py-16 text-center">
-          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Ready to start?</h2>
-          <p className="mx-auto mt-3 max-w-xl text-muted-foreground">
-            Pick a topic, follow a roadmap, and track every problem you solve on the way to
-            your next offer.
-          </p>
-          <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
-            <Link
-              href="/topics"
-              className="inline-flex h-11 items-center gap-2 rounded-lg bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
-            >
-              Browse topics <ArrowRight className="h-4 w-4" />
-            </Link>
-            <Link
-              href="/sheets"
-              className="inline-flex h-11 items-center gap-2 rounded-lg border border-border bg-background px-6 text-sm font-semibold transition-colors hover:bg-accent"
-            >
-              Explore sheets
-            </Link>
-          </div>
+          <Reveal>
+            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Ready to start?</h2>
+            <p className="mx-auto mt-3 max-w-xl text-muted-foreground">
+              Pick a topic, follow a roadmap, and track every problem you solve on the way to
+              your next offer.
+            </p>
+            <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
+              <Link
+                href="/topics"
+                className="inline-flex h-11 items-center gap-2 rounded-lg bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20"
+              >
+                Browse topics <ArrowRight className="h-4 w-4" />
+              </Link>
+              <Link
+                href="/sheets"
+                className="inline-flex h-11 items-center gap-2 rounded-lg border border-border bg-background px-6 text-sm font-semibold transition-colors hover:bg-accent"
+              >
+                Explore sheets
+              </Link>
+            </div>
+          </Reveal>
         </div>
       </section>
-    </>
+    </div>
   );
 }

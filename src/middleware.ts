@@ -53,6 +53,16 @@ export default auth(async (req) => {
   const path = nextUrl.pathname;
   const isApi = path.startsWith("/api/");
 
+  // Static asset files in /public (resume, images, fonts…) are always public —
+  // never gate a file download behind the auth redirect.
+  if (
+    /\.(pdf|png|jpe?g|gif|webp|avif|svg|ico|txt|xml|json|webmanifest|woff2?|ttf|otf|mp4|webm|css|js|map)$/i.test(
+      path,
+    )
+  ) {
+    return NextResponse.next();
+  }
+
   // Public static + SEO/crawler files (sitemap, robots, manifest, OG image,
   // site-verification) must bypass auth AND rate limiting so search engines and
   // social scrapers — which carry no session — can fetch them.
