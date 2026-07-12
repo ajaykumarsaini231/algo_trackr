@@ -5,16 +5,38 @@ import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { Sidebar } from "@/components/layout/sidebar";
 import { Header } from "@/components/layout/header";
+import { PublicHeader } from "@/components/layout/public-header";
+import { PublicFooter } from "@/components/layout/public-footer";
 import { ImpersonationBanner } from "@/components/admin/impersonation-banner";
 import { ActivityTracker } from "@/components/activity/activity-tracker";
 
 /** Routes that render standalone (no sidebar/header chrome). */
 const BARE_ROUTES = new Set(["/signin", "/signup"]);
 
+/**
+ * Public content routes render marketing chrome (top nav + fat footer) for
+ * everyone — crawlers and logged-in users alike (LeetCode-style split). The
+ * sidebar/app chrome is reserved for the authenticated product.
+ */
+const PUBLIC_PREFIXES = [
+  "/about",
+  "/contact",
+  "/roadmaps",
+  "/topics",
+  "/patterns",
+  "/companies",
+  "/sheets",
+  "/algorithm-patterns",
+  "/blog",
+];
+
 export function AppShell({ children }: { children: React.ReactNode }) {
   const [open, setOpen] = React.useState(false);
   const pathname = usePathname();
   const bare = BARE_ROUTES.has(pathname);
+  const isPublicRoute =
+    pathname === "/" ||
+    PUBLIC_PREFIXES.some((p) => pathname === p || pathname.startsWith(`${p}/`));
 
   // Lock body scroll while the mobile drawer is open.
   React.useEffect(() => {
@@ -26,6 +48,18 @@ export function AppShell({ children }: { children: React.ReactNode }) {
 
   if (bare) {
     return <main className="min-h-screen">{children}</main>;
+  }
+
+  if (isPublicRoute) {
+    return (
+      <div className="flex min-h-screen flex-col">
+        <PublicHeader />
+        <main id="main" className="flex-1">
+          {children}
+        </main>
+        <PublicFooter />
+      </div>
+    );
   }
 
   return (

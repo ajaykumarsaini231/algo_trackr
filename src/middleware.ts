@@ -17,8 +17,27 @@ import { checkRateLimit } from "@/lib/rate-limit";
  */
 const { auth } = NextAuth(authConfig);
 
-/** Paths reachable without a session. */
-const PUBLIC_PAGES = new Set(["/signin", "/signup"]);
+/** Auth pages: reachable without a session; signed-in users get bounced to the app. */
+const AUTH_PAGES = new Set(["/signin", "/signup"]);
+
+/**
+ * Public content pages (crawlable, no session required). PRIVATE-BY-DEFAULT:
+ * anything NOT listed here still requires auth, so app/detail pages never leak.
+ * Exact-match only — e.g. "/topics" is public but "/topics/[slug]" stays gated
+ * until its public server-rendered version ships.
+ */
+const PUBLIC_PAGES = new Set([
+  ...AUTH_PAGES,
+  "/",
+  "/about",
+  "/contact",
+  "/roadmaps",
+  "/topics",
+  "/patterns",
+  "/companies",
+  "/sheets",
+  "/algorithm-patterns",
+]);
 // /api/reminders/run authenticates itself with the cron Bearer secret
 // (GitHub Actions has no session cookie); the handler rejects everything else.
 const PUBLIC_API_PREFIXES = ["/api/auth/", "/api/reminders/run"];
@@ -112,6 +131,7 @@ export default auth(async (req) => {
   // 4. Authentication gate.
   const isPublicApi = PUBLIC_API_PREFIXES.some((p) => path.startsWith(p));
   const isPublicPage = PUBLIC_PAGES.has(path);
+  const isAuthPage = AUTH_PAGES.has(path);
   const signedIn = Boolean(req.auth?.user);
 
   if (isApi && !isPublicApi && !signedIn) {
@@ -128,9 +148,9 @@ export default auth(async (req) => {
     return NextResponse.redirect(url);
   }
 
-  // Signed-in users landing on the auth pages go home.
-  if (!isApi && isPublicPage && signedIn) {
-    return NextResponse.redirect(new URL("/", nextUrl));
+  // Signed-in users landing on the auth pages go to their dashboard.
+  if (!isApi && isAuthPage && signedIn) {
+    return NextResponse.redirect(new URL("/dashboard", nextUrl));
   }
 
   return NextResponse.next();

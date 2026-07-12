@@ -1,322 +1,277 @@
-"use client";
-
 import Link from "next/link";
-import dynamic from "next/dynamic";
-import { ArrowRight, Database, Sparkles } from "lucide-react";
-import { PageHeader } from "@/components/shared/page-header";
-import { RecentQuestions } from "@/components/dashboard/recent-questions";
-import { Heatmap } from "@/components/charts/heatmap";
-import { ProgressBars } from "@/components/charts/progress-bars";
-import { Button } from "@/components/ui/button";
-import { StatGridSkeleton } from "@/components/shared/skeletons";
-import { EmptyState } from "@/components/shared/empty-state";
-import { Skeleton } from "@/components/ui/skeleton";
-import { useStats } from "@/hooks/use-stats";
-import { DIFFICULTY_DOT, DIFFICULTY_CHART_COLORS } from "@/lib/constants";
-import { cn, slugify } from "@/lib/utils";
-import { DIFFICULTIES } from "@/types";
+import type { Metadata } from "next";
+import {
+  ArrowRight,
+  BookMarked,
+  Building2,
+  Cpu,
+  FolderTree,
+  Map as MapIcon,
+  RotateCcw,
+  Sparkles,
+  Target,
+  TrendingUp,
+} from "lucide-react";
+import { buildMetadata } from "@/lib/seo";
+import { JsonLd } from "@/components/seo/json-ld";
+import { breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { TOPICS, COMPANIES } from "@/lib/constants";
+import { ALL_PATTERNS } from "@/lib/patterns";
+import { slugify } from "@/lib/utils";
 
-// Lazy-load the recharts donut so recharts stays out of the dashboard's initial JS.
-const DonutChart = dynamic(
-  () => import("@/components/charts/donut-chart").then((m) => m.DonutChart),
-  { ssr: false, loading: () => <Skeleton className="mx-auto h-[150px] w-[150px] rounded-full" /> },
-);
+const PROBLEM_COUNT = "15,000+";
+const TOPIC_COUNT = TOPICS.length;
+const PATTERN_COUNT = ALL_PATTERNS.length;
+const COMPANY_COUNT = COMPANIES.filter((c) => c !== "Others").length;
 
-/** Current streak (run of active days ending today/yesterday) and longest run. */
-function computeStreaks(days: { date: string; count: number }[]) {
-  let max = 0;
-  let run = 0;
-  for (const d of days) {
-    run = d.count > 0 ? run + 1 : 0;
-    if (run > max) max = run;
-  }
-  let current = 0;
-  let i = days.length - 1;
-  if (i >= 0 && days[i]!.count === 0) i--; // today hasn't broken the streak yet
-  for (; i >= 0 && days[i]!.count > 0; i--) current++;
-  return { current, max };
-}
+export const metadata: Metadata = buildMetadata({
+  title: "DSAspire — Master DSA & Crack Coding Interviews",
+  description:
+    "Free DSA learning platform with 15,000+ curated practice problems, visual roadmaps, pattern-based guides, company-wise interview prep, spaced-repetition revision and progress tracking. Prepare for FAANG and top tech interviews.",
+  path: "/",
+  keywords: [
+    "DSA",
+    "data structures and algorithms",
+    "coding interview preparation",
+    "leetcode alternative",
+    "dsa roadmap",
+    "dsa sheet",
+    "faang interview prep",
+    "dsa practice problems",
+  ],
+});
 
-function OverviewStat({
-  label,
-  value,
-  sub,
-  href,
-}: {
-  label: string;
-  value: number;
-  sub?: string;
-  href?: string;
-}) {
-  const inner = (
-    <div className={cn("h-full bg-card px-4 py-3.5", href && "transition-colors hover:bg-accent/50")}>
-      <div className="text-[11px] font-medium uppercase tracking-wider text-muted-foreground">
-        {label}
-      </div>
-      <div className="mt-1 flex items-baseline gap-1.5">
-        <span className="text-xl font-semibold tracking-tight tabular-nums">
-          {value.toLocaleString()}
-        </span>
-        {sub && <span className="text-xs tabular-nums text-muted-foreground">{sub}</span>}
-      </div>
-    </div>
-  );
-  return href ? (
-    <Link href={href} className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring">
-      {inner}
-    </Link>
-  ) : (
-    inner
-  );
-}
+const FAQS = [
+  {
+    q: "What is DSAspire?",
+    a: "DSAspire is a free Data Structures & Algorithms learning and interview-preparation platform. It offers 15,000+ curated coding problems, visual learning roadmaps, pattern-based guides, company-wise interview prep, spaced-repetition revision and personal progress tracking to help you crack coding interviews at FAANG and other top tech companies.",
+  },
+  {
+    q: "Is DSAspire free to use?",
+    a: "Yes. DSAspire's core learning features — problem catalog, topics, patterns, company prep, roadmaps and sheets — are free to use.",
+  },
+  {
+    q: "How many DSA problems and topics does DSAspire cover?",
+    a: `DSAspire covers ${PROBLEM_COUNT} problems organized into ${TOPIC_COUNT} core topics, ${PATTERN_COUNT} algorithmic patterns and interview questions mapped to ${COMPANY_COUNT}+ companies including Google, Amazon, Microsoft and Meta.`,
+  },
+  {
+    q: "How should I prepare for coding interviews with DSAspire?",
+    a: "Follow a roadmap from foundation to expert, learn each topic and its patterns, practice curated sheets like Blind 75 and Striver A2Z, target specific companies, and use spaced-repetition revision to retain what you learn.",
+  },
+  {
+    q: "Which companies does DSAspire help you prepare for?",
+    a: "DSAspire maps problems to interview questions asked at Google, Amazon, Microsoft, Meta, Apple, Bloomberg, Uber and 40+ other top technology companies.",
+  },
+];
 
-export default function DashboardPage() {
-  const { stats, isLoading, isError } = useStats();
+const EXPLORE = [
+  { href: "/topics", icon: FolderTree, title: "Topics", desc: `All ${TOPIC_COUNT} DSA topics from arrays to dynamic programming, organized with subtopics.` },
+  { href: "/algorithm-patterns", icon: Cpu, title: "Patterns", desc: `${PATTERN_COUNT} algorithmic patterns — the reusable techniques behind every interview problem.` },
+  { href: "/companies", icon: Building2, title: "Companies", desc: `Company-wise interview prep for ${COMPANY_COUNT}+ top tech companies.` },
+  { href: "/sheets", icon: BookMarked, title: "Sheets", desc: "Curated ladders like Blind 75 and Striver A2Z to structure your prep." },
+  { href: "/roadmaps", icon: MapIcon, title: "Roadmaps", desc: "Step-by-step visual paths from beginner to interview-ready." },
+  { href: "/about", icon: Sparkles, title: "About", desc: "How DSAspire works and the methodology behind the platform." },
+];
 
-  const topicProgress = stats
-    ? [...stats.byTopic]
-        .filter((t) => t.total > 0)
-        .sort((a, b) => b.total - a.total)
-        .slice(0, 8)
-        .map((t) => ({
-          label: t.topic,
-          total: t.total,
-          solved: t.solved,
-          href: `/topics/${slugify(t.topic)}`,
-        }))
-    : [];
+const FEATURES = [
+  { icon: TrendingUp, title: "Progress tracking", desc: "Track every problem you solve with a GitHub-style activity heatmap and streaks." },
+  { icon: RotateCcw, title: "Spaced-repetition revision", desc: "Schedule reviews so hard-won concepts actually stick before your interview." },
+  { icon: Target, title: "Company-targeted prep", desc: "Focus on the exact patterns and problems your target company asks." },
+  { icon: MapIcon, title: "Progressive roadmaps", desc: "Move from foundation to expert with staged, unlockable learning paths." },
+];
 
-  const streaks = stats ? computeStreaks(stats.heatmap) : { current: 0, max: 0 };
-  const isEmpty = !isLoading && stats && stats.total === 0;
+export default function HomePage() {
+  const topTopics = TOPICS.slice(0, 12);
+  const topCompanies = COMPANIES.filter((c) => c !== "Others").slice(0, 12);
 
   return (
-    <div>
-      <PageHeader
-        title="Dashboard"
-        description="Your DSA progress at a glance."
-        actions={
-          <Button asChild variant="outline" size="sm" className="gap-1.5">
-            <Link href="/statistics">
-              View statistics <ArrowRight className="h-4 w-4" />
-            </Link>
-          </Button>
-        }
+    <>
+      <JsonLd
+        data={[
+          breadcrumbSchema([{ name: "Home", path: "/" }]),
+          faqSchema(FAQS),
+        ]}
       />
 
-      {isError && (
-        <EmptyState
-          icon={<Database className="h-7 w-7" />}
-          title="Couldn't reach the database"
-          description="Make sure MongoDB is running and MONGODB_URI is set in .env.local, then refresh."
-        />
-      )}
-
-      {!isError && isLoading && (
-        <div className="space-y-6">
-          <StatGridSkeleton count={6} />
+      {/* Hero */}
+      <section className="mx-auto max-w-4xl px-4 py-16 text-center sm:py-24">
+        <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-border bg-muted/50 px-3 py-1 text-xs font-medium text-muted-foreground">
+          <Sparkles className="h-3.5 w-3.5 text-primary" />
+          {PROBLEM_COUNT} problems · {TOPIC_COUNT} topics · {PATTERN_COUNT} patterns
         </div>
-      )}
+        <h1 className="text-balance text-4xl font-extrabold tracking-tight sm:text-6xl">
+          Master DSA &amp; crack coding interviews
+        </h1>
+        <p className="mx-auto mt-5 max-w-2xl text-pretty text-lg text-muted-foreground">
+          DSAspire is a free Data Structures &amp; Algorithms learning platform with{" "}
+          {PROBLEM_COUNT} curated problems, visual roadmaps, pattern-based guides,
+          company-wise interview prep and spaced-repetition revision — everything you
+          need to prepare for FAANG and top tech interviews.
+        </p>
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+          <Link
+            href="/topics"
+            className="inline-flex h-11 items-center gap-2 rounded-lg bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-sm transition-colors hover:bg-primary/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          >
+            Start learning <ArrowRight className="h-4 w-4" />
+          </Link>
+          <Link
+            href="/roadmaps"
+            className="inline-flex h-11 items-center gap-2 rounded-lg border border-border bg-background px-6 text-sm font-semibold transition-colors hover:bg-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          >
+            View roadmaps
+          </Link>
+        </div>
+      </section>
 
-      {isEmpty && (
-        <EmptyState
-          icon={<Sparkles className="h-7 w-7" />}
-          title="Welcome! Your tracker is empty"
-          description="Set up the Admin Panel with your 8-digit key, then add questions or load the sample set to explore everything."
-          action={
-            <div className="flex flex-wrap justify-center gap-2">
-              <Button asChild>
-                <Link href="/admin">Open Admin Panel</Link>
-              </Button>
-              <Button asChild variant="outline">
-                <Link href="/topics">Browse topics</Link>
-              </Button>
+      {/* Stats */}
+      <section aria-label="Platform stats" className="border-y border-border bg-muted/30">
+        <div className="mx-auto grid max-w-5xl grid-cols-2 gap-px px-4 py-10 sm:grid-cols-4">
+          {[
+            [PROBLEM_COUNT, "Practice problems"],
+            [`${TOPIC_COUNT}`, "Core topics"],
+            [`${PATTERN_COUNT}`, "Algorithm patterns"],
+            [`${COMPANY_COUNT}+`, "Companies covered"],
+          ].map(([value, label]) => (
+            <div key={label} className="text-center">
+              <div className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">{value}</div>
+              <div className="mt-1 text-sm text-muted-foreground">{label}</div>
             </div>
-          }
-        />
-      )}
+          ))}
+        </div>
+      </section>
 
-      {!isError && !isLoading && stats && stats.total > 0 && (
-        <div className="space-y-4">
-          {/* Progress overview */}
-          <section className="overflow-hidden rounded-lg border bg-border">
-            <h2 className="sr-only">Progress overview</h2>
-            <div className="grid grid-cols-2 gap-px sm:grid-cols-3 lg:grid-cols-6">
-              <OverviewStat label="Total questions" value={stats.total} href="/search" />
-              <OverviewStat
-                label="Solved"
-                value={stats.solved}
-                sub={`${stats.completionPercentage}%`}
-              />
-              <OverviewStat label="Attempted" value={stats.attempted} />
-              <OverviewStat label="Unsolved" value={stats.unsolved} />
-              <OverviewStat label="Revision due" value={stats.revisionNeeded} href="/revision" />
-              <OverviewStat label="Favorites" value={stats.favorites} href="/favorites" />
+      {/* What is DSAspire */}
+      <section className="mx-auto max-w-3xl px-4 py-16">
+        <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">What is DSAspire?</h2>
+        <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
+          DSAspire is a structured, information-dense workspace for mastering Data
+          Structures &amp; Algorithms and preparing for technical interviews. It brings
+          together a large catalog of {PROBLEM_COUNT} problems (from LeetCode, Codeforces
+          and the Striver A2Z sheet), organizes them by {TOPIC_COUNT} topics and{" "}
+          {PATTERN_COUNT} patterns, and layers on learning roadmaps, curated sheets,
+          company-wise interview prep, progress tracking and spaced-repetition revision.
+          Whether you are a beginner starting arrays or an experienced engineer targeting
+          FAANG, DSAspire gives you a clear path from foundation to interview-ready.
+        </p>
+      </section>
+
+      {/* Explore */}
+      <section className="mx-auto max-w-6xl px-4 pb-8">
+        <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Explore DSAspire</h2>
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {EXPLORE.map(({ href, icon: Icon, title, desc }) => (
+            <Link
+              key={href}
+              href={href}
+              className="group flex flex-col rounded-xl border border-border bg-card p-6 transition-colors hover:border-primary/40 hover:bg-accent/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            >
+              <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                <Icon className="h-5 w-5" />
+              </div>
+              <h3 className="mt-4 flex items-center gap-1.5 font-semibold group-hover:text-primary">
+                {title}
+                <ArrowRight className="h-4 w-4 opacity-0 transition-opacity group-hover:opacity-100" />
+              </h3>
+              <p className="mt-1.5 text-sm text-muted-foreground">{desc}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* Features */}
+      <section className="mx-auto max-w-6xl px-4 py-16">
+        <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Why learn with DSAspire</h2>
+        <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {FEATURES.map(({ icon: Icon, title, desc }) => (
+            <div key={title}>
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                <Icon className="h-5 w-5" />
+              </div>
+              <h3 className="mt-4 font-semibold">{title}</h3>
+              <p className="mt-1.5 text-sm text-muted-foreground">{desc}</p>
             </div>
-            <div className="space-y-2.5 border-t bg-card px-4 py-4 sm:px-5">
-              {DIFFICULTIES.map((d) => {
-                const total = stats.byDifficulty[d];
-                const solved = stats.solvedByDifficulty[d];
-                const pct = total ? Math.round((solved / total) * 100) : 0;
-                return (
-                  <div key={d} className="flex items-center gap-3">
-                    <span className="flex w-20 shrink-0 items-center gap-2 text-[13px] font-medium">
-                      <span className={cn("h-2 w-2 rounded-full", DIFFICULTY_DOT[d])} />
-                      {d}
-                    </span>
-                    <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-muted">
-                      <div
-                        className={cn("h-full rounded-full", DIFFICULTY_DOT[d])}
-                        style={{ width: `${pct}%` }}
-                      />
-                    </div>
-                    <span className="w-32 shrink-0 text-right text-xs tabular-nums text-muted-foreground">
-                      {solved.toLocaleString()} / {total.toLocaleString()} solved
-                    </span>
-                    <span className="hidden w-10 shrink-0 text-right text-xs tabular-nums text-muted-foreground sm:block">
-                      {pct}%
-                    </span>
-                  </div>
-                );
-              })}
-            </div>
-          </section>
+          ))}
+        </div>
+      </section>
 
-          {/* Practice / revision / distribution */}
-          <div className="grid gap-4 lg:grid-cols-3">
-            <section className="flex flex-col rounded-lg border bg-card p-5">
-              <h2 className="text-sm font-semibold">Continue practicing</h2>
-              <p className="mt-1 text-[13px] leading-relaxed text-muted-foreground">
-                Pick up where you left off. Staged learning surfaces the next
-                unsolved question for each topic.
-              </p>
-              <div className="mt-auto flex flex-wrap items-center gap-2 pt-4">
-                <Button asChild size="sm">
-                  <Link href="/learn">Start solving</Link>
-                </Button>
-                <Button asChild size="sm" variant="outline">
-                  <Link href="/topics">Browse topics</Link>
-                </Button>
-              </div>
-            </section>
-
-            <section className="flex flex-col rounded-lg border bg-card p-5">
-              <h2 className="text-sm font-semibold">Revision due today</h2>
-              <div className="mt-2 flex items-baseline gap-2">
-                <span className="text-3xl font-semibold tracking-tight tabular-nums">
-                  {stats.revisionDue.toLocaleString()}
-                </span>
-                <span className="text-[13px] text-muted-foreground">
-                  {stats.revisionDue === 0
-                    ? "nothing due for review"
-                    : "questions waiting for review"}
-                </span>
-              </div>
-              <div className="mt-auto pt-4">
-                <Button asChild size="sm" variant="outline" className="gap-1.5">
-                  <Link href="/revision">
-                    View revision <ArrowRight className="h-4 w-4" />
-                  </Link>
-                </Button>
-              </div>
-            </section>
-
-            <section className="rounded-lg border bg-card p-5">
-              <h2 className="text-sm font-semibold">Difficulty distribution</h2>
-              <div className="mt-2">
-                <DonutChart
-                  height={150}
-                  showLegend={false}
-                  data={DIFFICULTIES.map((d) => ({
-                    name: d,
-                    value: stats.byDifficulty[d],
-                    color: DIFFICULTY_CHART_COLORS[d],
-                  }))}
-                />
-              </div>
-              <ul className="mt-3 space-y-1.5">
-                {DIFFICULTIES.map((d) => {
-                  const count = stats.byDifficulty[d];
-                  const share = stats.total ? Math.round((count / stats.total) * 100) : 0;
-                  return (
-                    <li key={d} className="flex items-center gap-2 text-[13px]">
-                      <span className={cn("h-2 w-2 rounded-full", DIFFICULTY_DOT[d])} />
-                      <span className="font-medium">{d}</span>
-                      <span className="ml-auto tabular-nums text-muted-foreground">
-                        {count.toLocaleString()}
-                        <span className="ml-1.5 inline-block w-9 text-right">({share}%)</span>
-                      </span>
-                    </li>
-                  );
-                })}
-              </ul>
-              <div className="mt-3 flex items-center justify-between border-t pt-2.5 text-[13px]">
-                <span className="font-medium">Total</span>
-                <span className="font-semibold tabular-nums">{stats.total.toLocaleString()}</span>
-              </div>
-            </section>
-          </div>
-
-          {/* Topics + activity */}
-          <div className="grid gap-4 lg:grid-cols-5">
-            <section className="rounded-lg border bg-card p-5 lg:col-span-2">
-              <div className="mb-4 flex items-center justify-between">
-                <h2 className="text-sm font-semibold">Topic progress</h2>
+      {/* Popular topics + companies (internal linking) */}
+      <section className="mx-auto max-w-6xl px-4 pb-16">
+        <div className="grid gap-10 lg:grid-cols-2">
+          <div>
+            <h2 className="text-xl font-bold tracking-tight">Popular DSA topics</h2>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {topTopics.map((t) => (
                 <Link
-                  href="/topics"
-                  className="text-xs font-medium text-muted-foreground transition-colors hover:text-foreground"
+                  key={t.slug}
+                  href={`/topics/${t.slug}`}
+                  className="rounded-full border border-border bg-card px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:border-primary/40 hover:text-foreground"
                 >
-                  All topics
+                  {t.name}
                 </Link>
-              </div>
-              <ProgressBars data={topicProgress} emptyLabel="No topics tracked yet" />
-            </section>
-
-            <section className="rounded-lg border bg-card p-5 lg:col-span-3">
-              <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
-                <div>
-                  <h2 className="text-sm font-semibold">Activity</h2>
-                  <p className="text-xs text-muted-foreground">
-                    Questions solved over the last 6 months
-                  </p>
-                </div>
-                <div className="flex items-center gap-3 text-xs text-muted-foreground">
-                  <span>
-                    <span className="font-semibold tabular-nums text-foreground">
-                      {streaks.current}
-                    </span>{" "}
-                    day current streak
-                  </span>
-                  <span aria-hidden>·</span>
-                  <span>
-                    <span className="font-semibold tabular-nums text-foreground">
-                      {streaks.max}
-                    </span>{" "}
-                    day max streak
-                  </span>
-                </div>
-              </div>
-              <Heatmap data={stats.heatmap} />
-            </section>
+              ))}
+              <Link href="/topics" className="rounded-full px-3 py-1.5 text-sm font-medium text-primary hover:underline">
+                All topics →
+              </Link>
+            </div>
           </div>
-
-          {/* Recent activity */}
-          <div className="grid gap-4 lg:grid-cols-2">
-            <RecentQuestions
-              title="Recently added"
-              questions={stats.recentlyAdded}
-              emptyText="No questions added yet."
-              dateField="createdAt"
-              viewAllHref="/search"
-            />
-            <RecentQuestions
-              title="Recently solved"
-              questions={stats.recentlySolved}
-              emptyText="No solved questions yet."
-              dateField="solvedAt"
-            />
+          <div>
+            <h2 className="text-xl font-bold tracking-tight">Prepare by company</h2>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {topCompanies.map((name) => (
+                <Link
+                  key={name}
+                  href={`/companies/${slugify(name)}`}
+                  className="rounded-full border border-border bg-card px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:border-primary/40 hover:text-foreground"
+                >
+                  {name}
+                </Link>
+              ))}
+              <Link href="/companies" className="rounded-full px-3 py-1.5 text-sm font-medium text-primary hover:underline">
+                All companies →
+              </Link>
+            </div>
           </div>
         </div>
-      )}
-    </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="mx-auto max-w-3xl px-4 pb-20">
+        <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Frequently asked questions</h2>
+        <dl className="mt-6 divide-y divide-border">
+          {FAQS.map((f) => (
+            <div key={f.q} className="py-5">
+              <dt className="font-semibold">{f.q}</dt>
+              <dd className="mt-2 text-pretty leading-relaxed text-muted-foreground">{f.a}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+
+      {/* CTA */}
+      <section className="border-t border-border bg-muted/30">
+        <div className="mx-auto max-w-3xl px-4 py-16 text-center">
+          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Ready to start?</h2>
+          <p className="mx-auto mt-3 max-w-xl text-muted-foreground">
+            Pick a topic, follow a roadmap, and track every problem you solve on the way to
+            your next offer.
+          </p>
+          <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
+            <Link
+              href="/topics"
+              className="inline-flex h-11 items-center gap-2 rounded-lg bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
+            >
+              Browse topics <ArrowRight className="h-4 w-4" />
+            </Link>
+            <Link
+              href="/sheets"
+              className="inline-flex h-11 items-center gap-2 rounded-lg border border-border bg-background px-6 text-sm font-semibold transition-colors hover:bg-accent"
+            >
+              Explore sheets
+            </Link>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
