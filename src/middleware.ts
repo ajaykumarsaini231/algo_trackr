@@ -34,6 +34,13 @@ export default auth(async (req) => {
   const path = nextUrl.pathname;
   const isApi = path.startsWith("/api/");
 
+  // Public static verification files (Google Search Console site-verification,
+  // etc.) must be reachable by crawlers with no session — serve them straight
+  // through, ahead of rate limiting and the auth gate.
+  if (path === "/google4cfb0a6190ab2db2.html") {
+    return NextResponse.next();
+  }
+
   const ip =
     req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
     req.headers.get("x-real-ip") ||
