@@ -28,7 +28,10 @@ sequenceDiagram
 
 - `cron: "3-58/5 * * * *"` — minutes :03, :08 … :58, **24/7, in UTC**. Per-user evening windows (e.g. 20:00–23:45 *in the user's own timezone*) are evaluated server-side, so a single global schedule serves every timezone.
 - GitHub cron is best-effort and heavily deprioritizes the popular minutes (:00/:15/:30/:45) — a plain `*/15` schedule was observed firing only every 1–2.5 h. Scheduling every 5 minutes on off-peak offsets yields far more actual runs. The engine's **slot arithmetic** (`slot = floor(local-minutes-of-day / interval)`) plus the unique slot claim keep the extra invocations idempotent — a user still receives at most one reminder per 15-minute slot, and a late run still lands in the correct slot.
-- If GitHub's scheduler is still too unreliable, point any external cron service (e.g. cron-job.org) at `POST $APP_URL/api/reminders/run` with header `Authorization: Bearer $REMINDER_CRON_SECRET` — the endpoint is scheduler-agnostic and idempotent per slot.
+- If GitHub's scheduler is still too unreliable, point any external cron service at the endpoint — it is scheduler-agnostic and idempotent per slot, so several schedulers can safely overlap:
+  - **GET or POST** are both accepted (cron-job.org test runs use GET).
+  - Auth: header `Authorization: Bearer $REMINDER_CRON_SECRET`, or `?token=$REMINDER_CRON_SECRET` for services that cannot send custom headers (prefer the header — query strings can land in proxy logs).
+  - The scheduler is identified in logs/audit via User-Agent (cron-job.org, UptimeRobot, QStash) or an explicit `X-Scheduler` header; unauthorized calls get `401`, unsupported methods `405`.
 
 ## Secrets
 
