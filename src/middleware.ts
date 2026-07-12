@@ -34,10 +34,19 @@ export default auth(async (req) => {
   const path = nextUrl.pathname;
   const isApi = path.startsWith("/api/");
 
-  // Public static verification files (Google Search Console site-verification,
-  // etc.) must be reachable by crawlers with no session — serve them straight
-  // through, ahead of rate limiting and the auth gate.
-  if (path === "/google4cfb0a6190ab2db2.html") {
+  // Public static + SEO/crawler files (sitemap, robots, manifest, OG image,
+  // site-verification) must bypass auth AND rate limiting so search engines and
+  // social scrapers — which carry no session — can fetch them.
+  if (
+    path === "/robots.txt" ||
+    path === "/sitemap.xml" ||
+    path.startsWith("/sitemap/") ||
+    path === "/manifest.webmanifest" ||
+    path.startsWith("/opengraph-image") ||
+    path.startsWith("/twitter-image") ||
+    path === "/favicon.ico" ||
+    path === "/google4cfb0a6190ab2db2.html"
+  ) {
     return NextResponse.next();
   }
 

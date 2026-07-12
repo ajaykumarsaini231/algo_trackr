@@ -3,7 +3,9 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/components/providers/providers";
 import { AppShell } from "@/components/layout/app-shell";
-import { APP_NAME, APP_TAGLINE } from "@/lib/constants";
+import { SITE, IS_NOINDEX } from "@/lib/seo";
+import { JsonLd } from "@/components/seo/json-ld";
+import { organizationSchema, websiteSchema } from "@/lib/schema";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -18,15 +20,37 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE.url),
   title: {
-    default: `${APP_NAME} — DSA Question Tracker`,
-    template: `%s · ${APP_NAME}`,
+    default: `${SITE.name} — ${SITE.tagline}`,
+    template: `%s · ${SITE.name}`,
   },
-  description: APP_TAGLINE,
-  applicationName: APP_NAME,
-  icons: {
-    icon: "/favicon.svg",
+  description: SITE.description,
+  applicationName: SITE.name,
+  authors: [{ name: SITE.name }],
+  creator: SITE.name,
+  publisher: SITE.name,
+  formatDetection: { telephone: false },
+  icons: { icon: "/favicon.svg" },
+  manifest: "/manifest.webmanifest",
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    siteName: SITE.name,
+    locale: SITE.locale,
+    url: SITE.url,
+    title: `${SITE.name} — ${SITE.tagline}`,
+    description: SITE.description,
   },
+  twitter: {
+    card: "summary_large_image",
+    site: SITE.twitter,
+    title: `${SITE.name} — ${SITE.tagline}`,
+    description: SITE.description,
+  },
+  robots: IS_NOINDEX
+    ? { index: false, follow: false }
+    : { index: true, follow: true },
 };
 
 export const viewport: Viewport = {
@@ -42,6 +66,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans`}>
+        <JsonLd data={[organizationSchema(), websiteSchema()]} />
         <Providers>
           <AppShell>{children}</AppShell>
         </Providers>
