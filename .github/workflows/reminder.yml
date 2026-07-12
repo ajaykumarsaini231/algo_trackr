@@ -13,7 +13,12 @@ name: WhatsApp reminders
 
 on:
   schedule:
-    - cron: "*/15 * * * *" # every 15 minutes, 24/7 (per-user windows filter server-side)
+    # GitHub's scheduler heavily delays/skips jobs on popular minutes
+    # (:00/:15/:30/:45) — observed gaps of 1-2.5h with "*/15". Scheduling
+    # every 5 minutes on off-peak offsets (:03,:08,…,:58) yields far more
+    # actual runs; the per-user 15-minute slot claim keeps sends idempotent,
+    # so extra invocations can never double-message anyone.
+    - cron: "3-58/5 * * * *"
   workflow_dispatch:
     inputs:
       dryRun:

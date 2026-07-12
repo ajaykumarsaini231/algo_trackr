@@ -14,7 +14,7 @@ sequenceDiagram
     participant META as Meta Cloud API
     participant U as User's WhatsApp
 
-    Note over GHA: cron: */15 * * * * (UTC) + manual dispatch
+    Note over GHA: cron: 3-58/5 * * * * (UTC) + manual dispatch
     GHA->>V: POST, Authorization: Bearer REMINDER_CRON_SECRET
     V->>V: timing-safe secret check → 401 on mismatch
     V->>DB: enabled users → eligibility rules → slot claims
@@ -26,8 +26,9 @@ sequenceDiagram
 
 ## Schedule & cron semantics
 
-- `cron: "*/15 * * * *"` — every 15 minutes, **24/7, in UTC**. Per-user evening windows (e.g. 20:00–23:45 *in the user's own timezone*) are evaluated server-side, so a single global schedule serves every timezone.
-- GitHub cron is best-effort: runs can start a few minutes late under load. The engine's **slot arithmetic** (`slot = floor(local-minutes-of-day / interval)`) absorbs drift — a late run still lands in the correct slot, and a skipped GitHub run simply means that slot is attempted by no one (next slot fires normally).
+- `cron: "3-58/5 * * * *"` — minutes :03, :08 … :58, **24/7, in UTC**. Per-user evening windows (e.g. 20:00–23:45 *in the user's own timezone*) are evaluated server-side, so a single global schedule serves every timezone.
+- GitHub cron is best-effort and heavily deprioritizes the popular minutes (:00/:15/:30/:45) — a plain `*/15` schedule was observed firing only every 1–2.5 h. Scheduling every 5 minutes on off-peak offsets yields far more actual runs. The engine's **slot arithmetic** (`slot = floor(local-minutes-of-day / interval)`) plus the unique slot claim keep the extra invocations idempotent — a user still receives at most one reminder per 15-minute slot, and a late run still lands in the correct slot.
+- If GitHub's scheduler is still too unreliable, point any external cron service (e.g. cron-job.org) at `POST $APP_URL/api/reminders/run` with header `Authorization: Bearer $REMINDER_CRON_SECRET` — the endpoint is scheduler-agnostic and idempotent per slot.
 
 ## Secrets
 
