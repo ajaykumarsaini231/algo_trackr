@@ -185,7 +185,7 @@ function UserMenu() {
         <DropdownMenuSeparator />
         <DropdownMenuItem
           className="cursor-pointer"
-          onSelect={() => void signOut({ callbackUrl: "/signin" })}
+          onSelect={() => void signOut({ callbackUrl: "/" })}
         >
           <LogOut className="mr-2 h-4 w-4" />
           Sign out

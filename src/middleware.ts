@@ -35,8 +35,9 @@ const PUBLIC_PAGES = new Set([
   "/topics",
   "/patterns",
   "/companies",
-  "/sheets",
-  "/algorithm-patterns",
+  // NOTE: /sheets and /algorithm-patterns render entirely from auth-gated data,
+  // so they are intentionally NOT public — logged-out visitors are redirected to
+  // /signin (with a callbackUrl back) instead of seeing a data-load error.
 ]);
 // /api/reminders/run authenticates itself with the cron Bearer secret
 // (GitHub Actions has no session cookie); the handler rejects everything else.
