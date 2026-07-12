@@ -41,8 +41,6 @@ next-env.d.ts
 !.vscode/extensions.json
 .idea
 
-# tooling state
+# tooling state (local-only; removed from the repo intentionally)
 .vercel
-.claude/settings.local.json
-
-.vercel
+.claude/
