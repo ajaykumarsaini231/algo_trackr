@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { useParams, useRouter } from "next/navigation";
+import { useParams, useRouter, useSearchParams } from "next/navigation";
 import {
   Archive,
   ArchiveRestore,
@@ -51,6 +51,7 @@ import { useQuestion } from "@/hooks/use-questions";
 import { useQuestionMutations } from "@/hooks/use-question-mutations";
 import { STATUSES } from "@/lib/constants";
 import { cn, formatDate, formatMinutes, slugify } from "@/lib/utils";
+import { safeExternalUrl } from "@/lib/question-nav";
 import type { QuestionInput, Status } from "@/types";
 
 function DetailRow({ label, value }: { label: string; value: React.ReactNode }) {
@@ -86,6 +87,7 @@ function LinkButton({
 export default function QuestionDetailPage() {
   const { id } = useParams<{ id: string }>();
   const router = useRouter();
+  const searchParams = useSearchParams();
   const { question: q, isLoading, mutate } = useQuestion(id);
   const { update, archive, restore } = useQuestionMutations();
 
@@ -101,6 +103,17 @@ export default function QuestionDetailPage() {
     }
   }, [q]);
 
+  // Graceful fallback: the record is gone/unknown but the list that linked
+  // here passed the original judge URL (?ext=…) — never leave a dead page,
+  // send the user to the problem itself. The URL is host-allowlisted.
+  const fallbackUrl = safeExternalUrl(searchParams.get("ext"));
+  const notFound = !isLoading && !q;
+  React.useEffect(() => {
+    if (notFound && fallbackUrl) {
+      window.location.replace(fallbackUrl);
+    }
+  }, [notFound, fallbackUrl]);
+
   if (isLoading) {
     return (
       <div className="space-y-4">
@@ -115,6 +128,19 @@ export default function QuestionDetailPage() {
   }
 
   if (!q) {
+    if (fallbackUrl) {
+      return (
+        <EmptyState
+          title="Taking you to the problem…"
+          description="This question isn't in the library, so we're opening its original page."
+          action={
+            <Button asChild variant="outline">
+              <a href={fallbackUrl} rel="noreferrer">Open problem now</a>
+            </Button>
+          }
+        />
+      );
+    }
     return (
       <EmptyState
         title="Question not found"

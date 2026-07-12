@@ -9,6 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { Icon } from "@/components/shared/icon";
+import { QuestionLink } from "@/components/questions/question-link";
 import { useSheetDetail } from "@/hooks/use-sheets";
 
 const DIFFS = ["", "Easy", "Medium", "Hard"] as const;
@@ -87,7 +88,7 @@ export default function SheetDetailPage() {
                   {sheet.questions.items.map((q) => (
                     <li key={q.id} className="flex items-center justify-between gap-3 py-2">
                       <div className="min-w-0">
-                        <a href={q.problemLink || undefined} target="_blank" rel="noreferrer" className="truncate text-sm font-medium hover:text-primary hover:underline">{q.title}</a>
+                        <QuestionLink q={q} className="block truncate text-sm font-medium hover:text-primary hover:underline">{q.title}</QuestionLink>
                         <p className="text-xs text-muted-foreground">{q.topic} · {q.platform}{q.status && q.status !== "Not Started" ? ` · ${q.status}` : ""}</p>
                       </div>
                       <Badge variant={q.difficulty === "Easy" ? "success" : q.difficulty === "Medium" ? "warning" : "destructive"}>{q.difficulty}</Badge>

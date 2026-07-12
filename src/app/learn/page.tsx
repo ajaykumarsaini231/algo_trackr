@@ -11,6 +11,7 @@ import { Progress } from "@/components/ui/progress";
 import { Icon } from "@/components/shared/icon";
 import { fetcher } from "@/lib/api-client";
 import { useLearn } from "@/hooks/use-learn";
+import { QuestionLink } from "@/components/questions/question-link";
 import type { LearningStageStat, RankedQuestion, RoadmapItem } from "@/lib/learning";
 
 const ACCENT: Record<string, string> = {
@@ -20,12 +21,14 @@ const ACCENT: Record<string, string> = {
 
 function QuestionRow({ q }: { q: RankedQuestion }) {
   return (
-    <li className="flex items-center justify-between gap-3 py-2">
-      <div className="min-w-0">
-        <a href={q.problemLink || undefined} target="_blank" rel="noreferrer" className="truncate text-sm font-medium hover:text-primary hover:underline">{q.title}</a>
-        <p className="text-xs text-muted-foreground">{q.topic} · {q.platform}{q.favorite ? " · ★" : ""}</p>
-      </div>
-      <Badge variant={q.difficulty === "Easy" ? "success" : q.difficulty === "Medium" ? "warning" : "destructive"}>{q.difficulty}</Badge>
+    <li>
+      <QuestionLink q={q} className="group flex items-center justify-between gap-3 py-2">
+        <div className="min-w-0">
+          <p className="truncate text-sm font-medium group-hover:text-primary">{q.title}</p>
+          <p className="text-xs text-muted-foreground">{q.topic} · {q.platform}{q.favorite ? " · ★" : ""}</p>
+        </div>
+        <Badge variant={q.difficulty === "Easy" ? "success" : q.difficulty === "Medium" ? "warning" : "destructive"}>{q.difficulty}</Badge>
+      </QuestionLink>
     </li>
   );
 }
@@ -154,10 +157,10 @@ export default function LearnPage() {
               ) : (
                 <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
                   {overview.mixedChallenge.map((q) => (
-                    <a key={q.id} href={q.problemLink || undefined} target="_blank" rel="noreferrer" className="rounded-lg border bg-card/50 p-3 hover:border-primary/40 hover:bg-card">
+                    <QuestionLink key={q.id} q={q} className="block rounded-lg border bg-card/50 p-3 hover:border-primary/40 hover:bg-card">
                       <p className="truncate text-sm font-medium">{q.title}</p>
                       <p className="mt-0.5 text-xs text-muted-foreground">{q.topic} · {q.difficulty}</p>
-                    </a>
+                    </QuestionLink>
                   ))}
                 </div>
               )}

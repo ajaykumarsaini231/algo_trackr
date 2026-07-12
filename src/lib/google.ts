@@ -89,6 +89,8 @@ export interface GoogleTopicRow {
 }
 
 export interface GoogleRecommendation {
+  /** Question id — present so recommendation clicks open the internal details page. */
+  id?: string;
   title: string;
   topic: string;
   difficulty: string;

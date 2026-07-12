@@ -9,6 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Icon } from "@/components/shared/icon";
 import { usePatternDetail } from "@/hooks/use-patterns";
+import { QuestionLink } from "@/components/questions/question-link";
 import type { PatternPriority } from "@/lib/patterns";
 
 const PRIORITY_VARIANT: Record<PatternPriority, "destructive" | "warning" | "info" | "muted"> = {
@@ -128,12 +129,17 @@ export default function PatternDetailPage() {
               ) : (
                 <ul className="divide-y divide-border/60">
                   {detail.questions.items.map((q) => (
-                    <li key={q.id} className="flex items-center justify-between gap-3 py-2">
-                      <div className="min-w-0">
-                        <a href={q.problemLink || undefined} target="_blank" rel="noreferrer" className="truncate text-sm font-medium hover:text-primary hover:underline">{q.title}</a>
-                        <p className="text-xs text-muted-foreground">{q.topic} · {q.platform}{q.status && q.status !== "Not Started" ? ` · ${q.status}` : ""}</p>
-                      </div>
-                      <Badge variant={q.difficulty === "Easy" ? "success" : q.difficulty === "Medium" ? "warning" : "destructive"}>{q.difficulty}</Badge>
+                    <li key={q.id}>
+                      <QuestionLink
+                        q={q}
+                        className="group flex items-center justify-between gap-3 py-2"
+                      >
+                        <div className="min-w-0">
+                          <p className="truncate text-sm font-medium group-hover:text-primary">{q.title}</p>
+                          <p className="text-xs text-muted-foreground">{q.topic} · {q.platform}{q.status && q.status !== "Not Started" ? ` · ${q.status}` : ""}</p>
+                        </div>
+                        <Badge variant={q.difficulty === "Easy" ? "success" : q.difficulty === "Medium" ? "warning" : "destructive"}>{q.difficulty}</Badge>
+                      </QuestionLink>
                     </li>
                   ))}
                 </ul>

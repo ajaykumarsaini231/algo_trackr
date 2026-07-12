@@ -11,20 +11,23 @@ import { Progress } from "@/components/ui/progress";
 import { Icon } from "@/components/shared/icon";
 import { slugify } from "@/lib/utils";
 import { useTopicLearning } from "@/hooks/use-topic-learning";
+import { QuestionLink } from "@/components/questions/question-link";
 import type { StageQuestion, TopicLearning, TopicLearningAll } from "@/lib/learning";
 
 function QRow({ q }: { q: StageQuestion }) {
   const done = q.status === "Solved";
   return (
-    <li className="flex items-center justify-between gap-3 py-2">
-      <div className="flex min-w-0 items-center gap-2">
-        <Icon name={done ? "CheckCircle2" : "Circle"} className={`h-4 w-4 shrink-0 ${done ? "text-emerald-500" : "text-muted-foreground/40"}`} />
-        <div className="min-w-0">
-          <a href={q.problemLink || undefined} target="_blank" rel="noreferrer" className="truncate text-sm font-medium hover:text-primary hover:underline">{q.title}</a>
-          <p className="text-xs text-muted-foreground">{q.topic} · {q.platform} · ~{q.estimatedSolveTime}m{q.favorite ? " · ★" : ""}</p>
+    <li>
+      <QuestionLink q={q} className="group flex items-center justify-between gap-3 py-2">
+        <div className="flex min-w-0 items-center gap-2">
+          <Icon name={done ? "CheckCircle2" : "Circle"} className={`h-4 w-4 shrink-0 ${done ? "text-emerald-500" : "text-muted-foreground/40"}`} />
+          <div className="min-w-0">
+            <p className="truncate text-sm font-medium group-hover:text-primary">{q.title}</p>
+            <p className="text-xs text-muted-foreground">{q.topic} · {q.platform} · ~{q.estimatedSolveTime}m{q.favorite ? " · ★" : ""}</p>
+          </div>
         </div>
-      </div>
-      <Badge variant={q.difficulty === "Easy" ? "success" : q.difficulty === "Medium" ? "warning" : "destructive"}>{q.difficulty}</Badge>
+        <Badge variant={q.difficulty === "Easy" ? "success" : q.difficulty === "Medium" ? "warning" : "destructive"}>{q.difficulty}</Badge>
+      </QuestionLink>
     </li>
   );
 }
@@ -101,7 +104,7 @@ export default function TopicLearnPage() {
           ) : (
             <div className="flex flex-wrap gap-2">
               {continueQ && (
-                <Button asChild><a href={continueQ.problemLink || undefined} target="_blank" rel="noreferrer"><Icon name="Zap" className="mr-1 h-4 w-4" /> Continue Learning</a></Button>
+                <Button asChild><QuestionLink q={continueQ}><Icon name="Zap" className="mr-1 h-4 w-4" /> Continue Learning</QuestionLink></Button>
               )}
               {staged.canLoadMore ? (
                 <Button variant="outline" onClick={() => setReveal((r) => r + 1)}>Load More <Icon name="ArrowRightLeft" className="ml-1 h-4 w-4" /></Button>

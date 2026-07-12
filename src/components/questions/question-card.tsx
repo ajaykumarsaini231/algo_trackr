@@ -11,6 +11,7 @@ import { RatingStars } from "@/components/shared/rating-stars";
 import { useQuestionMutations } from "@/hooks/use-question-mutations";
 import { fetcher } from "@/lib/api-client";
 import { cn, formatMinutes, slugify } from "@/lib/utils";
+import { questionHref } from "@/lib/question-nav";
 import type { Question } from "@/types";
 
 interface QuestionCardProps {
@@ -41,7 +42,7 @@ export const QuestionCard = React.memo(function QuestionCard({ question: q, inde
     >
       <Card glass className="card-hover group relative h-full overflow-hidden">
         <Link
-          href={`/questions/${q._id}`}
+          href={questionHref(q)}
           onMouseEnter={() => preload(`/api/questions/${q._id}`, fetcher)}
           onFocus={() => preload(`/api/questions/${q._id}`, fetcher)}
           className="block p-4"

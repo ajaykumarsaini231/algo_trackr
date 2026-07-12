@@ -11,6 +11,7 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { Icon } from "@/components/shared/icon";
 import { useGoogle } from "@/hooks/use-google";
+import { QuestionLink } from "@/components/questions/question-link";
 import { priorityBadge, type GoogleRecommendation } from "@/lib/google";
 import { slugify } from "@/lib/utils";
 
@@ -27,16 +28,14 @@ function RecList({ items }: { items: GoogleRecommendation[] }) {
   return (
     <ul className="divide-y divide-border/60">
       {items.map((q, i) => (
-        <li key={i} className="flex items-center justify-between gap-3 py-2">
+        <li key={q.id ?? i} className="flex items-center justify-between gap-3 py-2">
           <div className="min-w-0">
-            <a
-              href={q.problemLink || undefined}
-              target="_blank"
-              rel="noreferrer"
-              className="truncate text-sm font-medium hover:text-primary hover:underline"
+            <QuestionLink
+              q={q}
+              className="block truncate text-sm font-medium hover:text-primary hover:underline"
             >
               {q.title}
-            </a>
+            </QuestionLink>
             <p className="text-xs text-muted-foreground">
               {q.topic} · {q.platform}
             </p>

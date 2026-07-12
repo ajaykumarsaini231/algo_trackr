@@ -138,7 +138,8 @@ export async function GET() {
       } },
       { $sort: { _prio: 1, _striver: 1, _lc: 1, difficulty: 1 } },
       { $limit: limit },
-      { $project: { _id: 0, title: 1, topic: 1, difficulty: 1, platform: 1, problemLink: 1 } },
+      // Keep the id so recommendation clicks open the internal details page.
+      { $project: { _id: 0, id: { $toString: "$_id" }, title: 1, topic: 1, difficulty: 1, platform: 1, problemLink: 1 } },
     ];
     const weekly = (await Question.aggregate(recPipeline(25))) as GoogleRecommendation[];
 
@@ -149,7 +150,7 @@ export async function GET() {
       ] } },
       { $sort: { striver: -1 } },
       { $limit: 25 },
-      { $project: { _id: 0, title: 1, topic: 1, difficulty: 1, platform: 1, problemLink: 1 } },
+      { $project: { _id: 0, id: { $toString: "$_id" }, title: 1, topic: 1, difficulty: 1, platform: 1, problemLink: 1 } },
     ])) as GoogleRecommendation[];
 
     // Readiness (priority-weighted).
