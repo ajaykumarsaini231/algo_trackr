@@ -5,6 +5,7 @@ import { importSchema, questionCreateSchema, parseOrError } from "@/lib/validati
 import { requireAdmin } from "@/lib/auth-helpers";
 import { checkRateLimit, tooManyRequests } from "@/lib/rate-limit";
 import { logAudit } from "@/lib/audit";
+import { bumpCatalogVersion } from "@/lib/catalog-cache";
 import Question from "@/models/Question";
 
 export const runtime = "nodejs";
@@ -163,6 +164,7 @@ export async function POST(req: NextRequest) {
       }
     }
 
+    if (inserted > 0 || updated > 0) bumpCatalogVersion();
     void logAudit({
       action: "admin.import",
       userId: admin.user?.id ?? null,

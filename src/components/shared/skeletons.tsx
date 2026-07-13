@@ -57,6 +57,19 @@ export function QuestionListSkeleton({ count = 6 }: { count?: number }) {
   );
 }
 
+/** Header + grid fallback for question-list segments (favorites, topic, …). */
+export function ListPageSkeleton({ count = 9 }: { count?: number }) {
+  return (
+    <div className="space-y-6">
+      <div className="space-y-2">
+        <Skeleton className="h-7 w-44" />
+        <Skeleton className="h-4 w-64" />
+      </div>
+      <QuestionListSkeleton count={count} />
+    </div>
+  );
+}
+
 export function ChartSkeleton({ height = 300 }: { height?: number }) {
   return (
     <Card>

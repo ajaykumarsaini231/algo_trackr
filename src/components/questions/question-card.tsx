@@ -3,7 +3,6 @@
 import * as React from "react";
 import Link from "next/link";
 import { preload } from "swr";
-import { motion } from "framer-motion";
 import { Clock, ExternalLink, RotateCw, Star } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { DifficultyBadge, StatusBadge } from "@/components/shared/badges";
@@ -35,10 +34,9 @@ export const QuestionCard = React.memo(function QuestionCard({ question: q, inde
   }
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 12 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3, delay: Math.min(index * 0.03, 0.3) }}
+    <div
+      className="card-enter"
+      style={{ "--card-delay": `${Math.min(index * 0.03, 0.3)}s` } as React.CSSProperties}
     >
       <Card glass className="card-hover group relative h-full overflow-hidden">
         <Link
@@ -142,6 +140,6 @@ export const QuestionCard = React.memo(function QuestionCard({ question: q, inde
           </div>
         </Link>
       </Card>
-    </motion.div>
+    </div>
   );
 });

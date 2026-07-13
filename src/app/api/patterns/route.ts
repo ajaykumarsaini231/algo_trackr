@@ -3,6 +3,7 @@ import { ok, handle } from "@/lib/api-response";
 import { requireUser } from "@/lib/auth-helpers";
 import { checkRateLimit, tooManyRequests } from "@/lib/rate-limit";
 import { getUserOverlay, activeRow } from "@/lib/progress";
+import { cachedCatalog } from "@/lib/catalog-cache";
 import Question from "@/models/Question";
 import {
   ALL_PATTERNS, PATTERN_CATEGORIES, PATTERN_BY_SLUG,
@@ -27,26 +28,40 @@ export async function GET() {
 
     await connectDB();
 
-    // Catalog dimensions (no user data).
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const rows: any[] = await Question.aggregate([
-      { $match: ACTIVE },
-      { $unwind: "$patterns" },
-      { $group: {
-        _id: "$patterns", total: { $sum: 1 },
-        easy: { $sum: { $cond: [{ $eq: ["$difficulty", "Easy"] }, 1, 0] } },
-        medium: { $sum: { $cond: [{ $eq: ["$difficulty", "Medium"] }, 1, 0] } },
-        hard: { $sum: { $cond: [{ $eq: ["$difficulty", "Hard"] }, 1, 0] } },
-        leetcode: { $sum: { $cond: [{ $eq: ["$platform", "LeetCode"] }, 1, 0] } },
-        codeforces: { $sum: { $cond: [{ $eq: ["$platform", "Codeforces"] }, 1, 0] } },
-        striver: { $sum: { $cond: [{ $in: ["Striver", "$tags"] }, 1, 0] } },
-      } },
+    // The pattern breakdown + the classified/total counts are catalog-wide and
+    // identical for every user → cached (dropped on any question write). The
+    // caller's overlay is per-user and runs concurrently with the cached reads.
+    const [rows, overlayRows, catalogCounts] = await Promise.all([
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      cachedCatalog<any[]>("patterns:breakdown", () =>
+        Question.aggregate([
+          { $match: ACTIVE },
+          { $unwind: "$patterns" },
+          { $group: {
+            _id: "$patterns", total: { $sum: 1 },
+            easy: { $sum: { $cond: [{ $eq: ["$difficulty", "Easy"] }, 1, 0] } },
+            medium: { $sum: { $cond: [{ $eq: ["$difficulty", "Medium"] }, 1, 0] } },
+            hard: { $sum: { $cond: [{ $eq: ["$difficulty", "Hard"] }, 1, 0] } },
+            leetcode: { $sum: { $cond: [{ $eq: ["$platform", "LeetCode"] }, 1, 0] } },
+            codeforces: { $sum: { $cond: [{ $eq: ["$platform", "Codeforces"] }, 1, 0] } },
+            striver: { $sum: { $cond: [{ $in: ["Striver", "$tags"] }, 1, 0] } },
+          } },
+        ]),
+      ),
+      getUserOverlay(user.id).then((r) => r.filter(activeRow)),
+      cachedCatalog("patterns:counts", async () => {
+        const [totalQuestions, classified] = await Promise.all([
+          Question.countDocuments(ACTIVE),
+          Question.countDocuments({ ...ACTIVE, "patterns.0": { $exists: true } }),
+        ]);
+        return { totalQuestions, classified };
+      }),
     ]);
     const bySlug = new Map(rows.map((r) => [r._id, r]));
 
     // Caller's solved-per-pattern from their own rows.
     const solvedBySlug = new Map<string, number>();
-    for (const r of (await getUserOverlay(user.id)).filter(activeRow)) {
+    for (const r of overlayRows) {
       if (r.status !== "Solved") continue;
       for (const slug of r.q.patterns) {
         solvedBySlug.set(slug, (solvedBySlug.get(slug) || 0) + 1);
@@ -81,10 +96,7 @@ export async function GET() {
 
     const used = allStats.filter((s) => s.total > 0).sort((a, b) => b.total - a.total);
     const totalAssignments = allStats.reduce((s, p) => s + p.total, 0);
-    const [totalQuestions, classified] = await Promise.all([
-      Question.countDocuments(ACTIVE),
-      Question.countDocuments({ ...ACTIVE, "patterns.0": { $exists: true } }),
-    ]);
+    const { totalQuestions, classified } = catalogCounts;
 
     const payload: PatternDashboard = {
       generatedAt: new Date().toISOString(),

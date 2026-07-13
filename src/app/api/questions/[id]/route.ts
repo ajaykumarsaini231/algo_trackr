@@ -14,6 +14,7 @@ import {
   type UserStatePatch,
 } from "@/lib/progress";
 import { logAudit } from "@/lib/audit";
+import { bumpCatalogVersion } from "@/lib/catalog-cache";
 import Question from "@/models/Question";
 
 export const runtime = "nodejs";
@@ -37,10 +38,13 @@ export async function GET(
     }
 
     await connectDB();
-    const doc = await Question.findById(id).lean();
+    // The catalog doc and the caller's progress row are independent reads.
+    const [doc, progress] = await Promise.all([
+      Question.findById(id).lean(),
+      getProgressMap(user.id, [id]),
+    ]);
     if (!doc) return fail("Question not found", 404);
 
-    const progress = await getProgressMap(user.id, [id]);
     return ok(serializeQuestion(overlayQuestion(doc as Record<string, unknown>, progress.get(id))));
   });
 }
@@ -100,6 +104,7 @@ export async function PATCH(
         (doc as any)[key] = data[key];
       }
       await doc.save();
+      bumpCatalogVersion(); // catalog changed → drop cached catalog aggregations
       void logAudit({
         action: "question.update",
         userId: admin.user?.id ?? null,

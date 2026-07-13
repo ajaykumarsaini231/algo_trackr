@@ -6,6 +6,16 @@ All notable changes to this project are documented here. Format follows [Keep a 
 
 - Complete project documentation suite (`README`, `docs/*`, security policy, community templates)
 
+### Performance — end-to-end audit + optimizations (no UI/feature changes)
+- Audit + results reports: `PERFORMANCE-AUDIT.md`, `PERFORMANCE-RESULTS.md`
+- **Indexes:** added `{archived,createdAt,_id}`, `{archived,updatedAt,_id}`, `{archived,topic,createdAt,_id}` on `questions` and `{loginCount}` on `users` — the default question-list sort went from examining all 15,267 docs (126–173 ms, in-memory sort) to 20 docs (3 ms, index-covered). Idempotent builder: `scripts/ensure-perf-indexes.mjs`
+- **Question list:** slim `.select()`/`$project` projection cut the 20-item payload 89% (116 kB → 13 kB); difficulty/rating/attempt sorts no longer load the whole catalog (was 6–10 s) — difficulty now sorts+paginates at the DB; `countDocuments` runs concurrently with the page fetch
+- **Catalog cache** (`src/lib/catalog-cache.ts`, 60 s TTL, invalidated on any question write): removes the per-user recomputation of user-independent aggregations in `stats`, `patterns`, `sheets`, `learn`
+- **Parallelized** sequential DB round-trips in `computeUserStats`, `/api/questions`, `/api/questions/[id]`, `/api/patterns`, `/api/sheets`, `/api/learn`; removed a duplicate `continueLearning` call and an N+1 stage-count loop
+- **Dashboard SSR:** server-renders stats and seeds SWR `fallback` so real data paints on first byte (identical components; graceful client-fetch fallback)
+- **Bundle:** removed framer-motion from `question-card.tsx` and `template.tsx` (now a Server Component with a CSS transition) — six question-list routes −39 kB First Load JS each (−18%)
+- **Loading:** per-segment `loading.tsx` (dashboard + list segments) replacing the single dashboard-shaped global; neutral generic global
+
 ## [1.0.0] — 2026-07-12
 
 Initial public release (`a8a7ff1`). Highlights of what shipped in it, grouped by era of development:

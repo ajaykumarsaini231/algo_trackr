@@ -79,6 +79,16 @@ QuestionSchema.index({ archived: 1, patterns: 1 });
 // Staged learning: ordered questions per topic (progressive-unlock flow).
 QuestionSchema.index({ archived: 1, topic: 1, difficultyRank: 1, learningScore: -1 });
 
+// Default list ordering. The questions list defaults to createdAt:desc and
+// also offers updatedAt:desc; without these the sort was a full in-memory sort
+// of the whole active catalog (all 15k docs examined to return one page of 20).
+// The trailing `_id: 1` matches the route's tiebreaker (`sort({ field, _id: 1 })`)
+// so the sort is fully index-covered — a page examines ~limit keys, not 15k.
+QuestionSchema.index({ archived: 1, createdAt: -1, _id: 1 });
+QuestionSchema.index({ archived: 1, updatedAt: -1, _id: 1 });
+// Topic-scoped list ordered by recency (topic pages default to createdAt:desc).
+QuestionSchema.index({ archived: 1, topic: 1, createdAt: -1, _id: 1 });
+
 /**
  * Keep derived fields consistent without ever destroying data:
  *  - stamp `solvedAt` the first time a question becomes Solved
