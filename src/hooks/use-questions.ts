@@ -4,13 +4,20 @@ import useSWR from "swr";
 import { buildQuestionQuery, fetcher } from "@/lib/api-client";
 import type { Paginated, Question, QuestionFilters } from "@/types";
 
-/** Fetch a filtered, paginated list of questions. */
-export function useQuestions(filters: QuestionFilters = {}) {
+/**
+ * Fetch a filtered, paginated list of questions.
+ * `fallbackData` seeds SWR for THIS key so a server-rendered first page paints
+ * instantly (the caller passes it only for the initial, un-touched view).
+ */
+export function useQuestions(
+  filters: QuestionFilters = {},
+  fallbackData?: Paginated<Question>,
+) {
   const key = `/api/questions${buildQuestionQuery(filters)}`;
   const { data, error, isLoading, mutate } = useSWR<Paginated<Question>>(
     key,
     fetcher,
-    { keepPreviousData: true, revalidateOnFocus: false },
+    { keepPreviousData: true, revalidateOnFocus: false, fallbackData },
   );
 
   return {

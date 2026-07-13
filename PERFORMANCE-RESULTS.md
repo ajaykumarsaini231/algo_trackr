@@ -61,6 +61,21 @@ Cause: `question-card.tsx` was the only framer-motion importer on those routes; 
 
 ## 4. Rendering & perceived performance
 
+**App-wide SSR (v2).** The SWR-`fallback` pattern was rolled out to **every** data page, not just the dashboard, so none of them show a blank→skeleton→fetch waterfall on load:
+
+| Page | SWR key seeded on the server | Shared compute fn |
+|---|---|---|
+| `/dashboard`, `/statistics`, `/topics`, `/companies`, `/patterns` | `/api/stats` | `computeUserStats` |
+| `/google` | `/api/google` | `computeGoogleRoadmap` (extracted + cached) |
+| `/sheets` | `/api/sheets` | `computeSheetsProgress` (extracted) |
+| `/learn` | `/api/learn` | `computeLearnOverview` (extracted) |
+| `/favorites`, `/search`, `/topics/[topic]`, `/patterns/[pattern]`, `/companies/[company]` | `/api/questions?…` (initial page) | `listQuestions` (extracted; via `QuestionsBrowser initialData`) |
+| `/revision` | `/api/questions?revision=true&limit=500` | `listQuestions` |
+
+Each route handler was thinned to call the same shared function, so the API and the SSR page can never drift. `initialData` is applied only to the initial, un-touched list view (guarded on page + user-filter + locked-filter equality), so changing filters/subtopics/pages never shows stale seed data. Every server page degrades to client-fetch on any hiccup.
+
+**`/api/google` optimization.** Was ~12 strictly sequential queries per request (the audit's worst offender). Now the user-independent catalog half (totals, per-topic/platform/difficulty rollups, 5 tier counts, company overlap, Google-Hard list) is **one cached, fully parallel batch**; only the caller's overlay + personalized recommendations are per-user. This is what fixed the `/google` page still showing its 4 skeleton cards.
+
 | Area | Before | After |
 |---|---|---|
 | Dashboard first paint | blank HTML → hydrate → SWR fetch → skeleton → data | **real data server-rendered on first byte** (SWR `fallback` seeded by `computeUserStats` on the server; identical components) |
@@ -97,8 +112,9 @@ The dashboard SSR path is defensive: any auth/DB hiccup is caught and it degrade
 
 ## 7. Recommended follow-ups (lower priority, pattern established)
 
-- Apply the same catalog-cache + `Promise.all` treatment to `/api/google` (~12 sequential, mostly cacheable) and the `[slug]` detail routes' duplicate scans (audit H3/H8).
 - Migrate the free-text search leg from the 8-field regex to `$text` (index already exists; 190–828 ms → 108–171 ms) — deferred here because it changes substring→word-match semantics and needs a UX decision.
+- The `[slug]` detail routes (`/api/patterns/[slug]`, `/api/learn/topic/[slug]`) still have the duplicate-scan cleanups from audit H8.
+- `/companies/[company]`'s summary stat cards still fetch client-side (the main question list is server-rendered); fold those counts into a server aggregation if the brief fill-in matters.
 - Drop the now-unused legacy indexes on `questions` (`status`, `favorite`, `revisionNeeded` — user-state moved to `UserProgress`) to cut write/RAM overhead. Requires dropping pre-existing indexes, so left for explicit approval.
 - Fold `upsertProgress`'s pre-read into its pipeline update (one write instead of two).
 - Optional: extend SSR `fallback` seeding to the default page of the question-list views (keyed SWR fallback via the shared `buildQuestionQuery`).
