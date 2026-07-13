@@ -1,16 +1,20 @@
-"use client";
-
 import Link from "next/link";
-import { useParams } from "next/navigation";
 import { Icon } from "@/components/shared/icon";
 import { PageHeader } from "@/components/shared/page-header";
 import { EmptyState } from "@/components/shared/empty-state";
 import { QuestionsBrowser } from "@/components/questions/questions-browser";
 import { Button } from "@/components/ui/button";
 import { getPatternBySlug } from "@/lib/constants";
+import { listInitialData } from "@/lib/ssr-fallback";
 
-export default function PatternDetailPage() {
-  const { pattern: slug } = useParams<{ pattern: string }>();
+export const dynamic = "force-dynamic";
+
+export default async function PatternDetailPage({
+  params,
+}: {
+  params: Promise<{ pattern: string }>;
+}) {
+  const { pattern: slug } = await params;
   const pattern = getPatternBySlug(slug);
 
   if (!pattern) {
@@ -28,6 +32,8 @@ export default function PatternDetailPage() {
     );
   }
 
+  const initialData = await listInitialData({ pattern: pattern.name });
+
   return (
     <div>
       <PageHeader
@@ -39,6 +45,7 @@ export default function PatternDetailPage() {
       <QuestionsBrowser
         lockedFilters={{ pattern: pattern.name }}
         hide={["pattern"]}
+        initialData={initialData}
         emptyTitle={`No ${pattern.name} questions yet`}
         emptyDescription="Add questions from the Admin Panel."
       />

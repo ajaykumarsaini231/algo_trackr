@@ -1,10 +1,14 @@
-"use client";
-
 import { Icon } from "@/components/shared/icon";
 import { PageHeader } from "@/components/shared/page-header";
 import { QuestionsBrowser } from "@/components/questions/questions-browser";
+import { listInitialData } from "@/lib/ssr-fallback";
 
-export default function FavoritesPage() {
+export const dynamic = "force-dynamic";
+
+const LOCKED = { favorite: true } as const;
+
+export default async function FavoritesPage() {
+  const initialData = await listInitialData(LOCKED);
   return (
     <div>
       <PageHeader
@@ -14,7 +18,8 @@ export default function FavoritesPage() {
       />
 
       <QuestionsBrowser
-        lockedFilters={{ favorite: true }}
+        lockedFilters={LOCKED}
+        initialData={initialData}
         emptyTitle="No favorites yet"
         emptyDescription="Tap the star on any question to add it here."
       />

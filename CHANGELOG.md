@@ -12,9 +12,11 @@ All notable changes to this project are documented here. Format follows [Keep a 
 - **Question list:** slim `.select()`/`$project` projection cut the 20-item payload 89% (116 kB → 13 kB); difficulty/rating/attempt sorts no longer load the whole catalog (was 6–10 s) — difficulty now sorts+paginates at the DB; `countDocuments` runs concurrently with the page fetch
 - **Catalog cache** (`src/lib/catalog-cache.ts`, 60 s TTL, invalidated on any question write): removes the per-user recomputation of user-independent aggregations in `stats`, `patterns`, `sheets`, `learn`
 - **Parallelized** sequential DB round-trips in `computeUserStats`, `/api/questions`, `/api/questions/[id]`, `/api/patterns`, `/api/sheets`, `/api/learn`; removed a duplicate `continueLearning` call and an N+1 stage-count loop
-- **Dashboard SSR:** server-renders stats and seeds SWR `fallback` so real data paints on first byte (identical components; graceful client-fetch fallback)
+- **App-wide SSR:** every data page now server-renders its initial data and seeds SWR `fallback` so real content paints on first byte instead of blank→skeleton→fetch — dashboard, statistics, google, sheets, learn, topics, companies, patterns, and the question-list pages (favorites, search, revision, topic/pattern/company detail). Route handlers were thinned to share one compute fn each (`computeUserStats`, `computeGoogleRoadmap`, `computeSheetsProgress`, `computeLearnOverview`, `listQuestions`) so the API and SSR can't drift; `initialData` is applied only to the initial un-touched list view
+- **/api/google:** was ~12 sequential queries/request; the user-independent catalog half is now one cached, fully parallel batch (only overlay + recommendations are per-user)
 - **Bundle:** removed framer-motion from `question-card.tsx` and `template.tsx` (now a Server Component with a CSS transition) — six question-list routes −39 kB First Load JS each (−18%)
 - **Loading:** per-segment `loading.tsx` (dashboard + list segments) replacing the single dashboard-shaped global; neutral generic global
+- **App-shell chrome by auth, not just route:** `/topics`, `/patterns`, `/companies`, `/sheets`, `/algorithm-patterns` previously rendered the public marketing header/footer for *everyone*, so a signed-in user clicking them from the sidebar lost the app chrome (looked like landing on the home page). Now signed-in users keep the sidebar on these pages; signed-out visitors/crawlers still get the public chrome (SEO preserved)
 
 ## [1.0.0] — 2026-07-12
 
