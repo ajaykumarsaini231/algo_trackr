@@ -10,6 +10,7 @@ import {
   getProgressMap,
   activeRow,
 } from "@/lib/progress";
+import { cachedCatalog } from "@/lib/catalog-cache";
 import Question from "@/models/Question";
 import { SHEET_BY_KEY } from "@/lib/sheets";
 import { PATTERN_BY_SLUG, PATTERN_CATEGORIES } from "@/lib/patterns";
@@ -112,11 +113,28 @@ async function getUserLearnState(userId: string): Promise<UserLearnState> {
   return { solvedIds, solvedByStage, solvedByTopic, solvedByPatternSlug, totalSolved };
 }
 
-async function stageStats(state: UserLearnState): Promise<{ stages: LearningStageStat[]; currentStage: string }> {
+/**
+ * Per-stage catalog totals — identical for every user, so counted once and
+ * cached (dropped on any question write). Replaces a 4× sequential
+ * `countDocuments` loop that ran on every learn request.
+ */
+async function stageTotals(): Promise<Map<string, number>> {
+  const entries = await cachedCatalog("learn:stageTotals", () =>
+    Promise.all(
+      LEARNING_STAGES.map(async (st) => [st.key, await countActive(st.match)] as const),
+    ),
+  );
+  return new Map(entries);
+}
+
+function stageStats(
+  state: UserLearnState,
+  totals: Map<string, number>,
+): { stages: LearningStageStat[]; currentStage: string } {
   const stages: LearningStageStat[] = [];
   let prevSolved = Infinity; // Foundation always unlocked
   for (const st of LEARNING_STAGES) {
-    const total = await countActive(st.match);
+    const total = totals.get(st.key) || 0;
     const solved = state.solvedByStage.get(st.key) || 0;
     const unlocked = prevSolved >= st.unlockThreshold;
     stages.push({
@@ -161,33 +179,45 @@ export async function GET(req: NextRequest) {
     const skip = Math.min(10_000, Math.max(0, Number(sp.get("skip")) || 0));
     const limit = Math.min(50, Math.max(1, Number(sp.get("limit")) || 12));
 
-    const state = await getUserLearnState(user.id);
+    // Per-user overlay + the (cached) per-stage catalog totals, concurrently.
+    const [state, totals] = await Promise.all([
+      getUserLearnState(user.id),
+      stageTotals(),
+    ]);
 
     // "Load More" fast path.
     if (sp.get("section") === "continue") {
-      const stageKey = sp.get("stage") || (await stageStats(state)).currentStage;
+      const stageKey = sp.get("stage") || stageStats(state, totals).currentStage;
       return ok({ continueLearning: await continueLearning(user.id, state, stageKey, skip, limit) });
     }
 
-    const { stages, currentStage } = await stageStats(state);
+    const { stages, currentStage } = stageStats(state, totals);
     const stageKey = sp.get("stage") || currentStage;
-
-    // Mixed challenge: best-scored unsolved question per topic in the current stage.
     const st = STAGE_BY_KEY.get(stageKey) || LEARNING_STAGES[0];
-    const mixed = await Question.aggregate([
-      { $match: { ...ACTIVE, ...st.match, _id: { $nin: state.solvedIds } } }, SCORE_STAGE,
-      { $sort: { _score: -1 } },
-      { $group: { _id: "$topic", doc: { $first: "$$ROOT" } } },
-      { $replaceRoot: { newRoot: "$doc" } },
-      { $sort: { _score: -1 } }, { $limit: 9 }, PROJECT_Q,
+
+    // Independent reads in parallel: the per-stage "mixed" pick + the "continue"
+    // page (both per-user via $nin solvedIds) and the two catalog roadmap
+    // aggregations (topic + pattern totals — cached, user-independent).
+    const [mixed, continueResult, topicAgg, patAgg] = await Promise.all([
+      Question.aggregate([
+        { $match: { ...ACTIVE, ...st.match, _id: { $nin: state.solvedIds } } }, SCORE_STAGE,
+        { $sort: { _score: -1 } },
+        { $group: { _id: "$topic", doc: { $first: "$$ROOT" } } },
+        { $replaceRoot: { newRoot: "$doc" } },
+        { $sort: { _score: -1 } }, { $limit: 9 }, PROJECT_Q,
+      ]),
+      continueLearning(user.id, state, stageKey, skip, limit),
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      cachedCatalog<any[]>("learn:topicAgg", () =>
+        Question.aggregate([{ $match: ACTIVE }, { $group: { _id: "$topic", total: { $sum: 1 } } }]),
+      ),
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      cachedCatalog<any[]>("learn:patAgg", () =>
+        Question.aggregate([{ $match: ACTIVE }, { $unwind: "$patterns" }, { $group: { _id: "$patterns", total: { $sum: 1 } } }]),
+      ),
     ]);
 
     // Topic roadmap: catalog totals + the caller's solved counts.
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const topicAgg: any[] = await Question.aggregate([
-      { $match: ACTIVE },
-      { $group: { _id: "$topic", total: { $sum: 1 } } },
-    ]);
     const topicMap = new Map(topicAgg.map((t) => [t._id, t]));
     let topicCurrentUsed = false;
     const topicRoadmap: RoadmapItem[] = PREP_ORDER.map((topic) => {
@@ -200,13 +230,8 @@ export async function GET(req: NextRequest) {
       return { key: topic, name: topic, priority: GOOGLE_PRIORITY[topic], total, solved, completionPct: cp, status };
     });
 
-    // Pattern roadmap (by category): catalog totals + caller's solved per slug.
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const patAgg: any[] = await Question.aggregate([
-      { $match: ACTIVE },
-      { $unwind: "$patterns" },
-      { $group: { _id: "$patterns", total: { $sum: 1 } } },
-    ]);
+    // Pattern roadmap (by category): catalog totals (from the cached patAgg
+    // above) + caller's solved per slug.
     const catTotals = new Map<string, { total: number; solved: number }>();
     for (const r of patAgg) {
       const p = PATTERN_BY_SLUG.get(r._id);
@@ -231,7 +256,9 @@ export async function GET(req: NextRequest) {
       totalSolved: state.totalSolved,
       currentStage,
       stages,
-      continueLearning: await continueLearning(user.id, state, stageKey, skip, limit),
+      // `continueResult` was computed in the parallel block above (previously
+      // this awaited a SECOND, duplicate continueLearning call).
+      continueLearning: continueResult,
       mixedChallenge: await toRanked(user.id, mixed),
       topicRoadmap,
       patternRoadmap,

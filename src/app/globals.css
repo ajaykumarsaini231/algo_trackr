@@ -160,3 +160,31 @@
     animation: fade-in-up 0.4s ease-out both;
   }
 }
+
+/*
+ * Lightweight CSS entrance transitions that replace framer-motion on the hot
+ * render path (page template + question cards), keeping the exact visuals
+ * without shipping/executing the animation library there. Reduced-motion users
+ * get an instant, transform-free swap (matches the former MotionConfig).
+ */
+@keyframes page-enter {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes card-enter {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.page-enter {
+  animation: page-enter 0.32s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.card-enter {
+  animation: card-enter 0.3s ease-out both;
+  animation-delay: var(--card-delay, 0s);
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-enter,
+  .card-enter {
+    animation: none;
+  }
+}

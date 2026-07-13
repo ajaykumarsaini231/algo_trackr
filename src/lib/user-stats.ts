@@ -10,6 +10,7 @@ import {
 } from "@/lib/progress";
 import { DIFFICULTIES, STATUSES } from "@/types";
 import type { Stats, Difficulty } from "@/types";
+import { cachedCatalog } from "@/lib/catalog-cache";
 import Question from "@/models/Question";
 import UserProgress from "@/models/UserProgress";
 
@@ -29,41 +30,66 @@ export async function computeUserStats(userId: string): Promise<Stats> {
   heatStart.setUTCHours(0, 0, 0, 0);
   heatStart.setUTCDate(heatStart.getUTCDate() - 181);
 
-  const ACTIVE = { archived: { $ne: true } };
+  // Equality match (all docs carry `archived`) so the {archived,createdAt}
+  // index serves the "recently added" sort; equivalent to `{$ne:true}` here.
+  const ACTIVE = { archived: false };
 
-  // ---- Catalog facet: totals only (no user data involved) ----
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const [facet]: any[] = await Question.aggregate([
-    {
-      $facet: {
-        counts: [
-          {
-            $group: {
-              _id: null,
-              activeTotal: { $sum: { $cond: [{ $ne: ["$archived", true] }, 1, 0] } },
-              archived: { $sum: { $cond: [{ $eq: ["$archived", true] }, 1, 0] } },
+  // The catalog facet is IDENTICAL for every user and changes only when an
+  // admin edits the catalog, so it is cached (60 s TTL, dropped on any question
+  // write). Keyed by month so `monthlyAdded`'s window rolls over correctly.
+  const facetKey = `stats:facet:${now.getFullYear()}-${now.getMonth()}`;
+  const facetPromise = cachedCatalog(facetKey, async () => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const [f]: any[] = await Question.aggregate([
+      {
+        $facet: {
+          counts: [
+            {
+              $group: {
+                _id: null,
+                activeTotal: { $sum: { $cond: [{ $ne: ["$archived", true] }, 1, 0] } },
+                archived: { $sum: { $cond: [{ $eq: ["$archived", true] }, 1, 0] } },
+              },
             },
-          },
-        ],
-        byDifficulty: [{ $match: ACTIVE }, { $group: { _id: "$difficulty", total: { $sum: 1 } } }],
-        byTopic: [{ $match: ACTIVE }, { $group: { _id: "$topic", total: { $sum: 1 } } }],
-        byPattern: [{ $match: ACTIVE }, { $group: { _id: "$pattern", total: { $sum: 1 } } }],
-        byPlatform: [{ $match: ACTIVE }, { $group: { _id: "$platform", total: { $sum: 1 } } }],
-        byCompany: [
-          { $match: ACTIVE },
-          { $unwind: "$companies" },
-          { $group: { _id: "$companies", total: { $sum: 1 } } },
-        ],
-        monthlyAdded: [
-          { $match: { ...ACTIVE, createdAt: { $gte: sixStart } } },
-          { $group: { _id: { y: { $year: "$createdAt" }, m: { $month: "$createdAt" } }, n: { $sum: 1 } } },
-        ],
+          ],
+          byDifficulty: [{ $match: ACTIVE }, { $group: { _id: "$difficulty", total: { $sum: 1 } } }],
+          byTopic: [{ $match: ACTIVE }, { $group: { _id: "$topic", total: { $sum: 1 } } }],
+          byPattern: [{ $match: ACTIVE }, { $group: { _id: "$pattern", total: { $sum: 1 } } }],
+          byPlatform: [{ $match: ACTIVE }, { $group: { _id: "$platform", total: { $sum: 1 } } }],
+          byCompany: [
+            { $match: ACTIVE },
+            { $unwind: "$companies" },
+            { $group: { _id: "$companies", total: { $sum: 1 } } },
+          ],
+          monthlyAdded: [
+            { $match: { ...ACTIVE, createdAt: { $gte: sixStart } } },
+            { $group: { _id: { y: { $year: "$createdAt" }, m: { $month: "$createdAt" } }, n: { $sum: 1 } } },
+          ],
+        },
       },
-    },
-  ]);
+    ]);
+    return f;
+  });
 
-  // ---- User overlay: ONE query over the target user's own progress ----
-  const rows = (await getUserOverlay(userId)).filter(activeRow);
+  // The "recently added" catalog page (top 6 by recency) is also user-agnostic.
+  const recentlyAddedPromise = cachedCatalog("stats:recentlyAdded", () =>
+    Question.find(ACTIVE).sort({ createdAt: -1, _id: 1 }).limit(6).lean(),
+  );
+
+  // Run the (cached) catalog reads, the user overlay, and the recent-solved id
+  // lookup CONCURRENTLY instead of five sequential round-trips. Types are left
+  // inferred so `activeRow`'s type-guard narrowing on `rows` is preserved.
+  const [facet, rows, recentlyAddedDocs, recentSolvedIds] = await Promise.all([
+    facetPromise,
+    getUserOverlay(userId).then((r) => r.filter(activeRow)),
+    recentlyAddedPromise as Promise<Record<string, unknown>[]>,
+    UserProgress.find({ userId: new Types.ObjectId(userId), solvedAt: { $ne: null } })
+      .sort({ solvedAt: -1 })
+      .limit(6)
+      .select("questionId")
+      .lean()
+      .then((p) => p.map((x) => x.questionId)),
+  ]);
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const arr = (x: any): any[] => (Array.isArray(x) ? x : []);
@@ -180,31 +206,21 @@ export async function computeUserStats(userId: string): Promise<Stats> {
     day.setUTCDate(day.getUTCDate() + 1);
   }
 
-  // Recently added: catalog list overlaid with the target user's progress.
-  const recentlyAddedDocs = await Question.find(ACTIVE)
-    .sort({ createdAt: -1 })
-    .limit(6)
-    .lean();
-  const recentlyAdded = serializeQuestions(
-    await overlayQuestions(userId, recentlyAddedDocs as Record<string, unknown>[]),
-  );
+  // Recently added (catalog docs already fetched above) + recently solved (docs
+  // for the pre-fetched ids) — overlaid with the target user's progress. The
+  // catalog reads happened concurrently up top; here we just overlay.
+  const [recentlyAdded, recentDocs] = await Promise.all([
+    overlayQuestions(userId, recentlyAddedDocs).then(serializeQuestions),
+    recentSolvedIds.length
+      ? Question.find({ _id: { $in: recentSolvedIds } }).lean()
+      : Promise.resolve([] as Record<string, unknown>[]),
+  ]);
 
-  // Recently solved: the target user's own latest solves.
-  const recentProgress = await UserProgress.find({
-    userId: new Types.ObjectId(userId),
-    solvedAt: { $ne: null },
-  })
-    .sort({ solvedAt: -1 })
-    .limit(6)
-    .select("questionId")
-    .lean();
-  const recentIds = recentProgress.map((p) => p.questionId);
-  const recentDocs = await Question.find({ _id: { $in: recentIds } }).lean();
-  const docOrder = new Map(recentDocs.map((d) => [String(d._id), d]));
+  const docOrder = new Map((recentDocs as Record<string, unknown>[]).map((d) => [String(d._id), d]));
   const recentlySolved = serializeQuestions(
     await overlayQuestions(
       userId,
-      recentIds
+      recentSolvedIds
         .map((id) => docOrder.get(String(id)))
         .filter(Boolean) as Record<string, unknown>[],
     ),

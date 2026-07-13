@@ -60,6 +60,9 @@ UserSchema.index({ status: 1 });
 UserSchema.index({ role: 1 });
 UserSchema.index({ solvedCount: -1 });
 UserSchema.index({ name: 1 });
+// `loginCount` is a whitelisted sortable column in the admin user list; without
+// this index sorting/keyset-paginating by it was an unindexed collection sort.
+UserSchema.index({ loginCount: -1 });
 
 export type UserDoc = InferSchemaType<typeof UserSchema>;
 

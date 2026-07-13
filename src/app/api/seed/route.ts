@@ -4,6 +4,7 @@ import { questionCreateSchema } from "@/lib/validations";
 import { requireAdmin } from "@/lib/auth-helpers";
 import { checkRateLimit, tooManyRequests } from "@/lib/rate-limit";
 import { logAudit } from "@/lib/audit";
+import { bumpCatalogVersion } from "@/lib/catalog-cache";
 import { SAMPLE_QUESTIONS } from "@/lib/sample-data";
 import Question from "@/models/Question";
 
@@ -37,6 +38,7 @@ export async function POST() {
       inserted += 1;
     }
 
+    if (inserted > 0) bumpCatalogVersion();
     return ok({ inserted });
   });
 }
