@@ -16,6 +16,7 @@ All notable changes to this project are documented here. Format follows [Keep a 
 - **/api/google:** was ~12 sequential queries/request; the user-independent catalog half is now one cached, fully parallel batch (only overlay + recommendations are per-user)
 - **Bundle:** removed framer-motion from `question-card.tsx` and `template.tsx` (now a Server Component with a CSS transition) — six question-list routes −39 kB First Load JS each (−18%)
 - **Loading:** per-segment `loading.tsx` (dashboard + list segments) replacing the single dashboard-shaped global; neutral generic global
+- **App-shell chrome by auth, not just route:** `/topics`, `/patterns`, `/companies`, `/sheets`, `/algorithm-patterns` previously rendered the public marketing header/footer for *everyone*, so a signed-in user clicking them from the sidebar lost the app chrome (looked like landing on the home page). Now signed-in users keep the sidebar on these pages; signed-out visitors/crawlers still get the public chrome (SEO preserved)
 
 ## [1.0.0] — 2026-07-12
 

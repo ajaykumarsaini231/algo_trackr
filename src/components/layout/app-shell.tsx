@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { usePathname } from "next/navigation";
+import { useSession } from "next-auth/react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Sidebar } from "@/components/layout/sidebar";
 import { Header } from "@/components/layout/header";
@@ -33,10 +34,18 @@ const PUBLIC_PREFIXES = [
 export function AppShell({ children }: { children: React.ReactNode }) {
   const [open, setOpen] = React.useState(false);
   const pathname = usePathname();
+  const { data: session } = useSession();
+  const signedIn = Boolean(session?.user);
   const bare = BARE_ROUTES.has(pathname);
-  const isPublicRoute =
-    pathname === "/" ||
-    PUBLIC_PREFIXES.some((p) => pathname === p || pathname.startsWith(`${p}/`));
+  // The landing page ("/") is always marketing chrome. The other public content
+  // pages (topics/patterns/companies/sheets/algorithm-patterns/…) render the
+  // marketing header+footer ONLY for signed-OUT visitors (SEO/crawlers). A
+  // signed-in user reaching them from the sidebar stays in the app shell
+  // (sidebar) instead of being dropped into the public/home-looking layout.
+  const isPublicContent = PUBLIC_PREFIXES.some(
+    (p) => pathname === p || pathname.startsWith(`${p}/`),
+  );
+  const isPublicRoute = pathname === "/" || (!signedIn && isPublicContent);
 
   // Lock body scroll while the mobile drawer is open.
   React.useEffect(() => {
